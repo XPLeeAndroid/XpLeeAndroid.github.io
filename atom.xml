@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-25T10:46:30.084Z</updated>
+  <updated>2016-06-25T15:56:24.037Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GoodNight</title>
+    <link href="http://xpleeandroid.github.io/2016/06/25/GoodNight/"/>
+    <id>http://xpleeandroid.github.io/2016/06/25/GoodNight/</id>
+    <published>2016-06-25T15:50:44.000Z</published>
+    <updated>2016-06-25T15:56:24.037Z</updated>
+    
+    <content type="html">&lt;p&gt; use one day for establish this blog,thanks for opensource!&lt;/p&gt;
+&lt;p&gt; Now we can say good night!&lt;/p&gt;
+&lt;p&gt; ``&lt;br&gt;&lt;img src=&quot;http://f5.topitme.com/5/98/93/1153052438ba893985l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; use one day for establish this blog,thanks for opensource!&lt;/p&gt;
+&lt;p&gt; Now we can say good night!&lt;/p&gt;
+&lt;p&gt; ``&lt;br&gt;&lt;img src=&quot;http://f5.topitme.
+    
+    </summary>
+    
+    
+      <category term="随想" scheme="http://xpleeandroid.github.io/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
