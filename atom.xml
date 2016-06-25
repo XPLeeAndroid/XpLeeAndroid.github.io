@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>李晓鹏</title>
-  <subtitle>呵呵大</subtitle>
+  <subtitle>Adam</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-25T14:22:23.541Z</updated>
+  <updated>2016-06-25T10:46:30.084Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
-    <name>李晓鹏</name>
+    <name>Adam</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>你好</title>
-    <link href="http://xpleeandroid.github.io/2016/06/25/%E4%BD%A0%E5%A5%BD/"/>
-    <id>http://xpleeandroid.github.io/2016/06/25/你好/</id>
-    <published>2016-06-25T14:22:23.000Z</published>
-    <updated>2016-06-25T14:22:23.541Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
