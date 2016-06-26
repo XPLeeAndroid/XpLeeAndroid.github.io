@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-26T10:10:28.183Z</updated>
+  <updated>2016-06-26T10:11:22.300Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,16 +20,16 @@
     <link href="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/"/>
     <id>http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/</id>
     <published>2016-06-26T06:40:57.000Z</published>
-    <updated>2016-06-26T10:10:28.183Z</updated>
+    <updated>2016-06-26T10:11:22.300Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;原文链接 &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;/blockquote&gt;
+&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;hr&gt;
 &lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。&lt;/p&gt;
