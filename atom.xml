@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-26T08:04:40.201Z</updated>
+  <updated>2016-06-26T08:19:47.343Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,10 +20,35 @@
     <link href="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/"/>
     <id>http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/</id>
     <published>2016-06-26T06:40:57.000Z</published>
-    <updated>2016-06-26T08:04:40.201Z</updated>
+    <updated>2016-06-26T08:19:47.343Z</updated>
     
     <content type="html">&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。&lt;/p&gt;
+&lt;p&gt;首先，你必须在Application的build.gradle里的android块内填写如下代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;android {
+…
+dataBinding.enabled = true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;下一步就是在你的layout文件的最外层添加 &lt;layout&gt;标签，不管你用的是任何 ViewGroup:&lt;/layout&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    xmlns:tools=&amp;quot;http://schemas.android.com/tools&amp;quot;&amp;gt;
+&amp;lt;RelativeLayout
+        android:layout_width=&amp;quot;match_parent&amp;quot;
+        android:layout_height=&amp;quot;match_parent&amp;quot;
+        android:paddingLeft=&amp;quot;@dimen/activity_horizontal_margin&amp;quot;
+        android:paddingRight=&amp;quot;@dimen/activity_horizontal_margin&amp;quot;
+        android:paddingTop=&amp;quot;@dimen/activity_vertical_margin&amp;quot;
+        android:paddingBottom=&amp;quot;@dimen/activity_vertical_margin&amp;quot;
+        tools:context=&amp;quot;.MainActivity&amp;quot;&amp;gt;
+
+    &amp;lt;TextView
+            android:id=&amp;quot;@+id/hello&amp;quot;
+            android:layout_width=&amp;quot;wrap_content&amp;quot;
+            android:layout_height=&amp;quot;wrap_content&amp;quot;/&amp;gt;
+
+&amp;lt;/RelativeLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">

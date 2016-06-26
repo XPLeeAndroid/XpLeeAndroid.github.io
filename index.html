@@ -163,6 +163,31 @@
         
           <h1 id="No-More-findViewById"><a href="#No-More-findViewById" class="headerlink" title="No More findViewById"></a>No More findViewById</h1><p>Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br></pre></td></tr></table></figure>
+<p>虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。</p>
+<p>首先，你必须在Application的build.gradle里的android块内填写如下代码：</p>
+<pre><code>android {
+…
+dataBinding.enabled = true
+</code></pre><p>}</p>
+<p>下一步就是在你的layout文件的最外层添加 <layout>标签，不管你用的是任何 ViewGroup:</layout></p>
+<pre><code>&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;
+&lt;RelativeLayout
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+        android:paddingLeft=&quot;@dimen/activity_horizontal_margin&quot;
+        android:paddingRight=&quot;@dimen/activity_horizontal_margin&quot;
+        android:paddingTop=&quot;@dimen/activity_vertical_margin&quot;
+        android:paddingBottom=&quot;@dimen/activity_vertical_margin&quot;
+        tools:context=&quot;.MainActivity&quot;&gt;
+
+    &lt;TextView
+            android:id=&quot;@+id/hello&quot;
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;/&gt;
+
+&lt;/RelativeLayout&gt;
+</code></pre><p></p>
 
         
       </div>
