@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-25T15:56:24.037Z</updated>
+  <updated>2016-06-26T06:43:41.315Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>翻译:no more findViewById</title>
+    <link href="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/"/>
+    <id>http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/</id>
+    <published>2016-06-26T06:40:57.000Z</published>
+    <updated>2016-06-26T06:43:41.315Z</updated>
+    
+    <content type="html">&lt;!-- more原文地址：https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6 --&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;!-- more原文地址：https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6 --&gt;
+
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://xpleeandroid.github.io/tags/android/"/>
+    
+      <category term="翻译" scheme="http://xpleeandroid.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title>GoodNight</title>
