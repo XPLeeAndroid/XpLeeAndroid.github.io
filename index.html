@@ -10,19 +10,19 @@
   
   
   <meta name="keywords" content="undefined">
-  <meta name="description" content="屌丝程序员，正在寻找出路。">
+  <meta name="description" content="Talk is cheap. Show me the code.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="李晓鹏">
 <meta property="og:url" content="http://xpleeandroid.github.io/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="屌丝程序员，正在寻找出路。">
+<meta property="og:description" content="Talk is cheap. Show me the code.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="李晓鹏">
-<meta name="twitter:description" content="屌丝程序员，正在寻找出路。">
+<meta name="twitter:description" content="Talk is cheap. Show me the code.">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="屌丝程序员，正在寻找出路。">
+  <meta name="summary" content="Talk is cheap. Show me the code.">
   <link rel="shortcut icon" href="/img/author.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -197,6 +197,15 @@ dataBinding.enabled = true
 DataBindingUtil.setContentView(this, R.layout.hello_world);
 binding.hello.setText(&quot;Hello World&quot;); 
 </code></pre><p>你可以看到 <strong>HelloWordBinding</strong>这个类自动为<strong>hello_world.xml</strong>生成并且id为“@+id/hello”的view分配到了一个<strong>hello</strong>的field你可以使用。没有强制类型转换，没有findViewById.</p>
+<p>这标兵这是访问view的机制不仅仅比findViewById更加简单，而且也更加快！绑定程序一次执行覆盖所有layout的view，把view分配到field。当你运行findViewById，的时候view结构每次都会被遍历查找。</p>
+<p>你会注意到一件事:它对你的变量名使用了驼峰命名法（比如hello_world.html 变成类 HelloWorldBinding）,所以如果你给它的id是“@+id/hello_text”,那么field的名称将会是 helloText.</p>
+<p>当你正在inflate你布局里RecyclerView,ViewPager，或其他不设置Activity内容的控件，你将希望在生成的类上用生成的类型安全的方法，这里有几个版本匹配LayoutInflater,所以使用你最适合食用的.举个例子：</p>
+<pre><code>HelloWorldBinding binding = HelloWorldBinding.inflate(
+getLayoutInflater(), container, attachToContainer);
+</code></pre><p>如果你们有把被inflate的view 附加到包含他们的ViewGroup上，你必须访问被infalte的view的view结构。你可以用binding的getRoot()方法：</p>
+<pre><code>linearLayout.addView(binding.getRoot());
+</code></pre><p>现在，你可能会考虑，如果我有一个layout包含同步view的不同配置呢？layout预执行和运行时inflate阶段通过添加所有View 的id到生成的类，如果没有被inflate的话设置为null。</p>
+<p>相当神奇，不是吗？最好的部分是运行时没有反射和其他任何高消耗的技术。把他少量添加到你现有程序里面非常容易，他能让你的生活更加简单，让你的layout加载的更快！</p>
 
         
       </div>

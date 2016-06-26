@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-26T08:55:35.558Z</updated>
+  <updated>2016-06-26T09:32:40.028Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/"/>
     <id>http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/</id>
     <published>2016-06-26T06:40:57.000Z</published>
-    <updated>2016-06-26T08:55:35.558Z</updated>
+    <updated>2016-06-26T09:32:40.028Z</updated>
     
     <content type="html">&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -58,6 +58,15 @@ dataBinding.enabled = true
 DataBindingUtil.setContentView(this, R.layout.hello_world);
 binding.hello.setText(&amp;quot;Hello World&amp;quot;); 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以看到 &lt;strong&gt;HelloWordBinding&lt;/strong&gt;这个类自动为&lt;strong&gt;hello_world.xml&lt;/strong&gt;生成并且id为“@+id/hello”的view分配到了一个&lt;strong&gt;hello&lt;/strong&gt;的field你可以使用。没有强制类型转换，没有findViewById.&lt;/p&gt;
+&lt;p&gt;这标兵这是访问view的机制不仅仅比findViewById更加简单，而且也更加快！绑定程序一次执行覆盖所有layout的view，把view分配到field。当你运行findViewById，的时候view结构每次都会被遍历查找。&lt;/p&gt;
+&lt;p&gt;你会注意到一件事:它对你的变量名使用了驼峰命名法（比如hello_world.html 变成类 HelloWorldBinding）,所以如果你给它的id是“@+id/hello_text”,那么field的名称将会是 helloText.&lt;/p&gt;
+&lt;p&gt;当你正在inflate你布局里RecyclerView,ViewPager，或其他不设置Activity内容的控件，你将希望在生成的类上用生成的类型安全的方法，这里有几个版本匹配LayoutInflater,所以使用你最适合食用的.举个例子：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HelloWorldBinding binding = HelloWorldBinding.inflate(
+getLayoutInflater(), container, attachToContainer);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果你们有把被inflate的view 附加到包含他们的ViewGroup上，你必须访问被infalte的view的view结构。你可以用binding的getRoot()方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;linearLayout.addView(binding.getRoot());
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;现在，你可能会考虑，如果我有一个layout包含同步view的不同配置呢？layout预执行和运行时inflate阶段通过添加所有View 的id到生成的类，如果没有被inflate的话设置为null。&lt;/p&gt;
+&lt;p&gt;相当神奇，不是吗？最好的部分是运行时没有反射和其他任何高消耗的技术。把他少量添加到你现有程序里面非常容易，他能让你的生活更加简单，让你的layout加载的更快！&lt;/p&gt;
 </content>
     
     <summary type="html">
