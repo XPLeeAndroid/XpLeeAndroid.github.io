@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-26T07:51:47.857Z</updated>
+  <updated>2016-06-26T07:46:57.681Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,25 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://xpleeandroid.github.io/2016/06/26/test/"/>
-    <id>http://xpleeandroid.github.io/2016/06/26/test/</id>
-    <published>2016-06-26T07:51:47.000Z</published>
-    <updated>2016-06-26T07:51:47.857Z</updated>
-    
-    <content type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=29431066&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>翻译:no more findViewById</title>
