@@ -188,6 +188,15 @@ dataBinding.enabled = true
 
 &lt;/RelativeLayout&gt;
 </code></pre><p></p>
+<p><strong>Layout</strong>标签告诉Android Studio这个layout在编译时将进行额外的操作，查找到所有感兴趣的view,并且标签为下一步。所有外部没有包<code>layout</code>标签的布局将不会执行额外操作。所以你可以在新项目中少量使用而无需改变项目中其他的部分。</p>
+<p>下面要做的就是告诉它在运行时分别加载你的layout。因为它向后兼容，所以不需要依赖新框架的改变来加载这些预执行的layout文件。因此你只需对程序做一个轻微的改变。</p>
+<p>从一个Activity,不是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    setContentView(R.layout.hello_world);</span><br><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br><span class="line">hello.setText(<span class="string">"Hello World"</span>); </span><br></pre></td></tr></table></figure>
+<p>而是这样加载：</p>
+<pre><code>HelloWorldBinding binding = 
+DataBindingUtil.setContentView(this, R.layout.hello_world);
+binding.hello.setText(&quot;Hello World&quot;); 
+</code></pre><p>你可以看到 <strong>HelloWordBinding</strong>这个类自动为<strong>hello_world.xml</strong>生成并且id为“@+id/hello”的view分配到了一个<strong>hello</strong>的field你可以使用。没有强制类型转换，没有findViewById.</p>
 
         
       </div>

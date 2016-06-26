@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-26T08:19:47.343Z</updated>
+  <updated>2016-06-26T08:55:35.558Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/"/>
     <id>http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/</id>
     <published>2016-06-26T06:40:57.000Z</published>
-    <updated>2016-06-26T08:19:47.343Z</updated>
+    <updated>2016-06-26T08:55:35.558Z</updated>
     
     <content type="html">&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -49,6 +49,15 @@ dataBinding.enabled = true
 
 &amp;lt;/RelativeLayout&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Layout&lt;/strong&gt;标签告诉Android Studio这个layout在编译时将进行额外的操作，查找到所有感兴趣的view,并且标签为下一步。所有外部没有包&lt;code&gt;layout&lt;/code&gt;标签的布局将不会执行额外操作。所以你可以在新项目中少量使用而无需改变项目中其他的部分。&lt;/p&gt;
+&lt;p&gt;下面要做的就是告诉它在运行时分别加载你的layout。因为它向后兼容，所以不需要依赖新框架的改变来加载这些预执行的layout文件。因此你只需对程序做一个轻微的改变。&lt;/p&gt;
+&lt;p&gt;从一个Activity,不是：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;    setContentView(R.layout.hello_world);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hello.setText(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;而是这样加载：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HelloWorldBinding binding = 
+DataBindingUtil.setContentView(this, R.layout.hello_world);
+binding.hello.setText(&amp;quot;Hello World&amp;quot;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以看到 &lt;strong&gt;HelloWordBinding&lt;/strong&gt;这个类自动为&lt;strong&gt;hello_world.xml&lt;/strong&gt;生成并且id为“@+id/hello”的view分配到了一个&lt;strong&gt;hello&lt;/strong&gt;的field你可以使用。没有强制类型转换，没有findViewById.&lt;/p&gt;
 </content>
     
     <summary type="html">
