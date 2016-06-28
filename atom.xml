@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-28T07:14:19.816Z</updated>
+  <updated>2016-06-28T08:15:53.910Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T07:14:19.816Z</updated>
+    <updated>2016-06-28T08:15:53.910Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -48,6 +48,31 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;通过泛型，开发者可以自己实现泛型算法，应用到一系列的不同类型，可以自定义，并且类型安全，易读。&lt;/p&gt;
+&lt;h1 id=&quot;泛型类型&quot;&gt;&lt;a href=&quot;#泛型类型&quot; class=&quot;headerlink&quot; title=&quot;泛型类型&quot;&gt;&lt;/a&gt;泛型类型&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;泛型类型&lt;/strong&gt;是泛型类或者接口被类型参数化。下面的&lt;strong&gt;Box&lt;/strong&gt;类将被更改演示这个概念。&lt;/p&gt;
+&lt;h3 id=&quot;简单的-Box-类&quot;&gt;&lt;a href=&quot;#简单的-Box-类&quot; class=&quot;headerlink&quot; title=&quot;简单的 Box 类&quot;&gt;&lt;/a&gt;简单的 Box 类&lt;/h3&gt;&lt;p&gt;列举一个简单的非泛型 &lt;strong&gt;Box&lt;/strong&gt;操作任意类型的object。它只需要提供两个方法：set，添加一个obejct到box，get,获取这个对象：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Box {
+private Object object;
+
+public void set(Object object) { this.object = object; }
+public Object get() { return object; }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因为它的方法接收或返回一个对象，你可以任意传入，只要传入的不是原始数据类型。我们没有在编译时辨别clas如何使用的。一边可能替换一个 Integer到box，另一边获取的不是Integer类型，而可能传入一个String类型，结果会导致运行时错误。&lt;/p&gt;
+&lt;h3 id=&quot;泛型版本的Box&quot;&gt;&lt;a href=&quot;#泛型版本的Box&quot; class=&quot;headerlink&quot; title=&quot;泛型版本的Box&quot;&gt;&lt;/a&gt;泛型版本的Box&lt;/h3&gt;&lt;p&gt;泛型类的定义形式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class name&amp;lt;T1, T2, ..., Tn&amp;gt; { /* ... */ }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;类型参数部分被一对尖括号（&amp;lt;&amp;gt;）划分，紧跟类名，它指定了&lt;strong&gt;类型参数&lt;/strong&gt;（也叫作类型变量）T1， T2， ….,和Tn.&lt;/p&gt;
+&lt;p&gt;把原Box类更新为泛型类，你要通过把“public class Box”改变为“public class Box&lt;t&gt;”创建一个类型声明。这会引入一个&lt;strong&gt;类型变量&lt;/strong&gt;, &lt;strong&gt;T&lt;/strong&gt;,你可以在类中任意地方使用。通过这个改变，Box类就变为：&lt;/t&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * Generic version of the Box class.
+ * @param &amp;lt;T&amp;gt; the type of the value being boxed
+ */
+public class Box&amp;lt;T&amp;gt; {
+// T stands for &amp;quot;Type&amp;quot;
+private T t;
+
+public void set(T t) { this.t = t; }
+public T get() { return t; }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以看到，所有&lt;strong&gt;Object&lt;/strong&gt;出现的地方都被替换为T了。一个类型变量可以指定为任意非原始类型的类型：任意的类，任意的接口，任意的数组，甚至其他的类型变量。同样的技术可以应用到创建泛型接口上。&lt;/p&gt;
 </content>
     
     <summary type="html">

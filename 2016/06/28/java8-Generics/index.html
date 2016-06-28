@@ -26,7 +26,7 @@
 
 
 泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
-<meta property="og:updated_time" content="2016-06-28T07:14:19.816Z">
+<meta property="og:updated_time" content="2016-06-28T08:15:53.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
 <meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
@@ -203,7 +203,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么要用泛型"><span class="post-toc-text">为什么要用泛型</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么要用泛型"><span class="post-toc-text">为什么要用泛型</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型类型"><span class="post-toc-text">泛型类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简单的-Box-类"><span class="post-toc-text">简单的 Box 类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#泛型版本的Box"><span class="post-toc-text">泛型版本的Box</span></a></li></ol></li></ol></li></ol>
           </nav>
           
         </aside>
@@ -237,6 +237,31 @@
 </li>
 </ul>
 <p>通过泛型，开发者可以自己实现泛型算法，应用到一系列的不同类型，可以自定义，并且类型安全，易读。</p>
+<h1 id="泛型类型"><a href="#泛型类型" class="headerlink" title="泛型类型"></a>泛型类型</h1><p><strong>泛型类型</strong>是泛型类或者接口被类型参数化。下面的<strong>Box</strong>类将被更改演示这个概念。</p>
+<h3 id="简单的-Box-类"><a href="#简单的-Box-类" class="headerlink" title="简单的 Box 类"></a>简单的 Box 类</h3><p>列举一个简单的非泛型 <strong>Box</strong>操作任意类型的object。它只需要提供两个方法：set，添加一个obejct到box，get,获取这个对象：</p>
+<pre><code>public class Box {
+private Object object;
+
+public void set(Object object) { this.object = object; }
+public Object get() { return object; }
+}
+</code></pre><p>因为它的方法接收或返回一个对象，你可以任意传入，只要传入的不是原始数据类型。我们没有在编译时辨别clas如何使用的。一边可能替换一个 Integer到box，另一边获取的不是Integer类型，而可能传入一个String类型，结果会导致运行时错误。</p>
+<h3 id="泛型版本的Box"><a href="#泛型版本的Box" class="headerlink" title="泛型版本的Box"></a>泛型版本的Box</h3><p>泛型类的定义形式如下：</p>
+<pre><code>class name&lt;T1, T2, ..., Tn&gt; { /* ... */ }
+</code></pre><p>类型参数部分被一对尖括号（&lt;&gt;）划分，紧跟类名，它指定了<strong>类型参数</strong>（也叫作类型变量）T1， T2， ….,和Tn.</p>
+<p>把原Box类更新为泛型类，你要通过把“public class Box”改变为“public class Box<t>”创建一个类型声明。这会引入一个<strong>类型变量</strong>, <strong>T</strong>,你可以在类中任意地方使用。通过这个改变，Box类就变为：</t></p>
+<pre><code>/**
+ * Generic version of the Box class.
+ * @param &lt;T&gt; the type of the value being boxed
+ */
+public class Box&lt;T&gt; {
+// T stands for &quot;Type&quot;
+private T t;
+
+public void set(T t) { this.t = t; }
+public T get() { return t; }
+}
+</code></pre><p>你可以看到，所有<strong>Object</strong>出现的地方都被替换为T了。一个类型变量可以指定为任意非原始类型的类型：任意的类，任意的接口，任意的数组，甚至其他的类型变量。同样的技术可以应用到创建泛型接口上。</p>
 
             <blockquote>
               <p>
