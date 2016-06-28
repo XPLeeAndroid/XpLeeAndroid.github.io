@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-28T06:04:35.120Z</updated>
+  <updated>2016-06-28T06:10:23.875Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>java8-Generics</title>
+    <title>java8教程-泛型（Generics）</title>
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T06:04:35.120Z</updated>
+    <updated>2016-06-28T06:10:23.875Z</updated>
     
     <content type="html"></content>
     
@@ -28,6 +28,8 @@
     
     </summary>
     
+    
+      <category term="java" scheme="http://xpleeandroid.github.io/tags/java/"/>
     
   </entry>
   
