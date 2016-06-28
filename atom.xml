@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-28T09:47:46.453Z</updated>
+  <updated>2016-06-28T09:48:46.534Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T09:47:46.453Z</updated>
+    <updated>2016-06-28T09:48:46.534Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -29,10 +29,9 @@
 &lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;泛型（已更新）&quot;&gt;&lt;a href=&quot;#泛型（已更新）&quot; class=&quot;headerlink&quot; title=&quot;泛型（已更新）&quot;&gt;&lt;/a&gt;泛型（已更新）&lt;/h1&gt;&lt;p&gt; 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。&lt;/p&gt;
 &lt;p&gt;  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。&lt;/p&gt;
-&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;/p&gt;
+&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;为什么要用泛型&quot;&gt;&lt;a href=&quot;#为什么要用泛型&quot; class=&quot;headerlink&quot; title=&quot;为什么要用泛型&quot;&gt;&lt;/a&gt;为什么要用泛型&lt;/h1&gt;&lt;p&gt;简言之，泛型能够使&lt;strong&gt;类型&lt;/strong&gt;（类和接口）在定义类，接口和方法的时候参数化。非常像方法定义时用到的&lt;strong&gt;形式参数&lt;/strong&gt;（formal parameters）,类型参数提供了一种你可以通过不同的输入来复用同一段代码的方法。不同点是，&lt;strong&gt;形式参数&lt;/strong&gt;输入的是&lt;strong&gt;值&lt;/strong&gt;，而类型参数输入的是&lt;strong&gt;类型&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;使用泛型比非泛型有很多好处：&lt;/p&gt;
 &lt;ul&gt;
@@ -133,6 +132,9 @@ Pair&amp;lt;String, String&amp;gt;  p2 = new OrderedPair&amp;lt;String, String&a
 &lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;h1 id=&quot;泛型（已更新）&quot;&gt;&lt;a href=&quot;#泛型（已更新）&quot; class=&quot;headerlink&quot; title=&quot;泛型（已更新）&quot;&gt;&lt;/a&gt;泛型（已更新）&lt;/h1&gt;&lt;p&gt; 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。&lt;/p&gt;
+&lt;p&gt;  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。&lt;/p&gt;
+&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;br&gt;
     
     </summary>
     
