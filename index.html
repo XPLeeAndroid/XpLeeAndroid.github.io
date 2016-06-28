@@ -227,11 +227,39 @@ public T get() { return t; }
 <pre><code>Box&lt;Integer&gt; integerBox;
 </code></pre><p>你可以认为泛型类型调用跟原生方法调用大致一样，但是不是传入一个参数到方法，而是传入一个类型蚕食–这个情况下的Integer–给Box类本身。</p>
 <blockquote>
-<p><strong>Type Parameter</strong>和<strong>Type Argument</strong>术语（Terminology）：<br>很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，<br>type argument 创建一个参数化类型，因此，Foo<t>中的T是type parameter，Foo<string> f中的String是一个type argument。</string></t></p>
+<p><strong>Type Parameter</strong>和<strong>Type Argument</strong>术语（Terminology）：<br>很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，<br>type argument 创建一个参数化类型，因此，Foo&lt; T&gt;中的T是type parameter，Foo&lt; String&gt; f中的String是一个type argument。</p>
 </blockquote>
 <p>就想其他的变量定义，上面的代码不会真正创建一个新的 Box对象。它只是声明，integerBox将持有一个“Box of Integer”的引用，用以读取Box<integer>.泛型类型的调用通常称为参数化类型。</integer></p>
 <p>为了实例化这个类，用new 关键字，把<integer>放在类名和括号之间。</integer></p>
 <pre><code>Box&lt;Integer&gt; integerBox = new Box&lt;Integer&gt;();
+</code></pre><h3 id="The-Diamond"><a href="#The-Diamond" class="headerlink" title="The Diamond"></a>The Diamond</h3><p>在Java SE 7及以后版本，可以省去类型参数调用泛型类的构造函数，用一个空的类型参数（&lt;&gt;）,编译器可以通过上下文决定，或推测type arguments，这个尖括号非正式得叫作diamond(钻石？这么奇葩)，你可以这样创建Box&lt; Integer&gt;的一个实例：</p>
+<pre><code>Box&lt;Integer&gt; integerBox = new Box&lt;&gt;();
+</code></pre><p>要查看更多关于diamond 符号和类型推断（inference）,请看<a href="https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html" target="_blank" rel="external">类型推断</a>。</p>
+<h3 id="多类型参数"><a href="#多类型参数" class="headerlink" title="多类型参数"></a>多类型参数</h3><p>正如前面提到的，泛型类可以有多个类型参数。比如泛型 OrderedPair 类，实现了泛型接口 Pair：</p>
+<pre><code>public interface Pair&lt;K, V&gt; {
+public K getKey();
+public V getValue();
+}
+
+public class OrderedPair&lt;K, V&gt; implements Pair&lt;K, V&gt; {
+
+private K key;
+private V value;
+
+public OrderedPair(K key, V value) {
+this.key = key;
+this.value = value;
+}
+
+public K getKey()    { return key; }
+public V getValue() { return value; }
+}
+</code></pre><p>下面的语句创建了两个OrderedPair的实例：</p>
+<pre><code>Pair&lt;String, Integer&gt; p1 = new OrderedPair&lt;String, Integer&gt;(&quot;Even&quot;, 8);
+Pair&lt;String, String&gt;  p2 = new OrderedPair&lt;String, String&gt;(&quot;hello&quot;, &quot;world&quot;);
+</code></pre><p>new OrderedPair<string,integer>把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为<a href="https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html" target="_blank" rel="external">自动装箱</a>，传入String和int到类是有效的。</string,integer></p>
+<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List<string>）替换（substitute）类型参数（K ，V）,例如用OrderedPair<k,v>:</k,v></string></p>
+<pre><code>OrderedPair&lt;String, Box&lt;Integer&gt;&gt; p = new OrderedPair&lt;&gt;(&quot;primes&quot;, new Box&lt;Integer&gt;(...));
 </code></pre>
         
       </div>

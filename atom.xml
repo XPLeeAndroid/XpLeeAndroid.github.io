@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-28T09:02:17.298Z</updated>
+  <updated>2016-06-28T09:27:34.896Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T09:02:17.298Z</updated>
+    <updated>2016-06-28T09:27:34.896Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -88,11 +88,39 @@ public T get() { return t; }
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以认为泛型类型调用跟原生方法调用大致一样，但是不是传入一个参数到方法，而是传入一个类型蚕食–这个情况下的Integer–给Box类本身。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Type Parameter&lt;/strong&gt;和&lt;strong&gt;Type Argument&lt;/strong&gt;术语（Terminology）：&lt;br&gt;很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，&lt;br&gt;type argument 创建一个参数化类型，因此，Foo&lt;t&gt;中的T是type parameter，Foo&lt;string&gt; f中的String是一个type argument。&lt;/string&gt;&lt;/t&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type Parameter&lt;/strong&gt;和&lt;strong&gt;Type Argument&lt;/strong&gt;术语（Terminology）：&lt;br&gt;很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，&lt;br&gt;type argument 创建一个参数化类型，因此，Foo&amp;lt; T&amp;gt;中的T是type parameter，Foo&amp;lt; String&amp;gt; f中的String是一个type argument。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;就想其他的变量定义，上面的代码不会真正创建一个新的 Box对象。它只是声明，integerBox将持有一个“Box of Integer”的引用，用以读取Box&lt;integer&gt;.泛型类型的调用通常称为参数化类型。&lt;/integer&gt;&lt;/p&gt;
 &lt;p&gt;为了实例化这个类，用new 关键字，把&lt;integer&gt;放在类名和括号之间。&lt;/integer&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox = new Box&amp;lt;Integer&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;The-Diamond&quot;&gt;&lt;a href=&quot;#The-Diamond&quot; class=&quot;headerlink&quot; title=&quot;The Diamond&quot;&gt;&lt;/a&gt;The Diamond&lt;/h3&gt;&lt;p&gt;在Java SE 7及以后版本，可以省去类型参数调用泛型类的构造函数，用一个空的类型参数（&amp;lt;&amp;gt;）,编译器可以通过上下文决定，或推测type arguments，这个尖括号非正式得叫作diamond(钻石？这么奇葩)，你可以这样创建Box&amp;lt; Integer&amp;gt;的一个实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox = new Box&amp;lt;&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;要查看更多关于diamond 符号和类型推断（inference）,请看&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;类型推断&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;多类型参数&quot;&gt;&lt;a href=&quot;#多类型参数&quot; class=&quot;headerlink&quot; title=&quot;多类型参数&quot;&gt;&lt;/a&gt;多类型参数&lt;/h3&gt;&lt;p&gt;正如前面提到的，泛型类可以有多个类型参数。比如泛型 OrderedPair 类，实现了泛型接口 Pair：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public interface Pair&amp;lt;K, V&amp;gt; {
+public K getKey();
+public V getValue();
+}
+
+public class OrderedPair&amp;lt;K, V&amp;gt; implements Pair&amp;lt;K, V&amp;gt; {
+
+private K key;
+private V value;
+
+public OrderedPair(K key, V value) {
+this.key = key;
+this.value = value;
+}
+
+public K getKey()    { return key; }
+public V getValue() { return value; }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面的语句创建了两个OrderedPair的实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Pair&amp;lt;String, Integer&amp;gt; p1 = new OrderedPair&amp;lt;String, Integer&amp;gt;(&amp;quot;Even&amp;quot;, 8);
+Pair&amp;lt;String, String&amp;gt;  p2 = new OrderedPair&amp;lt;String, String&amp;gt;(&amp;quot;hello&amp;quot;, &amp;quot;world&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;new OrderedPair&lt;string,integer&gt;把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自动装箱&lt;/a&gt;，传入String和int到类是有效的。&lt;/string,integer&gt;&lt;/p&gt;
+&lt;h3 id=&quot;参数化类型&quot;&gt;&lt;a href=&quot;#参数化类型&quot; class=&quot;headerlink&quot; title=&quot;参数化类型&quot;&gt;&lt;/a&gt;参数化类型&lt;/h3&gt;&lt;p&gt;你也可以用一个参数化的类型（ie List&lt;string&gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&lt;k,v&gt;:&lt;/k,v&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;OrderedPair&amp;lt;String, Box&amp;lt;Integer&amp;gt;&amp;gt; p = new OrderedPair&amp;lt;&amp;gt;(&amp;quot;primes&amp;quot;, new Box&amp;lt;Integer&amp;gt;(...));
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
