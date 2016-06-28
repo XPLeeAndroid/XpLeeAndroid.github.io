@@ -12,33 +12,30 @@
   <meta name="keywords" content="java">
   <meta name="description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
 翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
+转载请注明出处，谢谢！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java8教程-泛型（Generics）">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/06/28/java8-Generics/index.html">
 <meta property="og:site_name" content="李晓鹏">
 <meta property="og:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
 翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
-<meta property="og:updated_time" content="2016-06-28T09:29:54.131Z">
+转载请注明出处，谢谢！">
+<meta property="og:updated_time" content="2016-06-28T09:47:46.453Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
 <meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
 翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
+转载请注明出处，谢谢！">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="---Talk is cheap. Show me the code.">
+  <meta name="summary" content="&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文链接 [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -218,6 +215,7 @@
 <li>转载请注明出处，谢谢！</li>
 </ul>
 </blockquote>
+<a id="more"></a>
 <h1 id="泛型（已更新）"><a href="#泛型（已更新）" class="headerlink" title="泛型（已更新）"></a>泛型（已更新）</h1><p> 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。</p>
 <p>  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。</p>
 <p>泛型通过更多的在编译时检测bug为你的代码增加了稳定性。</p>
