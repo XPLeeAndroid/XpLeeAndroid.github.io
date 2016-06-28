@@ -258,7 +258,7 @@ public V getValue() { return value; }
 <pre><code>Pair&lt;String, Integer&gt; p1 = new OrderedPair&lt;String, Integer&gt;(&quot;Even&quot;, 8);
 Pair&lt;String, String&gt;  p2 = new OrderedPair&lt;String, String&gt;(&quot;hello&quot;, &quot;world&quot;);
 </code></pre><p>new OrderedPair<string,integer>把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为<a href="https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html" target="_blank" rel="external">自动装箱</a>，传入String和int到类是有效的。</string,integer></p>
-<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List<string>）替换（substitute）类型参数（K ，V）,例如用OrderedPair<k,v>:</k,v></string></p>
+<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List&lt; String&gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&lt; K,V&gt;:</p>
 <pre><code>OrderedPair&lt;String, Box&lt;Integer&gt;&gt; p = new OrderedPair&lt;&gt;(&quot;primes&quot;, new Box&lt;Integer&gt;(...));
 </code></pre>
         

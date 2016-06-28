@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-06-28T09:27:34.896Z</updated>
+  <updated>2016-06-28T09:29:54.131Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T09:27:34.896Z</updated>
+    <updated>2016-06-28T09:29:54.131Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -119,7 +119,7 @@ public V getValue() { return value; }
 &lt;pre&gt;&lt;code&gt;Pair&amp;lt;String, Integer&amp;gt; p1 = new OrderedPair&amp;lt;String, Integer&amp;gt;(&amp;quot;Even&amp;quot;, 8);
 Pair&amp;lt;String, String&amp;gt;  p2 = new OrderedPair&amp;lt;String, String&amp;gt;(&amp;quot;hello&amp;quot;, &amp;quot;world&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;new OrderedPair&lt;string,integer&gt;把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自动装箱&lt;/a&gt;，传入String和int到类是有效的。&lt;/string,integer&gt;&lt;/p&gt;
-&lt;h3 id=&quot;参数化类型&quot;&gt;&lt;a href=&quot;#参数化类型&quot; class=&quot;headerlink&quot; title=&quot;参数化类型&quot;&gt;&lt;/a&gt;参数化类型&lt;/h3&gt;&lt;p&gt;你也可以用一个参数化的类型（ie List&lt;string&gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&lt;k,v&gt;:&lt;/k,v&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;h3 id=&quot;参数化类型&quot;&gt;&lt;a href=&quot;#参数化类型&quot; class=&quot;headerlink&quot; title=&quot;参数化类型&quot;&gt;&lt;/a&gt;参数化类型&lt;/h3&gt;&lt;p&gt;你也可以用一个参数化的类型（ie List&amp;lt; String&amp;gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&amp;lt; K,V&amp;gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;OrderedPair&amp;lt;String, Box&amp;lt;Integer&amp;gt;&amp;gt; p = new OrderedPair&amp;lt;&amp;gt;(&amp;quot;primes&amp;quot;, new Box&amp;lt;Integer&amp;gt;(...));
 &lt;/code&gt;&lt;/pre&gt;</content>
     

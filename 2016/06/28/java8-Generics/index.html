@@ -26,7 +26,7 @@
 
 
 泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
-<meta property="og:updated_time" content="2016-06-28T09:27:34.896Z">
+<meta property="og:updated_time" content="2016-06-28T09:29:54.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
 <meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
@@ -308,7 +308,7 @@ public V getValue() { return value; }
 <pre><code>Pair&lt;String, Integer&gt; p1 = new OrderedPair&lt;String, Integer&gt;(&quot;Even&quot;, 8);
 Pair&lt;String, String&gt;  p2 = new OrderedPair&lt;String, String&gt;(&quot;hello&quot;, &quot;world&quot;);
 </code></pre><p>new OrderedPair<string,integer>把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为<a href="https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html" target="_blank" rel="external">自动装箱</a>，传入String和int到类是有效的。</string,integer></p>
-<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List<string>）替换（substitute）类型参数（K ，V）,例如用OrderedPair<k,v>:</k,v></string></p>
+<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List&lt; String&gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&lt; K,V&gt;:</p>
 <pre><code>OrderedPair&lt;String, Box&lt;Integer&gt;&gt; p = new OrderedPair&lt;&gt;(&quot;primes&quot;, new Box&lt;Integer&gt;(...));
 </code></pre>
             <blockquote>
