@@ -28,7 +28,7 @@ Android Studio开发android程序的一个小特点是数据绑定。我会在�
 
 No More findViewById
 Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你">
-<meta property="og:updated_time" content="2016-06-28T05:42:00.663Z">
+<meta property="og:updated_time" content="2016-06-28T09:49:39.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="翻译:no more findViewById">
 <meta name="twitter:description" content="原文链接 https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
@@ -41,7 +41,15 @@ Android Studio开发android程序的一个小特点是数据绑定。我会在�
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="---Talk is cheap. Show me the code.">
+  <meta name="summary" content="&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;br&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -222,8 +230,7 @@ Android Studio开发android程序的一个小特点是数据绑定。我会在�
 </ul>
 </blockquote>
 <h1 id="No-More-findViewById"><a href="#No-More-findViewById" class="headerlink" title="No More findViewById"></a>No More findViewById</h1><hr>
-<p>Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br></pre></td></tr></table></figure>
+<p>Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br></pre></td></tr></table></figure></p>
 <p>虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。</p>
 <p>首先，你必须在Application的build.gradle里的android块内填写如下代码：</p>
 <pre><code>android {
