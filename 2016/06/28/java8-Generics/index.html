@@ -26,7 +26,7 @@
 
 
 泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
-<meta property="og:updated_time" content="2016-06-28T06:30:49.288Z">
+<meta property="og:updated_time" content="2016-06-28T07:14:19.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
 <meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
@@ -203,7 +203,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么要用泛型"><span class="post-toc-text">为什么要用泛型</span></a></li></ol>
           </nav>
           
         </aside>
@@ -221,6 +221,22 @@
 <h1 id="泛型（已更新）"><a href="#泛型（已更新）" class="headerlink" title="泛型（已更新）"></a>泛型（已更新）</h1><p> 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。</p>
 <p>  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。</p>
 <p>泛型通过更多的在编译时检测bug为你的代码增加了稳定性。</p>
+<h1 id="为什么要用泛型"><a href="#为什么要用泛型" class="headerlink" title="为什么要用泛型"></a>为什么要用泛型</h1><p>简言之，泛型能够使<strong>类型</strong>（类和接口）在定义类，接口和方法的时候参数化。非常像方法定义时用到的<strong>形式参数</strong>（formal parameters）,类型参数提供了一种你可以通过不同的输入来复用同一段代码的方法。不同点是，<strong>形式参数</strong>输入的是<strong>值</strong>，而类型参数输入的是<strong>类型</strong>。</p>
+<p>使用泛型比非泛型有很多好处：</p>
+<ul>
+<li>编译时更强大的类型检测</li>
+</ul>
+<p> Java编译器对泛型应用了强大的类型检测，如果代码违反了类型安全就会报错。修复编译时错误比修复运行时错误更加容易，因为运行时错误很难查找到。</p>
+<ul>
+<li><p>消除类型转换(Elimination of casts)</p>
+<p>以下代码片段没有泛型需要转型：</p>
+<p>  List list = new ArrayList();<br>  list.add(“hello”);<br>  String s = (String) list.get(0);<br>当我们重新用泛型编写，代码就不需要类型转换了：</p>
+<p>  List<string> list = new ArrayList<string>();<br>  list.add(“hello”);<br>  String s = list.get(0);   // no cast</string></string></p>
+</li>
+<li><p>使开发者实现泛型算法</p>
+</li>
+</ul>
+<p>通过泛型，开发者可以自己实现泛型算法，应用到一系列的不同类型，可以自定义，并且类型安全，易读。</p>
 
             <blockquote>
               <p>
