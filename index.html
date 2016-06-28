@@ -212,7 +212,27 @@ public void set(T t) { this.t = t; }
 public T get() { return t; }
 }
 </code></pre><p>你可以看到，所有<strong>Object</strong>出现的地方都被替换为T了。一个类型变量可以指定为任意非原始类型的类型：任意的类，任意的接口，任意的数组，甚至其他的类型变量。同样的技术可以应用到创建泛型接口上。</p>
-
+<h3 id="类型参数命名规则（Naming-Conventions）"><a href="#类型参数命名规则（Naming-Conventions）" class="headerlink" title="类型参数命名规则（Naming Conventions）"></a>类型参数命名规则（Naming Conventions）</h3><p>通过规则，类型参数是单独的，大写字母。这个表示鲜明区别了你已知的变量命名规则，一个好的理由是：没有这个规则，你将很难区分类型变量和原生类或接口名的区别。</p>
+<p>最普遍使用的类型参数是：</p>
+<ul>
+<li>E -Element（Java Collections框架大量使用）</li>
+<li>K -Key</li>
+<li>N -Number</li>
+<li>T -Type</li>
+<li>V -Value </li>
+<li>S,U,V 等 -第二，第三，第四个类型</li>
+</ul>
+<p>你可以在JAVA SE API 看到这些名字的使用。</p>
+<h3 id="调用和实例化一个泛型类型"><a href="#调用和实例化一个泛型类型" class="headerlink" title="调用和实例化一个泛型类型"></a>调用和实例化一个泛型类型</h3><p>要在你的代码引用泛型类 Box，你必须执行 泛型类型调用，把T替换成具体的值，比如Integer： </p>
+<pre><code>Box&lt;Integer&gt; integerBox;
+</code></pre><p>你可以认为泛型类型调用跟原生方法调用大致一样，但是不是传入一个参数到方法，而是传入一个类型蚕食–这个情况下的Integer–给Box类本身。</p>
+<blockquote>
+<p><strong>Type Parameter</strong>和<strong>Type Argument</strong>术语（Terminology）：<br>很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，<br>type argument 创建一个参数化类型，因此，Foo<t>中的T是type parameter，Foo<string> f中的String是一个type argument。</string></t></p>
+</blockquote>
+<p>就想其他的变量定义，上面的代码不会真正创建一个新的 Box对象。它只是声明，integerBox将持有一个“Box of Integer”的引用，用以读取Box<integer>.泛型类型的调用通常称为参数化类型。</integer></p>
+<p>为了实例化这个类，用new 关键字，把<integer>放在类名和括号之间。</integer></p>
+<pre><code>Box&lt;Integer&gt; integerBox = new Box&lt;Integer&gt;();
+</code></pre>
         
       </div>
       <div class="post-footer clearfix">
