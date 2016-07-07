@@ -95,11 +95,26 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     <link href="http://xpleeandroid.github.io/2016/07/07/Learn-PHP/"/>
     <id>http://xpleeandroid.github.io/2016/07/07/Learn-PHP/</id>
     <published>2016-07-07T03:33:29.000Z</published>
-    <updated>2016-07-07T03:34:52.220Z</updated>
+    <updated>2016-07-07T09:43:48.188Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;php文件操作的模式&quot;&gt;&lt;a href=&quot;#php文件操作的模式&quot; class=&quot;headerlink&quot; title=&quot;php文件操作的模式&quot;&gt;&lt;/a&gt;php文件操作的模式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; 只读权限打开文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; 只写权限打开文件，擦除内容，如果没有则新建文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a&lt;/strong&gt; 只写权限打开文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x&lt;/strong&gt; 新建一个只写权限的文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r+&lt;/strong&gt; 打开读/写权限文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w+&lt;/strong&gt; 打开读/写权限的文件， 擦除内容，如果没有则新建文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; 打开读/写权限文件，如果没有则新建文件；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x+&lt;/strong&gt; 新建一个读/写权限的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;将表单提交到本身页面&quot;&gt;&lt;a href=&quot;#将表单提交到本身页面&quot; class=&quot;headerlink&quot; title=&quot;将表单提交到本身页面&quot;&gt;&lt;/a&gt;将表单提交到本身页面&lt;/h2&gt;&lt;p&gt;只需将form的action 设置为&lt;code&gt;&amp;lt;?php echo $_SERVER[&amp;#39;PHP_SELF&amp;#39;];?&amp;gt;&lt;/code&gt;&lt;br&gt;为了防止跨站点攻击(XSS)，我们通常需要使用&lt;strong&gt;htmlspecialchars()&lt;/strong&gt;&lt;br&gt;避免&lt;strong&gt;$_SERVER[“PHP_SELF”]&lt;/strong&gt; 被利用。如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method=&amp;quot;post&amp;quot; action=&amp;quot;&amp;lt;?php echo htmlspecialchars($_SERVER[&amp;quot;PHP_SELF&amp;quot;]);?&amp;gt;&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;php文件操作的模式&quot;&gt;&lt;a href=&quot;#php文件操作的模式&quot; class=&quot;headerlink&quot; title=&quot;php文件操作的模式&quot;&gt;&lt;/a&gt;php文件操作的模式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; 只读权限打开文件&lt;/li&gt;
     
     </summary>
     

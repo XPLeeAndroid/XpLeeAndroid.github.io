@@ -212,7 +212,19 @@ He responded, &quot;When the second thief was speaking, I finally understood the
       </div>
       <div class="post-content" id="post-content" itemprop="postContent" >
         
-          
+          <h2 id="php文件操作的模式"><a href="#php文件操作的模式" class="headerlink" title="php文件操作的模式"></a>php文件操作的模式</h2><ul>
+<li><strong>r</strong> 只读权限打开文件</li>
+<li><strong>w</strong> 只写权限打开文件，擦除内容，如果没有则新建文件</li>
+<li><strong>a</strong> 只写权限打开文件</li>
+<li><strong>x</strong> 新建一个只写权限的文件</li>
+<li><strong>r+</strong> 打开读/写权限文件</li>
+<li><strong>w+</strong> 打开读/写权限的文件， 擦除内容，如果没有则新建文件</li>
+<li><strong>a+</strong> 打开读/写权限文件，如果没有则新建文件；</li>
+<li><strong>x+</strong> 新建一个读/写权限的文件</li>
+</ul>
+<h2 id="将表单提交到本身页面"><a href="#将表单提交到本身页面" class="headerlink" title="将表单提交到本身页面"></a>将表单提交到本身页面</h2><p>只需将form的action 设置为<code>&lt;?php echo $_SERVER[&#39;PHP_SELF&#39;];?&gt;</code><br>为了防止跨站点攻击(XSS)，我们通常需要使用<strong>htmlspecialchars()</strong><br>避免<strong>$_SERVER[“PHP_SELF”]</strong> 被利用。如下：</p>
+<pre><code>&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
+</code></pre>
         
       </div>
       <div class="post-footer clearfix">
