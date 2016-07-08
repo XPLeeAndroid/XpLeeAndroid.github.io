@@ -224,7 +224,34 @@ He responded, &quot;When the second thief was speaking, I finally understood the
 </ul>
 <h2 id="将表单提交到本身页面"><a href="#将表单提交到本身页面" class="headerlink" title="将表单提交到本身页面"></a>将表单提交到本身页面</h2><p>只需将form的action 设置为<code>&lt;?php echo $_SERVER[&#39;PHP_SELF&#39;];?&gt;</code><br>为了防止跨站点攻击(XSS)，我们通常需要使用<strong>htmlspecialchars()</strong><br>避免<strong>$_SERVER[“PHP_SELF”]</strong> 被利用。如下：</p>
 <pre><code>&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
-</code></pre>
+</code></pre><h2 id="正则匹配规则"><a href="#正则匹配规则" class="headerlink" title="正则匹配规则"></a>正则匹配规则</h2><ul>
+<li><strong>[abc]</strong>  单独的字符串 ：a,b或c</li>
+<li><strong>[^abc]</strong> 任意的单独字符串单不是a,b,或c</li>
+<li><strong>[a-z]</strong>  a-z任意的单独字符串</li>
+<li><strong>[a-zA-Z]</strong> a-z 或A-Z中任意的单独字符串</li>
+<li><strong>^</strong>  匹配整行开头 (比如 <strong>^\d+</strong>匹配的是任意的数字开头的字符串)</li>
+<li><strong>$</strong>   匹配整行结尾 (比如<strong>\d+$</strong>匹配任意以数字结尾的字符串)</li>
+<li><strong>\A</strong>  匹配字符串输入的开头</li>
+<li><strong>\z</strong> 匹配字符串输入的结尾</li>
+<li><strong>.</strong> 任意单个字符串</li>
+<li><strong>\s</strong> 任意空字符串</li>
+<li><strong>\S</strong>  任意非空字符串</li>
+<li><strong>\d</strong> 任意数字</li>
+<li><strong>\D</strong> 任意非数字</li>
+<li><strong>\w</strong> 任意任何单字符（数字，字母，下滑线）、</li>
+<li><strong>\W</strong> 任意非字符</li>
+<li><strong>\B</strong> 匹配任意链接字符串</li>
+<li><strong>（…）</strong> 捕获封闭的内容 </li>
+<li><strong>(a|b)</strong> 匹配a或b</li>
+<li><strong>a?</strong> 0或1个a</li>
+<li><strong>a*</strong> 0或多个a</li>
+<li><strong>a+</strong> 1或多个a</li>
+<li><strong>a{3}</strong> 三个a</li>
+<li><strong>a{3,}</strong> 3个或更多a</li>
+<li><strong>a{3,6}</strong> 3到6个a</li>
+<li><strong>i</strong> 忽略大小写 <strong>m</strong> 匹配多行 <strong>x</strong> 忽略空白</li>
+</ul>
+
         
       </div>
       <div class="post-footer clearfix">

@@ -95,7 +95,7 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     <link href="http://xpleeandroid.github.io/2016/07/07/Learn-PHP/"/>
     <id>http://xpleeandroid.github.io/2016/07/07/Learn-PHP/</id>
     <published>2016-07-07T03:33:29.000Z</published>
-    <updated>2016-07-07T09:43:48.188Z</updated>
+    <updated>2016-07-08T09:51:53.028Z</updated>
     
     <content type="html">&lt;h2 id=&quot;php文件操作的模式&quot;&gt;&lt;a href=&quot;#php文件操作的模式&quot; class=&quot;headerlink&quot; title=&quot;php文件操作的模式&quot;&gt;&lt;/a&gt;php文件操作的模式&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; 只读权限打开文件&lt;/li&gt;
@@ -109,7 +109,34 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
 &lt;/ul&gt;
 &lt;h2 id=&quot;将表单提交到本身页面&quot;&gt;&lt;a href=&quot;#将表单提交到本身页面&quot; class=&quot;headerlink&quot; title=&quot;将表单提交到本身页面&quot;&gt;&lt;/a&gt;将表单提交到本身页面&lt;/h2&gt;&lt;p&gt;只需将form的action 设置为&lt;code&gt;&amp;lt;?php echo $_SERVER[&amp;#39;PHP_SELF&amp;#39;];?&amp;gt;&lt;/code&gt;&lt;br&gt;为了防止跨站点攻击(XSS)，我们通常需要使用&lt;strong&gt;htmlspecialchars()&lt;/strong&gt;&lt;br&gt;避免&lt;strong&gt;$_SERVER[“PHP_SELF”]&lt;/strong&gt; 被利用。如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;form method=&amp;quot;post&amp;quot; action=&amp;quot;&amp;lt;?php echo htmlspecialchars($_SERVER[&amp;quot;PHP_SELF&amp;quot;]);?&amp;gt;&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;正则匹配规则&quot;&gt;&lt;a href=&quot;#正则匹配规则&quot; class=&quot;headerlink&quot; title=&quot;正则匹配规则&quot;&gt;&lt;/a&gt;正则匹配规则&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[abc]&lt;/strong&gt;  单独的字符串 ：a,b或c&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[^abc]&lt;/strong&gt; 任意的单独字符串单不是a,b,或c&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[a-z]&lt;/strong&gt;  a-z任意的单独字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[a-zA-Z]&lt;/strong&gt; a-z 或A-Z中任意的单独字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;^&lt;/strong&gt;  匹配整行开头 (比如 &lt;strong&gt;^\d+&lt;/strong&gt;匹配的是任意的数字开头的字符串)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$&lt;/strong&gt;   匹配整行结尾 (比如&lt;strong&gt;\d+$&lt;/strong&gt;匹配任意以数字结尾的字符串)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\A&lt;/strong&gt;  匹配字符串输入的开头&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\z&lt;/strong&gt; 匹配字符串输入的结尾&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.&lt;/strong&gt; 任意单个字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\s&lt;/strong&gt; 任意空字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\S&lt;/strong&gt;  任意非空字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\d&lt;/strong&gt; 任意数字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\D&lt;/strong&gt; 任意非数字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\w&lt;/strong&gt; 任意任何单字符（数字，字母，下滑线）、&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\W&lt;/strong&gt; 任意非字符&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\B&lt;/strong&gt; 匹配任意链接字符串&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;（…）&lt;/strong&gt; 捕获封闭的内容 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(a|b)&lt;/strong&gt; 匹配a或b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a?&lt;/strong&gt; 0或1个a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a*&lt;/strong&gt; 0或多个a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; 1或多个a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3}&lt;/strong&gt; 三个a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3,}&lt;/strong&gt; 3个或更多a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3,6}&lt;/strong&gt; 3到6个a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; 忽略大小写 &lt;strong&gt;m&lt;/strong&gt; 匹配多行 &lt;strong&gt;x&lt;/strong&gt; 忽略空白&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     
     <summary type="html">
     
