@@ -26,7 +26,7 @@
 
 
 泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
-<meta property="og:updated_time" content="2016-07-20T08:09:01.741Z">
+<meta property="og:updated_time" content="2016-07-20T09:34:13.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
 <meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
@@ -212,7 +212,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么要用泛型"><span class="post-toc-text">为什么要用泛型</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型类型"><span class="post-toc-text">泛型类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简单的-Box-类"><span class="post-toc-text">简单的 Box 类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#泛型版本的Box"><span class="post-toc-text">泛型版本的Box</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#类型参数命名规则（Naming-Conventions）"><span class="post-toc-text">类型参数命名规则（Naming Conventions）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调用和实例化一个泛型类型"><span class="post-toc-text">调用和实例化一个泛型类型</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#The-Diamond"><span class="post-toc-text">The Diamond</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多类型参数"><span class="post-toc-text">多类型参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参数化类型"><span class="post-toc-text">参数化类型</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#原类型（Raw-Types）"><span class="post-toc-text">原类型（Raw Types）</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型（已更新）"><span class="post-toc-text">泛型（已更新）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么要用泛型"><span class="post-toc-text">为什么要用泛型</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泛型类型"><span class="post-toc-text">泛型类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简单的-Box-类"><span class="post-toc-text">简单的 Box 类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#泛型版本的Box"><span class="post-toc-text">泛型版本的Box</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#类型参数命名规则（Naming-Conventions）"><span class="post-toc-text">类型参数命名规则（Naming Conventions）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调用和实例化一个泛型类型"><span class="post-toc-text">调用和实例化一个泛型类型</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#The-Diamond"><span class="post-toc-text">The Diamond</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多类型参数"><span class="post-toc-text">多类型参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参数化类型"><span class="post-toc-text">参数化类型</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#原类型（Raw-Types）"><span class="post-toc-text">原类型（Raw Types）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Unchecked-Error-Messages"><span class="post-toc-text">Unchecked Error Messages</span></a></li></ol></li></ol>
           </nav>
           
         </aside>
@@ -340,6 +340,18 @@ Box&lt;Integer&gt; intBox=rawBox;  //warning:unchecked conversion
 Box rawBox=stringBox;
 rawBox.set(8);  //waring: unchecked invocation to set(T)
 </code></pre><p>警告显示原类型绕过泛型类型检查，延迟捕获不安全代码到运行时。因此，你需要避免使用原类型。<a href="https://docs.oracle.com/javase/tutorial/java/generics/erasure.html" target="_blank" rel="external">类型擦除</a>部分会有更多关于Java编译器如何使用原类型的内容。</p>
+<h2 id="Unchecked-Error-Messages"><a href="#Unchecked-Error-Messages" class="headerlink" title="Unchecked Error Messages"></a>Unchecked Error Messages</h2><p>正如上面提到的，当混合遗赠代码和泛型代码时，你可能会碰到跟下面相似的警告：</p>
+<pre><code>Note: Example.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+</code></pre><p>这发生在当使用老的API操作原类型时，例如如下代码：</p>
+<pre><code>public class WarningDemo {
+Box&lt;Integer&gt; bi;
+bi=createBox();
+}
+static Box createBox(){
+return new Box();
+}
+</code></pre><p>‘unchecked’指的是编译器没有足够的类型信息来执行所有必要的类型检查以保证类型安全。</p>
 
             <blockquote>
               <p>

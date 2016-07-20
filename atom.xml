@@ -202,7 +202,7 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-07-20T08:09:01.741Z</updated>
+    <updated>2016-07-20T09:34:13.862Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -324,6 +324,18 @@ Box&amp;lt;Integer&amp;gt; intBox=rawBox;  //warning:unchecked conversion
 Box rawBox=stringBox;
 rawBox.set(8);  //waring: unchecked invocation to set(T)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;警告显示原类型绕过泛型类型检查，延迟捕获不安全代码到运行时。因此，你需要避免使用原类型。&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/erasure.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;类型擦除&lt;/a&gt;部分会有更多关于Java编译器如何使用原类型的内容。&lt;/p&gt;
+&lt;h2 id=&quot;Unchecked-Error-Messages&quot;&gt;&lt;a href=&quot;#Unchecked-Error-Messages&quot; class=&quot;headerlink&quot; title=&quot;Unchecked Error Messages&quot;&gt;&lt;/a&gt;Unchecked Error Messages&lt;/h2&gt;&lt;p&gt;正如上面提到的，当混合遗赠代码和泛型代码时，你可能会碰到跟下面相似的警告：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Note: Example.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这发生在当使用老的API操作原类型时，例如如下代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class WarningDemo {
+Box&amp;lt;Integer&amp;gt; bi;
+bi=createBox();
+}
+static Box createBox(){
+return new Box();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;‘unchecked’指的是编译器没有足够的类型信息来执行所有必要的类型检查以保证类型安全。&lt;/p&gt;
 </content>
     
     <summary type="html">
