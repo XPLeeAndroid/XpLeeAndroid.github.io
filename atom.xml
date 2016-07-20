@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-07T07:04:33.191Z</updated>
+  <updated>2016-07-09T09:23:45.820Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://xpleeandroid.github.io/2016/07/09/newsapi/"/>
+    <id>http://xpleeandroid.github.io/2016/07/09/newsapi/</id>
+    <published>2016-07-09T09:24:16.415Z</published>
+    <updated>2016-07-09T09:23:45.820Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingdaonews.com)&quot;&gt;&lt;/a&gt;register(host club.qingdaonews.com)&lt;/h1&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;step1  /user/touch_reg.php param: act=regstep1&amp;amp;reg_un=adamin90&amp;amp;reg_pw=wsxqaz123&amp;amp;con_pw=wsxqaz123&amp;amp;tel=15725266012  error response :{“result”:”error”,”type”:”tel”,”info”:”\u6b64\u624b\u673a\u53f7\u5df2\u7ecf\u6ce8\u518c(\u9ad8)”} success response :{“result”:”success”,”type”:”code”,”info”:”\u53d1\u9001\u6210\u529f”}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;login-host-app-qingdaonews-com&quot;&gt;&lt;a href=&quot;#login-host-app-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;login (host app.qingdaonews.com)&quot;&gt;&lt;/a&gt;login (host app.qingdaonews.com)&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;/shoujikehuduan/interface_login.php?username=15725266012&amp;amp;password=wsxqaz success response :{“result”:”success”,”point”:”200”,”uid”:”8087267”,”phone”:”15725266012”,”first”:0,”token”:”52165771559e88f430573c6cd0925e68”,”money”:”0”,”face”:”http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg”,”type”:”passport”,”username”:”15725266012”,”loginname”:”15725266012”,”password”:”wsxqaz”} error response :{“result”:”error”,”point”:null,”uid”:””,”phone”:null,”first”:0,”face”:”http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg”,”type”:”passport”,”username”:”15725266019”,”loginname”:”15725266019”,”password”:”123456”}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;签到-post-app-qingdaonews-com&quot;&gt;&lt;a href=&quot;#签到-post-app-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;签到 post  app.qingdaonews.com&quot;&gt;&lt;/a&gt;签到 post  app.qingdaonews.com&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/interface_missionstate.php?token=52165771559e88f430573c6cd0925e68&amp;amp;mission=mis_10&lt;/p&gt;
+&lt;h1 id=&quot;头条&quot;&gt;&lt;a href=&quot;#头条&quot; class=&quot;headerlink&quot; title=&quot;头条&quot;&gt;&lt;/a&gt;头条&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=bd&lt;/p&gt;
+&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=bd&amp;amp;minid=463459&lt;/p&gt;
+&lt;h1 id=&quot;青青岛&quot;&gt;&lt;a href=&quot;#青青岛&quot; class=&quot;headerlink&quot; title=&quot;青青岛&quot;&gt;&lt;/a&gt;青青岛&lt;/h1&gt;&lt;p&gt;/imobile/index.php?page=1&amp;amp;title=%E5%A4%B4%E6%9D%A1&amp;amp;type=newsapp&lt;/p&gt;
+&lt;h1 id=&quot;焦点&quot;&gt;&lt;a href=&quot;#焦点&quot; class=&quot;headerlink&quot; title=&quot;焦点&quot;&gt;&lt;/a&gt;焦点&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=jdxw&lt;/p&gt;
+&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=jdxw&amp;amp;minid=462981&lt;/p&gt;
+&lt;h1 id=&quot;体育&quot;&gt;&lt;a href=&quot;#体育&quot; class=&quot;headerlink&quot; title=&quot;体育&quot;&gt;&lt;/a&gt;体育&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=ty&lt;/p&gt;
+&lt;h1 id=&quot;文娱&quot;&gt;&lt;a href=&quot;#文娱&quot; class=&quot;headerlink&quot; title=&quot;文娱&quot;&gt;&lt;/a&gt;文娱&lt;/h1&gt;&lt;p&gt;yl&lt;/p&gt;
+&lt;h1 id=&quot;房产&quot;&gt;&lt;a href=&quot;#房产&quot; class=&quot;headerlink&quot; title=&quot;房产&quot;&gt;&lt;/a&gt;房产&lt;/h1&gt;&lt;p&gt;qdfc&lt;/p&gt;
+&lt;h1 id=&quot;汽车&quot;&gt;&lt;a href=&quot;#汽车&quot; class=&quot;headerlink&quot; title=&quot;汽车&quot;&gt;&lt;/a&gt;汽车&lt;/h1&gt;&lt;p&gt;qdqc&lt;/p&gt;
+&lt;h1 id=&quot;旅游&quot;&gt;&lt;a href=&quot;#旅游&quot; class=&quot;headerlink&quot; title=&quot;旅游&quot;&gt;&lt;/a&gt;旅游&lt;/h1&gt;&lt;p&gt;qdly&lt;/p&gt;
+&lt;h1 id=&quot;家居&quot;&gt;&lt;a href=&quot;#家居&quot; class=&quot;headerlink&quot; title=&quot;家居&quot;&gt;&lt;/a&gt;家居&lt;/h1&gt;&lt;p&gt;qdjj&lt;/p&gt;
+&lt;h1 id=&quot;财经&quot;&gt;&lt;a href=&quot;#财经&quot; class=&quot;headerlink&quot; title=&quot;财经&quot;&gt;&lt;/a&gt;财经&lt;/h1&gt;&lt;p&gt;cj&lt;/p&gt;
+&lt;h1 id=&quot;教育&quot;&gt;&lt;a href=&quot;#教育&quot; class=&quot;headerlink&quot; title=&quot;教育&quot;&gt;&lt;/a&gt;教育&lt;/h1&gt;&lt;p&gt;jy&lt;/p&gt;
+&lt;h1 id=&quot;健康&quot;&gt;&lt;a href=&quot;#健康&quot; class=&quot;headerlink&quot; title=&quot;健康&quot;&gt;&lt;/a&gt;健康&lt;/h1&gt;&lt;p&gt;jk&lt;/p&gt;
+&lt;h1 id=&quot;消费&quot;&gt;&lt;a href=&quot;#消费&quot; class=&quot;headerlink&quot; title=&quot;消费&quot;&gt;&lt;/a&gt;消费&lt;/h1&gt;&lt;p&gt;xf&lt;/p&gt;
+&lt;h1 id=&quot;舆情&quot;&gt;&lt;a href=&quot;#舆情&quot; class=&quot;headerlink&quot; title=&quot;舆情&quot;&gt;&lt;/a&gt;舆情&lt;/h1&gt;&lt;p&gt;yuqing&lt;/p&gt;
+&lt;h1 id=&quot;婚假&quot;&gt;&lt;a href=&quot;#婚假&quot; class=&quot;headerlink&quot; title=&quot;婚假&quot;&gt;&lt;/a&gt;婚假&lt;/h1&gt;&lt;p&gt;hj&lt;/p&gt;
+&lt;h1 id=&quot;民生&quot;&gt;&lt;a href=&quot;#民生&quot; class=&quot;headerlink&quot; title=&quot;民生&quot;&gt;&lt;/a&gt;民生&lt;/h1&gt;&lt;p&gt;msbl&lt;/p&gt;
+&lt;h1 id=&quot;黄岛-huangdao&quot;&gt;&lt;a href=&quot;#黄岛-huangdao&quot; class=&quot;headerlink&quot; title=&quot;黄岛 huangdao&quot;&gt;&lt;/a&gt;黄岛 huangdao&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingd
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>English Jokes（英文笑话）</title>
@@ -155,7 +199,7 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     <link href="http://xpleeandroid.github.io/2016/06/28/java8-Generics/"/>
     <id>http://xpleeandroid.github.io/2016/06/28/java8-Generics/</id>
     <published>2016-06-28T06:04:35.000Z</published>
-    <updated>2016-06-28T09:48:46.534Z</updated>
+    <updated>2016-07-20T08:09:01.741Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -256,7 +300,28 @@ Pair&amp;lt;String, String&amp;gt;  p2 = new OrderedPair&amp;lt;String, String&a
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;new OrderedPair&lt;string,integer&gt;把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自动装箱&lt;/a&gt;，传入String和int到类是有效的。&lt;/string,integer&gt;&lt;/p&gt;
 &lt;h3 id=&quot;参数化类型&quot;&gt;&lt;a href=&quot;#参数化类型&quot; class=&quot;headerlink&quot; title=&quot;参数化类型&quot;&gt;&lt;/a&gt;参数化类型&lt;/h3&gt;&lt;p&gt;你也可以用一个参数化的类型（ie List&amp;lt; String&amp;gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&amp;lt; K,V&amp;gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;OrderedPair&amp;lt;String, Box&amp;lt;Integer&amp;gt;&amp;gt; p = new OrderedPair&amp;lt;&amp;gt;(&amp;quot;primes&amp;quot;, new Box&amp;lt;Integer&amp;gt;(...));
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;原类型（Raw-Types）&quot;&gt;&lt;a href=&quot;#原类型（Raw-Types）&quot; class=&quot;headerlink&quot; title=&quot;原类型（Raw Types）&quot;&gt;&lt;/a&gt;原类型（Raw Types）&lt;/h1&gt;&lt;p&gt;原类型是指泛型类或泛型接口的名字没有任何参数，比如，给出泛型类Box：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Box(T){
+public void set(T t){
+/* ...... */
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以为形参&lt;strong&gt;T&lt;/strong&gt;赋值一个真实的类型参数来创建一个参数化类型的 Box（T）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box(Ingeter) intBox=new Box&amp;lt;&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果真实的类型参数被省略掉了，你就创建了一个&lt;strong&gt;原类型&lt;/strong&gt;的Box&lt;t&gt;:&lt;/t&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box rawBox =new Box();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因此，Box是Box&lt;t&gt;的原类型。然而，非泛型类或非泛型接口没有原类型。&lt;br&gt;原类型出现在遗赠的代码里是因为大量的API类（比如&lt;strong&gt;Collections&lt;/strong&gt;类）在JDK5之前不是泛型类。当使用原类型的时候，你本质上使用的是泛型之前的表现—Box -&amp;gt;Object.为了向后兼容，赋值参数化类型给他的原类型是允许的：&lt;/t&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box&amp;lt;String&amp;gt; stringBox=new Box&amp;lt;&amp;gt;();
+Box rawBox=stringBox;    //OK
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但是如果你赋值一个原类型给一个参数化的类型，你将得到警告：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box rawBox=new Box(); //rawBox是Box&amp;lt;T&amp;gt;()的原类型
+Box&amp;lt;Integer&amp;gt; intBox=rawBox;  //warning:unchecked conversion
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当你用原类型调用关联的反省类型的泛型方法时，你也会得到警告：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box&amp;lt;String&amp;gt; stringBox=new Box&amp;lt;&amp;gt;();
+Box rawBox=stringBox;
+rawBox.set(8);  //waring: unchecked invocation to set(T)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;警告显示原类型绕过泛型类型检查，延迟捕获不安全代码到运行时。因此，你需要避免使用原类型。&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/erasure.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;类型擦除&lt;/a&gt;部分会有更多关于Java编译器如何使用原类型的内容。&lt;/p&gt;
+</content>
     
     <summary type="html">
     
