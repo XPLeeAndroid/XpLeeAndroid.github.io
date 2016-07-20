@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-09T09:23:45.820Z</updated>
+  <updated>2016-07-20T08:13:53.296Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -16,13 +16,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://xpleeandroid.github.io/2016/07/09/newsapi/"/>
-    <id>http://xpleeandroid.github.io/2016/07/09/newsapi/</id>
-    <published>2016-07-09T09:24:16.415Z</published>
-    <updated>2016-07-09T09:23:45.820Z</updated>
+    <title>java8教程-泛型（Generics）</title>
+    <link href="http://xpleeandroid.github.io/2016/07/20/newsapi/"/>
+    <id>http://xpleeandroid.github.io/2016/07/20/newsapi/</id>
+    <published>2016-07-20T08:12:35.000Z</published>
+    <updated>2016-07-20T08:13:53.296Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingdaonews.com)&quot;&gt;&lt;/a&gt;register(host club.qingdaonews.com)&lt;/h1&gt;&lt;hr&gt;
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingdaonews.com)&quot;&gt;&lt;/a&gt;register(host club.qingdaonews.com)&lt;/h1&gt;&lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;step1  /user/touch_reg.php param: act=regstep1&amp;amp;reg_un=adamin90&amp;amp;reg_pw=wsxqaz123&amp;amp;con_pw=wsxqaz123&amp;amp;tel=15725266012  error response :{“result”:”error”,”type”:”tel”,”info”:”\u6b64\u624b\u673a\u53f7\u5df2\u7ecf\u6ce8\u518c(\u9ad8)”} success response :{“result”:”success”,”type”:”code”,”info”:”\u53d1\u9001\u6210\u529f”}&lt;/li&gt;
 &lt;/ul&gt;
@@ -52,10 +53,13 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingd
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;regist
     
     </summary>
     
+    
+      <category term="api" scheme="http://xpleeandroid.github.io/tags/api/"/>
     
   </entry>
   
