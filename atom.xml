@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-20T08:16:24.973Z</updated>
+  <updated>2016-07-21T10:33:19.793Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,127 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android拍照上传至PHP服务器并写入MySql数据库(上)</title>
+    <link href="http://xpleeandroid.github.io/2016/07/21/android-upload-img-to-php-server-1/"/>
+    <id>http://xpleeandroid.github.io/2016/07/21/android-upload-img-to-php-server-1/</id>
+    <published>2016-07-21T08:45:00.000Z</published>
+    <updated>2016-07-21T10:33:19.793Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。&lt;/p&gt;
+&lt;h1 id=&quot;数据库&quot;&gt;&lt;a href=&quot;#数据库&quot; class=&quot;headerlink&quot; title=&quot;数据库&quot;&gt;&lt;/a&gt;数据库&lt;/h1&gt;&lt;h2 id=&quot;创建数据库&quot;&gt;&lt;a href=&quot;#创建数据库&quot; class=&quot;headerlink&quot; title=&quot;创建数据库&quot;&gt;&lt;/a&gt;创建数据库&lt;/h2&gt;&lt;p&gt;数据库名称为 turtorial_upload_image:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE DATABASE tutorial_upload_image;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;创建表&quot;&gt;&lt;a href=&quot;#创建表&quot; class=&quot;headerlink&quot; title=&quot;创建表&quot;&gt;&lt;/a&gt;创建表&lt;/h2&gt;&lt;p&gt;我们要保存的信息是图片的名称和图片的路径，表名称是photos：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE TABLE photos(
+id INT(32) NOT NULL AUTO_INCREMENT,
+name VARCHAR(30) NOT NULL,
+path VARCHAR(30) NOT NULL,
+
+PRIMARY KEY(id)
+);
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;PHP&quot;&gt;&lt;a href=&quot;#PHP&quot; class=&quot;headerlink&quot; title=&quot;PHP&quot;&gt;&lt;/a&gt;PHP&lt;/h1&gt;&lt;p&gt;先上代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+/**
+ * Created by PhpStorm.
+ * User: Adam
+ * Date: 2016/7/21
+ * Time: 15:01
+ */
+header(&amp;apos;Content-type ： bitmap; charset=utf-8;&amp;apos;);
+$dbms = &amp;apos;mysql&amp;apos;;     //数据库类型
+
+$host = &amp;apos;localhost&amp;apos;; //数据库主机名
+
+$dbName = &amp;apos;tutorial_upload_image&amp;apos;;    //使用的数据库
+
+$user = &amp;apos;root&amp;apos;;      //数据库连接用户名
+
+$pass = &amp;apos;&amp;apos;;          //对应的密码
+
+$dsn = &amp;quot;$dbms:host=$host;dbname=$dbName&amp;quot;;
+
+if (isset($_POST[&amp;quot;encoding_string&amp;quot;])) {
+$encoding_string = $_POST[&amp;quot;encoding_string&amp;quot;];
+
+$image_name = $_POST[&amp;quot;image_name&amp;quot;];
+
+//decode 客户端上传的base64数据
+$decoded_string = base64_decode($encoding_string);
+
+$path = &amp;quot;images/&amp;quot; . $image_name;  //定义存放路径
+$file = fopen($path, &amp;quot;wb&amp;quot;);
+
+$is_written = fwrite($file, $decoded_string);
+fclose($file);
+//写入数据库
+if ($is_written &amp;gt; 0) {
+    //sql语句
+    $strSql = &amp;quot;insert into photos(name,path) values(&amp;apos;$image_name&amp;apos;,&amp;apos;$path&amp;apos;)&amp;quot;;
+
+
+    //方法一 pdo方式  支持多种数据库
+    try {
+
+        $dbh = new PDO($dsn, $user, $pass); //初始化一个PDO对象
+        $temp = $dbh-&amp;gt;prepare($strSql);
+        $temp-&amp;gt;execute();
+        $array = array(
+            &amp;quot;status&amp;quot; =&amp;gt; true,
+            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据成功&amp;quot;
+        );
+        echo json_encode($array);
+        $dbh = null; //运行完成后关闭链接
+    } catch (PDOException $e) {
+        $array = array(
+            &amp;quot;status&amp;quot; =&amp;gt; false,
+            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据失败&amp;quot; . ($e-&amp;gt;getMessage())
+        );
+        echo json_encode($array);
+
+    }
+
+
+    //方法2  mysqli方式
+//        $connection=mysqli_connect(&amp;apos;localhost&amp;apos;,&amp;apos;root&amp;apos;,&amp;apos;&amp;apos;,&amp;apos;tutorial_upload_image&amp;apos;);
+//        $result=mysqli_query($connection,$strSql);
+//        if($result){
+//            $array = array (
+//                &amp;quot;status&amp;quot; =&amp;gt; true,
+//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据成功&amp;quot;
+//            );
+//            echo json_encode($array);
+//        }else{
+//            $array = array (
+//                &amp;quot;status&amp;quot; =&amp;gt; false,
+//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据失败&amp;quot;
+//            );
+//            echo json_encode($array);
+//        }
+//        mysqli_close($connection);   //关闭连接
+}
+
+}
+?&amp;gt;    
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里我列举了两种连接数据库的方式 PDO和mysqli  ，mysql方式官方已经不推荐使用了，所以就不再列举（我也没用过）。数据库连接过程首先是读取POST过来的内容，然后写到images目录下面，再把地址和名称写入数据库里，返回相应的JSON数据，在这里每次上传完毕后都关闭了连接。&lt;/p&gt;
+&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;测试阶段我们找用postman进行模拟发送数据，首先在&lt;a href=&quot;http://www.motobit.com/util/base64-decoder-encoder.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这个网站&lt;/a&gt;Base64 encode一张图片，复制之后，拷贝到postman里面，postman数据如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/android_upload_img_to_php_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;测试结果成功~&lt;/p&gt;
+&lt;p&gt;下节我们将开发安卓客户端。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文
+    
+    </summary>
+    
+    
+      <category term="PHP" scheme="http://xpleeandroid.github.io/tags/PHP/"/>
+    
+      <category term="Android" scheme="http://xpleeandroid.github.io/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>anonymous</title>
