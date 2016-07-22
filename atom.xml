@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-21T10:33:19.793Z</updated>
+  <updated>2016-07-22T08:02:25.418Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -16,13 +16,104 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Android拍照上传至PHP服务器并写入MySql数据库(下)</title>
+    <link href="http://xpleeandroid.github.io/2016/07/22/android-upload-img-to-php-server-2/"/>
+    <id>http://xpleeandroid.github.io/2016/07/22/android-upload-img-to-php-server-2/</id>
+    <published>2016-07-22T07:45:32.000Z</published>
+    <updated>2016-07-22T08:02:25.418Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Android实现&quot;&gt;&lt;a href=&quot;#Android实现&quot; class=&quot;headerlink&quot; title=&quot;Android实现&quot;&gt;&lt;/a&gt;Android实现&lt;/h1&gt;&lt;p&gt;调用系统相机，拍照：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityForResult(intent, CODE_CAMERA);
+
+
+  private void getFileUri() {
+    image_name = Calendar.getInstance().getTimeInMillis() + &amp;quot;.jpg&amp;quot;;
+    file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + image_name);
+    file_uri = Uri.fromFile(file);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;在onActivityResult里面接收图片并Base64处理：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  @Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+    if (requestCode == CODE_CAMERA &amp;amp;&amp;amp; resultCode == RESULT_OK) {
+        new EncodeImage().execute();   //把bitmap转换成base64字符串
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;EncodeImage是一个AsyncTask，doInBackground里面从uri里面获取bitmap，然后转入输出流，最终转换为base64编码字符串：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@Override
+  protected Void doInBackground(Void... voids) {
+      bitmap = BitmapFactory.decodeFile(file_uri.getPath());
+      ByteArrayOutputStream stream = new ByteArrayOutputStream();
+      bitmap.compress(Bitmap.CompressFormat.JPEG, 80, stream);
+      byte[] array = stream.toByteArray();
+      encoded_string = Base64.encodeToString(array, 0);
+      bitmap.recycle();  //防止oom
+      return null;
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就可以上传到服务器了：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    private void uploadImage() {
+    HashMap&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
+    map.put(&amp;quot;encoding_string&amp;quot;, encoded_string);
+    map.put(&amp;quot;image_name&amp;quot;, image_name);
+    OkHttpUtils.post()
+            .url(&amp;quot;http:192.168.0.112/phpdemo/uploadimage.php&amp;quot;)
+            .params(map)
+            .tag(this)
+            .build()
+            .execute(new StringCallback() {
+                @Override
+                public void onError(Call call, Exception e, int id) {
+                    Log.e(&amp;quot;出错了&amp;quot;, &amp;quot;错误信息：&amp;quot; + e.getMessage());
+                }
+
+                @Override
+                public void onResponse(String response, int id) {
+                    Log.e(&amp;quot;成功or失败&amp;quot;, &amp;quot;信息：&amp;quot; + response);
+                }
+            });
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在上传服务器过程中，遇到两个问题，第一,提示&lt;code&gt;POST Content-Length of  ... bytes exceeds the limit of 8388608 bytes&lt;/code&gt;,这个错误是因为php默认最大post上传8M,更改php.ini里面的&lt;code&gt;post_max_size=1000M&lt;/code&gt;就ok了；第二，当第二次拍照的时候会出现OOM的情况，检查代码发现bitmap没有recycle。&lt;/p&gt;
+&lt;p&gt;OVER&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Android实现&quot;&gt;&lt;a href=&quot;#Android实现&quot; class=&quot;headerlink&quot; title=&quot;Android实现&quot;&gt;&lt;/a&gt;Android实现&lt;/h1&gt;&lt;p&gt;调用系统相机，拍照：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityForResult(intent, CODE_CAMERA);
+
+
+  private void getFileUri() {
+    image_name = Calendar.getInstance().getTimeInMillis() + &amp;quot;.jpg&amp;quot;;
+    file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + image_name);
+    file_uri = Uri.fromFile(file);
+}
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="PHP" scheme="http://xpleeandroid.github.io/tags/PHP/"/>
+    
+      <category term="Android" scheme="http://xpleeandroid.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android拍照上传至PHP服务器并写入MySql数据库(上)</title>
     <link href="http://xpleeandroid.github.io/2016/07/21/android-upload-img-to-php-server-1/"/>
     <id>http://xpleeandroid.github.io/2016/07/21/android-upload-img-to-php-server-1/</id>
     <published>2016-07-21T08:45:00.000Z</published>
-    <updated>2016-07-21T10:33:19.793Z</updated>
+    <updated>2016-07-22T07:47:25.904Z</updated>
     
     <content type="html">&lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;数据库&quot;&gt;&lt;a href=&quot;#数据库&quot; class=&quot;headerlink&quot; title=&quot;数据库&quot;&gt;&lt;/a&gt;数据库&lt;/h1&gt;&lt;h2 id=&quot;创建数据库&quot;&gt;&lt;a href=&quot;#创建数据库&quot; class=&quot;headerlink&quot; title=&quot;创建数据库&quot;&gt;&lt;/a&gt;创建数据库&lt;/h2&gt;&lt;p&gt;数据库名称为 turtorial_upload_image:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;CREATE DATABASE tutorial_upload_image;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;创建表&quot;&gt;&lt;a href=&quot;#创建表&quot; class=&quot;headerlink&quot; title=&quot;创建表&quot;&gt;&lt;/a&gt;创建表&lt;/h2&gt;&lt;p&gt;我们要保存的信息是图片的名称和图片的路径，表名称是photos：&lt;/p&gt;
@@ -125,7 +216,7 @@ if ($is_written &amp;gt; 0) {
     
     <summary type="html">
     
-      &lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文
+      &lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。&lt;/p&gt;
     
     </summary>
     

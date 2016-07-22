@@ -138,6 +138,55 @@
   <ul class="post-list">
   
     <li class="post-list-item">
+  <article id="post-android-upload-img-to-php-server-2" class="article article-type-post" itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/07/22/android-upload-img-to-php-server-2/">Android拍照上传至PHP服务器并写入MySql数据库(下)</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+</div>
+        <time datetime="2016-07-22T07:45:32.000Z" itemprop="datePublished" class="post-tiem">
+  2016-07-22
+</time>
+      </div>
+      <div class="post-content" id="post-content" itemprop="postContent" >
+        
+          <h1 id="Android实现"><a href="#Android实现" class="headerlink" title="Android实现"></a>Android实现</h1><p>调用系统相机，拍照：</p>
+<pre><code> Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityForResult(intent, CODE_CAMERA);
+
+
+  private void getFileUri() {
+    image_name = Calendar.getInstance().getTimeInMillis() + &quot;.jpg&quot;;
+    file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + image_name);
+    file_uri = Uri.fromFile(file);
+}
+</code></pre>
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2016/07/22/android-upload-img-to-php-server-2/" class="post-more waves-effect waves-button waves-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
   <article id="post-android-upload-img-to-php-server-1" class="article article-type-post" itemprop="blogPost">
     
       
@@ -162,105 +211,6 @@
       <div class="post-content" id="post-content" itemprop="postContent" >
         
           <h1 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h1><p>需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。</p>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><p>数据库名称为 turtorial_upload_image:</p>
-<pre><code>CREATE DATABASE tutorial_upload_image;
-</code></pre><h2 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h2><p>我们要保存的信息是图片的名称和图片的路径，表名称是photos：</p>
-<pre><code>CREATE TABLE photos(
-id INT(32) NOT NULL AUTO_INCREMENT,
-name VARCHAR(30) NOT NULL,
-path VARCHAR(30) NOT NULL,
-
-PRIMARY KEY(id)
-);
-</code></pre><h1 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h1><p>先上代码：</p>
-<pre><code>&lt;?php
-/**
- * Created by PhpStorm.
- * User: Adam
- * Date: 2016/7/21
- * Time: 15:01
- */
-header(&apos;Content-type ： bitmap; charset=utf-8;&apos;);
-$dbms = &apos;mysql&apos;;     //数据库类型
-
-$host = &apos;localhost&apos;; //数据库主机名
-
-$dbName = &apos;tutorial_upload_image&apos;;    //使用的数据库
-
-$user = &apos;root&apos;;      //数据库连接用户名
-
-$pass = &apos;&apos;;          //对应的密码
-
-$dsn = &quot;$dbms:host=$host;dbname=$dbName&quot;;
-
-if (isset($_POST[&quot;encoding_string&quot;])) {
-$encoding_string = $_POST[&quot;encoding_string&quot;];
-
-$image_name = $_POST[&quot;image_name&quot;];
-
-//decode 客户端上传的base64数据
-$decoded_string = base64_decode($encoding_string);
-
-$path = &quot;images/&quot; . $image_name;  //定义存放路径
-$file = fopen($path, &quot;wb&quot;);
-
-$is_written = fwrite($file, $decoded_string);
-fclose($file);
-//写入数据库
-if ($is_written &gt; 0) {
-    //sql语句
-    $strSql = &quot;insert into photos(name,path) values(&apos;$image_name&apos;,&apos;$path&apos;)&quot;;
-
-
-    //方法一 pdo方式  支持多种数据库
-    try {
-
-        $dbh = new PDO($dsn, $user, $pass); //初始化一个PDO对象
-        $temp = $dbh-&gt;prepare($strSql);
-        $temp-&gt;execute();
-        $array = array(
-            &quot;status&quot; =&gt; true,
-            &quot;msg&quot; =&gt; &quot;插入数据成功&quot;
-        );
-        echo json_encode($array);
-        $dbh = null; //运行完成后关闭链接
-    } catch (PDOException $e) {
-        $array = array(
-            &quot;status&quot; =&gt; false,
-            &quot;msg&quot; =&gt; &quot;插入数据失败&quot; . ($e-&gt;getMessage())
-        );
-        echo json_encode($array);
-
-    }
-
-
-    //方法2  mysqli方式
-//        $connection=mysqli_connect(&apos;localhost&apos;,&apos;root&apos;,&apos;&apos;,&apos;tutorial_upload_image&apos;);
-//        $result=mysqli_query($connection,$strSql);
-//        if($result){
-//            $array = array (
-//                &quot;status&quot; =&gt; true,
-//                &quot;msg&quot; =&gt; &quot;插入数据成功&quot;
-//            );
-//            echo json_encode($array);
-//        }else{
-//            $array = array (
-//                &quot;status&quot; =&gt; false,
-//                &quot;msg&quot; =&gt; &quot;插入数据失败&quot;
-//            );
-//            echo json_encode($array);
-//        }
-//        mysqli_close($connection);   //关闭连接
-}
-
-}
-?&gt;    
-</code></pre><p>这里我列举了两种连接数据库的方式 PDO和mysqli  ，mysql方式官方已经不推荐使用了，所以就不再列举（我也没用过）。数据库连接过程首先是读取POST过来的内容，然后写到images目录下面，再把地址和名称写入数据库里，返回相应的JSON数据，在这里每次上传完毕后都关闭了连接。</p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>测试阶段我们找用postman进行模拟发送数据，首先在<a href="http://www.motobit.com/util/base64-decoder-encoder.asp" target="_blank" rel="external">这个网站</a>Base64 encode一张图片，复制之后，拷贝到postman里面，postman数据如下：</p>
-<p><img src="/img/android_upload_img_to_php_1.png" alt=""></p>
-<p>测试结果成功~</p>
-<p>下节我们将开发安卓客户端。</p>
-
         
       </div>
       <div class="post-footer clearfix">
