@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016/7 | 李晓鹏 | Adam</title>
+  <title>安卓计算下载速度 | 李晓鹏 | Adam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#e91e63">
   
   
-  <meta name="keywords" content="undefined">
-  <meta name="description" content="---Talk is cheap. Show me the code.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李晓鹏">
-<meta property="og:url" content="http://xpleeandroid.github.io/archives/2016/07/index.html">
+  <meta name="keywords" content="android">
+  <meta name="description" content="昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓计算下载速度">
+<meta property="og:url" content="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="---Talk is cheap. Show me the code.">
+<meta property="og:description" content="昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。">
+<meta property="og:updated_time" content="2016-07-28T03:37:25.861Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李晓鹏">
-<meta name="twitter:description" content="---Talk is cheap. Show me the code.">
+<meta name="twitter:title" content="安卓计算下载速度">
+<meta name="twitter:description" content="昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="---Talk is cheap. Show me the code.">
+  <meta name="summary" content="&lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -30,7 +31,7 @@
 <body>
   <div id="loading" class="active"></div>
 
-  <nav id="menu"  >
+  <nav id="menu" class="hide" >
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
@@ -53,7 +54,7 @@
           </a>
         </li>
     
-        <li class="waves-block waves-effect active">
+        <li class="waves-block waves-effect">
           <a href="/archives"  >
             <i class="icon icon-lg icon-archives"></i>
             Archives
@@ -107,7 +108,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">李晓鹏</div>
+        <div class="flex-col header-title ellipsis">安卓计算下载速度</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -128,196 +129,141 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">李晓鹏</h1>
-    <h5 class="subtitle">Adam</h5>
+    <h1 class="author">安卓计算下载速度</h1>
+    <h5 class="subtitle">2016-07-28</h5>
   </div>
 </header>
 
     <div class="container body-wrap">
       
-  
-  
+  <article id="post-android-calculate-download-speed" class="article article-type-post" itemprop="blogPost">
     
-    
-      
-      
-      <section class="archives-wrap flex-row">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year waves-effect waves-circle waves-light">2016</a>
-        </div>
-        <div class="archives flex-col">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/28/android-calculate-download-speed/">安卓计算下载速度</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-28T03:23:13.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 28
-</time>
-    </header>
-    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
-
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/22/android-upload-img-to-php-server-2/">Android拍照上传至PHP服务器并写入MySql数据库(下)</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-22T07:45:32.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 22
-</time>
-    </header>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/21/android-upload-img-to-php-server-1/">Android拍照上传至PHP服务器并写入MySql数据库(上)</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-21T08:45:00.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 21
-</time>
-    </header>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/20/newsapi/">anonymous</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-20T08:12:35.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 20
-</time>
-    </header>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">api</a></li></ul>
-
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/07/English-Jokes/">English Jokes（英文笑话）</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-07T06:43:44.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 7
-</time>
-    </header>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/娱乐/">娱乐</a></li></ul>
-
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header flex-row flex-middle">
-      	<div class="flex-col">
-	      	
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/07/Learn-PHP/">PHP学习笔记</a>
-    </h3>
-  
-
-
-
-        </div>
-        <time datetime="2016-07-07T03:33:29.000Z" itemprop="datePublished" class="post-tiem">
-  Jul 7
-</time>
-    </header>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-  </div>
-</article>
-  
-  
+</div>
       </div>
-    </section>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+          <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#NANOSECONDS"><span class="post-toc-text">NANOSECONDS</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CODE-EXAMPLE"><span class="post-toc-text">CODE EXAMPLE</span></a></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <p>昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。<br><a id="more"></a></p>
+<h1 id="NANOSECONDS"><a href="#NANOSECONDS" class="headerlink" title="NANOSECONDS"></a>NANOSECONDS</h1><p><strong>NANOSECONDS</strong>，毫微秒，十亿分之一秒，1s=1000000000毫微秒。</p>
+<h1 id="CODE-EXAMPLE"><a href="#CODE-EXAMPLE" class="headerlink" title="CODE EXAMPLE"></a>CODE EXAMPLE</h1><pre><code>       long start = System.nanoTime();   //开始时间
+            long totalRead = 0;  //总共下载了多少
+            final double NANOS_PER_SECOND = 1000000000.0;  //1秒=10亿nanoseconds
+            final double BYTES_PER_MIB = 1024 * 1024;    //1M=1024*1024byte
+            while (((len = is.read(buffler, 0, 1024)) &gt;0)) {
+                totalRead += len;
+                double speed = NANOS_PER_SECOND / BYTES_PER_MIB * totalRead / (System.nanoTime() - start + 1);
+}
+</code></pre>
+            <blockquote>
+              <p>
+                本文地址：
+                <a href="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/</a>
+              </p>
+              <footer><cite><a href="http://xpleeandroid.github.io">@李晓鹏</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
   
+
   
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/07/22/android-upload-img-to-php-server-2/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Android拍照上传至PHP服务器并写入MySql数据库(下)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="android-calculate-download-speed" data-title="安卓计算下载速度" data-url="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"xpleeandroid"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
 
 
     </div>
@@ -327,10 +273,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "李晓鹏",
+    title: "安卓计算下载速度",
     pic: "/img/author.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://xpleeandroid.github.io/archives/2016/07/index.html"
+    url: "http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-22T08:02:25.418Z</updated>
+  <updated>2016-07-28T03:37:25.861Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓计算下载速度</title>
+    <link href="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/"/>
+    <id>http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/</id>
+    <published>2016-07-28T03:23:13.000Z</published>
+    <updated>2016-07-28T03:37:25.861Z</updated>
+    
+    <content type="html">&lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;NANOSECONDS&quot;&gt;&lt;a href=&quot;#NANOSECONDS&quot; class=&quot;headerlink&quot; title=&quot;NANOSECONDS&quot;&gt;&lt;/a&gt;NANOSECONDS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NANOSECONDS&lt;/strong&gt;，毫微秒，十亿分之一秒，1s=1000000000毫微秒。&lt;/p&gt;
+&lt;h1 id=&quot;CODE-EXAMPLE&quot;&gt;&lt;a href=&quot;#CODE-EXAMPLE&quot; class=&quot;headerlink&quot; title=&quot;CODE EXAMPLE&quot;&gt;&lt;/a&gt;CODE EXAMPLE&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;       long start = System.nanoTime();   //开始时间
+            long totalRead = 0;  //总共下载了多少
+            final double NANOS_PER_SECOND = 1000000000.0;  //1秒=10亿nanoseconds
+            final double BYTES_PER_MIB = 1024 * 1024;    //1M=1024*1024byte
+            while (((len = is.read(buffler, 0, 1024)) &amp;gt;0)) {
+                totalRead += len;
+                double speed = NANOS_PER_SECOND / BYTES_PER_MIB * totalRead / (System.nanoTime() - start + 1);
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://xpleeandroid.github.io/tags/android/"/>
+    
+  </entry>
   
   <entry>
     <title>Android拍照上传至PHP服务器并写入MySql数据库(下)</title>
