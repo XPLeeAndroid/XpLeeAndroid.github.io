@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/index.html">
 <meta property="og:site_name" content="李晓鹏">
 <meta property="og:description" content="昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。">
-<meta property="og:updated_time" content="2016-07-28T03:37:25.861Z">
+<meta property="og:updated_time" content="2016-07-28T03:41:16.658Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安卓计算下载速度">
 <meta name="twitter:description" content="昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。">
@@ -188,7 +188,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#NANOSECONDS"><span class="post-toc-text">NANOSECONDS</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CODE-EXAMPLE"><span class="post-toc-text">CODE EXAMPLE</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#NANOSECONDS"><span class="post-toc-text">NANOSECONDS</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CODE-EXAMPLE"><span class="post-toc-text">CODE EXAMPLE</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#WARNING"><span class="post-toc-text">WARNING</span></a></li></ol>
           </nav>
           
         </aside>
@@ -206,7 +206,8 @@
                 totalRead += len;
                 double speed = NANOS_PER_SECOND / BYTES_PER_MIB * totalRead / (System.nanoTime() - start + 1);
 }
-</code></pre>
+</code></pre><h1 id="WARNING"><a href="#WARNING" class="headerlink" title="WARNING"></a>WARNING</h1><p>这种方法计算的是从start开始时间的平均速度，不是实时速度。</p>
+
             <blockquote>
               <p>
                 本文地址：

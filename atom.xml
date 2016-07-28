@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-28T03:37:25.861Z</updated>
+  <updated>2016-07-28T03:41:16.658Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/"/>
     <id>http://xpleeandroid.github.io/2016/07/28/android-calculate-download-speed/</id>
     <published>2016-07-28T03:23:13.000Z</published>
-    <updated>2016-07-28T03:37:25.861Z</updated>
+    <updated>2016-07-28T03:41:16.658Z</updated>
     
     <content type="html">&lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;NANOSECONDS&quot;&gt;&lt;a href=&quot;#NANOSECONDS&quot; class=&quot;headerlink&quot; title=&quot;NANOSECONDS&quot;&gt;&lt;/a&gt;NANOSECONDS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NANOSECONDS&lt;/strong&gt;，毫微秒，十亿分之一秒，1s=1000000000毫微秒。&lt;/p&gt;
@@ -32,7 +32,8 @@
                 totalRead += len;
                 double speed = NANOS_PER_SECOND / BYTES_PER_MIB * totalRead / (System.nanoTime() - start + 1);
 }
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;WARNING&quot;&gt;&lt;a href=&quot;#WARNING&quot; class=&quot;headerlink&quot; title=&quot;WARNING&quot;&gt;&lt;/a&gt;WARNING&lt;/h1&gt;&lt;p&gt;这种方法计算的是从start开始时间的平均速度，不是实时速度。&lt;/p&gt;
+</content>
     
     <summary type="html">
     
