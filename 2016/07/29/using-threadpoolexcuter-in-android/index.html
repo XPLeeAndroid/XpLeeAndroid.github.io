@@ -31,7 +31,7 @@ Thread Po">
 这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。
 Thread Po">
 <meta property="og:image" content="http://xpleeandroid.github.io/img/using_threadpoolexcutor.png">
-<meta property="og:updated_time" content="2016-07-29T02:34:47.484Z">
+<meta property="og:updated_time" content="2016-07-29T06:07:00.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安卓中使用ThreadPoolExcutor">
 <meta name="twitter:description" content="原文链接 https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e
@@ -211,7 +211,7 @@ Thread Po">
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ThreadPoolExcutor"><span class="post-toc-text">ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><span class="post-toc-text">为什么在Android和JAVA应用程序中使用Thread Pool Executor?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在Android中使用ThreadPoolExcutor"><span class="post-toc-text">在Android中使用ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#现在在你的代码中这样使用"><span class="post-toc-text">现在在你的代码中这样使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎样取消一个task？"><span class="post-toc-text">怎样取消一个task？</span></a></li></ol>
           </nav>
           
         </aside>
@@ -229,7 +229,220 @@ Thread Po">
 <p><img src="/img/using_threadpoolexcutor.png" alt=""></p>
 <p>这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。<br>我们将使用很多的利用，详细的（thoroughly）介绍这些主题。</p>
 <h1 id="Thread-Pools-线程池"><a href="#Thread-Pools-线程池" class="headerlink" title="Thread Pools (线程池)"></a>Thread Pools (线程池)</h1><p>一个线程池管理一池的工作线程（准确的数量依赖于它的实现方式）。<br>一个task队列等待池中的空闲线程执行队列中的task.Task被生产者加入队列中，工作线程作为消费者，只要池中有空闲线程在等待新的后台任务，就会从task队列中消费任务。</p>
+<h1 id="ThreadPoolExcutor"><a href="#ThreadPoolExcutor" class="headerlink" title="ThreadPoolExcutor"></a>ThreadPoolExcutor</h1><p>ThreadPoolExcutor 从线程池中的一个线程执行一个给定的task。</p>
+<pre><code>ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
+int corePoolSize,
+int maximumPoolSize,
+long keepAliveTime,
+TimeUnit unit,
+BlockingQueue&lt;Runnable&gt; workQueue
+);
+</code></pre><p>参数解释：</p>
+<ol>
+<li><strong>corePoolSize:</strong> 线程池中保留线程的最小数目，最开始线程池中没有线程，但是随着task被加入队列，新线程被创建。如果有空闲的线程，但是线程的数目小于corePoolSize，就会创建新的线程。</li>
+<li><strong>maximumPoolSize:</strong> 线程池中线程的最大值，如果线程数量超过corePoolSize,线程数量&gt;=corePoolSize,那么只有队列满的时候才会创建新的工作线程。</li>
+<li><strong>keepAliveTime:</strong> 当线程数量超过corepoolsize，非corepoolsize的空闲线程将等待一个新的task，如果在这个定义的时间参数内没有等到新的task，该线程将被终止。</li>
+<li><strong>unit：</strong> <strong>keppAliveTime</strong>的时间单位</li>
+<li><strong>workQueue:</strong>  task队列，持有runnable task，必须是一个<a href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html" target="_blank" rel="external">BlockingQueue</a>.</li>
+</ol>
+<h1 id="为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><a href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor" class="headerlink" title="为什么在Android和JAVA应用程序中使用Thread Pool Executor?"></a>为什么在Android和JAVA应用程序中使用Thread Pool Executor?</h1><ol>
+<li>它是一个强大的任务执行框架，支持任务添加到队列，任务取消，任务优先级。</li>
+<li>降低了线程创建的开销，它在线程池内管理一定数量的线程。</li>
+</ol>
+<h1 id="在Android中使用ThreadPoolExcutor"><a href="#在Android中使用ThreadPoolExcutor" class="headerlink" title="在Android中使用ThreadPoolExcutor"></a>在Android中使用ThreadPoolExcutor</h1><p>首先，创建一个PriorityThreadFactory:</p>
+<pre><code>import android.os.Process;
 
+import java.util.concurrent.ThreadFactory;
+
+/**
+ * Created by Adam on 2016/7/29.
+ */
+public class PriorityThreadFactory implements ThreadFactory {
+private final int mThreadPrority;
+
+public PriorityThreadFactory(int mThreadPrority) {
+    this.mThreadPrority = mThreadPrority;
+}
+
+@Override
+public Thread newThread(final Runnable r) {
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                Process.setThreadPriority(mThreadPrority);
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+            } catch (SecurityException e) {
+                e.printStackTrace();
+            }
+            r.run();
+            ;
+
+        }
+    };
+    return new Thread(runnable);
+}
+}
+</code></pre><p>创建一个MainThreadExecutor:</p>
+<pre><code>import android.os.Handler;
+import android.os.Looper;
+
+import java.util.concurrent.Executor;
+
+/**
+ * Created by Adam on 2016/7/29.
+ */
+public class MainThreadExecutor implements Executor {
+
+private final Handler handler = new Handler(Looper.getMainLooper());
+
+@Override
+public void execute(Runnable command) {
+
+    handler.post(command);
+
+}
+}
+</code></pre><p>创建一个DefaultExecutorSupplier:</p>
+<pre><code>import android.os.Process;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Created by Adam on 2016/7/29.
+ */
+public class DefaultExecutorSupplier {
+/*
+    *指定线程数量
+ */
+public static final int NUMBER_OF_CORES = Runtime.getRuntime().availableProcessors();
+/**
+     * 后台任务的线程池
+ */
+private final ThreadPoolExecutor mForBackgroundTasks;
+/**
+     * 轻量后台任务的线程池
+ */
+private final ThreadPoolExecutor mForLightWeightBackgroundTasks;
+
+/**
+     * 主线程任务的线程池executor
+ */
+private final Executor mMainThreadExcutor;
+
+private static DefaultExecutorSupplier mInstance;
+
+/**
+     * 返回DefaultExecutorSupplier的实例
+ */
+public static DefaultExecutorSupplier getInstance() {
+
+    if (mInstance == null) {
+
+        synchronized (DefaultExecutorSupplier.class) {
+            mInstance = new DefaultExecutorSupplier();
+        }
+    }
+
+    return mInstance;
+
+}
+
+private DefaultExecutorSupplier() {
+    ThreadFactory backgroundPriorityThreadFactory = new PriorityThreadFactory(Process.THREAD_PRIORITY_BACKGROUND);
+    mForBackgroundTasks = new ThreadPoolExecutor(
+            NUMBER_OF_CORES * 2,
+            NUMBER_OF_CORES * 2,
+            60L,
+            TimeUnit.SECONDS,
+            new LinkedBlockingQueue&lt;Runnable&gt;(),
+            backgroundPriorityThreadFactory
+
+    );
+
+    mForLightWeightBackgroundTasks = new ThreadPoolExecutor(
+            NUMBER_OF_CORES * 2,
+            NUMBER_OF_CORES * 2,
+            60L,
+            TimeUnit.SECONDS,
+            new LinkedBlockingQueue&lt;Runnable&gt;(),
+            backgroundPriorityThreadFactory
+    );
+
+    mMainThreadExcutor = new MainThreadExecutor();
+}
+
+
+/*
+  * returns the thread pool executor for background task
+  */
+public ThreadPoolExecutor forBackgroundTasks() {
+    return mForBackgroundTasks;
+}
+
+/*
+    * returns the thread pool executor for light weight background task
+    */
+public ThreadPoolExecutor forLightWeightBackgroundTasks() {
+    return mForLightWeightBackgroundTasks;
+}
+
+/*
+    * returns the thread pool executor for main thread task
+    */
+public Executor forMainThreadTasks() {
+    return mMainThreadExcutor;
+}
+
+
+}
+</code></pre><p><strong>注意：不同线程池的数量依赖于你的需求</strong></p>
+<h1 id="现在在你的代码中这样使用"><a href="#现在在你的代码中这样使用" class="headerlink" title="现在在你的代码中这样使用"></a>现在在你的代码中这样使用</h1><pre><code>    /*
+    * 后台任务
+    */
+public void doSomeBackgroundWork() {
+    DefaultExecutorSupplier.getInstance().forBackgroundTasks()
+            .execute(new Runnable() {
+                @Override
+                public void run() {
+                    // 在这里后台工作.
+                }
+            });
+}
+
+/*
+    * 轻量后台任务
+    */
+public void doSomeLightWeightBackgroundWork() {
+    DefaultExecutorSupplier.getInstance().forLightWeightBackgroundTasks()
+            .execute(new Runnable() {
+                @Override
+                public void run() {
+                    // 在这里做一些轻量后台工作.
+                }
+            });
+}
+
+/*
+    * 主线程任务
+    */
+public void doSomeMainThreadWork() {
+    DefaultExecutorSupplier.getInstance().forMainThreadTasks()
+            .execute(new Runnable() {
+                @Override
+                public void run() {
+                    // 做一些中线程工作.
+                }
+            });
+}
+</code></pre><p>这样，我们可以为网络任务，I/O任务，重型的后台任务和其他任务创建不同的线程池。</p>
+<h1 id="怎样取消一个task？"><a href="#怎样取消一个task？" class="headerlink" title="怎样取消一个task？"></a>怎样取消一个task？</h1>
             <blockquote>
               <p>
                 本文地址：
