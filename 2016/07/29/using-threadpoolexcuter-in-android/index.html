@@ -16,8 +16,7 @@
 
 
 
-这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。
-Thread Po">
+这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安卓中使用ThreadPoolExcutor">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/07/29/using-threadpoolexcuter-in-android/index.html">
@@ -28,10 +27,9 @@ Thread Po">
 
 
 
-这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。
-Thread Po">
+这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。">
 <meta property="og:image" content="http://xpleeandroid.github.io/img/using_threadpoolexcutor.png">
-<meta property="og:updated_time" content="2016-07-29T06:07:00.529Z">
+<meta property="og:updated_time" content="2016-07-29T08:40:15.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安卓中使用ThreadPoolExcutor">
 <meta name="twitter:description" content="原文链接 https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e
@@ -40,13 +38,20 @@ Thread Po">
 
 
 
-这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。
-Thread Po">
+这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。">
 <meta name="twitter:image" content="http://xpleeandroid.github.io/img/using_threadpoolexcutor.png">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="---Talk is cheap. Show me the code.">
+  <meta name="summary" content="&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;br&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -211,7 +216,7 @@ Thread Po">
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ThreadPoolExcutor"><span class="post-toc-text">ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><span class="post-toc-text">为什么在Android和JAVA应用程序中使用Thread Pool Executor?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在Android中使用ThreadPoolExcutor"><span class="post-toc-text">在Android中使用ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#现在在你的代码中这样使用"><span class="post-toc-text">现在在你的代码中这样使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎样取消一个task？"><span class="post-toc-text">怎样取消一个task？</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ThreadPoolExcutor"><span class="post-toc-text">ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><span class="post-toc-text">为什么在Android和JAVA应用程序中使用Thread Pool Executor?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在Android中使用ThreadPoolExcutor"><span class="post-toc-text">在Android中使用ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#现在在你的代码中这样使用"><span class="post-toc-text">现在在你的代码中这样使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎样取消一个task？"><span class="post-toc-text">怎样取消一个task？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如何设置task的优先级？"><span class="post-toc-text">如何设置task的优先级？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建一个PrirityRunnable"><span class="post-toc-text">创建一个PrirityRunnable</span></a></li></ol>
           </nav>
           
         </aside>
@@ -227,7 +232,7 @@ Thread Po">
 </ul>
 </blockquote>
 <p><img src="/img/using_threadpoolexcutor.png" alt=""></p>
-<p>这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。<br>我们将使用很多的利用，详细的（thoroughly）介绍这些主题。</p>
+<p>这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。<br>我们将使用很多的利用，详细的（thoroughly）介绍这些主题。<br><a id="more"></a></p>
 <h1 id="Thread-Pools-线程池"><a href="#Thread-Pools-线程池" class="headerlink" title="Thread Pools (线程池)"></a>Thread Pools (线程池)</h1><p>一个线程池管理一池的工作线程（准确的数量依赖于它的实现方式）。<br>一个task队列等待池中的空闲线程执行队列中的task.Task被生产者加入队列中，工作线程作为消费者，只要池中有空闲线程在等待新的后台任务，就会从task队列中消费任务。</p>
 <h1 id="ThreadPoolExcutor"><a href="#ThreadPoolExcutor" class="headerlink" title="ThreadPoolExcutor"></a>ThreadPoolExcutor</h1><p>ThreadPoolExcutor 从线程池中的一个线程执行一个给定的task。</p>
 <pre><code>ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
@@ -442,7 +447,134 @@ public void doSomeMainThreadWork() {
             });
 }
 </code></pre><p>这样，我们可以为网络任务，I/O任务，重型的后台任务和其他任务创建不同的线程池。</p>
-<h1 id="怎样取消一个task？"><a href="#怎样取消一个task？" class="headerlink" title="怎样取消一个task？"></a>怎样取消一个task？</h1>
+<h1 id="怎样取消一个task？"><a href="#怎样取消一个task？" class="headerlink" title="怎样取消一个task？"></a>怎样取消一个task？</h1><p>为了取消一个task，你必须得到task的<strong>future</strong>。所以，不要使用<strong>execute</strong>，使用<strong>submit</strong>，将返回一个future。现在future就可以用来取消task了。</p>
+<pre><code>Future future= DefaultExecutorSupplier.getInstance().forBackgroundTasks()
+           .submit(new Runnable() {
+               @Override
+               public void run() {
+
+               }
+           });
+
+   future.cancel(true);
+</code></pre><h1 id="如何设置task的优先级？"><a href="#如何设置task的优先级？" class="headerlink" title="如何设置task的优先级？"></a>如何设置task的优先级？</h1><p>假设队列里有20个任务，线程池持有4个线程，我们根据task的优先级处理他们，因为线程池此时同时可处理4个线程。</p>
+<p>但是假设我们需要我们最后推进队列的任务最先执行，我们需要为该任务设置<strong>立即</strong>的优先当线程从队列里拿取新任务时。</p>
+<p>为了设置任务的优先级，我们需要创建一个线程池executor。</p>
+<p>为优先级创建一个枚举类:</p>
+<pre><code>/**
+ * Created by Adam on 2016/7/29.
+ */
+public enum Priority {
+/**
+     * 注意：不要在任何情况下改变顺序，否则会使排序不准确
+ */
+/**
+     * 最低优先级，预加载数据用
+ */
+LOW,
+/**
+     * 中优先级
+ */
+MEDIUM,
+/**
+     * 高优先级
+ */
+HIGH,
+/**
+     * 立即
+ */
+IMMEDIATE,
+}
+</code></pre><h1 id="创建一个PrirityRunnable"><a href="#创建一个PrirityRunnable" class="headerlink" title="创建一个PrirityRunnable"></a>创建一个PrirityRunnable</h1><pre><code>public class PriorityRunnable implements Runnable {
+
+private final Priority priority;
+
+public PriorityRunnable(Priority priority) {
+    this.priority = priority;
+}
+
+@Override
+public void run() {
+
+}
+public Priority getPriority(){
+    return  priority;
+}
+}
+</code></pre><p>创建一个PriorityThreadPoolExecutor,继承自ThreadPoolExecutor.我们必须创建PriorityFutureTask,将实现Comparable<priorityfuturetask>接口。</priorityfuturetask></p>
+<pre><code>import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Created by Adam on 2016/7/29.
+ */
+public class PriorityThreadPoolExecutor extends ThreadPoolExecutor {
+public PriorityThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&lt;Runnable&gt; workQueue, ThreadFactory threadFactory) {
+    super(corePoolSize, maximumPoolSize, keepAliveTime, unit, new PriorityBlockingQueue&lt;Runnable&gt;(), threadFactory);
+}
+
+
+@Override
+public Future&lt;?&gt; submit(Runnable task) {
+    PriorityFutureTask futureTask = new PriorityFutureTask((PriorityRunnable) task);
+    execute(futureTask);
+    return futureTask;
+}
+
+private static final class PriorityFutureTask extends FutureTask&lt;PriorityRunnable&gt;
+        implements Comparable&lt;PriorityFutureTask&gt; {
+
+    private final PriorityRunnable priorityRunnable;
+
+    public PriorityFutureTask(PriorityRunnable priorityRunnable) {
+        super(priorityRunnable, null);
+        this.priorityRunnable = priorityRunnable;
+    }
+
+    @Override
+    public int compareTo(PriorityFutureTask another) {
+        Priority p1 = priorityRunnable.getPriority();
+        Priority p2 = another.priorityRunnable.getPriority();
+        return p2.ordinal() - p1.ordinal();
+    }
+}
+}
+</code></pre><p>首先在DefaultExcutorSupplier,用PriorityThreadPoolExecutor代替ThreadPoolExecutor.</p>
+<pre><code>        ThreadFactory backgroundPriorityThreadFactory = new PriorityThreadFactory(Process.THREAD_PRIORITY_BACKGROUND);
+//        mForBackgroundTasks = new ThreadPoolExecutor(
+//                NUMBER_OF_CORES * 2,
+//                NUMBER_OF_CORES * 2,
+//                60L,
+//                TimeUnit.SECONDS,
+//                new LinkedBlockingQueue&lt;Runnable&gt;(),
+//                backgroundPriorityThreadFactory
+//
+//        );
+    mForBackgroundTasks=new PriorityThreadPoolExecutor(
+            NUMBER_OF_CORES * 2,
+            NUMBER_OF_CORES * 2,
+            60L,
+            TimeUnit.SECONDS,
+            new LinkedBlockingQueue&lt;Runnable&gt;(),
+            backgroundPriorityThreadFactory
+    );
+</code></pre><p>下面的例子演示了如何设置高优先级：</p>
+<pre><code>   public void doSomeTaskAtHighPriority(){
+    DefaultExecutorSupplier.getInstance().forBackgroundTasks()
+            .submit(new PriorityRunnable(Priority.HIGH){
+                @Override
+                public void run() {
+                    super.run();
+                }
+            });
+}
+</code></pre>
             <blockquote>
               <p>
                 本文地址：

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-29T06:07:00.529Z</updated>
+  <updated>2016-07-29T08:40:15.631Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xpleeandroid.github.io/2016/07/29/using-threadpoolexcuter-in-android/"/>
     <id>http://xpleeandroid.github.io/2016/07/29/using-threadpoolexcuter-in-android/</id>
     <published>2016-07-29T02:14:02.000Z</published>
-    <updated>2016-07-29T06:07:00.529Z</updated>
+    <updated>2016-07-29T08:40:15.631Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
@@ -30,7 +30,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;/p&gt;
+&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Thread-Pools-线程池&quot;&gt;&lt;a href=&quot;#Thread-Pools-线程池&quot; class=&quot;headerlink&quot; title=&quot;Thread Pools (线程池)&quot;&gt;&lt;/a&gt;Thread Pools (线程池)&lt;/h1&gt;&lt;p&gt;一个线程池管理一池的工作线程（准确的数量依赖于它的实现方式）。&lt;br&gt;一个task队列等待池中的空闲线程执行队列中的task.Task被生产者加入队列中，工作线程作为消费者，只要池中有空闲线程在等待新的后台任务，就会从task队列中消费任务。&lt;/p&gt;
 &lt;h1 id=&quot;ThreadPoolExcutor&quot;&gt;&lt;a href=&quot;#ThreadPoolExcutor&quot; class=&quot;headerlink&quot; title=&quot;ThreadPoolExcutor&quot;&gt;&lt;/a&gt;ThreadPoolExcutor&lt;/h1&gt;&lt;p&gt;ThreadPoolExcutor 从线程池中的一个线程执行一个给定的task。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
@@ -245,13 +245,146 @@ public void doSomeMainThreadWork() {
             });
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样，我们可以为网络任务，I/O任务，重型的后台任务和其他任务创建不同的线程池。&lt;/p&gt;
-&lt;h1 id=&quot;怎样取消一个task？&quot;&gt;&lt;a href=&quot;#怎样取消一个task？&quot; class=&quot;headerlink&quot; title=&quot;怎样取消一个task？&quot;&gt;&lt;/a&gt;怎样取消一个task？&lt;/h1&gt;</content>
+&lt;h1 id=&quot;怎样取消一个task？&quot;&gt;&lt;a href=&quot;#怎样取消一个task？&quot; class=&quot;headerlink&quot; title=&quot;怎样取消一个task？&quot;&gt;&lt;/a&gt;怎样取消一个task？&lt;/h1&gt;&lt;p&gt;为了取消一个task，你必须得到task的&lt;strong&gt;future&lt;/strong&gt;。所以，不要使用&lt;strong&gt;execute&lt;/strong&gt;，使用&lt;strong&gt;submit&lt;/strong&gt;，将返回一个future。现在future就可以用来取消task了。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Future future= DefaultExecutorSupplier.getInstance().forBackgroundTasks()
+           .submit(new Runnable() {
+               @Override
+               public void run() {
+
+               }
+           });
+
+   future.cancel(true);
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;如何设置task的优先级？&quot;&gt;&lt;a href=&quot;#如何设置task的优先级？&quot; class=&quot;headerlink&quot; title=&quot;如何设置task的优先级？&quot;&gt;&lt;/a&gt;如何设置task的优先级？&lt;/h1&gt;&lt;p&gt;假设队列里有20个任务，线程池持有4个线程，我们根据task的优先级处理他们，因为线程池此时同时可处理4个线程。&lt;/p&gt;
+&lt;p&gt;但是假设我们需要我们最后推进队列的任务最先执行，我们需要为该任务设置&lt;strong&gt;立即&lt;/strong&gt;的优先当线程从队列里拿取新任务时。&lt;/p&gt;
+&lt;p&gt;为了设置任务的优先级，我们需要创建一个线程池executor。&lt;/p&gt;
+&lt;p&gt;为优先级创建一个枚举类:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * Created by Adam on 2016/7/29.
+ */
+public enum Priority {
+/**
+     * 注意：不要在任何情况下改变顺序，否则会使排序不准确
+ */
+/**
+     * 最低优先级，预加载数据用
+ */
+LOW,
+/**
+     * 中优先级
+ */
+MEDIUM,
+/**
+     * 高优先级
+ */
+HIGH,
+/**
+     * 立即
+ */
+IMMEDIATE,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;创建一个PrirityRunnable&quot;&gt;&lt;a href=&quot;#创建一个PrirityRunnable&quot; class=&quot;headerlink&quot; title=&quot;创建一个PrirityRunnable&quot;&gt;&lt;/a&gt;创建一个PrirityRunnable&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;public class PriorityRunnable implements Runnable {
+
+private final Priority priority;
+
+public PriorityRunnable(Priority priority) {
+    this.priority = priority;
+}
+
+@Override
+public void run() {
+
+}
+public Priority getPriority(){
+    return  priority;
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建一个PriorityThreadPoolExecutor,继承自ThreadPoolExecutor.我们必须创建PriorityFutureTask,将实现Comparable&lt;priorityfuturetask&gt;接口。&lt;/priorityfuturetask&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Created by Adam on 2016/7/29.
+ */
+public class PriorityThreadPoolExecutor extends ThreadPoolExecutor {
+public PriorityThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&amp;lt;Runnable&amp;gt; workQueue, ThreadFactory threadFactory) {
+    super(corePoolSize, maximumPoolSize, keepAliveTime, unit, new PriorityBlockingQueue&amp;lt;Runnable&amp;gt;(), threadFactory);
+}
+
+
+@Override
+public Future&amp;lt;?&amp;gt; submit(Runnable task) {
+    PriorityFutureTask futureTask = new PriorityFutureTask((PriorityRunnable) task);
+    execute(futureTask);
+    return futureTask;
+}
+
+private static final class PriorityFutureTask extends FutureTask&amp;lt;PriorityRunnable&amp;gt;
+        implements Comparable&amp;lt;PriorityFutureTask&amp;gt; {
+
+    private final PriorityRunnable priorityRunnable;
+
+    public PriorityFutureTask(PriorityRunnable priorityRunnable) {
+        super(priorityRunnable, null);
+        this.priorityRunnable = priorityRunnable;
+    }
+
+    @Override
+    public int compareTo(PriorityFutureTask another) {
+        Priority p1 = priorityRunnable.getPriority();
+        Priority p2 = another.priorityRunnable.getPriority();
+        return p2.ordinal() - p1.ordinal();
+    }
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;首先在DefaultExcutorSupplier,用PriorityThreadPoolExecutor代替ThreadPoolExecutor.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        ThreadFactory backgroundPriorityThreadFactory = new PriorityThreadFactory(Process.THREAD_PRIORITY_BACKGROUND);
+//        mForBackgroundTasks = new ThreadPoolExecutor(
+//                NUMBER_OF_CORES * 2,
+//                NUMBER_OF_CORES * 2,
+//                60L,
+//                TimeUnit.SECONDS,
+//                new LinkedBlockingQueue&amp;lt;Runnable&amp;gt;(),
+//                backgroundPriorityThreadFactory
+//
+//        );
+    mForBackgroundTasks=new PriorityThreadPoolExecutor(
+            NUMBER_OF_CORES * 2,
+            NUMBER_OF_CORES * 2,
+            60L,
+            TimeUnit.SECONDS,
+            new LinkedBlockingQueue&amp;lt;Runnable&amp;gt;(),
+            backgroundPriorityThreadFactory
+    );
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面的例子演示了如何设置高优先级：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   public void doSomeTaskAtHighPriority(){
+    DefaultExecutorSupplier.getInstance().forBackgroundTasks()
+            .submit(new PriorityRunnable(Priority.HIGH){
+                @Override
+                public void run() {
+                    super.run();
+                }
+            });
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot; target=&quot;_blank&quot; r
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;br&gt;
     
     </summary>
     
