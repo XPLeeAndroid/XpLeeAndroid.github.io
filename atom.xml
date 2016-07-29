@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-28T03:41:16.658Z</updated>
+  <updated>2016-07-29T02:18:39.067Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓中使用ThreadPoolExcutor</title>
+    <link href="http://xpleeandroid.github.io/2016/07/29/using-threadpoolexcuter-in-android/"/>
+    <id>http://xpleeandroid.github.io/2016/07/29/using-threadpoolexcuter-in-android/</id>
+    <published>2016-07-29T02:14:02.000Z</published>
+    <updated>2016-07-29T02:18:39.067Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot; target=&quot;_blank&quot; r
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://xpleeandroid.github.io/tags/android/"/>
+    
+      <category term="翻译" scheme="http://xpleeandroid.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title>安卓计算下载速度</title>
