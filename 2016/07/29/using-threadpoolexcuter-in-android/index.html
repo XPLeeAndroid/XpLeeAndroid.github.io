@@ -29,7 +29,7 @@
 
 这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。我们将使用很多的利用，详细的（thoroughly）介绍这些主题。">
 <meta property="og:image" content="http://xpleeandroid.github.io/img/using_threadpoolexcutor.png">
-<meta property="og:updated_time" content="2016-07-29T08:40:15.631Z">
+<meta property="og:updated_time" content="2016-07-29T08:42:00.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安卓中使用ThreadPoolExcutor">
 <meta name="twitter:description" content="原文链接 https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e
@@ -216,7 +216,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ThreadPoolExcutor"><span class="post-toc-text">ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><span class="post-toc-text">为什么在Android和JAVA应用程序中使用Thread Pool Executor?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在Android中使用ThreadPoolExcutor"><span class="post-toc-text">在Android中使用ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#现在在你的代码中这样使用"><span class="post-toc-text">现在在你的代码中这样使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎样取消一个task？"><span class="post-toc-text">怎样取消一个task？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如何设置task的优先级？"><span class="post-toc-text">如何设置task的优先级？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建一个PrirityRunnable"><span class="post-toc-text">创建一个PrirityRunnable</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thread-Pools-线程池"><span class="post-toc-text">Thread Pools (线程池)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ThreadPoolExcutor"><span class="post-toc-text">ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor"><span class="post-toc-text">为什么在Android和JAVA应用程序中使用Thread Pool Executor?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在Android中使用ThreadPoolExcutor"><span class="post-toc-text">在Android中使用ThreadPoolExcutor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#现在在你的代码中这样使用"><span class="post-toc-text">现在在你的代码中这样使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#怎样取消一个task？"><span class="post-toc-text">怎样取消一个task？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如何设置task的优先级？"><span class="post-toc-text">如何设置task的优先级？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建一个PriorityRunnable"><span class="post-toc-text">创建一个PriorityRunnable</span></a></li></ol></li></ol>
           </nav>
           
         </aside>
@@ -485,7 +485,7 @@ HIGH,
  */
 IMMEDIATE,
 }
-</code></pre><h1 id="创建一个PrirityRunnable"><a href="#创建一个PrirityRunnable" class="headerlink" title="创建一个PrirityRunnable"></a>创建一个PrirityRunnable</h1><pre><code>public class PriorityRunnable implements Runnable {
+</code></pre><h2 id="创建一个PriorityRunnable"><a href="#创建一个PriorityRunnable" class="headerlink" title="创建一个PriorityRunnable"></a>创建一个PriorityRunnable</h2><pre><code>public class PriorityRunnable implements Runnable {
 
 private final Priority priority;
 
