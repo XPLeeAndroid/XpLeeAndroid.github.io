@@ -169,6 +169,8 @@
 </ul>
 </blockquote>
 <p><img src="/img/using_threadpoolexcutor.png" alt=""></p>
+<p>这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。<br>我们将使用很多的利用，详细的（thoroughly）介绍这些主题。</p>
+<h1 id="Thread-Pools-线程池"><a href="#Thread-Pools-线程池" class="headerlink" title="Thread Pools (线程池)"></a>Thread Pools (线程池)</h1><p>一个线程池管理一池的工作线程（准确的数量依赖于它的实现方式）。<br>一个task队列等待池中的空闲线程执行队列中的task.Task被生产者加入队列中，工作线程作为消费者，只要池中有空闲线程在等待新的后台任务，就会从task队列中消费任务。</p>
 
         
       </div>
