@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-07-29T08:42:00.042Z</updated>
+  <updated>2016-08-10T03:31:06.410Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux日常命令</title>
+    <link href="http://xpleeandroid.github.io/2016/08/10/daily-linux-command/"/>
+    <id>http://xpleeandroid.github.io/2016/08/10/daily-linux-command/</id>
+    <published>2016-08-10T03:30:06.000Z</published>
+    <updated>2016-08-10T03:31:06.410Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态&lt;/li&gt;
+&lt;li&gt;ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 &lt;/li&gt;
+&lt;li&gt;kill -9 pid 强制杀死进程pid&lt;/li&gt;
+&lt;li&gt;service iptabes stop 停止防火墙 centos7之前版本&lt;/li&gt;
+&lt;li&gt;chkconfig iptables off 禁用防火墙 centos7之前版本&lt;/li&gt;
+&lt;li&gt;systemctl stop firewalld.service 停止防火墙 centos7&lt;/li&gt;
+&lt;li&gt;systemctl disable firewalld.service 禁用防火墙 centos7&lt;/li&gt;
+&lt;li&gt;chmod -R 777 shadowsocks-rm&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态&lt;/li&gt;
+&lt;li&gt;ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 &lt;/li&gt;
+&lt;li&gt;k
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>安卓中使用ThreadPoolExcutor</title>
