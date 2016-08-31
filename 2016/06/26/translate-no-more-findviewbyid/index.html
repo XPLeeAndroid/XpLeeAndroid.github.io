@@ -10,34 +10,46 @@
   
   
   <meta name="keywords" content="android,翻译">
-  <meta name="description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
-&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
-&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;">
+  <meta name="description" content="原文链接 https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
+翻译： Adamin90
+转载请注明出处，谢谢！
+
+
+No More findViewById
+Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你">
 <meta property="og:type" content="article">
 <meta property="og:title" content="翻译:no more findViewById">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/06/26/translate-no-more-findviewbyid/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
-&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
-&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;">
+<meta property="og:description" content="原文链接 https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
+翻译： Adamin90
+转载请注明出处，谢谢！
+
+
+No More findViewById
+Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你">
 <meta property="og:updated_time" content="2016-06-28T09:49:39.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="翻译:no more findViewById">
-<meta name="twitter:description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
-&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
-&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;">
+<meta name="twitter:description" content="原文链接 https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6
+翻译： Adamin90
+转载请注明出处，谢谢！
+
+
+No More findViewById
+Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
   <meta name="summary" content="&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
+&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;Android Studio&amp;#x5F00;&amp;#x53D1;android&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5C0F;&amp;#x7279;&amp;#x70B9;&amp;#x662F;&amp;#x6570;&amp;#x636E;&amp;#x7ED1;&amp;#x5B9A;&amp;#x3002;&amp;#x6211;&amp;#x4F1A;&amp;#x5728;&amp;#x5C06;&amp;#x6765;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x4E2D;&amp;#x8BB2;&amp;#x89E3;&amp;#x5B83;&amp;#x7684;&amp;#x5176;&amp;#x4ED6;&amp;#x4E00;&amp;#x4E9B;&amp;#x4F18;&amp;#x96C5;&amp;#x7684;&amp;#x7279;&amp;#x70B9;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x4F60;&amp;#x8981;&amp;#x4E86;&amp;#x89E3;&amp;#x7684;&amp;#x6700;&amp;#x57FA;&amp;#x7840;&amp;#x7684;&amp;#x662F;&amp;#x600E;&amp;#x6837;&amp;#x6D88;&amp;#x9664;findViewById.&lt;br&gt;&lt;/p&gt;">
+&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;br&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -212,20 +224,20 @@
             <div class="post-content" id="post-content" itemprop="postContent">
             <blockquote>
 <ul>
-<li>&#x539F;&#x6587;&#x94FE;&#x63A5; <a href="https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6" target="_blank" rel="external">https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6</a></li>
-<li>&#x7FFB;&#x8BD1;&#xFF1A; <a href="https://github.com/adamin1990" target="_blank" rel="external">Adamin90</a></li>
-<li>&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</li>
+<li>原文链接 <a href="https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6" target="_blank" rel="external">https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6</a></li>
+<li>翻译： <a href="https://github.com/adamin1990" target="_blank" rel="external">Adamin90</a></li>
+<li>转载请注明出处，谢谢！</li>
 </ul>
 </blockquote>
 <h1 id="No-More-findViewById"><a href="#No-More-findViewById" class="headerlink" title="No More findViewById"></a>No More findViewById</h1><hr>
-<p>Android Studio&#x5F00;&#x53D1;android&#x7A0B;&#x5E8F;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x7279;&#x70B9;&#x662F;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x3002;&#x6211;&#x4F1A;&#x5728;&#x5C06;&#x6765;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x8BB2;&#x89E3;&#x5B83;&#x7684;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x4F18;&#x96C5;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x8981;&#x4E86;&#x89E3;&#x7684;&#x6700;&#x57FA;&#x7840;&#x7684;&#x662F;&#x600E;&#x6837;&#x6D88;&#x9664;findViewById.<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br></pre></td></tr></table></figure></p>
-<p>&#x867D;&#x7136;&#x73B0;&#x5728;&#x6709;&#x5F88;&#x591A;&#x8BD5;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x8FD9;&#x4E9B;&#x591A;&#x4F59;&#x4EE3;&#x7801;&#xFF0C;&#x4F46;&#x662F;Android Studio 1.5&#x4EE5;&#x53CA;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x5DF2;&#x7ECF;&#x6709;&#x5B98;&#x65B9;&#x7684;&#x65B9;&#x6CD5;&#x4E86;&#x3002;</p>
-<p>&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5728;Application&#x7684;build.gradle&#x91CC;&#x7684;android&#x5757;&#x5185;&#x586B;&#x5199;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br></pre></td></tr></table></figure></p>
+<p>虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。</p>
+<p>首先，你必须在Application的build.gradle里的android块内填写如下代码：</p>
 <pre><code>android {
-&#x2026;
+…
 dataBinding.enabled = true
 </code></pre><p>}</p>
-<p>&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x5728;&#x4F60;&#x7684;layout&#x6587;&#x4EF6;&#x7684;&#x6700;&#x5916;&#x5C42;&#x6DFB;&#x52A0; <layout>&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x7BA1;&#x4F60;&#x7528;&#x7684;&#x662F;&#x4EFB;&#x4F55; ViewGroup:</layout></p>
+<p>下一步就是在你的layout文件的最外层添加 <layout>标签，不管你用的是任何 ViewGroup:</layout></p>
 <pre><code>&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
     xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;
 &lt;RelativeLayout
@@ -244,24 +256,24 @@ dataBinding.enabled = true
 
 &lt;/RelativeLayout&gt;
 </code></pre><p></p>
-<p><strong>Layout</strong>&#x6807;&#x7B7E;&#x544A;&#x8BC9;Android Studio&#x8FD9;&#x4E2A;layout&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5C06;&#x8FDB;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x67E5;&#x627E;&#x5230;&#x6240;&#x6709;&#x611F;&#x5174;&#x8DA3;&#x7684;view,&#x5E76;&#x4E14;&#x6807;&#x7B7E;&#x4E3A;&#x4E0B;&#x4E00;&#x6B65;&#x3002;&#x6240;&#x6709;&#x5916;&#x90E8;&#x6CA1;&#x6709;&#x5305;<code>layout</code>&#x6807;&#x7B7E;&#x7684;&#x5E03;&#x5C40;&#x5C06;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x989D;&#x5916;&#x64CD;&#x4F5C;&#x3002;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x65B0;&#x9879;&#x76EE;&#x4E2D;&#x5C11;&#x91CF;&#x4F7F;&#x7528;&#x800C;&#x65E0;&#x9700;&#x6539;&#x53D8;&#x9879;&#x76EE;&#x4E2D;&#x5176;&#x4ED6;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x544A;&#x8BC9;&#x5B83;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5206;&#x522B;&#x52A0;&#x8F7D;&#x4F60;&#x7684;layout&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x5411;&#x540E;&#x517C;&#x5BB9;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x65B0;&#x6846;&#x67B6;&#x7684;&#x6539;&#x53D8;&#x6765;&#x52A0;&#x8F7D;&#x8FD9;&#x4E9B;&#x9884;&#x6267;&#x884C;&#x7684;layout&#x6587;&#x4EF6;&#x3002;&#x56E0;&#x6B64;&#x4F60;&#x53EA;&#x9700;&#x5BF9;&#x7A0B;&#x5E8F;&#x505A;&#x4E00;&#x4E2A;&#x8F7B;&#x5FAE;&#x7684;&#x6539;&#x53D8;&#x3002;</p>
-<p>&#x4ECE;&#x4E00;&#x4E2A;Activity,&#x4E0D;&#x662F;&#xFF1A;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    setContentView(R.layout.hello_world);</span><br><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br><span class="line">hello.setText(<span class="string">&quot;Hello World&quot;</span>); </span><br></pre></td></tr></table></figure>
-<p>&#x800C;&#x662F;&#x8FD9;&#x6837;&#x52A0;&#x8F7D;&#xFF1A;</p>
+<p><strong>Layout</strong>标签告诉Android Studio这个layout在编译时将进行额外的操作，查找到所有感兴趣的view,并且标签为下一步。所有外部没有包<code>layout</code>标签的布局将不会执行额外操作。所以你可以在新项目中少量使用而无需改变项目中其他的部分。</p>
+<p>下面要做的就是告诉它在运行时分别加载你的layout。因为它向后兼容，所以不需要依赖新框架的改变来加载这些预执行的layout文件。因此你只需对程序做一个轻微的改变。</p>
+<p>从一个Activity,不是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    setContentView(R.layout.hello_world);</span><br><span class="line">TextView hello = (TextView) findViewById(R.id.hello);</span><br><span class="line">hello.setText(<span class="string">"Hello World"</span>); </span><br></pre></td></tr></table></figure>
+<p>而是这样加载：</p>
 <pre><code>HelloWorldBinding binding = 
 DataBindingUtil.setContentView(this, R.layout.hello_world);
 binding.hello.setText(&quot;Hello World&quot;); 
-</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230; <strong>HelloWordBinding</strong>&#x8FD9;&#x4E2A;&#x7C7B;&#x81EA;&#x52A8;&#x4E3A;<strong>hello_world.xml</strong>&#x751F;&#x6210;&#x5E76;&#x4E14;id&#x4E3A;&#x201C;@+id/hello&#x201D;&#x7684;view&#x5206;&#x914D;&#x5230;&#x4E86;&#x4E00;&#x4E2A;<strong>hello</strong>&#x7684;field&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x6CA1;&#x6709;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x6CA1;&#x6709;findViewById.</p>
-<p>&#x8FD9;&#x6807;&#x5175;&#x8FD9;&#x662F;&#x8BBF;&#x95EE;view&#x7684;&#x673A;&#x5236;&#x4E0D;&#x4EC5;&#x4EC5;&#x6BD4;findViewById&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x66F4;&#x52A0;&#x5FEB;&#xFF01;&#x7ED1;&#x5B9A;&#x7A0B;&#x5E8F;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x8986;&#x76D6;&#x6240;&#x6709;layout&#x7684;view&#xFF0C;&#x628A;view&#x5206;&#x914D;&#x5230;field&#x3002;&#x5F53;&#x4F60;&#x8FD0;&#x884C;findViewById&#xFF0C;&#x7684;&#x65F6;&#x5019;view&#x7ED3;&#x6784;&#x6BCF;&#x6B21;&#x90FD;&#x4F1A;&#x88AB;&#x904D;&#x5386;&#x67E5;&#x627E;&#x3002;</p>
-<p>&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x4E00;&#x4EF6;&#x4E8B;:&#x5B83;&#x5BF9;&#x4F60;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x4F7F;&#x7528;&#x4E86;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x6CD5;&#xFF08;&#x6BD4;&#x5982;hello_world.html &#x53D8;&#x6210;&#x7C7B; HelloWorldBinding&#xFF09;,&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x7ED9;&#x5B83;&#x7684;id&#x662F;&#x201C;@+id/hello_text&#x201D;,&#x90A3;&#x4E48;field&#x7684;&#x540D;&#x79F0;&#x5C06;&#x4F1A;&#x662F; helloText.</p>
-<p>&#x5F53;&#x4F60;&#x6B63;&#x5728;inflate&#x4F60;&#x5E03;&#x5C40;&#x91CC;RecyclerView,ViewPager&#xFF0C;&#x6216;&#x5176;&#x4ED6;&#x4E0D;&#x8BBE;&#x7F6E;Activity&#x5185;&#x5BB9;&#x7684;&#x63A7;&#x4EF6;&#xFF0C;&#x4F60;&#x5C06;&#x5E0C;&#x671B;&#x5728;&#x751F;&#x6210;&#x7684;&#x7C7B;&#x4E0A;&#x7528;&#x751F;&#x6210;&#x7684;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x51E0;&#x4E2A;&#x7248;&#x672C;&#x5339;&#x914D;LayoutInflater,&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x4F60;&#x6700;&#x9002;&#x5408;&#x98DF;&#x7528;&#x7684;.&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+</code></pre><p>你可以看到 <strong>HelloWordBinding</strong>这个类自动为<strong>hello_world.xml</strong>生成并且id为“@+id/hello”的view分配到了一个<strong>hello</strong>的field你可以使用。没有强制类型转换，没有findViewById.</p>
+<p>这标兵这是访问view的机制不仅仅比findViewById更加简单，而且也更加快！绑定程序一次执行覆盖所有layout的view，把view分配到field。当你运行findViewById，的时候view结构每次都会被遍历查找。</p>
+<p>你会注意到一件事:它对你的变量名使用了驼峰命名法（比如hello_world.html 变成类 HelloWorldBinding）,所以如果你给它的id是“@+id/hello_text”,那么field的名称将会是 helloText.</p>
+<p>当你正在inflate你布局里RecyclerView,ViewPager，或其他不设置Activity内容的控件，你将希望在生成的类上用生成的类型安全的方法，这里有几个版本匹配LayoutInflater,所以使用你最适合食用的.举个例子：</p>
 <pre><code>HelloWorldBinding binding = HelloWorldBinding.inflate(
 getLayoutInflater(), container, attachToContainer);
-</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4EEC;&#x6709;&#x628A;&#x88AB;inflate&#x7684;view &#x9644;&#x52A0;&#x5230;&#x5305;&#x542B;&#x4ED6;&#x4EEC;&#x7684;ViewGroup&#x4E0A;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x8BBF;&#x95EE;&#x88AB;infalte&#x7684;view&#x7684;view&#x7ED3;&#x6784;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;binding&#x7684;getRoot()&#x65B9;&#x6CD5;&#xFF1A;</p>
+</code></pre><p>如果你们有把被inflate的view 附加到包含他们的ViewGroup上，你必须访问被infalte的view的view结构。你可以用binding的getRoot()方法：</p>
 <pre><code>linearLayout.addView(binding.getRoot());
-</code></pre><p>&#x73B0;&#x5728;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x8003;&#x8651;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x6709;&#x4E00;&#x4E2A;layout&#x5305;&#x542B;&#x540C;&#x6B65;view&#x7684;&#x4E0D;&#x540C;&#x914D;&#x7F6E;&#x5462;&#xFF1F;layout&#x9884;&#x6267;&#x884C;&#x548C;&#x8FD0;&#x884C;&#x65F6;inflate&#x9636;&#x6BB5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x6240;&#x6709;View &#x7684;id&#x5230;&#x751F;&#x6210;&#x7684;&#x7C7B;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;inflate&#x7684;&#x8BDD;&#x8BBE;&#x7F6E;&#x4E3A;null&#x3002;</p>
-<p>&#x76F8;&#x5F53;&#x795E;&#x5947;&#xFF0C;&#x4E0D;&#x662F;&#x5417;&#xFF1F;&#x6700;&#x597D;&#x7684;&#x90E8;&#x5206;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x6CA1;&#x6709;&#x53CD;&#x5C04;&#x548C;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x9AD8;&#x6D88;&#x8017;&#x7684;&#x6280;&#x672F;&#x3002;&#x628A;&#x4ED6;&#x5C11;&#x91CF;&#x6DFB;&#x52A0;&#x5230;&#x4F60;&#x73B0;&#x6709;&#x7A0B;&#x5E8F;&#x91CC;&#x9762;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#xFF0C;&#x4ED6;&#x80FD;&#x8BA9;&#x4F60;&#x7684;&#x751F;&#x6D3B;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x8BA9;&#x4F60;&#x7684;layout&#x52A0;&#x8F7D;&#x7684;&#x66F4;&#x5FEB;&#xFF01;</p>
+</code></pre><p>现在，你可能会考虑，如果我有一个layout包含同步view的不同配置呢？layout预执行和运行时inflate阶段通过添加所有View 的id到生成的类，如果没有被inflate的话设置为null。</p>
+<p>相当神奇，不是吗？最好的部分是运行时没有反射和其他任何高消耗的技术。把他少量添加到你现有程序里面非常容易，他能让你的生活更加简单，让你的layout加载的更快！</p>
 
             <blockquote>
               <p>

@@ -10,26 +10,32 @@
   
   
   <meta name="keywords" content="PHP,Android">
-  <meta name="description" content="Android&amp;#x5B9E;&amp;#x73B0;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;
+  <meta name="description" content="Android实现调用系统相机，拍照：
  Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            getFileUri();">
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityFor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android拍照上传至PHP服务器并写入MySql数据库(下)">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/07/22/android-upload-img-to-php-server-2/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="Android&amp;#x5B9E;&amp;#x73B0;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;
+<meta property="og:description" content="Android实现调用系统相机，拍照：
  Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            getFileUri();">
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityFor">
 <meta property="og:updated_time" content="2016-07-22T08:02:25.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android拍照上传至PHP服务器并写入MySql数据库(下)">
-<meta name="twitter:description" content="Android&amp;#x5B9E;&amp;#x73B0;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;
+<meta name="twitter:description" content="Android实现调用系统相机，拍照：
  Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            getFileUri();">
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityFor">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;h1 id=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;a href=&quot;#Android&amp;#x5B9E;&amp;#x73B0;&quot; class=&quot;headerlink&quot; title=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;/a&gt;Android&amp;#x5B9E;&amp;#x73B0;&lt;/h1&gt;&lt;p&gt;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;&lt;/p&gt;
+  <meta name="summary" content="&lt;h1 id=&quot;Android实现&quot;&gt;&lt;a href=&quot;#Android实现&quot; class=&quot;headerlink&quot; title=&quot;Android实现&quot;&gt;&lt;/a&gt;Android实现&lt;/h1&gt;&lt;p&gt;调用系统相机，拍照：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             getFileUri();
             intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
@@ -214,7 +220,7 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Android&#x5B9E;&#x73B0;"><a href="#Android&#x5B9E;&#x73B0;" class="headerlink" title="Android&#x5B9E;&#x73B0;"></a>Android&#x5B9E;&#x73B0;</h1><p>&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x76F8;&#x673A;&#xFF0C;&#x62CD;&#x7167;&#xFF1A;</p>
+            <h1 id="Android实现"><a href="#Android实现" class="headerlink" title="Android实现"></a>Android实现</h1><p>调用系统相机，拍照：</p>
 <pre><code> Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             getFileUri();
             intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
@@ -227,15 +233,15 @@
     file_uri = Uri.fromFile(file);
 }
 </code></pre><a id="more"></a>
-<p>&#x5728;onActivityResult&#x91CC;&#x9762;&#x63A5;&#x6536;&#x56FE;&#x7247;&#x5E76;Base64&#x5904;&#x7406;&#xFF1A;</p>
+<p>在onActivityResult里面接收图片并Base64处理：</p>
 <pre><code>  @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
     if (requestCode == CODE_CAMERA &amp;&amp; resultCode == RESULT_OK) {
-        new EncodeImage().execute();   //&#x628A;bitmap&#x8F6C;&#x6362;&#x6210;base64&#x5B57;&#x7B26;&#x4E32;
+        new EncodeImage().execute();   //把bitmap转换成base64字符串
     }
 }
-</code></pre><p>EncodeImage&#x662F;&#x4E00;&#x4E2A;AsyncTask&#xFF0C;doInBackground&#x91CC;&#x9762;&#x4ECE;uri&#x91CC;&#x9762;&#x83B7;&#x53D6;bitmap&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x5165;&#x8F93;&#x51FA;&#x6D41;&#xFF0C;&#x6700;&#x7EC8;&#x8F6C;&#x6362;&#x4E3A;base64&#x7F16;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+</code></pre><p>EncodeImage是一个AsyncTask，doInBackground里面从uri里面获取bitmap，然后转入输出流，最终转换为base64编码字符串：</p>
 <pre><code>@Override
   protected Void doInBackground(Void... voids) {
       bitmap = BitmapFactory.decodeFile(file_uri.getPath());
@@ -243,10 +249,10 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
       bitmap.compress(Bitmap.CompressFormat.JPEG, 80, stream);
       byte[] array = stream.toByteArray();
       encoded_string = Base64.encodeToString(array, 0);
-      bitmap.recycle();  //&#x9632;&#x6B62;oom
+      bitmap.recycle();  //防止oom
       return null;
   }
-</code></pre><p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E86;&#xFF1A;</p>
+</code></pre><p>然后就可以上传到服务器了：</p>
 <pre><code>    private void uploadImage() {
     HashMap&lt;String, String&gt; map = new HashMap&lt;&gt;();
     map.put(&quot;encoding_string&quot;, encoded_string);
@@ -259,16 +265,16 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             .execute(new StringCallback() {
                 @Override
                 public void onError(Call call, Exception e, int id) {
-                    Log.e(&quot;&#x51FA;&#x9519;&#x4E86;&quot;, &quot;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF1A;&quot; + e.getMessage());
+                    Log.e(&quot;出错了&quot;, &quot;错误信息：&quot; + e.getMessage());
                 }
 
                 @Override
                 public void onResponse(String response, int id) {
-                    Log.e(&quot;&#x6210;&#x529F;or&#x5931;&#x8D25;&quot;, &quot;&#x4FE1;&#x606F;&#xFF1A;&quot; + response);
+                    Log.e(&quot;成功or失败&quot;, &quot;信息：&quot; + response);
                 }
             });
 }
-</code></pre><p>&#x5728;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9047;&#x5230;&#x4E24;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7B2C;&#x4E00;,&#x63D0;&#x793A;<code>POST Content-Length of  ... bytes exceeds the limit of 8388608 bytes</code>,&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x662F;&#x56E0;&#x4E3A;php&#x9ED8;&#x8BA4;&#x6700;&#x5927;post&#x4E0A;&#x4F20;8M,&#x66F4;&#x6539;php.ini&#x91CC;&#x9762;&#x7684;<code>post_max_size=1000M</code>&#x5C31;ok&#x4E86;&#xFF1B;&#x7B2C;&#x4E8C;&#xFF0C;&#x5F53;&#x7B2C;&#x4E8C;&#x6B21;&#x62CD;&#x7167;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x51FA;&#x73B0;OOM&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x68C0;&#x67E5;&#x4EE3;&#x7801;&#x53D1;&#x73B0;bitmap&#x6CA1;&#x6709;recycle&#x3002;</p>
+</code></pre><p>在上传服务器过程中，遇到两个问题，第一,提示<code>POST Content-Length of  ... bytes exceeds the limit of 8388608 bytes</code>,这个错误是因为php默认最大post上传8M,更改php.ini里面的<code>post_max_size=1000M</code>就ok了；第二，当第二次拍照的时候会出现OOM的情况，检查代码发现bitmap没有recycle。</p>
 <p>OVER</p>
 
             <blockquote>

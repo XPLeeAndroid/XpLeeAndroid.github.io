@@ -10,22 +10,46 @@
   
   
   <meta name="keywords" content="PHP">
-  <meta name="description" content="php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;
-r &amp;#x53EA;&amp;#x8BFB;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;
-w &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C">
+  <meta name="description" content="php文件操作的模式
+r 只读权限打开文件
+w 只写权限打开文件，擦除内容，如果没有则新建文件
+a 只写权限打开文件
+x 新建一个只写权限的文件
+r+ 打开读/写权限文件
+w+ 打开读/写权限的文件， 擦除内容，如果没有则新建文件
+a+ 打开读/写权限文件，如果没有则新建文件；
+x+ 新建一个读/写权限的文件
+
+将表单提交到本身页面只需将form的action 设置为&amp;lt;?php echo $">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP学习笔记">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/07/07/Learn-PHP/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;
-r &amp;#x53EA;&amp;#x8BFB;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;
-w &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C">
+<meta property="og:description" content="php文件操作的模式
+r 只读权限打开文件
+w 只写权限打开文件，擦除内容，如果没有则新建文件
+a 只写权限打开文件
+x 新建一个只写权限的文件
+r+ 打开读/写权限文件
+w+ 打开读/写权限的文件， 擦除内容，如果没有则新建文件
+a+ 打开读/写权限文件，如果没有则新建文件；
+x+ 新建一个读/写权限的文件
+
+将表单提交到本身页面只需将form的action 设置为&amp;lt;?php echo $">
 <meta property="og:updated_time" content="2016-07-08T09:51:53.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP学习笔记">
-<meta name="twitter:description" content="php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;
-r &amp;#x53EA;&amp;#x8BFB;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;
-w &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C">
+<meta name="twitter:description" content="php文件操作的模式
+r 只读权限打开文件
+w 只写权限打开文件，擦除内容，如果没有则新建文件
+a 只写权限打开文件
+x 新建一个只写权限的文件
+r+ 打开读/写权限文件
+w+ 打开读/写权限的文件， 擦除内容，如果没有则新建文件
+a+ 打开读/写权限文件，如果没有则新建文件；
+x+ 新建一个读/写权限的文件
+
+将表单提交到本身页面只需将form的action 设置为&amp;lt;?php echo $">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
@@ -202,44 +226,44 @@ w &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="php&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x6A21;&#x5F0F;"><a href="#php&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x6A21;&#x5F0F;" class="headerlink" title="php&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x6A21;&#x5F0F;"></a>php&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x6A21;&#x5F0F;</h2><ul>
-<li><strong>r</strong> &#x53EA;&#x8BFB;&#x6743;&#x9650;&#x6253;&#x5F00;&#x6587;&#x4EF6;</li>
-<li><strong>w</strong> &#x53EA;&#x5199;&#x6743;&#x9650;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x64E6;&#x9664;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;</li>
-<li><strong>a</strong> &#x53EA;&#x5199;&#x6743;&#x9650;&#x6253;&#x5F00;&#x6587;&#x4EF6;</li>
-<li><strong>x</strong> &#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x53EA;&#x5199;&#x6743;&#x9650;&#x7684;&#x6587;&#x4EF6;</li>
-<li><strong>r+</strong> &#x6253;&#x5F00;&#x8BFB;/&#x5199;&#x6743;&#x9650;&#x6587;&#x4EF6;</li>
-<li><strong>w+</strong> &#x6253;&#x5F00;&#x8BFB;/&#x5199;&#x6743;&#x9650;&#x7684;&#x6587;&#x4EF6;&#xFF0C; &#x64E6;&#x9664;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;</li>
-<li><strong>a+</strong> &#x6253;&#x5F00;&#x8BFB;/&#x5199;&#x6743;&#x9650;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF1B;</li>
-<li><strong>x+</strong> &#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x8BFB;/&#x5199;&#x6743;&#x9650;&#x7684;&#x6587;&#x4EF6;</li>
+            <h2 id="php文件操作的模式"><a href="#php文件操作的模式" class="headerlink" title="php文件操作的模式"></a>php文件操作的模式</h2><ul>
+<li><strong>r</strong> 只读权限打开文件</li>
+<li><strong>w</strong> 只写权限打开文件，擦除内容，如果没有则新建文件</li>
+<li><strong>a</strong> 只写权限打开文件</li>
+<li><strong>x</strong> 新建一个只写权限的文件</li>
+<li><strong>r+</strong> 打开读/写权限文件</li>
+<li><strong>w+</strong> 打开读/写权限的文件， 擦除内容，如果没有则新建文件</li>
+<li><strong>a+</strong> 打开读/写权限文件，如果没有则新建文件；</li>
+<li><strong>x+</strong> 新建一个读/写权限的文件</li>
 </ul>
-<h2 id="&#x5C06;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x8EAB;&#x9875;&#x9762;"><a href="#&#x5C06;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x8EAB;&#x9875;&#x9762;" class="headerlink" title="&#x5C06;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x8EAB;&#x9875;&#x9762;"></a>&#x5C06;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x8EAB;&#x9875;&#x9762;</h2><p>&#x53EA;&#x9700;&#x5C06;form&#x7684;action &#x8BBE;&#x7F6E;&#x4E3A;<code>&lt;?php echo $_SERVER[&apos;PHP_SELF&apos;];?&gt;</code><br>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x8DE8;&#x7AD9;&#x70B9;&#x653B;&#x51FB;(XSS)&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4F7F;&#x7528;<strong>htmlspecialchars()</strong><br>&#x907F;&#x514D;<strong>$_SERVER[&#x201C;PHP_SELF&#x201D;]</strong> &#x88AB;&#x5229;&#x7528;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h2 id="将表单提交到本身页面"><a href="#将表单提交到本身页面" class="headerlink" title="将表单提交到本身页面"></a>将表单提交到本身页面</h2><p>只需将form的action 设置为<code>&lt;?php echo $_SERVER[&#39;PHP_SELF&#39;];?&gt;</code><br>为了防止跨站点攻击(XSS)，我们通常需要使用<strong>htmlspecialchars()</strong><br>避免<strong>$_SERVER[“PHP_SELF”]</strong> 被利用。如下：</p>
 <pre><code>&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;
-</code></pre><h2 id="&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;"><a href="#&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;" class="headerlink" title="&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;"></a>&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;</h2><ul>
-<li><strong>[abc]</strong>  &#x5355;&#x72EC;&#x7684;&#x5B57;&#x7B26;&#x4E32; &#xFF1A;a,b&#x6216;c</li>
-<li><strong>[^abc]</strong> &#x4EFB;&#x610F;&#x7684;&#x5355;&#x72EC;&#x5B57;&#x7B26;&#x4E32;&#x5355;&#x4E0D;&#x662F;a,b,&#x6216;c</li>
-<li><strong>[a-z]</strong>  a-z&#x4EFB;&#x610F;&#x7684;&#x5355;&#x72EC;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>[a-zA-Z]</strong> a-z &#x6216;A-Z&#x4E2D;&#x4EFB;&#x610F;&#x7684;&#x5355;&#x72EC;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>^</strong>  &#x5339;&#x914D;&#x6574;&#x884C;&#x5F00;&#x5934; (&#x6BD4;&#x5982; <strong>^\d+</strong>&#x5339;&#x914D;&#x7684;&#x662F;&#x4EFB;&#x610F;&#x7684;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;&#x4E32;)</li>
-<li><strong>$</strong>   &#x5339;&#x914D;&#x6574;&#x884C;&#x7ED3;&#x5C3E; (&#x6BD4;&#x5982;<strong>\d+$</strong>&#x5339;&#x914D;&#x4EFB;&#x610F;&#x4EE5;&#x6570;&#x5B57;&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;)</li>
-<li><strong>\A</strong>  &#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x8F93;&#x5165;&#x7684;&#x5F00;&#x5934;</li>
-<li><strong>\z</strong> &#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x8F93;&#x5165;&#x7684;&#x7ED3;&#x5C3E;</li>
-<li><strong>.</strong> &#x4EFB;&#x610F;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>\s</strong> &#x4EFB;&#x610F;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>\S</strong>  &#x4EFB;&#x610F;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>\d</strong> &#x4EFB;&#x610F;&#x6570;&#x5B57;</li>
-<li><strong>\D</strong> &#x4EFB;&#x610F;&#x975E;&#x6570;&#x5B57;</li>
-<li><strong>\w</strong> &#x4EFB;&#x610F;&#x4EFB;&#x4F55;&#x5355;&#x5B57;&#x7B26;&#xFF08;&#x6570;&#x5B57;&#xFF0C;&#x5B57;&#x6BCD;&#xFF0C;&#x4E0B;&#x6ED1;&#x7EBF;&#xFF09;&#x3001;</li>
-<li><strong>\W</strong> &#x4EFB;&#x610F;&#x975E;&#x5B57;&#x7B26;</li>
-<li><strong>\B</strong> &#x5339;&#x914D;&#x4EFB;&#x610F;&#x94FE;&#x63A5;&#x5B57;&#x7B26;&#x4E32;</li>
-<li><strong>&#xFF08;&#x2026;&#xFF09;</strong> &#x6355;&#x83B7;&#x5C01;&#x95ED;&#x7684;&#x5185;&#x5BB9; </li>
-<li><strong>(a|b)</strong> &#x5339;&#x914D;a&#x6216;b</li>
-<li><strong>a?</strong> 0&#x6216;1&#x4E2A;a</li>
-<li><strong>a*</strong> 0&#x6216;&#x591A;&#x4E2A;a</li>
-<li><strong>a+</strong> 1&#x6216;&#x591A;&#x4E2A;a</li>
-<li><strong>a{3}</strong> &#x4E09;&#x4E2A;a</li>
-<li><strong>a{3,}</strong> 3&#x4E2A;&#x6216;&#x66F4;&#x591A;a</li>
-<li><strong>a{3,6}</strong> 3&#x5230;6&#x4E2A;a</li>
-<li><strong>i</strong> &#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199; <strong>m</strong> &#x5339;&#x914D;&#x591A;&#x884C; <strong>x</strong> &#x5FFD;&#x7565;&#x7A7A;&#x767D;</li>
+</code></pre><h2 id="正则匹配规则"><a href="#正则匹配规则" class="headerlink" title="正则匹配规则"></a>正则匹配规则</h2><ul>
+<li><strong>[abc]</strong>  单独的字符串 ：a,b或c</li>
+<li><strong>[^abc]</strong> 任意的单独字符串单不是a,b,或c</li>
+<li><strong>[a-z]</strong>  a-z任意的单独字符串</li>
+<li><strong>[a-zA-Z]</strong> a-z 或A-Z中任意的单独字符串</li>
+<li><strong>^</strong>  匹配整行开头 (比如 <strong>^\d+</strong>匹配的是任意的数字开头的字符串)</li>
+<li><strong>$</strong>   匹配整行结尾 (比如<strong>\d+$</strong>匹配任意以数字结尾的字符串)</li>
+<li><strong>\A</strong>  匹配字符串输入的开头</li>
+<li><strong>\z</strong> 匹配字符串输入的结尾</li>
+<li><strong>.</strong> 任意单个字符串</li>
+<li><strong>\s</strong> 任意空字符串</li>
+<li><strong>\S</strong>  任意非空字符串</li>
+<li><strong>\d</strong> 任意数字</li>
+<li><strong>\D</strong> 任意非数字</li>
+<li><strong>\w</strong> 任意任何单字符（数字，字母，下滑线）、</li>
+<li><strong>\W</strong> 任意非字符</li>
+<li><strong>\B</strong> 匹配任意链接字符串</li>
+<li><strong>（…）</strong> 捕获封闭的内容 </li>
+<li><strong>(a|b)</strong> 匹配a或b</li>
+<li><strong>a?</strong> 0或1个a</li>
+<li><strong>a*</strong> 0或多个a</li>
+<li><strong>a+</strong> 1或多个a</li>
+<li><strong>a{3}</strong> 三个a</li>
+<li><strong>a{3,}</strong> 3个或更多a</li>
+<li><strong>a{3,6}</strong> 3到6个a</li>
+<li><strong>i</strong> 忽略大小写 <strong>m</strong> 匹配多行 <strong>x</strong> 忽略空白</li>
 </ul>
 
             <blockquote>
