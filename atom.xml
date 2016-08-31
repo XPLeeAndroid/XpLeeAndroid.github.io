@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-08-12T06:57:46.375Z</updated>
+  <updated>2016-08-31T05:56:18.802Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -16,15 +16,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Life Record of My 撒欢</title>
+    <link href="http://xpleeandroid.github.io/2016/08/31/MyGoldRetriever/"/>
+    <id>http://xpleeandroid.github.io/2016/08/31/MyGoldRetriever/</id>
+    <published>2016-08-31T05:42:32.000Z</published>
+    <updated>2016-08-31T05:56:18.802Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;2016.08.31&lt;/strong&gt;&lt;br&gt;&amp;#x5927;&amp;#x6E05;&amp;#x65E9;&amp;#x7684;&amp;#xFF0C;&amp;#x968F;&amp;#x5730;&amp;#x5927;&amp;#x5C0F;&amp;#x4FBF;&amp;#x4E86;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;/2016/08/31/MyGoldRetriever/source/img/IMG20160831084548.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;2016.08.31&lt;/strong&gt;&lt;br&gt;&amp;#x5927;&amp;#x6E05;&amp;#x65E9;&amp;#x7684;&amp;#xFF0C;&amp;#x968F;&amp;#x5730;&amp;#x5927;&amp;#x5C0F;&amp;#x4FBF;&amp;#x4E86;&amp;#x3002;&lt;br&gt;&lt;img s
+    
+    </summary>
+    
+    
+      <category term="撒欢" scheme="http://xpleeandroid.github.io/tags/%E6%92%92%E6%AC%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SS用户说明</title>
     <link href="http://xpleeandroid.github.io/2016/08/12/ss-user-guide/"/>
     <id>http://xpleeandroid.github.io/2016/08/12/ss-user-guide/</id>
     <published>2016-08-12T06:54:55.000Z</published>
     <updated>2016-08-12T06:57:46.375Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;ShadowSocks使用说明&quot;&gt;&lt;a href=&quot;#ShadowSocks使用说明&quot; class=&quot;headerlink&quot; title=&quot;ShadowSocks使用说明&quot;&gt;&lt;/a&gt;ShadowSocks使用说明&lt;/h1&gt;&lt;p&gt;shadowsocks是一款开源的基于UDP转发的开源的科学上网工具&lt;/p&gt;
-&lt;h2 id=&quot;客户端下载与配置&quot;&gt;&lt;a href=&quot;#客户端下载与配置&quot; class=&quot;headerlink&quot; title=&quot;客户端下载与配置&quot;&gt;&lt;/a&gt;客户端下载与配置&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; title=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://shadowsocks.org/en/download/clients.html&lt;/a&gt;&lt;br&gt;提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  &lt;/p&gt;
-&lt;h3 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h3&gt;&lt;p&gt;Shadowsocks接收JSON格式的配置,形式如下：&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&quot;&gt;&lt;a href=&quot;#ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&quot; class=&quot;headerlink&quot; title=&quot;ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&quot;&gt;&lt;/a&gt;ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&lt;/h1&gt;&lt;p&gt;shadowsocks&amp;#x662F;&amp;#x4E00;&amp;#x6B3E;&amp;#x5F00;&amp;#x6E90;&amp;#x7684;&amp;#x57FA;&amp;#x4E8E;UDP&amp;#x8F6C;&amp;#x53D1;&amp;#x7684;&amp;#x5F00;&amp;#x6E90;&amp;#x7684;&amp;#x79D1;&amp;#x5B66;&amp;#x4E0A;&amp;#x7F51;&amp;#x5DE5;&amp;#x5177;&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E0E;&amp;#x914D;&amp;#x7F6E;&quot;&gt;&lt;a href=&quot;#&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E0E;&amp;#x914D;&amp;#x7F6E;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E0E;&amp;#x914D;&amp;#x7F6E;&quot;&gt;&lt;/a&gt;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E0E;&amp;#x914D;&amp;#x7F6E;&lt;/h2&gt;&lt;p&gt;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5730;&amp;#x5740;&amp;#xFF1A;&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; title=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://shadowsocks.org/en/download/clients.html&lt;/a&gt;&lt;br&gt;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT&amp;#x7684;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;  &lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&quot;&gt;&lt;/a&gt;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&lt;/h3&gt;&lt;p&gt;Shadowsocks&amp;#x63A5;&amp;#x6536;JSON&amp;#x683C;&amp;#x5F0F;&amp;#x7684;&amp;#x914D;&amp;#x7F6E;,&amp;#x5F62;&amp;#x5F0F;&amp;#x5982;&amp;#x4E0B;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{
 &amp;quot;server&amp;quot;:&amp;quot;my_server_ip&amp;quot;,
 &amp;quot;server_port&amp;quot;:8388,
@@ -34,29 +55,29 @@
 &amp;quot;method&amp;quot;:&amp;quot;table&amp;quot;,
 &amp;quot;auth&amp;quot;: true
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;字段解释&quot;&gt;&lt;a href=&quot;#字段解释&quot; class=&quot;headerlink&quot; title=&quot;字段解释&quot;&gt;&lt;/a&gt;字段解释&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;server&lt;/strong&gt; : 您的主机名或者服务器IP地址（IPV4/IPV6）  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;server_port&lt;/strong&gt; : 服务器端口号  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;local_port&lt;/strong&gt; : 本机端口号   &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;password&lt;/strong&gt; : 用于加密传输的密码  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;timeout&lt;/strong&gt; :链接超时时间，单位毫秒  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;method&lt;/strong&gt; :加密方式，“bf-cfb”,“aes-256-cfb”,”des-cfb”,”rc4”等。默认是table，并不安全，“aes-256-cfb”是推荐的方式 。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;auth&lt;/strong&gt; : 一次性认证，true表示开启一次性认真特性。  &lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;&amp;#x5B57;&amp;#x6BB5;&amp;#x89E3;&amp;#x91CA;&quot;&gt;&lt;a href=&quot;#&amp;#x5B57;&amp;#x6BB5;&amp;#x89E3;&amp;#x91CA;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5B57;&amp;#x6BB5;&amp;#x89E3;&amp;#x91CA;&quot;&gt;&lt;/a&gt;&amp;#x5B57;&amp;#x6BB5;&amp;#x89E3;&amp;#x91CA;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;server&lt;/strong&gt; : &amp;#x60A8;&amp;#x7684;&amp;#x4E3B;&amp;#x673A;&amp;#x540D;&amp;#x6216;&amp;#x8005;&amp;#x670D;&amp;#x52A1;&amp;#x5668;IP&amp;#x5730;&amp;#x5740;&amp;#xFF08;IPV4/IPV6&amp;#xFF09;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;server_port&lt;/strong&gt; : &amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x7AEF;&amp;#x53E3;&amp;#x53F7;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;local_port&lt;/strong&gt; : &amp;#x672C;&amp;#x673A;&amp;#x7AEF;&amp;#x53E3;&amp;#x53F7;   &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;password&lt;/strong&gt; : &amp;#x7528;&amp;#x4E8E;&amp;#x52A0;&amp;#x5BC6;&amp;#x4F20;&amp;#x8F93;&amp;#x7684;&amp;#x5BC6;&amp;#x7801;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;timeout&lt;/strong&gt; :&amp;#x94FE;&amp;#x63A5;&amp;#x8D85;&amp;#x65F6;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x5355;&amp;#x4F4D;&amp;#x6BEB;&amp;#x79D2;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;method&lt;/strong&gt; :&amp;#x52A0;&amp;#x5BC6;&amp;#x65B9;&amp;#x5F0F;&amp;#xFF0C;&amp;#x201C;bf-cfb&amp;#x201D;,&amp;#x201C;aes-256-cfb&amp;#x201D;,&amp;#x201D;des-cfb&amp;#x201D;,&amp;#x201D;rc4&amp;#x201D;&amp;#x7B49;&amp;#x3002;&amp;#x9ED8;&amp;#x8BA4;&amp;#x662F;table&amp;#xFF0C;&amp;#x5E76;&amp;#x4E0D;&amp;#x5B89;&amp;#x5168;&amp;#xFF0C;&amp;#x201C;aes-256-cfb&amp;#x201D;&amp;#x662F;&amp;#x63A8;&amp;#x8350;&amp;#x7684;&amp;#x65B9;&amp;#x5F0F; &amp;#x3002;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;auth&lt;/strong&gt; : &amp;#x4E00;&amp;#x6B21;&amp;#x6027;&amp;#x8BA4;&amp;#x8BC1;&amp;#xFF0C;true&amp;#x8868;&amp;#x793A;&amp;#x5F00;&amp;#x542F;&amp;#x4E00;&amp;#x6B21;&amp;#x6027;&amp;#x8BA4;&amp;#x771F;&amp;#x7279;&amp;#x6027;&amp;#x3002;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;获取账号与配置文件&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1 . &lt;strong&gt;获取SS账号&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;到&lt;a href=&quot;http://216.158.86.233/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://216.158.86.233/&lt;/a&gt; 获取注册凭邀请码注册账号  &lt;/p&gt;
-&lt;p&gt;2 . &lt;strong&gt;Windows客户端&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;下载&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows客户端&lt;/a&gt;&lt;br&gt;双击运行程序，在Windows右下角的图标区域就会多一个像纸飞机一样的图标，这个就是客户端程序&lt;br&gt;鼠标右键点击这个纸飞机图标，会出现客户端的主菜单&lt;br&gt;把SS账号的二维码图片显示在电脑上，在Windows的SS客户端上（注意：不是手机）点击“服务器选择”，“扫描屏幕上的二维码”， 客户端软件会识别屏幕上的二维码自动配置（电脑不需要有摄像头）&lt;/p&gt;
-&lt;p&gt;然后点击“确定”回到主菜单，选择“启用代理”和“开机启动”，让这两项前面都有对号，也就是选择上，这样客户端就配置好了。&lt;/p&gt;
-&lt;p&gt;在主菜单里面，点击代理模式，可以选择PAC模式或者全局模式，前者的意思是只有访问被墙的网站才通过SS账号访问，国内网站和国外没有被墙的网站不通过SS账号。全局模式则是所有访问都走SS。&lt;/p&gt;
-&lt;p&gt;3 . &lt;strong&gt;MAC OS 系统&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考OSX客户端使用说明 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#x83B7;&amp;#x53D6;&amp;#x8D26;&amp;#x53F7;&amp;#x4E0E;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1 . &lt;strong&gt;&amp;#x83B7;&amp;#x53D6;SS&amp;#x8D26;&amp;#x53F7;&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&amp;#x5230;&lt;a href=&quot;http://216.158.86.233/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://216.158.86.233/&lt;/a&gt; &amp;#x83B7;&amp;#x53D6;&amp;#x6CE8;&amp;#x518C;&amp;#x51ED;&amp;#x9080;&amp;#x8BF7;&amp;#x7801;&amp;#x6CE8;&amp;#x518C;&amp;#x8D26;&amp;#x53F7;  &lt;/p&gt;
+&lt;p&gt;2 . &lt;strong&gt;Windows&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E0B;&amp;#x8F7D;&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&lt;/a&gt;&lt;br&gt;&amp;#x53CC;&amp;#x51FB;&amp;#x8FD0;&amp;#x884C;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x5728;Windows&amp;#x53F3;&amp;#x4E0B;&amp;#x89D2;&amp;#x7684;&amp;#x56FE;&amp;#x6807;&amp;#x533A;&amp;#x57DF;&amp;#x5C31;&amp;#x4F1A;&amp;#x591A;&amp;#x4E00;&amp;#x4E2A;&amp;#x50CF;&amp;#x7EB8;&amp;#x98DE;&amp;#x673A;&amp;#x4E00;&amp;#x6837;&amp;#x7684;&amp;#x56FE;&amp;#x6807;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5C31;&amp;#x662F;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x7A0B;&amp;#x5E8F;&lt;br&gt;&amp;#x9F20;&amp;#x6807;&amp;#x53F3;&amp;#x952E;&amp;#x70B9;&amp;#x51FB;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7EB8;&amp;#x98DE;&amp;#x673A;&amp;#x56FE;&amp;#x6807;&amp;#xFF0C;&amp;#x4F1A;&amp;#x51FA;&amp;#x73B0;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x7684;&amp;#x4E3B;&amp;#x83DC;&amp;#x5355;&lt;br&gt;&amp;#x628A;SS&amp;#x8D26;&amp;#x53F7;&amp;#x7684;&amp;#x4E8C;&amp;#x7EF4;&amp;#x7801;&amp;#x56FE;&amp;#x7247;&amp;#x663E;&amp;#x793A;&amp;#x5728;&amp;#x7535;&amp;#x8111;&amp;#x4E0A;&amp;#xFF0C;&amp;#x5728;Windows&amp;#x7684;SS&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0A;&amp;#xFF08;&amp;#x6CE8;&amp;#x610F;&amp;#xFF1A;&amp;#x4E0D;&amp;#x662F;&amp;#x624B;&amp;#x673A;&amp;#xFF09;&amp;#x70B9;&amp;#x51FB;&amp;#x201C;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x9009;&amp;#x62E9;&amp;#x201D;&amp;#xFF0C;&amp;#x201C;&amp;#x626B;&amp;#x63CF;&amp;#x5C4F;&amp;#x5E55;&amp;#x4E0A;&amp;#x7684;&amp;#x4E8C;&amp;#x7EF4;&amp;#x7801;&amp;#x201D;&amp;#xFF0C; &amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x8F6F;&amp;#x4EF6;&amp;#x4F1A;&amp;#x8BC6;&amp;#x522B;&amp;#x5C4F;&amp;#x5E55;&amp;#x4E0A;&amp;#x7684;&amp;#x4E8C;&amp;#x7EF4;&amp;#x7801;&amp;#x81EA;&amp;#x52A8;&amp;#x914D;&amp;#x7F6E;&amp;#xFF08;&amp;#x7535;&amp;#x8111;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x6709;&amp;#x6444;&amp;#x50CF;&amp;#x5934;&amp;#xFF09;&lt;/p&gt;
+&lt;p&gt;&amp;#x7136;&amp;#x540E;&amp;#x70B9;&amp;#x51FB;&amp;#x201C;&amp;#x786E;&amp;#x5B9A;&amp;#x201D;&amp;#x56DE;&amp;#x5230;&amp;#x4E3B;&amp;#x83DC;&amp;#x5355;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&amp;#x201C;&amp;#x542F;&amp;#x7528;&amp;#x4EE3;&amp;#x7406;&amp;#x201D;&amp;#x548C;&amp;#x201C;&amp;#x5F00;&amp;#x673A;&amp;#x542F;&amp;#x52A8;&amp;#x201D;&amp;#xFF0C;&amp;#x8BA9;&amp;#x8FD9;&amp;#x4E24;&amp;#x9879;&amp;#x524D;&amp;#x9762;&amp;#x90FD;&amp;#x6709;&amp;#x5BF9;&amp;#x53F7;&amp;#xFF0C;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;&amp;#x9009;&amp;#x62E9;&amp;#x4E0A;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x5C31;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;&amp;#x4E3B;&amp;#x83DC;&amp;#x5355;&amp;#x91CC;&amp;#x9762;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&amp;#x4EE3;&amp;#x7406;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x9009;&amp;#x62E9;PAC&amp;#x6A21;&amp;#x5F0F;&amp;#x6216;&amp;#x8005;&amp;#x5168;&amp;#x5C40;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x524D;&amp;#x8005;&amp;#x7684;&amp;#x610F;&amp;#x601D;&amp;#x662F;&amp;#x53EA;&amp;#x6709;&amp;#x8BBF;&amp;#x95EE;&amp;#x88AB;&amp;#x5899;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#x624D;&amp;#x901A;&amp;#x8FC7;SS&amp;#x8D26;&amp;#x53F7;&amp;#x8BBF;&amp;#x95EE;&amp;#xFF0C;&amp;#x56FD;&amp;#x5185;&amp;#x7F51;&amp;#x7AD9;&amp;#x548C;&amp;#x56FD;&amp;#x5916;&amp;#x6CA1;&amp;#x6709;&amp;#x88AB;&amp;#x5899;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#x4E0D;&amp;#x901A;&amp;#x8FC7;SS&amp;#x8D26;&amp;#x53F7;&amp;#x3002;&amp;#x5168;&amp;#x5C40;&amp;#x6A21;&amp;#x5F0F;&amp;#x5219;&amp;#x662F;&amp;#x6240;&amp;#x6709;&amp;#x8BBF;&amp;#x95EE;&amp;#x90FD;&amp;#x8D70;SS&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;3 . &lt;strong&gt;MAC OS &amp;#x7CFB;&amp;#x7EDF;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x53C2;&amp;#x8003;OSX&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E; &lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;ShadowSocks使用说明&quot;&gt;&lt;a href=&quot;#ShadowSocks使用说明&quot; class=&quot;headerlink&quot; title=&quot;ShadowSocks使用说明&quot;&gt;&lt;/a&gt;ShadowSocks使用说明&lt;/h1&gt;&lt;p&gt;shadowsocks是一款开源的基
+      &lt;h1 id=&quot;ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&quot;&gt;&lt;a href=&quot;#ShadowSocks&amp;#x4F7F;&amp;#x7528;&amp;#x8BF4;&amp;#x660E;&quot; class=&quot;headerlink&quot; title=&quot;Shadow
     
     </summary>
     
@@ -73,24 +94,22 @@
     <updated>2016-08-10T08:20:25.126Z</updated>
     
     <content type="html">&lt;ul&gt;
-&lt;li&gt;ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态&lt;/li&gt;
-&lt;li&gt;ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 &lt;/li&gt;
-&lt;li&gt;kill -9 pid 强制杀死进程pid&lt;/li&gt;
-&lt;li&gt;service iptabes stop 停止防火墙 centos7之前版本&lt;/li&gt;
-&lt;li&gt;chkconfig iptables off 禁用防火墙 centos7之前版本&lt;/li&gt;
-&lt;li&gt;systemctl stop firewalld.service 停止防火墙 centos7&lt;/li&gt;
-&lt;li&gt;systemctl disable firewalld.service 禁用防火墙 centos7&lt;/li&gt;
+&lt;li&gt;ps -aux | grep servers.py &amp;#x67E5;&amp;#x770B;servers.py&amp;#x540E;&amp;#x53F0;&amp;#x8FDB;&amp;#x7A0B; -aux &amp;#x663E;&amp;#x793A;&amp;#x6240;&amp;#x6709;&amp;#x72B6;&amp;#x6001;&lt;/li&gt;
+&lt;li&gt;ps -ef | grep servers.py -e:&amp;#x663E;&amp;#x793A;&amp;#x6240;&amp;#x6709;&amp;#x8FDB;&amp;#x7A0B;&amp;#xFF0C;&amp;#x73AF;&amp;#x5883;&amp;#x53D8;&amp;#x91CF;&amp;#xFF1B;-f:&amp;#x5168;&amp;#x683C;&amp;#x5F0F; -h &amp;#x4E0D;&amp;#x663E;&amp;#x793A;&amp;#x6807;&amp;#x9898; &lt;/li&gt;
+&lt;li&gt;kill -9 pid &amp;#x5F3A;&amp;#x5236;&amp;#x6740;&amp;#x6B7B;&amp;#x8FDB;&amp;#x7A0B;pid&lt;/li&gt;
+&lt;li&gt;service iptabes stop &amp;#x505C;&amp;#x6B62;&amp;#x9632;&amp;#x706B;&amp;#x5899; centos7&amp;#x4E4B;&amp;#x524D;&amp;#x7248;&amp;#x672C;&lt;/li&gt;
+&lt;li&gt;chkconfig iptables off &amp;#x7981;&amp;#x7528;&amp;#x9632;&amp;#x706B;&amp;#x5899; centos7&amp;#x4E4B;&amp;#x524D;&amp;#x7248;&amp;#x672C;&lt;/li&gt;
+&lt;li&gt;systemctl stop firewalld.service &amp;#x505C;&amp;#x6B62;&amp;#x9632;&amp;#x706B;&amp;#x5899; centos7&lt;/li&gt;
+&lt;li&gt;systemctl disable firewalld.service &amp;#x7981;&amp;#x7528;&amp;#x9632;&amp;#x706B;&amp;#x5899; centos7&lt;/li&gt;
 &lt;li&gt;chmod -R 777 shadowsocks-rm&lt;/li&gt;
-&lt;li&gt;mv ss-panel/{.,}* .; rmdir ss-panel 移动ss-panel文件夹下的内容到上级目录，并且删除ss-panel目录&lt;/li&gt;
+&lt;li&gt;mv ss-panel/{.,}* .; rmdir ss-panel &amp;#x79FB;&amp;#x52A8;ss-panel&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x4E0B;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x5230;&amp;#x4E0A;&amp;#x7EA7;&amp;#x76EE;&amp;#x5F55;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x5220;&amp;#x9664;ss-panel&amp;#x76EE;&amp;#x5F55;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态&lt;/li&gt;
-&lt;li&gt;ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 &lt;/li&gt;
-&lt;li&gt;k
+&lt;li&gt;ps -aux | grep servers.py &amp;#x67E5;&amp;#x770B;servers.py&amp;#x540E;&amp;#x53F0;&amp;#x8FDB;&amp;#x7A0B; -aux &amp;#x663E;&amp;#x793A;&amp;#x6240;&amp;#x6709;&amp;#x72B6;&amp;
     
     </summary>
     
@@ -108,15 +127,15 @@
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Thread-Pools-线程池&quot;&gt;&lt;a href=&quot;#Thread-Pools-线程池&quot; class=&quot;headerlink&quot; title=&quot;Thread Pools (线程池)&quot;&gt;&lt;/a&gt;Thread Pools (线程池)&lt;/h1&gt;&lt;p&gt;一个线程池管理一池的工作线程（准确的数量依赖于它的实现方式）。&lt;br&gt;一个task队列等待池中的空闲线程执行队列中的task.Task被生产者加入队列中，工作线程作为消费者，只要池中有空闲线程在等待新的后台任务，就会从task队列中消费任务。&lt;/p&gt;
-&lt;h1 id=&quot;ThreadPoolExcutor&quot;&gt;&lt;a href=&quot;#ThreadPoolExcutor&quot; class=&quot;headerlink&quot; title=&quot;ThreadPoolExcutor&quot;&gt;&lt;/a&gt;ThreadPoolExcutor&lt;/h1&gt;&lt;p&gt;ThreadPoolExcutor 从线程池中的一个线程执行一个给定的task。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2016/07/29/using-threadpoolexcuter-in-android/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x8FD9;&amp;#x7BC7;&amp;#x6587;&amp;#x7AE0;&amp;#x5C06;&amp;#x6D89;&amp;#x53CA;&amp;#x5230;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#xFF0C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x6267;&amp;#x884C;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x548C;&amp;#x4ED6;&amp;#x4EEC;&amp;#x5728;Android&amp;#x4E2D;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&lt;br&gt;&amp;#x6211;&amp;#x4EEC;&amp;#x5C06;&amp;#x4F7F;&amp;#x7528;&amp;#x5F88;&amp;#x591A;&amp;#x7684;&amp;#x5229;&amp;#x7528;&amp;#xFF0C;&amp;#x8BE6;&amp;#x7EC6;&amp;#x7684;&amp;#xFF08;thoroughly&amp;#xFF09;&amp;#x4ECB;&amp;#x7ECD;&amp;#x8FD9;&amp;#x4E9B;&amp;#x4E3B;&amp;#x9898;&amp;#x3002;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Thread-Pools-&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&quot;&gt;&lt;a href=&quot;#Thread-Pools-&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&quot; class=&quot;headerlink&quot; title=&quot;Thread Pools (&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;)&quot;&gt;&lt;/a&gt;Thread Pools (&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;)&lt;/h1&gt;&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x7BA1;&amp;#x7406;&amp;#x4E00;&amp;#x6C60;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x7EBF;&amp;#x7A0B;&amp;#xFF08;&amp;#x51C6;&amp;#x786E;&amp;#x7684;&amp;#x6570;&amp;#x91CF;&amp;#x4F9D;&amp;#x8D56;&amp;#x4E8E;&amp;#x5B83;&amp;#x7684;&amp;#x5B9E;&amp;#x73B0;&amp;#x65B9;&amp;#x5F0F;&amp;#xFF09;&amp;#x3002;&lt;br&gt;&amp;#x4E00;&amp;#x4E2A;task&amp;#x961F;&amp;#x5217;&amp;#x7B49;&amp;#x5F85;&amp;#x6C60;&amp;#x4E2D;&amp;#x7684;&amp;#x7A7A;&amp;#x95F2;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6267;&amp;#x884C;&amp;#x961F;&amp;#x5217;&amp;#x4E2D;&amp;#x7684;task.Task&amp;#x88AB;&amp;#x751F;&amp;#x4EA7;&amp;#x8005;&amp;#x52A0;&amp;#x5165;&amp;#x961F;&amp;#x5217;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5DE5;&amp;#x4F5C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4F5C;&amp;#x4E3A;&amp;#x6D88;&amp;#x8D39;&amp;#x8005;&amp;#xFF0C;&amp;#x53EA;&amp;#x8981;&amp;#x6C60;&amp;#x4E2D;&amp;#x6709;&amp;#x7A7A;&amp;#x95F2;&amp;#x7EBF;&amp;#x7A0B;&amp;#x5728;&amp;#x7B49;&amp;#x5F85;&amp;#x65B0;&amp;#x7684;&amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;&amp;#xFF0C;&amp;#x5C31;&amp;#x4F1A;&amp;#x4ECE;task&amp;#x961F;&amp;#x5217;&amp;#x4E2D;&amp;#x6D88;&amp;#x8D39;&amp;#x4EFB;&amp;#x52A1;&amp;#x3002;&lt;/p&gt;
+&lt;h1 id=&quot;ThreadPoolExcutor&quot;&gt;&lt;a href=&quot;#ThreadPoolExcutor&quot; class=&quot;headerlink&quot; title=&quot;ThreadPoolExcutor&quot;&gt;&lt;/a&gt;ThreadPoolExcutor&lt;/h1&gt;&lt;p&gt;ThreadPoolExcutor &amp;#x4ECE;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x4E2D;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6267;&amp;#x884C;&amp;#x4E00;&amp;#x4E2A;&amp;#x7ED9;&amp;#x5B9A;&amp;#x7684;task&amp;#x3002;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
 int corePoolSize,
 int maximumPoolSize,
@@ -124,19 +143,19 @@ long keepAliveTime,
 TimeUnit unit,
 BlockingQueue&amp;lt;Runnable&amp;gt; workQueue
 );
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x53C2;&amp;#x6570;&amp;#x89E3;&amp;#x91CA;&amp;#xFF1A;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;corePoolSize:&lt;/strong&gt; 线程池中保留线程的最小数目，最开始线程池中没有线程，但是随着task被加入队列，新线程被创建。如果有空闲的线程，但是线程的数目小于corePoolSize，就会创建新的线程。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;maximumPoolSize:&lt;/strong&gt; 线程池中线程的最大值，如果线程数量超过corePoolSize,线程数量&amp;gt;=corePoolSize,那么只有队列满的时候才会创建新的工作线程。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;keepAliveTime:&lt;/strong&gt; 当线程数量超过corepoolsize，非corepoolsize的空闲线程将等待一个新的task，如果在这个定义的时间参数内没有等到新的task，该线程将被终止。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;unit：&lt;/strong&gt; &lt;strong&gt;keppAliveTime&lt;/strong&gt;的时间单位&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;workQueue:&lt;/strong&gt;  task队列，持有runnable task，必须是一个&lt;a href=&quot;https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BlockingQueue&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;corePoolSize:&lt;/strong&gt; &amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x4E2D;&amp;#x4FDD;&amp;#x7559;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x6700;&amp;#x5C0F;&amp;#x6570;&amp;#x76EE;&amp;#xFF0C;&amp;#x6700;&amp;#x5F00;&amp;#x59CB;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x4E2D;&amp;#x6CA1;&amp;#x6709;&amp;#x7EBF;&amp;#x7A0B;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x968F;&amp;#x7740;task&amp;#x88AB;&amp;#x52A0;&amp;#x5165;&amp;#x961F;&amp;#x5217;&amp;#xFF0C;&amp;#x65B0;&amp;#x7EBF;&amp;#x7A0B;&amp;#x88AB;&amp;#x521B;&amp;#x5EFA;&amp;#x3002;&amp;#x5982;&amp;#x679C;&amp;#x6709;&amp;#x7A7A;&amp;#x95F2;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x6570;&amp;#x76EE;&amp;#x5C0F;&amp;#x4E8E;corePoolSize&amp;#xFF0C;&amp;#x5C31;&amp;#x4F1A;&amp;#x521B;&amp;#x5EFA;&amp;#x65B0;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;maximumPoolSize:&lt;/strong&gt; &amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x4E2D;&amp;#x7EBF;&amp;#x7A0B;&amp;#x7684;&amp;#x6700;&amp;#x5927;&amp;#x503C;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6570;&amp;#x91CF;&amp;#x8D85;&amp;#x8FC7;corePoolSize,&amp;#x7EBF;&amp;#x7A0B;&amp;#x6570;&amp;#x91CF;&amp;gt;=corePoolSize,&amp;#x90A3;&amp;#x4E48;&amp;#x53EA;&amp;#x6709;&amp;#x961F;&amp;#x5217;&amp;#x6EE1;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x624D;&amp;#x4F1A;&amp;#x521B;&amp;#x5EFA;&amp;#x65B0;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;keepAliveTime:&lt;/strong&gt; &amp;#x5F53;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6570;&amp;#x91CF;&amp;#x8D85;&amp;#x8FC7;corepoolsize&amp;#xFF0C;&amp;#x975E;corepoolsize&amp;#x7684;&amp;#x7A7A;&amp;#x95F2;&amp;#x7EBF;&amp;#x7A0B;&amp;#x5C06;&amp;#x7B49;&amp;#x5F85;&amp;#x4E00;&amp;#x4E2A;&amp;#x65B0;&amp;#x7684;task&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x5728;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x53C2;&amp;#x6570;&amp;#x5185;&amp;#x6CA1;&amp;#x6709;&amp;#x7B49;&amp;#x5230;&amp;#x65B0;&amp;#x7684;task&amp;#xFF0C;&amp;#x8BE5;&amp;#x7EBF;&amp;#x7A0B;&amp;#x5C06;&amp;#x88AB;&amp;#x7EC8;&amp;#x6B62;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;unit&amp;#xFF1A;&lt;/strong&gt; &lt;strong&gt;keppAliveTime&lt;/strong&gt;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x5355;&amp;#x4F4D;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;workQueue:&lt;/strong&gt;  task&amp;#x961F;&amp;#x5217;&amp;#xFF0C;&amp;#x6301;&amp;#x6709;runnable task&amp;#xFF0C;&amp;#x5FC5;&amp;#x987B;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&lt;a href=&quot;https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BlockingQueue&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;为什么在Android和JAVA应用程序中使用Thread-Pool-Executor&quot;&gt;&lt;a href=&quot;#为什么在Android和JAVA应用程序中使用Thread-Pool-Executor&quot; class=&quot;headerlink&quot; title=&quot;为什么在Android和JAVA应用程序中使用Thread Pool Executor?&quot;&gt;&lt;/a&gt;为什么在Android和JAVA应用程序中使用Thread Pool Executor?&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;它是一个强大的任务执行框架，支持任务添加到队列，任务取消，任务优先级。&lt;/li&gt;
-&lt;li&gt;降低了线程创建的开销，它在线程池内管理一定数量的线程。&lt;/li&gt;
+&lt;h1 id=&quot;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x5728;Android&amp;#x548C;JAVA&amp;#x5E94;&amp;#x7528;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;Thread-Pool-Executor&quot;&gt;&lt;a href=&quot;#&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x5728;Android&amp;#x548C;JAVA&amp;#x5E94;&amp;#x7528;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;Thread-Pool-Executor&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x5728;Android&amp;#x548C;JAVA&amp;#x5E94;&amp;#x7528;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;Thread Pool Executor?&quot;&gt;&lt;/a&gt;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x5728;Android&amp;#x548C;JAVA&amp;#x5E94;&amp;#x7528;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;Thread Pool Executor?&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F3A;&amp;#x5927;&amp;#x7684;&amp;#x4EFB;&amp;#x52A1;&amp;#x6267;&amp;#x884C;&amp;#x6846;&amp;#x67B6;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x4EFB;&amp;#x52A1;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x961F;&amp;#x5217;&amp;#xFF0C;&amp;#x4EFB;&amp;#x52A1;&amp;#x53D6;&amp;#x6D88;&amp;#xFF0C;&amp;#x4EFB;&amp;#x52A1;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;&amp;#x964D;&amp;#x4F4E;&amp;#x4E86;&amp;#x7EBF;&amp;#x7A0B;&amp;#x521B;&amp;#x5EFA;&amp;#x7684;&amp;#x5F00;&amp;#x9500;&amp;#xFF0C;&amp;#x5B83;&amp;#x5728;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x5185;&amp;#x7BA1;&amp;#x7406;&amp;#x4E00;&amp;#x5B9A;&amp;#x6570;&amp;#x91CF;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x3002;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;在Android中使用ThreadPoolExcutor&quot;&gt;&lt;a href=&quot;#在Android中使用ThreadPoolExcutor&quot; class=&quot;headerlink&quot; title=&quot;在Android中使用ThreadPoolExcutor&quot;&gt;&lt;/a&gt;在Android中使用ThreadPoolExcutor&lt;/h1&gt;&lt;p&gt;首先，创建一个PriorityThreadFactory:&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x5728;Android&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;ThreadPoolExcutor&quot;&gt;&lt;a href=&quot;#&amp;#x5728;Android&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;ThreadPoolExcutor&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5728;Android&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;ThreadPoolExcutor&quot;&gt;&lt;/a&gt;&amp;#x5728;Android&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;ThreadPoolExcutor&lt;/h1&gt;&lt;p&gt;&amp;#x9996;&amp;#x5148;&amp;#xFF0C;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityThreadFactory:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import android.os.Process;
 
 import java.util.concurrent.ThreadFactory;
@@ -171,7 +190,7 @@ public Thread newThread(final Runnable r) {
     return new Thread(runnable);
 }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建一个MainThreadExecutor:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;MainThreadExecutor:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import android.os.Handler;
 import android.os.Looper;
 
@@ -191,7 +210,7 @@ public void execute(Runnable command) {
 
 }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建一个DefaultExecutorSupplier:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;DefaultExecutorSupplier:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import android.os.Process;
 
 import java.util.concurrent.Executor;
@@ -206,27 +225,27 @@ import java.util.concurrent.TimeUnit;
  */
 public class DefaultExecutorSupplier {
 /*
-    *指定线程数量
+    *&amp;#x6307;&amp;#x5B9A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6570;&amp;#x91CF;
  */
 public static final int NUMBER_OF_CORES = Runtime.getRuntime().availableProcessors();
 /**
-     * 后台任务的线程池
+     * &amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;
  */
 private final ThreadPoolExecutor mForBackgroundTasks;
 /**
-     * 轻量后台任务的线程池
+     * &amp;#x8F7B;&amp;#x91CF;&amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;
  */
 private final ThreadPoolExecutor mForLightWeightBackgroundTasks;
 
 /**
-     * 主线程任务的线程池executor
+     * &amp;#x4E3B;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4EFB;&amp;#x52A1;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;executor
  */
 private final Executor mMainThreadExcutor;
 
 private static DefaultExecutorSupplier mInstance;
 
 /**
-     * 返回DefaultExecutorSupplier的实例
+     * &amp;#x8FD4;&amp;#x56DE;DefaultExecutorSupplier&amp;#x7684;&amp;#x5B9E;&amp;#x4F8B;
  */
 public static DefaultExecutorSupplier getInstance() {
 
@@ -289,47 +308,47 @@ public Executor forMainThreadTasks() {
 
 
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;注意：不同线程池的数量依赖于你的需求&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;现在在你的代码中这样使用&quot;&gt;&lt;a href=&quot;#现在在你的代码中这样使用&quot; class=&quot;headerlink&quot; title=&quot;现在在你的代码中这样使用&quot;&gt;&lt;/a&gt;现在在你的代码中这样使用&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;    /*
-    * 后台任务
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;&amp;#x6CE8;&amp;#x610F;&amp;#xFF1A;&amp;#x4E0D;&amp;#x540C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x7684;&amp;#x6570;&amp;#x91CF;&amp;#x4F9D;&amp;#x8D56;&amp;#x4E8E;&amp;#x4F60;&amp;#x7684;&amp;#x9700;&amp;#x6C42;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x73B0;&amp;#x5728;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x8FD9;&amp;#x6837;&amp;#x4F7F;&amp;#x7528;&quot;&gt;&lt;a href=&quot;#&amp;#x73B0;&amp;#x5728;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x8FD9;&amp;#x6837;&amp;#x4F7F;&amp;#x7528;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x73B0;&amp;#x5728;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x8FD9;&amp;#x6837;&amp;#x4F7F;&amp;#x7528;&quot;&gt;&lt;/a&gt;&amp;#x73B0;&amp;#x5728;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x4E2D;&amp;#x8FD9;&amp;#x6837;&amp;#x4F7F;&amp;#x7528;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;    /*
+    * &amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;
     */
 public void doSomeBackgroundWork() {
     DefaultExecutorSupplier.getInstance().forBackgroundTasks()
             .execute(new Runnable() {
                 @Override
                 public void run() {
-                    // 在这里后台工作.
+                    // &amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x540E;&amp;#x53F0;&amp;#x5DE5;&amp;#x4F5C;.
                 }
             });
 }
 
 /*
-    * 轻量后台任务
+    * &amp;#x8F7B;&amp;#x91CF;&amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;
     */
 public void doSomeLightWeightBackgroundWork() {
     DefaultExecutorSupplier.getInstance().forLightWeightBackgroundTasks()
             .execute(new Runnable() {
                 @Override
                 public void run() {
-                    // 在这里做一些轻量后台工作.
+                    // &amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x505A;&amp;#x4E00;&amp;#x4E9B;&amp;#x8F7B;&amp;#x91CF;&amp;#x540E;&amp;#x53F0;&amp;#x5DE5;&amp;#x4F5C;.
                 }
             });
 }
 
 /*
-    * 主线程任务
+    * &amp;#x4E3B;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4EFB;&amp;#x52A1;
     */
 public void doSomeMainThreadWork() {
     DefaultExecutorSupplier.getInstance().forMainThreadTasks()
             .execute(new Runnable() {
                 @Override
                 public void run() {
-                    // 做一些中线程工作.
+                    // &amp;#x505A;&amp;#x4E00;&amp;#x4E9B;&amp;#x4E2D;&amp;#x7EBF;&amp;#x7A0B;&amp;#x5DE5;&amp;#x4F5C;.
                 }
             });
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样，我们可以为网络任务，I/O任务，重型的后台任务和其他任务创建不同的线程池。&lt;/p&gt;
-&lt;h1 id=&quot;怎样取消一个task？&quot;&gt;&lt;a href=&quot;#怎样取消一个task？&quot; class=&quot;headerlink&quot; title=&quot;怎样取消一个task？&quot;&gt;&lt;/a&gt;怎样取消一个task？&lt;/h1&gt;&lt;p&gt;为了取消一个task，你必须得到task的&lt;strong&gt;future&lt;/strong&gt;。所以，不要使用&lt;strong&gt;execute&lt;/strong&gt;，使用&lt;strong&gt;submit&lt;/strong&gt;，将返回一个future。现在future就可以用来取消task了。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x8FD9;&amp;#x6837;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E3A;&amp;#x7F51;&amp;#x7EDC;&amp;#x4EFB;&amp;#x52A1;&amp;#xFF0C;I/O&amp;#x4EFB;&amp;#x52A1;&amp;#xFF0C;&amp;#x91CD;&amp;#x578B;&amp;#x7684;&amp;#x540E;&amp;#x53F0;&amp;#x4EFB;&amp;#x52A1;&amp;#x548C;&amp;#x5176;&amp;#x4ED6;&amp;#x4EFB;&amp;#x52A1;&amp;#x521B;&amp;#x5EFA;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x3002;&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x600E;&amp;#x6837;&amp;#x53D6;&amp;#x6D88;&amp;#x4E00;&amp;#x4E2A;task&amp;#xFF1F;&quot;&gt;&lt;a href=&quot;#&amp;#x600E;&amp;#x6837;&amp;#x53D6;&amp;#x6D88;&amp;#x4E00;&amp;#x4E2A;task&amp;#xFF1F;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x600E;&amp;#x6837;&amp;#x53D6;&amp;#x6D88;&amp;#x4E00;&amp;#x4E2A;task&amp;#xFF1F;&quot;&gt;&lt;/a&gt;&amp;#x600E;&amp;#x6837;&amp;#x53D6;&amp;#x6D88;&amp;#x4E00;&amp;#x4E2A;task&amp;#xFF1F;&lt;/h1&gt;&lt;p&gt;&amp;#x4E3A;&amp;#x4E86;&amp;#x53D6;&amp;#x6D88;&amp;#x4E00;&amp;#x4E2A;task&amp;#xFF0C;&amp;#x4F60;&amp;#x5FC5;&amp;#x987B;&amp;#x5F97;&amp;#x5230;task&amp;#x7684;&lt;strong&gt;future&lt;/strong&gt;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8981;&amp;#x4F7F;&amp;#x7528;&lt;strong&gt;execute&lt;/strong&gt;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&lt;strong&gt;submit&lt;/strong&gt;&amp;#xFF0C;&amp;#x5C06;&amp;#x8FD4;&amp;#x56DE;&amp;#x4E00;&amp;#x4E2A;future&amp;#x3002;&amp;#x73B0;&amp;#x5728;future&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x7528;&amp;#x6765;&amp;#x53D6;&amp;#x6D88;task&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Future future= DefaultExecutorSupplier.getInstance().forBackgroundTasks()
            .submit(new Runnable() {
                @Override
@@ -339,35 +358,35 @@ public void doSomeMainThreadWork() {
            });
 
    future.cancel(true);
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;如何设置task的优先级？&quot;&gt;&lt;a href=&quot;#如何设置task的优先级？&quot; class=&quot;headerlink&quot; title=&quot;如何设置task的优先级？&quot;&gt;&lt;/a&gt;如何设置task的优先级？&lt;/h1&gt;&lt;p&gt;假设队列里有20个任务，线程池持有4个线程，我们根据task的优先级处理他们，因为线程池此时同时可处理4个线程。&lt;/p&gt;
-&lt;p&gt;但是假设我们需要我们最后推进队列的任务最先执行，我们需要为该任务设置&lt;strong&gt;立即&lt;/strong&gt;的优先当线程从队列里拿取新任务时。&lt;/p&gt;
-&lt;p&gt;为了设置任务的优先级，我们需要创建一个线程池executor。&lt;/p&gt;
-&lt;p&gt;为优先级创建一个枚举类:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;&amp;#x5982;&amp;#x4F55;&amp;#x8BBE;&amp;#x7F6E;task&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF1F;&quot;&gt;&lt;a href=&quot;#&amp;#x5982;&amp;#x4F55;&amp;#x8BBE;&amp;#x7F6E;task&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF1F;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5982;&amp;#x4F55;&amp;#x8BBE;&amp;#x7F6E;task&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF1F;&quot;&gt;&lt;/a&gt;&amp;#x5982;&amp;#x4F55;&amp;#x8BBE;&amp;#x7F6E;task&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF1F;&lt;/h1&gt;&lt;p&gt;&amp;#x5047;&amp;#x8BBE;&amp;#x961F;&amp;#x5217;&amp;#x91CC;&amp;#x6709;20&amp;#x4E2A;&amp;#x4EFB;&amp;#x52A1;&amp;#xFF0C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x6301;&amp;#x6709;4&amp;#x4E2A;&amp;#x7EBF;&amp;#x7A0B;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x6839;&amp;#x636E;task&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#x5904;&amp;#x7406;&amp;#x4ED6;&amp;#x4EEC;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x6B64;&amp;#x65F6;&amp;#x540C;&amp;#x65F6;&amp;#x53EF;&amp;#x5904;&amp;#x7406;4&amp;#x4E2A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F46;&amp;#x662F;&amp;#x5047;&amp;#x8BBE;&amp;#x6211;&amp;#x4EEC;&amp;#x9700;&amp;#x8981;&amp;#x6211;&amp;#x4EEC;&amp;#x6700;&amp;#x540E;&amp;#x63A8;&amp;#x8FDB;&amp;#x961F;&amp;#x5217;&amp;#x7684;&amp;#x4EFB;&amp;#x52A1;&amp;#x6700;&amp;#x5148;&amp;#x6267;&amp;#x884C;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x9700;&amp;#x8981;&amp;#x4E3A;&amp;#x8BE5;&amp;#x4EFB;&amp;#x52A1;&amp;#x8BBE;&amp;#x7F6E;&lt;strong&gt;&amp;#x7ACB;&amp;#x5373;&lt;/strong&gt;&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x5F53;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4ECE;&amp;#x961F;&amp;#x5217;&amp;#x91CC;&amp;#x62FF;&amp;#x53D6;&amp;#x65B0;&amp;#x4EFB;&amp;#x52A1;&amp;#x65F6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E3A;&amp;#x4E86;&amp;#x8BBE;&amp;#x7F6E;&amp;#x4EFB;&amp;#x52A1;&amp;#x7684;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x9700;&amp;#x8981;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;executor&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E3A;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x679A;&amp;#x4E3E;&amp;#x7C7B;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/**
  * Created by Adam on 2016/7/29.
  */
 public enum Priority {
 /**
-     * 注意：不要在任何情况下改变顺序，否则会使排序不准确
+     * &amp;#x6CE8;&amp;#x610F;&amp;#xFF1A;&amp;#x4E0D;&amp;#x8981;&amp;#x5728;&amp;#x4EFB;&amp;#x4F55;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#x6539;&amp;#x53D8;&amp;#x987A;&amp;#x5E8F;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x4F7F;&amp;#x6392;&amp;#x5E8F;&amp;#x4E0D;&amp;#x51C6;&amp;#x786E;
  */
 /**
-     * 最低优先级，预加载数据用
+     * &amp;#x6700;&amp;#x4F4E;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF0C;&amp;#x9884;&amp;#x52A0;&amp;#x8F7D;&amp;#x6570;&amp;#x636E;&amp;#x7528;
  */
 LOW,
 /**
-     * 中优先级
+     * &amp;#x4E2D;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;
  */
 MEDIUM,
 /**
-     * 高优先级
+     * &amp;#x9AD8;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;
  */
 HIGH,
 /**
-     * 立即
+     * &amp;#x7ACB;&amp;#x5373;
  */
 IMMEDIATE,
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;创建一个PriorityRunnable&quot;&gt;&lt;a href=&quot;#创建一个PriorityRunnable&quot; class=&quot;headerlink&quot; title=&quot;创建一个PriorityRunnable&quot;&gt;&lt;/a&gt;创建一个PriorityRunnable&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;public class PriorityRunnable implements Runnable {
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityRunnable&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityRunnable&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityRunnable&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityRunnable&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;public class PriorityRunnable implements Runnable {
 
 private final Priority priority;
 
@@ -383,7 +402,7 @@ public Priority getPriority(){
     return  priority;
 }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建一个PriorityThreadPoolExecutor,继承自ThreadPoolExecutor.我们必须创建PriorityFutureTask,将实现Comparable&lt;priorityfuturetask&gt;接口。&lt;/priorityfuturetask&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;PriorityThreadPoolExecutor,&amp;#x7EE7;&amp;#x627F;&amp;#x81EA;ThreadPoolExecutor.&amp;#x6211;&amp;#x4EEC;&amp;#x5FC5;&amp;#x987B;&amp;#x521B;&amp;#x5EFA;PriorityFutureTask,&amp;#x5C06;&amp;#x5B9E;&amp;#x73B0;Comparable&lt;priorityfuturetask&gt;&amp;#x63A5;&amp;#x53E3;&amp;#x3002;&lt;/priorityfuturetask&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
@@ -427,7 +446,7 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
     }
 }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;首先在DefaultExcutorSupplier,用PriorityThreadPoolExecutor代替ThreadPoolExecutor.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x9996;&amp;#x5148;&amp;#x5728;DefaultExcutorSupplier,&amp;#x7528;PriorityThreadPoolExecutor&amp;#x4EE3;&amp;#x66FF;ThreadPoolExecutor.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;        ThreadFactory backgroundPriorityThreadFactory = new PriorityThreadFactory(Process.THREAD_PRIORITY_BACKGROUND);
 //        mForBackgroundTasks = new ThreadPoolExecutor(
 //                NUMBER_OF_CORES * 2,
@@ -446,7 +465,7 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
             new LinkedBlockingQueue&amp;lt;Runnable&amp;gt;(),
             backgroundPriorityThreadFactory
     );
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面的例子演示了如何设置高优先级：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4E0B;&amp;#x9762;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#x6F14;&amp;#x793A;&amp;#x4E86;&amp;#x5982;&amp;#x4F55;&amp;#x8BBE;&amp;#x7F6E;&amp;#x9AD8;&amp;#x4F18;&amp;#x5148;&amp;#x7EA7;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;   public void doSomeTaskAtHighPriority(){
     DefaultExecutorSupplier.getInstance().forBackgroundTasks()
             .submit(new PriorityRunnable(Priority.HIGH){
@@ -462,13 +481,13 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
     
       &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; &lt;a href=&quot;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&quot;&gt;https://medium.freecodecamp.com/threadpoolexecutor-in-android-8e9d22330ee3#.hiw1y4s2e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这篇文章将涉及到线程池，线程池执行程序，和他们在Android中的使用。&lt;br&gt;我们将使用很多的利用，详细的（thoroughly）介绍这些主题。&lt;br&gt;
+&lt;p&gt;&lt;img src=&quot;/2016/07/29/using-threadpoolexcuter-in-android/img/using_threadpoolexcutor.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x8FD9;&amp;#x7BC7;&amp;#x6587;&amp;#x7AE0;&amp;#x5C06;&amp;#x6D89;&amp;#x53CA;&amp;#x5230;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#xFF0C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x6C60;&amp;#x6267;&amp;#x884C;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x548C;&amp;#x4ED6;&amp;#x4EEC;&amp;#x5728;Android&amp;#x4E2D;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&lt;br&gt;&amp;#x6211;&amp;#x4EEC;&amp;#x5C06;&amp;#x4F7F;&amp;#x7528;&amp;#x5F88;&amp;#x591A;&amp;#x7684;&amp;#x5229;&amp;#x7528;&amp;#xFF0C;&amp;#x8BE6;&amp;#x7EC6;&amp;#x7684;&amp;#xFF08;thoroughly&amp;#xFF09;&amp;#x4ECB;&amp;#x7ECD;&amp;#x8FD9;&amp;#x4E9B;&amp;#x4E3B;&amp;#x9898;&amp;#x3002;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -486,22 +505,22 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
     <published>2016-07-28T03:23:13.000Z</published>
     <updated>2016-07-28T03:41:16.658Z</updated>
     
-    <content type="html">&lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;NANOSECONDS&quot;&gt;&lt;a href=&quot;#NANOSECONDS&quot; class=&quot;headerlink&quot; title=&quot;NANOSECONDS&quot;&gt;&lt;/a&gt;NANOSECONDS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NANOSECONDS&lt;/strong&gt;，毫微秒，十亿分之一秒，1s=1000000000毫微秒。&lt;/p&gt;
-&lt;h1 id=&quot;CODE-EXAMPLE&quot;&gt;&lt;a href=&quot;#CODE-EXAMPLE&quot; class=&quot;headerlink&quot; title=&quot;CODE EXAMPLE&quot;&gt;&lt;/a&gt;CODE EXAMPLE&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;       long start = System.nanoTime();   //开始时间
-            long totalRead = 0;  //总共下载了多少
-            final double NANOS_PER_SECOND = 1000000000.0;  //1秒=10亿nanoseconds
+    <content type="html">&lt;p&gt;&amp;#x6628;&amp;#x5929;&amp;#x5F00;&amp;#x59CB;&amp;#x5C01;&amp;#x88C5;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B89;&amp;#x5353;&amp;#x591A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5668;&amp;#xFF0C;&amp;#x5728;&amp;#x5199;&amp;#x7684;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#xFF0C;&amp;#x731C;&amp;#x6D4B;&amp;#x60F3;&amp;#x52A0;&amp;#x5165;&amp;#x68C0;&amp;#x6D4B;&amp;#x4E0B;&amp;#x8F7D;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#x7684;&amp;#x901F;&amp;#x5EA6;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;google&amp;#x4E00;&amp;#x756A;&amp;#xFF0C;&amp;#x5F97;&amp;#x51FA;&amp;#x4E00;&amp;#x4E2A;&amp;#x6BD4;&amp;#x8F83;&amp;#x9760;&amp;#x8C31;&amp;#x7684;&amp;#x7B54;&amp;#x6848;&amp;#xFF0C;&amp;#x5728;&amp;#x6B64;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;&amp;#x3002;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;NANOSECONDS&quot;&gt;&lt;a href=&quot;#NANOSECONDS&quot; class=&quot;headerlink&quot; title=&quot;NANOSECONDS&quot;&gt;&lt;/a&gt;NANOSECONDS&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;NANOSECONDS&lt;/strong&gt;&amp;#xFF0C;&amp;#x6BEB;&amp;#x5FAE;&amp;#x79D2;&amp;#xFF0C;&amp;#x5341;&amp;#x4EBF;&amp;#x5206;&amp;#x4E4B;&amp;#x4E00;&amp;#x79D2;&amp;#xFF0C;1s=1000000000&amp;#x6BEB;&amp;#x5FAE;&amp;#x79D2;&amp;#x3002;&lt;/p&gt;
+&lt;h1 id=&quot;CODE-EXAMPLE&quot;&gt;&lt;a href=&quot;#CODE-EXAMPLE&quot; class=&quot;headerlink&quot; title=&quot;CODE EXAMPLE&quot;&gt;&lt;/a&gt;CODE EXAMPLE&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;       long start = System.nanoTime();   //&amp;#x5F00;&amp;#x59CB;&amp;#x65F6;&amp;#x95F4;
+            long totalRead = 0;  //&amp;#x603B;&amp;#x5171;&amp;#x4E0B;&amp;#x8F7D;&amp;#x4E86;&amp;#x591A;&amp;#x5C11;
+            final double NANOS_PER_SECOND = 1000000000.0;  //1&amp;#x79D2;=10&amp;#x4EBF;nanoseconds
             final double BYTES_PER_MIB = 1024 * 1024;    //1M=1024*1024byte
             while (((len = is.read(buffler, 0, 1024)) &amp;gt;0)) {
                 totalRead += len;
                 double speed = NANOS_PER_SECOND / BYTES_PER_MIB * totalRead / (System.nanoTime() - start + 1);
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;WARNING&quot;&gt;&lt;a href=&quot;#WARNING&quot; class=&quot;headerlink&quot; title=&quot;WARNING&quot;&gt;&lt;/a&gt;WARNING&lt;/h1&gt;&lt;p&gt;这种方法计算的是从start开始时间的平均速度，不是实时速度。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;WARNING&quot;&gt;&lt;a href=&quot;#WARNING&quot; class=&quot;headerlink&quot; title=&quot;WARNING&quot;&gt;&lt;/a&gt;WARNING&lt;/h1&gt;&lt;p&gt;&amp;#x8FD9;&amp;#x79CD;&amp;#x65B9;&amp;#x6CD5;&amp;#x8BA1;&amp;#x7B97;&amp;#x7684;&amp;#x662F;&amp;#x4ECE;start&amp;#x5F00;&amp;#x59CB;&amp;#x65F6;&amp;#x95F4;&amp;#x7684;&amp;#x5E73;&amp;#x5747;&amp;#x901F;&amp;#x5EA6;&amp;#xFF0C;&amp;#x4E0D;&amp;#x662F;&amp;#x5B9E;&amp;#x65F6;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;昨天开始封装一个安卓多线程下载器，在写的过程中，猜测想加入检测下载过程中的速度，于是google一番，得出一个比较靠谱的答案，在此总结一下。&lt;br&gt;
+      &lt;p&gt;&amp;#x6628;&amp;#x5929;&amp;#x5F00;&amp;#x59CB;&amp;#x5C01;&amp;#x88C5;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B89;&amp;#x5353;&amp;#x591A;&amp;#x7EBF;&amp;#x7A0B;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5668;&amp;#xFF0C;&amp;#x5728;&amp;#x5199;&amp;#x7684;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#xFF0C;&amp;#x731C;&amp;#x6D4B;&amp;#x60F3;&amp;#x52A0;&amp;#x5165;&amp;#x68C0;&amp;#x6D4B;&amp;#x4E0B;&amp;#x8F7D;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#x7684;&amp;#x901F;&amp;#x5EA6;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;google&amp;#x4E00;&amp;#x756A;&amp;#xFF0C;&amp;#x5F97;&amp;#x51FA;&amp;#x4E00;&amp;#x4E2A;&amp;#x6BD4;&amp;#x8F83;&amp;#x9760;&amp;#x8C31;&amp;#x7684;&amp;#x7B54;&amp;#x6848;&amp;#xFF0C;&amp;#x5728;&amp;#x6B64;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;&amp;#x3002;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -517,7 +536,7 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
     <published>2016-07-22T07:45:32.000Z</published>
     <updated>2016-07-22T08:02:25.418Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;Android实现&quot;&gt;&lt;a href=&quot;#Android实现&quot; class=&quot;headerlink&quot; title=&quot;Android实现&quot;&gt;&lt;/a&gt;Android实现&lt;/h1&gt;&lt;p&gt;调用系统相机，拍照：&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;a href=&quot;#Android&amp;#x5B9E;&amp;#x73B0;&quot; class=&quot;headerlink&quot; title=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;/a&gt;Android&amp;#x5B9E;&amp;#x73B0;&lt;/h1&gt;&lt;p&gt;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             getFileUri();
             intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
@@ -530,15 +549,15 @@ private static final class PriorityFutureTask extends FutureTask&amp;lt;Priority
     file_uri = Uri.fromFile(file);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;在onActivityResult里面接收图片并Base64处理：&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;onActivityResult&amp;#x91CC;&amp;#x9762;&amp;#x63A5;&amp;#x6536;&amp;#x56FE;&amp;#x7247;&amp;#x5E76;Base64&amp;#x5904;&amp;#x7406;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
     if (requestCode == CODE_CAMERA &amp;amp;&amp;amp; resultCode == RESULT_OK) {
-        new EncodeImage().execute();   //把bitmap转换成base64字符串
+        new EncodeImage().execute();   //&amp;#x628A;bitmap&amp;#x8F6C;&amp;#x6362;&amp;#x6210;base64&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;EncodeImage是一个AsyncTask，doInBackground里面从uri里面获取bitmap，然后转入输出流，最终转换为base64编码字符串：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;EncodeImage&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;AsyncTask&amp;#xFF0C;doInBackground&amp;#x91CC;&amp;#x9762;&amp;#x4ECE;uri&amp;#x91CC;&amp;#x9762;&amp;#x83B7;&amp;#x53D6;bitmap&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x8F6C;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&amp;#xFF0C;&amp;#x6700;&amp;#x7EC8;&amp;#x8F6C;&amp;#x6362;&amp;#x4E3A;base64&amp;#x7F16;&amp;#x7801;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Override
   protected Void doInBackground(Void... voids) {
       bitmap = BitmapFactory.decodeFile(file_uri.getPath());
@@ -546,10 +565,10 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
       bitmap.compress(Bitmap.CompressFormat.JPEG, 80, stream);
       byte[] array = stream.toByteArray();
       encoded_string = Base64.encodeToString(array, 0);
-      bitmap.recycle();  //防止oom
+      bitmap.recycle();  //&amp;#x9632;&amp;#x6B62;oom
       return null;
   }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就可以上传到服务器了：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x7136;&amp;#x540E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E0A;&amp;#x4F20;&amp;#x5230;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x4E86;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    private void uploadImage() {
     HashMap&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
     map.put(&amp;quot;encoding_string&amp;quot;, encoded_string);
@@ -562,22 +581,22 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             .execute(new StringCallback() {
                 @Override
                 public void onError(Call call, Exception e, int id) {
-                    Log.e(&amp;quot;出错了&amp;quot;, &amp;quot;错误信息：&amp;quot; + e.getMessage());
+                    Log.e(&amp;quot;&amp;#x51FA;&amp;#x9519;&amp;#x4E86;&amp;quot;, &amp;quot;&amp;#x9519;&amp;#x8BEF;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;&amp;quot; + e.getMessage());
                 }
 
                 @Override
                 public void onResponse(String response, int id) {
-                    Log.e(&amp;quot;成功or失败&amp;quot;, &amp;quot;信息：&amp;quot; + response);
+                    Log.e(&amp;quot;&amp;#x6210;&amp;#x529F;or&amp;#x5931;&amp;#x8D25;&amp;quot;, &amp;quot;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;&amp;quot; + response);
                 }
             });
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在上传服务器过程中，遇到两个问题，第一,提示&lt;code&gt;POST Content-Length of  ... bytes exceeds the limit of 8388608 bytes&lt;/code&gt;,这个错误是因为php默认最大post上传8M,更改php.ini里面的&lt;code&gt;post_max_size=1000M&lt;/code&gt;就ok了；第二，当第二次拍照的时候会出现OOM的情况，检查代码发现bitmap没有recycle。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5728;&amp;#x4E0A;&amp;#x4F20;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#xFF0C;&amp;#x9047;&amp;#x5230;&amp;#x4E24;&amp;#x4E2A;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x7B2C;&amp;#x4E00;,&amp;#x63D0;&amp;#x793A;&lt;code&gt;POST Content-Length of  ... bytes exceeds the limit of 8388608 bytes&lt;/code&gt;,&amp;#x8FD9;&amp;#x4E2A;&amp;#x9519;&amp;#x8BEF;&amp;#x662F;&amp;#x56E0;&amp;#x4E3A;php&amp;#x9ED8;&amp;#x8BA4;&amp;#x6700;&amp;#x5927;post&amp;#x4E0A;&amp;#x4F20;8M,&amp;#x66F4;&amp;#x6539;php.ini&amp;#x91CC;&amp;#x9762;&amp;#x7684;&lt;code&gt;post_max_size=1000M&lt;/code&gt;&amp;#x5C31;ok&amp;#x4E86;&amp;#xFF1B;&amp;#x7B2C;&amp;#x4E8C;&amp;#xFF0C;&amp;#x5F53;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B21;&amp;#x62CD;&amp;#x7167;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x4F1A;&amp;#x51FA;&amp;#x73B0;OOM&amp;#x7684;&amp;#x60C5;&amp;#x51B5;&amp;#xFF0C;&amp;#x68C0;&amp;#x67E5;&amp;#x4EE3;&amp;#x7801;&amp;#x53D1;&amp;#x73B0;bitmap&amp;#x6CA1;&amp;#x6709;recycle&amp;#x3002;&lt;/p&gt;
 &lt;p&gt;OVER&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Android实现&quot;&gt;&lt;a href=&quot;#Android实现&quot; class=&quot;headerlink&quot; title=&quot;Android实现&quot;&gt;&lt;/a&gt;Android实现&lt;/h1&gt;&lt;p&gt;调用系统相机，拍照：&lt;/p&gt;
+      &lt;h1 id=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;a href=&quot;#Android&amp;#x5B9E;&amp;#x73B0;&quot; class=&quot;headerlink&quot; title=&quot;Android&amp;#x5B9E;&amp;#x73B0;&quot;&gt;&lt;/a&gt;Android&amp;#x5B9E;&amp;#x73B0;&lt;/h1&gt;&lt;p&gt;&amp;#x8C03;&amp;#x7528;&amp;#x7CFB;&amp;#x7EDF;&amp;#x76F8;&amp;#x673A;&amp;#xFF0C;&amp;#x62CD;&amp;#x7167;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             getFileUri();
             intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
@@ -607,11 +626,11 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     <published>2016-07-21T08:45:00.000Z</published>
     <updated>2016-07-22T07:47:25.904Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot;&gt;&lt;a href=&quot;#&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot;&gt;&lt;/a&gt;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&lt;/h1&gt;&lt;p&gt;&amp;#x9700;&amp;#x6C42;&amp;#x5F88;&amp;#x7B80;&amp;#x5355;&amp;#xFF0C;Android&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x70B9;&amp;#x51FB;&amp;#x62CD;&amp;#x7167;&amp;#x540E;&amp;#xFF0C;&amp;#x8FDB;&amp;#x884C;Base64&amp;#x52A0;&amp;#x5BC6;&amp;#xFF0C;&amp;#x81EA;&amp;#x52A8;&amp;#x4E0A;&amp;#x4F20;&amp;#x81F3;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#xFF0C;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x63A5;&amp;#x6536;&amp;#x4E0A;&amp;#x4F20;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E76;&amp;#x89E3;&amp;#x5BC6;&amp;#x540E;&amp;#x4FDD;&amp;#x5B58;&amp;#x5230;&amp;#x6307;&amp;#x5B9A;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x4E0B;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C06;&amp;#x56FE;&amp;#x7247;&amp;#x4FE1;&amp;#x5FC3;&amp;#x5199;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#xFF0C;&amp;#x5E76;&amp;#x8FD4;&amp;#x56DE;&amp;#x76F8;&amp;#x5E94;&amp;#x7684;Json&amp;#x6570;&amp;#x636E;&amp;#x3002;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;数据库&quot;&gt;&lt;a href=&quot;#数据库&quot; class=&quot;headerlink&quot; title=&quot;数据库&quot;&gt;&lt;/a&gt;数据库&lt;/h1&gt;&lt;h2 id=&quot;创建数据库&quot;&gt;&lt;a href=&quot;#创建数据库&quot; class=&quot;headerlink&quot; title=&quot;创建数据库&quot;&gt;&lt;/a&gt;创建数据库&lt;/h2&gt;&lt;p&gt;数据库名称为 turtorial_upload_image:&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&lt;/h1&gt;&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&lt;/h2&gt;&lt;p&gt;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x540D;&amp;#x79F0;&amp;#x4E3A; turtorial_upload_image:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;CREATE DATABASE tutorial_upload_image;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;创建表&quot;&gt;&lt;a href=&quot;#创建表&quot; class=&quot;headerlink&quot; title=&quot;创建表&quot;&gt;&lt;/a&gt;创建表&lt;/h2&gt;&lt;p&gt;我们要保存的信息是图片的名称和图片的路径，表名称是photos：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x8868;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x8868;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x8868;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x8868;&lt;/h2&gt;&lt;p&gt;&amp;#x6211;&amp;#x4EEC;&amp;#x8981;&amp;#x4FDD;&amp;#x5B58;&amp;#x7684;&amp;#x4FE1;&amp;#x606F;&amp;#x662F;&amp;#x56FE;&amp;#x7247;&amp;#x7684;&amp;#x540D;&amp;#x79F0;&amp;#x548C;&amp;#x56FE;&amp;#x7247;&amp;#x7684;&amp;#x8DEF;&amp;#x5F84;&amp;#xFF0C;&amp;#x8868;&amp;#x540D;&amp;#x79F0;&amp;#x662F;photos&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;CREATE TABLE photos(
 id INT(32) NOT NULL AUTO_INCREMENT,
 name VARCHAR(30) NOT NULL,
@@ -619,7 +638,7 @@ path VARCHAR(30) NOT NULL,
 
 PRIMARY KEY(id)
 );
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;PHP&quot;&gt;&lt;a href=&quot;#PHP&quot; class=&quot;headerlink&quot; title=&quot;PHP&quot;&gt;&lt;/a&gt;PHP&lt;/h1&gt;&lt;p&gt;先上代码：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;PHP&quot;&gt;&lt;a href=&quot;#PHP&quot; class=&quot;headerlink&quot; title=&quot;PHP&quot;&gt;&lt;/a&gt;PHP&lt;/h1&gt;&lt;p&gt;&amp;#x5148;&amp;#x4E0A;&amp;#x4EE3;&amp;#x7801;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;?php
 /**
  * Created by PhpStorm.
@@ -627,16 +646,16 @@ PRIMARY KEY(id)
  * Date: 2016/7/21
  * Time: 15:01
  */
-header(&amp;apos;Content-type ： bitmap; charset=utf-8;&amp;apos;);
-$dbms = &amp;apos;mysql&amp;apos;;     //数据库类型
+header(&amp;apos;Content-type &amp;#xFF1A; bitmap; charset=utf-8;&amp;apos;);
+$dbms = &amp;apos;mysql&amp;apos;;     //&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7C7B;&amp;#x578B;
 
-$host = &amp;apos;localhost&amp;apos;; //数据库主机名
+$host = &amp;apos;localhost&amp;apos;; //&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x4E3B;&amp;#x673A;&amp;#x540D;
 
-$dbName = &amp;apos;tutorial_upload_image&amp;apos;;    //使用的数据库
+$dbName = &amp;apos;tutorial_upload_image&amp;apos;;    //&amp;#x4F7F;&amp;#x7528;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E93;
 
-$user = &amp;apos;root&amp;apos;;      //数据库连接用户名
+$user = &amp;apos;root&amp;apos;;      //&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x8FDE;&amp;#x63A5;&amp;#x7528;&amp;#x6237;&amp;#x540D;
 
-$pass = &amp;apos;&amp;apos;;          //对应的密码
+$pass = &amp;apos;&amp;apos;;          //&amp;#x5BF9;&amp;#x5E94;&amp;#x7684;&amp;#x5BC6;&amp;#x7801;
 
 $dsn = &amp;quot;$dbms:host=$host;dbname=$dbName&amp;quot;;
 
@@ -645,73 +664,73 @@ $encoding_string = $_POST[&amp;quot;encoding_string&amp;quot;];
 
 $image_name = $_POST[&amp;quot;image_name&amp;quot;];
 
-//decode 客户端上传的base64数据
+//decode &amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x4E0A;&amp;#x4F20;&amp;#x7684;base64&amp;#x6570;&amp;#x636E;
 $decoded_string = base64_decode($encoding_string);
 
-$path = &amp;quot;images/&amp;quot; . $image_name;  //定义存放路径
+$path = &amp;quot;images/&amp;quot; . $image_name;  //&amp;#x5B9A;&amp;#x4E49;&amp;#x5B58;&amp;#x653E;&amp;#x8DEF;&amp;#x5F84;
 $file = fopen($path, &amp;quot;wb&amp;quot;);
 
 $is_written = fwrite($file, $decoded_string);
 fclose($file);
-//写入数据库
+//&amp;#x5199;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5E93;
 if ($is_written &amp;gt; 0) {
-    //sql语句
+    //sql&amp;#x8BED;&amp;#x53E5;
     $strSql = &amp;quot;insert into photos(name,path) values(&amp;apos;$image_name&amp;apos;,&amp;apos;$path&amp;apos;)&amp;quot;;
 
 
-    //方法一 pdo方式  支持多种数据库
+    //&amp;#x65B9;&amp;#x6CD5;&amp;#x4E00; pdo&amp;#x65B9;&amp;#x5F0F;  &amp;#x652F;&amp;#x6301;&amp;#x591A;&amp;#x79CD;&amp;#x6570;&amp;#x636E;&amp;#x5E93;
     try {
 
-        $dbh = new PDO($dsn, $user, $pass); //初始化一个PDO对象
+        $dbh = new PDO($dsn, $user, $pass); //&amp;#x521D;&amp;#x59CB;&amp;#x5316;&amp;#x4E00;&amp;#x4E2A;PDO&amp;#x5BF9;&amp;#x8C61;
         $temp = $dbh-&amp;gt;prepare($strSql);
         $temp-&amp;gt;execute();
         $array = array(
             &amp;quot;status&amp;quot; =&amp;gt; true,
-            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据成功&amp;quot;
+            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;&amp;#x63D2;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x6210;&amp;#x529F;&amp;quot;
         );
         echo json_encode($array);
-        $dbh = null; //运行完成后关闭链接
+        $dbh = null; //&amp;#x8FD0;&amp;#x884C;&amp;#x5B8C;&amp;#x6210;&amp;#x540E;&amp;#x5173;&amp;#x95ED;&amp;#x94FE;&amp;#x63A5;
     } catch (PDOException $e) {
         $array = array(
             &amp;quot;status&amp;quot; =&amp;gt; false,
-            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据失败&amp;quot; . ($e-&amp;gt;getMessage())
+            &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;&amp;#x63D2;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5931;&amp;#x8D25;&amp;quot; . ($e-&amp;gt;getMessage())
         );
         echo json_encode($array);
 
     }
 
 
-    //方法2  mysqli方式
+    //&amp;#x65B9;&amp;#x6CD5;2  mysqli&amp;#x65B9;&amp;#x5F0F;
 //        $connection=mysqli_connect(&amp;apos;localhost&amp;apos;,&amp;apos;root&amp;apos;,&amp;apos;&amp;apos;,&amp;apos;tutorial_upload_image&amp;apos;);
 //        $result=mysqli_query($connection,$strSql);
 //        if($result){
 //            $array = array (
 //                &amp;quot;status&amp;quot; =&amp;gt; true,
-//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据成功&amp;quot;
+//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;&amp;#x63D2;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x6210;&amp;#x529F;&amp;quot;
 //            );
 //            echo json_encode($array);
 //        }else{
 //            $array = array (
 //                &amp;quot;status&amp;quot; =&amp;gt; false,
-//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;插入数据失败&amp;quot;
+//                &amp;quot;msg&amp;quot; =&amp;gt; &amp;quot;&amp;#x63D2;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5931;&amp;#x8D25;&amp;quot;
 //            );
 //            echo json_encode($array);
 //        }
-//        mysqli_close($connection);   //关闭连接
+//        mysqli_close($connection);   //&amp;#x5173;&amp;#x95ED;&amp;#x8FDE;&amp;#x63A5;
 }
 
 }
 ?&amp;gt;    
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里我列举了两种连接数据库的方式 PDO和mysqli  ，mysql方式官方已经不推荐使用了，所以就不再列举（我也没用过）。数据库连接过程首先是读取POST过来的内容，然后写到images目录下面，再把地址和名称写入数据库里，返回相应的JSON数据，在这里每次上传完毕后都关闭了连接。&lt;/p&gt;
-&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;测试阶段我们找用postman进行模拟发送数据，首先在&lt;a href=&quot;http://www.motobit.com/util/base64-decoder-encoder.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这个网站&lt;/a&gt;Base64 encode一张图片，复制之后，拷贝到postman里面，postman数据如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/android_upload_img_to_php_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;测试结果成功~&lt;/p&gt;
-&lt;p&gt;下节我们将开发安卓客户端。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x5217;&amp;#x4E3E;&amp;#x4E86;&amp;#x4E24;&amp;#x79CD;&amp;#x8FDE;&amp;#x63A5;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7684;&amp;#x65B9;&amp;#x5F0F; PDO&amp;#x548C;mysqli  &amp;#xFF0C;mysql&amp;#x65B9;&amp;#x5F0F;&amp;#x5B98;&amp;#x65B9;&amp;#x5DF2;&amp;#x7ECF;&amp;#x4E0D;&amp;#x63A8;&amp;#x8350;&amp;#x4F7F;&amp;#x7528;&amp;#x4E86;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x5C31;&amp;#x4E0D;&amp;#x518D;&amp;#x5217;&amp;#x4E3E;&amp;#xFF08;&amp;#x6211;&amp;#x4E5F;&amp;#x6CA1;&amp;#x7528;&amp;#x8FC7;&amp;#xFF09;&amp;#x3002;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x8FDE;&amp;#x63A5;&amp;#x8FC7;&amp;#x7A0B;&amp;#x9996;&amp;#x5148;&amp;#x662F;&amp;#x8BFB;&amp;#x53D6;POST&amp;#x8FC7;&amp;#x6765;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x5199;&amp;#x5230;images&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x9762;&amp;#xFF0C;&amp;#x518D;&amp;#x628A;&amp;#x5730;&amp;#x5740;&amp;#x548C;&amp;#x540D;&amp;#x79F0;&amp;#x5199;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x91CC;&amp;#xFF0C;&amp;#x8FD4;&amp;#x56DE;&amp;#x76F8;&amp;#x5E94;&amp;#x7684;JSON&amp;#x6570;&amp;#x636E;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6BCF;&amp;#x6B21;&amp;#x4E0A;&amp;#x4F20;&amp;#x5B8C;&amp;#x6BD5;&amp;#x540E;&amp;#x90FD;&amp;#x5173;&amp;#x95ED;&amp;#x4E86;&amp;#x8FDE;&amp;#x63A5;&amp;#x3002;&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6D4B;&amp;#x8BD5;&quot;&gt;&lt;a href=&quot;#&amp;#x6D4B;&amp;#x8BD5;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6D4B;&amp;#x8BD5;&quot;&gt;&lt;/a&gt;&amp;#x6D4B;&amp;#x8BD5;&lt;/h1&gt;&lt;p&gt;&amp;#x6D4B;&amp;#x8BD5;&amp;#x9636;&amp;#x6BB5;&amp;#x6211;&amp;#x4EEC;&amp;#x627E;&amp;#x7528;postman&amp;#x8FDB;&amp;#x884C;&amp;#x6A21;&amp;#x62DF;&amp;#x53D1;&amp;#x9001;&amp;#x6570;&amp;#x636E;&amp;#xFF0C;&amp;#x9996;&amp;#x5148;&amp;#x5728;&lt;a href=&quot;http://www.motobit.com/util/base64-decoder-encoder.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7F51;&amp;#x7AD9;&lt;/a&gt;Base64 encode&amp;#x4E00;&amp;#x5F20;&amp;#x56FE;&amp;#x7247;&amp;#xFF0C;&amp;#x590D;&amp;#x5236;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x62F7;&amp;#x8D1D;&amp;#x5230;postman&amp;#x91CC;&amp;#x9762;&amp;#xFF0C;postman&amp;#x6570;&amp;#x636E;&amp;#x5982;&amp;#x4E0B;&amp;#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2016/07/21/android-upload-img-to-php-server-1/img/android_upload_img_to_php_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D4B;&amp;#x8BD5;&amp;#x7ED3;&amp;#x679C;&amp;#x6210;&amp;#x529F;~&lt;/p&gt;
+&lt;p&gt;&amp;#x4E0B;&amp;#x8282;&amp;#x6211;&amp;#x4EEC;&amp;#x5C06;&amp;#x5F00;&amp;#x53D1;&amp;#x5B89;&amp;#x5353;&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x3002;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot; class=&quot;headerlink&quot; title=&quot;需求分析&quot;&gt;&lt;/a&gt;需求分析&lt;/h1&gt;&lt;p&gt;需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。&lt;/p&gt;
+      &lt;h1 id=&quot;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot;&gt;&lt;a href=&quot;#&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&quot;&gt;&lt;/a&gt;&amp;#x9700;&amp;#x6C42;&amp;#x5206;&amp;#x6790;&lt;/h1&gt;&lt;p&gt;&amp;#x9700;&amp;#x6C42;&amp;#x5F88;&amp;#x7B80;&amp;#x5355;&amp;#xFF0C;Android&amp;#x5BA2;&amp;#x6237;&amp;#x7AEF;&amp;#x70B9;&amp;#x51FB;&amp;#x62CD;&amp;#x7167;&amp;#x540E;&amp;#xFF0C;&amp;#x8FDB;&amp;#x884C;Base64&amp;#x52A0;&amp;#x5BC6;&amp;#xFF0C;&amp;#x81EA;&amp;#x52A8;&amp;#x4E0A;&amp;#x4F20;&amp;#x81F3;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#xFF0C;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x63A5;&amp;#x6536;&amp;#x4E0A;&amp;#x4F20;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E76;&amp;#x89E3;&amp;#x5BC6;&amp;#x540E;&amp;#x4FDD;&amp;#x5B58;&amp;#x5230;&amp;#x6307;&amp;#x5B9A;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x4E0B;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C06;&amp;#x56FE;&amp;#x7247;&amp;#x4FE1;&amp;#x5FC3;&amp;#x5199;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#xFF0C;&amp;#x5E76;&amp;#x8FD4;&amp;#x56DE;&amp;#x76F8;&amp;#x5E94;&amp;#x7684;Json&amp;#x6570;&amp;#x636E;&amp;#x3002;&lt;/p&gt;
     
     </summary>
     
@@ -732,31 +751,31 @@ if ($is_written &amp;gt; 0) {
     <content type="html">&lt;h1 id=&quot;register-host-club-qingdaonews-com&quot;&gt;&lt;a href=&quot;#register-host-club-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;register(host club.qingdaonews.com)&quot;&gt;&lt;/a&gt;register(host club.qingdaonews.com)&lt;/h1&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;hr&gt;
 &lt;ul&gt;
-&lt;li&gt;step1  /user/touch_reg.php param: act=regstep1&amp;amp;reg_un=adamin90&amp;amp;reg_pw=wsxqaz123&amp;amp;con_pw=wsxqaz123&amp;amp;tel=15725266012  error response :{“result”:”error”,”type”:”tel”,”info”:”\u6b64\u624b\u673a\u53f7\u5df2\u7ecf\u6ce8\u518c(\u9ad8)”} success response :{“result”:”success”,”type”:”code”,”info”:”\u53d1\u9001\u6210\u529f”}&lt;/li&gt;
+&lt;li&gt;step1  /user/touch_reg.php param: act=regstep1&amp;amp;reg_un=adamin90&amp;amp;reg_pw=wsxqaz123&amp;amp;con_pw=wsxqaz123&amp;amp;tel=15725266012  error response :{&amp;#x201C;result&amp;#x201D;:&amp;#x201D;error&amp;#x201D;,&amp;#x201D;type&amp;#x201D;:&amp;#x201D;tel&amp;#x201D;,&amp;#x201D;info&amp;#x201D;:&amp;#x201D;\u6b64\u624b\u673a\u53f7\u5df2\u7ecf\u6ce8\u518c(\u9ad8)&amp;#x201D;} success response :{&amp;#x201C;result&amp;#x201D;:&amp;#x201D;success&amp;#x201D;,&amp;#x201D;type&amp;#x201D;:&amp;#x201D;code&amp;#x201D;,&amp;#x201D;info&amp;#x201D;:&amp;#x201D;\u53d1\u9001\u6210\u529f&amp;#x201D;}&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;login-host-app-qingdaonews-com&quot;&gt;&lt;a href=&quot;#login-host-app-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;login (host app.qingdaonews.com)&quot;&gt;&lt;/a&gt;login (host app.qingdaonews.com)&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;/shoujikehuduan/interface_login.php?username=15725266012&amp;amp;password=wsxqaz success response :{“result”:”success”,”point”:”200”,”uid”:”8087267”,”phone”:”15725266012”,”first”:0,”token”:”52165771559e88f430573c6cd0925e68”,”money”:”0”,”face”:”http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg”,”type”:”passport”,”username”:”15725266012”,”loginname”:”15725266012”,”password”:”wsxqaz”} error response :{“result”:”error”,”point”:null,”uid”:””,”phone”:null,”first”:0,”face”:”http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg”,”type”:”passport”,”username”:”15725266019”,”loginname”:”15725266019”,”password”:”123456”}&lt;/li&gt;
+&lt;li&gt;/shoujikehuduan/interface_login.php?username=15725266012&amp;amp;password=wsxqaz success response :{&amp;#x201C;result&amp;#x201D;:&amp;#x201D;success&amp;#x201D;,&amp;#x201D;point&amp;#x201D;:&amp;#x201D;200&amp;#x201D;,&amp;#x201D;uid&amp;#x201D;:&amp;#x201D;8087267&amp;#x201D;,&amp;#x201D;phone&amp;#x201D;:&amp;#x201D;15725266012&amp;#x201D;,&amp;#x201D;first&amp;#x201D;:0,&amp;#x201D;token&amp;#x201D;:&amp;#x201D;52165771559e88f430573c6cd0925e68&amp;#x201D;,&amp;#x201D;money&amp;#x201D;:&amp;#x201D;0&amp;#x201D;,&amp;#x201D;face&amp;#x201D;:&amp;#x201D;http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg&amp;#x201D;,&amp;#x201D;type&amp;#x201D;:&amp;#x201D;passport&amp;#x201D;,&amp;#x201D;username&amp;#x201D;:&amp;#x201D;15725266012&amp;#x201D;,&amp;#x201D;loginname&amp;#x201D;:&amp;#x201D;15725266012&amp;#x201D;,&amp;#x201D;password&amp;#x201D;:&amp;#x201D;wsxqaz&amp;#x201D;} error response :{&amp;#x201C;result&amp;#x201D;:&amp;#x201D;error&amp;#x201D;,&amp;#x201D;point&amp;#x201D;:null,&amp;#x201D;uid&amp;#x201D;:&amp;#x201D;&amp;#x201D;,&amp;#x201D;phone&amp;#x201D;:null,&amp;#x201D;first&amp;#x201D;:0,&amp;#x201D;face&amp;#x201D;:&amp;#x201D;http:\/\/pic.qingdaonews.com\/f\/avatar_big.jpg&amp;#x201D;,&amp;#x201D;type&amp;#x201D;:&amp;#x201D;passport&amp;#x201D;,&amp;#x201D;username&amp;#x201D;:&amp;#x201D;15725266019&amp;#x201D;,&amp;#x201D;loginname&amp;#x201D;:&amp;#x201D;15725266019&amp;#x201D;,&amp;#x201D;password&amp;#x201D;:&amp;#x201D;123456&amp;#x201D;}&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;签到-post-app-qingdaonews-com&quot;&gt;&lt;a href=&quot;#签到-post-app-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;签到 post  app.qingdaonews.com&quot;&gt;&lt;/a&gt;签到 post  app.qingdaonews.com&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/interface_missionstate.php?token=52165771559e88f430573c6cd0925e68&amp;amp;mission=mis_10&lt;/p&gt;
-&lt;h1 id=&quot;头条&quot;&gt;&lt;a href=&quot;#头条&quot; class=&quot;headerlink&quot; title=&quot;头条&quot;&gt;&lt;/a&gt;头条&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=bd&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x7B7E;&amp;#x5230;-post-app-qingdaonews-com&quot;&gt;&lt;a href=&quot;#&amp;#x7B7E;&amp;#x5230;-post-app-qingdaonews-com&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7B7E;&amp;#x5230; post  app.qingdaonews.com&quot;&gt;&lt;/a&gt;&amp;#x7B7E;&amp;#x5230; post  app.qingdaonews.com&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/interface_missionstate.php?token=52165771559e88f430573c6cd0925e68&amp;amp;mission=mis_10&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x5934;&amp;#x6761;&quot;&gt;&lt;a href=&quot;#&amp;#x5934;&amp;#x6761;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5934;&amp;#x6761;&quot;&gt;&lt;/a&gt;&amp;#x5934;&amp;#x6761;&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=bd&lt;/p&gt;
 &lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=bd&amp;amp;minid=463459&lt;/p&gt;
-&lt;h1 id=&quot;青青岛&quot;&gt;&lt;a href=&quot;#青青岛&quot; class=&quot;headerlink&quot; title=&quot;青青岛&quot;&gt;&lt;/a&gt;青青岛&lt;/h1&gt;&lt;p&gt;/imobile/index.php?page=1&amp;amp;title=%E5%A4%B4%E6%9D%A1&amp;amp;type=newsapp&lt;/p&gt;
-&lt;h1 id=&quot;焦点&quot;&gt;&lt;a href=&quot;#焦点&quot; class=&quot;headerlink&quot; title=&quot;焦点&quot;&gt;&lt;/a&gt;焦点&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=jdxw&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x9752;&amp;#x9752;&amp;#x5C9B;&quot;&gt;&lt;a href=&quot;#&amp;#x9752;&amp;#x9752;&amp;#x5C9B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x9752;&amp;#x9752;&amp;#x5C9B;&quot;&gt;&lt;/a&gt;&amp;#x9752;&amp;#x9752;&amp;#x5C9B;&lt;/h1&gt;&lt;p&gt;/imobile/index.php?page=1&amp;amp;title=%E5%A4%B4%E6%9D%A1&amp;amp;type=newsapp&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x7126;&amp;#x70B9;&quot;&gt;&lt;a href=&quot;#&amp;#x7126;&amp;#x70B9;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7126;&amp;#x70B9;&quot;&gt;&lt;/a&gt;&amp;#x7126;&amp;#x70B9;&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=jdxw&lt;/p&gt;
 &lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=jdxw&amp;amp;minid=462981&lt;/p&gt;
-&lt;h1 id=&quot;体育&quot;&gt;&lt;a href=&quot;#体育&quot; class=&quot;headerlink&quot; title=&quot;体育&quot;&gt;&lt;/a&gt;体育&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=ty&lt;/p&gt;
-&lt;h1 id=&quot;文娱&quot;&gt;&lt;a href=&quot;#文娱&quot; class=&quot;headerlink&quot; title=&quot;文娱&quot;&gt;&lt;/a&gt;文娱&lt;/h1&gt;&lt;p&gt;yl&lt;/p&gt;
-&lt;h1 id=&quot;房产&quot;&gt;&lt;a href=&quot;#房产&quot; class=&quot;headerlink&quot; title=&quot;房产&quot;&gt;&lt;/a&gt;房产&lt;/h1&gt;&lt;p&gt;qdfc&lt;/p&gt;
-&lt;h1 id=&quot;汽车&quot;&gt;&lt;a href=&quot;#汽车&quot; class=&quot;headerlink&quot; title=&quot;汽车&quot;&gt;&lt;/a&gt;汽车&lt;/h1&gt;&lt;p&gt;qdqc&lt;/p&gt;
-&lt;h1 id=&quot;旅游&quot;&gt;&lt;a href=&quot;#旅游&quot; class=&quot;headerlink&quot; title=&quot;旅游&quot;&gt;&lt;/a&gt;旅游&lt;/h1&gt;&lt;p&gt;qdly&lt;/p&gt;
-&lt;h1 id=&quot;家居&quot;&gt;&lt;a href=&quot;#家居&quot; class=&quot;headerlink&quot; title=&quot;家居&quot;&gt;&lt;/a&gt;家居&lt;/h1&gt;&lt;p&gt;qdjj&lt;/p&gt;
-&lt;h1 id=&quot;财经&quot;&gt;&lt;a href=&quot;#财经&quot; class=&quot;headerlink&quot; title=&quot;财经&quot;&gt;&lt;/a&gt;财经&lt;/h1&gt;&lt;p&gt;cj&lt;/p&gt;
-&lt;h1 id=&quot;教育&quot;&gt;&lt;a href=&quot;#教育&quot; class=&quot;headerlink&quot; title=&quot;教育&quot;&gt;&lt;/a&gt;教育&lt;/h1&gt;&lt;p&gt;jy&lt;/p&gt;
-&lt;h1 id=&quot;健康&quot;&gt;&lt;a href=&quot;#健康&quot; class=&quot;headerlink&quot; title=&quot;健康&quot;&gt;&lt;/a&gt;健康&lt;/h1&gt;&lt;p&gt;jk&lt;/p&gt;
-&lt;h1 id=&quot;消费&quot;&gt;&lt;a href=&quot;#消费&quot; class=&quot;headerlink&quot; title=&quot;消费&quot;&gt;&lt;/a&gt;消费&lt;/h1&gt;&lt;p&gt;xf&lt;/p&gt;
-&lt;h1 id=&quot;舆情&quot;&gt;&lt;a href=&quot;#舆情&quot; class=&quot;headerlink&quot; title=&quot;舆情&quot;&gt;&lt;/a&gt;舆情&lt;/h1&gt;&lt;p&gt;yuqing&lt;/p&gt;
-&lt;h1 id=&quot;婚假&quot;&gt;&lt;a href=&quot;#婚假&quot; class=&quot;headerlink&quot; title=&quot;婚假&quot;&gt;&lt;/a&gt;婚假&lt;/h1&gt;&lt;p&gt;hj&lt;/p&gt;
-&lt;h1 id=&quot;民生&quot;&gt;&lt;a href=&quot;#民生&quot; class=&quot;headerlink&quot; title=&quot;民生&quot;&gt;&lt;/a&gt;民生&lt;/h1&gt;&lt;p&gt;msbl&lt;/p&gt;
-&lt;h1 id=&quot;黄岛-huangdao&quot;&gt;&lt;a href=&quot;#黄岛-huangdao&quot; class=&quot;headerlink&quot; title=&quot;黄岛 huangdao&quot;&gt;&lt;/a&gt;黄岛 huangdao&lt;/h1&gt;</content>
+&lt;h1 id=&quot;&amp;#x4F53;&amp;#x80B2;&quot;&gt;&lt;a href=&quot;#&amp;#x4F53;&amp;#x80B2;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4F53;&amp;#x80B2;&quot;&gt;&lt;/a&gt;&amp;#x4F53;&amp;#x80B2;&lt;/h1&gt;&lt;p&gt;/shoujikehuduan/mdi_newslist300.php?v=2.0&amp;amp;num=20&amp;amp;type=ty&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6587;&amp;#x5A31;&quot;&gt;&lt;a href=&quot;#&amp;#x6587;&amp;#x5A31;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6587;&amp;#x5A31;&quot;&gt;&lt;/a&gt;&amp;#x6587;&amp;#x5A31;&lt;/h1&gt;&lt;p&gt;yl&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x623F;&amp;#x4EA7;&quot;&gt;&lt;a href=&quot;#&amp;#x623F;&amp;#x4EA7;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x623F;&amp;#x4EA7;&quot;&gt;&lt;/a&gt;&amp;#x623F;&amp;#x4EA7;&lt;/h1&gt;&lt;p&gt;qdfc&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6C7D;&amp;#x8F66;&quot;&gt;&lt;a href=&quot;#&amp;#x6C7D;&amp;#x8F66;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6C7D;&amp;#x8F66;&quot;&gt;&lt;/a&gt;&amp;#x6C7D;&amp;#x8F66;&lt;/h1&gt;&lt;p&gt;qdqc&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x65C5;&amp;#x6E38;&quot;&gt;&lt;a href=&quot;#&amp;#x65C5;&amp;#x6E38;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x65C5;&amp;#x6E38;&quot;&gt;&lt;/a&gt;&amp;#x65C5;&amp;#x6E38;&lt;/h1&gt;&lt;p&gt;qdly&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x5BB6;&amp;#x5C45;&quot;&gt;&lt;a href=&quot;#&amp;#x5BB6;&amp;#x5C45;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5BB6;&amp;#x5C45;&quot;&gt;&lt;/a&gt;&amp;#x5BB6;&amp;#x5C45;&lt;/h1&gt;&lt;p&gt;qdjj&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x8D22;&amp;#x7ECF;&quot;&gt;&lt;a href=&quot;#&amp;#x8D22;&amp;#x7ECF;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x8D22;&amp;#x7ECF;&quot;&gt;&lt;/a&gt;&amp;#x8D22;&amp;#x7ECF;&lt;/h1&gt;&lt;p&gt;cj&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6559;&amp;#x80B2;&quot;&gt;&lt;a href=&quot;#&amp;#x6559;&amp;#x80B2;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6559;&amp;#x80B2;&quot;&gt;&lt;/a&gt;&amp;#x6559;&amp;#x80B2;&lt;/h1&gt;&lt;p&gt;jy&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x5065;&amp;#x5EB7;&quot;&gt;&lt;a href=&quot;#&amp;#x5065;&amp;#x5EB7;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5065;&amp;#x5EB7;&quot;&gt;&lt;/a&gt;&amp;#x5065;&amp;#x5EB7;&lt;/h1&gt;&lt;p&gt;jk&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6D88;&amp;#x8D39;&quot;&gt;&lt;a href=&quot;#&amp;#x6D88;&amp;#x8D39;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6D88;&amp;#x8D39;&quot;&gt;&lt;/a&gt;&amp;#x6D88;&amp;#x8D39;&lt;/h1&gt;&lt;p&gt;xf&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x8206;&amp;#x60C5;&quot;&gt;&lt;a href=&quot;#&amp;#x8206;&amp;#x60C5;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x8206;&amp;#x60C5;&quot;&gt;&lt;/a&gt;&amp;#x8206;&amp;#x60C5;&lt;/h1&gt;&lt;p&gt;yuqing&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x5A5A;&amp;#x5047;&quot;&gt;&lt;a href=&quot;#&amp;#x5A5A;&amp;#x5047;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5A5A;&amp;#x5047;&quot;&gt;&lt;/a&gt;&amp;#x5A5A;&amp;#x5047;&lt;/h1&gt;&lt;p&gt;hj&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6C11;&amp;#x751F;&quot;&gt;&lt;a href=&quot;#&amp;#x6C11;&amp;#x751F;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6C11;&amp;#x751F;&quot;&gt;&lt;/a&gt;&amp;#x6C11;&amp;#x751F;&lt;/h1&gt;&lt;p&gt;msbl&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x9EC4;&amp;#x5C9B;-huangdao&quot;&gt;&lt;a href=&quot;#&amp;#x9EC4;&amp;#x5C9B;-huangdao&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x9EC4;&amp;#x5C9B; huangdao&quot;&gt;&lt;/a&gt;&amp;#x9EC4;&amp;#x5C9B; huangdao&lt;/h1&gt;</content>
     
     <summary type="html">
     
@@ -776,7 +795,7 @@ if ($is_written &amp;gt; 0) {
     <published>2016-07-07T06:43:44.000Z</published>
     <updated>2016-07-07T07:04:33.191Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;1-十个大兵与两个小偷的故事&quot;&gt;&lt;a href=&quot;#1-十个大兵与两个小偷的故事&quot; class=&quot;headerlink&quot; title=&quot;1. 十个大兵与两个小偷的故事&quot;&gt;&lt;/a&gt;1. 十个大兵与两个小偷的故事&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Ten soldiers were setting up tents in the forest preparing for the night. 
+    <content type="html">&lt;h1 id=&quot;1-&amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot; class=&quot;headerlink&quot; title=&quot;1. &amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot;&gt;&lt;/a&gt;1. &amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Ten soldiers were setting up tents in the forest preparing for the night. 
 Later, two thieves arrived and attempted to rob them of their rations, but were caught. 
 The soldiers told them, &amp;quot;We would kill you, but we&amp;apos;re in a good mood today.
  We&amp;apos;ll release you if you can make us all laugh.&amp;quot; The thieves reluctantly agreed. 
@@ -789,9 +808,9 @@ No soldiers were laughing except for the one who didn&amp;apos;t laugh previousl
 After killing the thieves, the soldiers asked their friend, &amp;quot;Why did you laugh during the second thief&amp;apos;s story but not during the first&amp;apos;s? 
 It was much funnier after all.&amp;quot; 
 He responded, &amp;quot;When the second thief was speaking, I finally understood the first thief&amp;apos;s story, and it was damn funny.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;引用Zootopia（疯狂动物城）的一个场景，so hilarious!：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5F15;&amp;#x7528;Zootopia&amp;#xFF08;&amp;#x75AF;&amp;#x72C2;&amp;#x52A8;&amp;#x7269;&amp;#x57CE;&amp;#xFF09;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x573A;&amp;#x666F;&amp;#xFF0C;so hilarious!&amp;#xFF1A;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://img4.duitang.com/uploads/item/201607/07/20160707145046_hr5LB.thumb.500_500_g.gif&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;2-狮子和森林动物的故事（给乌龟跪了）&quot;&gt;&lt;a href=&quot;#2-狮子和森林动物的故事（给乌龟跪了）&quot; class=&quot;headerlink&quot; title=&quot;2. 狮子和森林动物的故事（给乌龟跪了）&quot;&gt;&lt;/a&gt;2. 狮子和森林动物的故事（给乌龟跪了）&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;One day a lion wakes up in a bad mood and summons the other animals in the jungle. 
+&lt;h1 id=&quot;2-&amp;#x72EE;&amp;#x5B50;&amp;#x548C;&amp;#x68EE;&amp;#x6797;&amp;#x52A8;&amp;#x7269;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;&amp;#x7ED9;&amp;#x4E4C;&amp;#x9F9F;&amp;#x8DEA;&amp;#x4E86;&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#2-&amp;#x72EE;&amp;#x5B50;&amp;#x548C;&amp;#x68EE;&amp;#x6797;&amp;#x52A8;&amp;#x7269;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;&amp;#x7ED9;&amp;#x4E4C;&amp;#x9F9F;&amp;#x8DEA;&amp;#x4E86;&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;2. &amp;#x72EE;&amp;#x5B50;&amp;#x548C;&amp;#x68EE;&amp;#x6797;&amp;#x52A8;&amp;#x7269;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;&amp;#x7ED9;&amp;#x4E4C;&amp;#x9F9F;&amp;#x8DEA;&amp;#x4E86;&amp;#xFF09;&quot;&gt;&lt;/a&gt;2. &amp;#x72EE;&amp;#x5B50;&amp;#x548C;&amp;#x68EE;&amp;#x6797;&amp;#x52A8;&amp;#x7269;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;&amp;#x7ED9;&amp;#x4E4C;&amp;#x9F9F;&amp;#x8DEA;&amp;#x4E86;&amp;#xFF09;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;One day a lion wakes up in a bad mood and summons the other animals in the jungle. 
 &amp;quot;I want each of you to tell a joke, but I warn you that if anyone of you fails to laugh, I&amp;apos;ll kill the one who told it. 
 Let&amp;apos;s see, monkey, you will be first.&amp;quot; 
 Shaking with fear the monkey begins, &amp;quot;Two men are in the street and...&amp;quot; 
@@ -807,7 +826,7 @@ The scared tiger begins, &amp;quot;They say that Little Red Riding Hood...&amp;q
 At that moment, the tortoise falls over laughing. &amp;quot;What&amp;apos;s with you?&amp;quot; bellows the lion. 
 &amp;quot;Tiger hasn&amp;apos;t finished yet...&amp;quot; 
 To which the tortoise replies, &amp;quot;The monkey&amp;apos;s joke is hilarious!&amp;quot; 
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;3-王后跟三个犯人的故事（the-queen-will-get-watermelon-shoved-up-the-third-prisoner’s-ass-hahaha-）&quot;&gt;&lt;a href=&quot;#3-王后跟三个犯人的故事（the-queen-will-get-watermelon-shoved-up-the-third-prisoner’s-ass-hahaha-）&quot; class=&quot;headerlink&quot; title=&quot;3. 王后跟三个犯人的故事（the queen will get watermelon shoved up the third prisoner’s ass? hahaha!）&quot;&gt;&lt;/a&gt;3. 王后跟三个犯人的故事（the queen will get watermelon shoved up the third prisoner’s ass? hahaha!）&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Three prisoners on death row are summoned by the queen for a chance to be free. 
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;3-&amp;#x738B;&amp;#x540E;&amp;#x8DDF;&amp;#x4E09;&amp;#x4E2A;&amp;#x72AF;&amp;#x4EBA;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;the-queen-will-get-watermelon-shoved-up-the-third-prisoner&amp;#x2019;s-ass-hahaha-&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#3-&amp;#x738B;&amp;#x540E;&amp;#x8DDF;&amp;#x4E09;&amp;#x4E2A;&amp;#x72AF;&amp;#x4EBA;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;the-queen-will-get-watermelon-shoved-up-the-third-prisoner&amp;#x2019;s-ass-hahaha-&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;3. &amp;#x738B;&amp;#x540E;&amp;#x8DDF;&amp;#x4E09;&amp;#x4E2A;&amp;#x72AF;&amp;#x4EBA;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;the queen will get watermelon shoved up the third prisoner&amp;#x2019;s ass? hahaha!&amp;#xFF09;&quot;&gt;&lt;/a&gt;3. &amp;#x738B;&amp;#x540E;&amp;#x8DDF;&amp;#x4E09;&amp;#x4E2A;&amp;#x72AF;&amp;#x4EBA;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&amp;#xFF08;the queen will get watermelon shoved up the third prisoner&amp;#x2019;s ass? hahaha!&amp;#xFF09;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Three prisoners on death row are summoned by the queen for a chance to be free. 
 The queen tells the prisoners they have one day to go into the jungle and bring her a fruit. 
 If she likes it, they are free to go. 
 However, if she doesn&amp;apos;t like it, the fruit of their will be shoved up their ass, and then killed they will be back on death row. 
@@ -821,7 +840,7 @@ When asked why he was crying, the second prisoner said &amp;quot;I saw the third
     
     <summary type="html">
     
-      &lt;h1 id=&quot;1-十个大兵与两个小偷的故事&quot;&gt;&lt;a href=&quot;#1-十个大兵与两个小偷的故事&quot; class=&quot;headerlink&quot; title=&quot;1. 十个大兵与两个小偷的故事&quot;&gt;&lt;/a&gt;1. 十个大兵与两个小偷的故事&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Ten soldiers were setting up tents in the forest preparing for the night. 
+      &lt;h1 id=&quot;1-&amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot;&gt;&lt;a href=&quot;#1-&amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot; class=&quot;headerlink&quot; title=&quot;1. &amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&quot;&gt;&lt;/a&gt;1. &amp;#x5341;&amp;#x4E2A;&amp;#x5927;&amp;#x5175;&amp;#x4E0E;&amp;#x4E24;&amp;#x4E2A;&amp;#x5C0F;&amp;#x5077;&amp;#x7684;&amp;#x6545;&amp;#x4E8B;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Ten soldiers were setting up tents in the forest preparing for the night. 
 Later, two thieves arrived and attempted to rob them of their rations, but were caught. 
 The soldiers told them, &amp;quot;We would kill you, but we&amp;apos;re in a good mood today.
  We&amp;apos;ll release you if you can make us all laugh.&amp;quot; The thieves reluctantly agreed. 
@@ -834,8 +853,8 @@ No soldiers were laughing except for the one who didn&amp;apos;t laugh previousl
 After killing the thieves, the soldiers asked their friend, &amp;quot;Why did you laugh during the second thief&amp;apos;s story but not during the first&amp;apos;s? 
 It was much funnier after all.&amp;quot; 
 He responded, &amp;quot;When the second thief was speaking, I finally understood the first thief&amp;apos;s story, and it was damn funny.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;引用Zootopia（疯狂动物城）的一个场景，so hilarious!：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://img4.duitang.com/uploads/item/201607/07/20160707145046_hr5LB.thumb.500_500_g.gif&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5F15;&amp;#x7528;Zootopia&amp;#xFF08;&amp;#x75AF;&amp;#x72C2;&amp;#x52A8;&amp;#x7269;&amp;#x57CE;&amp;#xFF09;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x573A;&amp;#x666F;&amp;#xFF0C;so hilarious!&amp;#xFF1A;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img4.duitang.com/uploads/item/201607/07/20160707145046_hr5LB.thumb.500_500_g.gif&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -851,51 +870,50 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     <published>2016-07-07T03:33:29.000Z</published>
     <updated>2016-07-08T09:51:53.028Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;php文件操作的模式&quot;&gt;&lt;a href=&quot;#php文件操作的模式&quot; class=&quot;headerlink&quot; title=&quot;php文件操作的模式&quot;&gt;&lt;/a&gt;php文件操作的模式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; 只读权限打开文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; 只写权限打开文件，擦除内容，如果没有则新建文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a&lt;/strong&gt; 只写权限打开文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;x&lt;/strong&gt; 新建一个只写权限的文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;r+&lt;/strong&gt; 打开读/写权限文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;w+&lt;/strong&gt; 打开读/写权限的文件， 擦除内容，如果没有则新建文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; 打开读/写权限文件，如果没有则新建文件；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;x+&lt;/strong&gt; 新建一个读/写权限的文件&lt;/li&gt;
+    <content type="html">&lt;h2 id=&quot;php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;a href=&quot;#php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&quot; class=&quot;headerlink&quot; title=&quot;php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;/a&gt;php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; &amp;#x53EA;&amp;#x8BFB;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x64E6;&amp;#x9664;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709;&amp;#x5219;&amp;#x65B0;&amp;#x5EFA;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a&lt;/strong&gt; &amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6253;&amp;#x5F00;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x&lt;/strong&gt; &amp;#x65B0;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x53EA;&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r+&lt;/strong&gt; &amp;#x6253;&amp;#x5F00;&amp;#x8BFB;/&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w+&lt;/strong&gt; &amp;#x6253;&amp;#x5F00;&amp;#x8BFB;/&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C; &amp;#x64E6;&amp;#x9664;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709;&amp;#x5219;&amp;#x65B0;&amp;#x5EFA;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; &amp;#x6253;&amp;#x5F00;&amp;#x8BFB;/&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709;&amp;#x5219;&amp;#x65B0;&amp;#x5EFA;&amp;#x6587;&amp;#x4EF6;&amp;#xFF1B;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x+&lt;/strong&gt; &amp;#x65B0;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x8BFB;/&amp;#x5199;&amp;#x6743;&amp;#x9650;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;将表单提交到本身页面&quot;&gt;&lt;a href=&quot;#将表单提交到本身页面&quot; class=&quot;headerlink&quot; title=&quot;将表单提交到本身页面&quot;&gt;&lt;/a&gt;将表单提交到本身页面&lt;/h2&gt;&lt;p&gt;只需将form的action 设置为&lt;code&gt;&amp;lt;?php echo $_SERVER[&amp;#39;PHP_SELF&amp;#39;];?&amp;gt;&lt;/code&gt;&lt;br&gt;为了防止跨站点攻击(XSS)，我们通常需要使用&lt;strong&gt;htmlspecialchars()&lt;/strong&gt;&lt;br&gt;避免&lt;strong&gt;$_SERVER[“PHP_SELF”]&lt;/strong&gt; 被利用。如下：&lt;/p&gt;
+&lt;h2 id=&quot;&amp;#x5C06;&amp;#x8868;&amp;#x5355;&amp;#x63D0;&amp;#x4EA4;&amp;#x5230;&amp;#x672C;&amp;#x8EAB;&amp;#x9875;&amp;#x9762;&quot;&gt;&lt;a href=&quot;#&amp;#x5C06;&amp;#x8868;&amp;#x5355;&amp;#x63D0;&amp;#x4EA4;&amp;#x5230;&amp;#x672C;&amp;#x8EAB;&amp;#x9875;&amp;#x9762;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x5C06;&amp;#x8868;&amp;#x5355;&amp;#x63D0;&amp;#x4EA4;&amp;#x5230;&amp;#x672C;&amp;#x8EAB;&amp;#x9875;&amp;#x9762;&quot;&gt;&lt;/a&gt;&amp;#x5C06;&amp;#x8868;&amp;#x5355;&amp;#x63D0;&amp;#x4EA4;&amp;#x5230;&amp;#x672C;&amp;#x8EAB;&amp;#x9875;&amp;#x9762;&lt;/h2&gt;&lt;p&gt;&amp;#x53EA;&amp;#x9700;&amp;#x5C06;form&amp;#x7684;action &amp;#x8BBE;&amp;#x7F6E;&amp;#x4E3A;&lt;code&gt;&amp;lt;?php echo $_SERVER[&amp;apos;PHP_SELF&amp;apos;];?&amp;gt;&lt;/code&gt;&lt;br&gt;&amp;#x4E3A;&amp;#x4E86;&amp;#x9632;&amp;#x6B62;&amp;#x8DE8;&amp;#x7AD9;&amp;#x70B9;&amp;#x653B;&amp;#x51FB;(XSS)&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x901A;&amp;#x5E38;&amp;#x9700;&amp;#x8981;&amp;#x4F7F;&amp;#x7528;&lt;strong&gt;htmlspecialchars()&lt;/strong&gt;&lt;br&gt;&amp;#x907F;&amp;#x514D;&lt;strong&gt;$_SERVER[&amp;#x201C;PHP_SELF&amp;#x201D;]&lt;/strong&gt; &amp;#x88AB;&amp;#x5229;&amp;#x7528;&amp;#x3002;&amp;#x5982;&amp;#x4E0B;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;form method=&amp;quot;post&amp;quot; action=&amp;quot;&amp;lt;?php echo htmlspecialchars($_SERVER[&amp;quot;PHP_SELF&amp;quot;]);?&amp;gt;&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;正则匹配规则&quot;&gt;&lt;a href=&quot;#正则匹配规则&quot; class=&quot;headerlink&quot; title=&quot;正则匹配规则&quot;&gt;&lt;/a&gt;正则匹配规则&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[abc]&lt;/strong&gt;  单独的字符串 ：a,b或c&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[^abc]&lt;/strong&gt; 任意的单独字符串单不是a,b,或c&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[a-z]&lt;/strong&gt;  a-z任意的单独字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[a-zA-Z]&lt;/strong&gt; a-z 或A-Z中任意的单独字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;^&lt;/strong&gt;  匹配整行开头 (比如 &lt;strong&gt;^\d+&lt;/strong&gt;匹配的是任意的数字开头的字符串)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;$&lt;/strong&gt;   匹配整行结尾 (比如&lt;strong&gt;\d+$&lt;/strong&gt;匹配任意以数字结尾的字符串)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\A&lt;/strong&gt;  匹配字符串输入的开头&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\z&lt;/strong&gt; 匹配字符串输入的结尾&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;.&lt;/strong&gt; 任意单个字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\s&lt;/strong&gt; 任意空字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\S&lt;/strong&gt;  任意非空字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\d&lt;/strong&gt; 任意数字&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\D&lt;/strong&gt; 任意非数字&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\w&lt;/strong&gt; 任意任何单字符（数字，字母，下滑线）、&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\W&lt;/strong&gt; 任意非字符&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\B&lt;/strong&gt; 匹配任意链接字符串&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;（…）&lt;/strong&gt; 捕获封闭的内容 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;(a|b)&lt;/strong&gt; 匹配a或b&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a?&lt;/strong&gt; 0或1个a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a*&lt;/strong&gt; 0或多个a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; 1或多个a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a{3}&lt;/strong&gt; 三个a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a{3,}&lt;/strong&gt; 3个或更多a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;a{3,6}&lt;/strong&gt; 3到6个a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; 忽略大小写 &lt;strong&gt;m&lt;/strong&gt; 匹配多行 &lt;strong&gt;x&lt;/strong&gt; 忽略空白&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;&amp;#x6B63;&amp;#x5219;&amp;#x5339;&amp;#x914D;&amp;#x89C4;&amp;#x5219;&quot;&gt;&lt;a href=&quot;#&amp;#x6B63;&amp;#x5219;&amp;#x5339;&amp;#x914D;&amp;#x89C4;&amp;#x5219;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6B63;&amp;#x5219;&amp;#x5339;&amp;#x914D;&amp;#x89C4;&amp;#x5219;&quot;&gt;&lt;/a&gt;&amp;#x6B63;&amp;#x5219;&amp;#x5339;&amp;#x914D;&amp;#x89C4;&amp;#x5219;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[abc]&lt;/strong&gt;  &amp;#x5355;&amp;#x72EC;&amp;#x7684;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32; &amp;#xFF1A;a,b&amp;#x6216;c&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[^abc]&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x5355;&amp;#x72EC;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x5355;&amp;#x4E0D;&amp;#x662F;a,b,&amp;#x6216;c&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[a-z]&lt;/strong&gt;  a-z&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x5355;&amp;#x72EC;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[a-zA-Z]&lt;/strong&gt; a-z &amp;#x6216;A-Z&amp;#x4E2D;&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x5355;&amp;#x72EC;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;^&lt;/strong&gt;  &amp;#x5339;&amp;#x914D;&amp;#x6574;&amp;#x884C;&amp;#x5F00;&amp;#x5934; (&amp;#x6BD4;&amp;#x5982; &lt;strong&gt;^\d+&lt;/strong&gt;&amp;#x5339;&amp;#x914D;&amp;#x7684;&amp;#x662F;&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x6570;&amp;#x5B57;&amp;#x5F00;&amp;#x5934;&amp;#x7684;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$&lt;/strong&gt;   &amp;#x5339;&amp;#x914D;&amp;#x6574;&amp;#x884C;&amp;#x7ED3;&amp;#x5C3E; (&amp;#x6BD4;&amp;#x5982;&lt;strong&gt;\d+$&lt;/strong&gt;&amp;#x5339;&amp;#x914D;&amp;#x4EFB;&amp;#x610F;&amp;#x4EE5;&amp;#x6570;&amp;#x5B57;&amp;#x7ED3;&amp;#x5C3E;&amp;#x7684;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\A&lt;/strong&gt;  &amp;#x5339;&amp;#x914D;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8F93;&amp;#x5165;&amp;#x7684;&amp;#x5F00;&amp;#x5934;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\z&lt;/strong&gt; &amp;#x5339;&amp;#x914D;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8F93;&amp;#x5165;&amp;#x7684;&amp;#x7ED3;&amp;#x5C3E;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x5355;&amp;#x4E2A;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\s&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x7A7A;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\S&lt;/strong&gt;  &amp;#x4EFB;&amp;#x610F;&amp;#x975E;&amp;#x7A7A;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\d&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x6570;&amp;#x5B57;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\D&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x975E;&amp;#x6570;&amp;#x5B57;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\w&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x4EFB;&amp;#x4F55;&amp;#x5355;&amp;#x5B57;&amp;#x7B26;&amp;#xFF08;&amp;#x6570;&amp;#x5B57;&amp;#xFF0C;&amp;#x5B57;&amp;#x6BCD;&amp;#xFF0C;&amp;#x4E0B;&amp;#x6ED1;&amp;#x7EBF;&amp;#xFF09;&amp;#x3001;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\W&lt;/strong&gt; &amp;#x4EFB;&amp;#x610F;&amp;#x975E;&amp;#x5B57;&amp;#x7B26;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\B&lt;/strong&gt; &amp;#x5339;&amp;#x914D;&amp;#x4EFB;&amp;#x610F;&amp;#x94FE;&amp;#x63A5;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;#xFF08;&amp;#x2026;&amp;#xFF09;&lt;/strong&gt; &amp;#x6355;&amp;#x83B7;&amp;#x5C01;&amp;#x95ED;&amp;#x7684;&amp;#x5185;&amp;#x5BB9; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(a|b)&lt;/strong&gt; &amp;#x5339;&amp;#x914D;a&amp;#x6216;b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a?&lt;/strong&gt; 0&amp;#x6216;1&amp;#x4E2A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a*&lt;/strong&gt; 0&amp;#x6216;&amp;#x591A;&amp;#x4E2A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a+&lt;/strong&gt; 1&amp;#x6216;&amp;#x591A;&amp;#x4E2A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3}&lt;/strong&gt; &amp;#x4E09;&amp;#x4E2A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3,}&lt;/strong&gt; 3&amp;#x4E2A;&amp;#x6216;&amp;#x66F4;&amp;#x591A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a{3,6}&lt;/strong&gt; 3&amp;#x5230;6&amp;#x4E2A;a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; &amp;#x5FFD;&amp;#x7565;&amp;#x5927;&amp;#x5C0F;&amp;#x5199; &lt;strong&gt;m&lt;/strong&gt; &amp;#x5339;&amp;#x914D;&amp;#x591A;&amp;#x884C; &lt;strong&gt;x&lt;/strong&gt; &amp;#x5FFD;&amp;#x7565;&amp;#x7A7A;&amp;#x767D;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;php文件操作的模式&quot;&gt;&lt;a href=&quot;#php文件操作的模式&quot; class=&quot;headerlink&quot; title=&quot;php文件操作的模式&quot;&gt;&lt;/a&gt;php文件操作的模式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; 只读权限打开文件&lt;/li&gt;
+      &lt;h2 id=&quot;php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&quot;&gt;&lt;a href=&quot;#php&amp;#x6587;&amp;#x4EF6;&amp;#x64CD;&amp;#x4F5C;&amp;#x7684;&amp;#x6A21;&amp;#x5F0F;&quot; 
     
     </summary>
     
@@ -913,43 +931,43 @@ He responded, &amp;quot;When the second thief was speaking, I finally understood
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;泛型（已更新）&quot;&gt;&lt;a href=&quot;#泛型（已更新）&quot; class=&quot;headerlink&quot; title=&quot;泛型（已更新）&quot;&gt;&lt;/a&gt;泛型（已更新）&lt;/h1&gt;&lt;p&gt; 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。&lt;/p&gt;
-&lt;p&gt;  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。&lt;/p&gt;
-&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;为什么要用泛型&quot;&gt;&lt;a href=&quot;#为什么要用泛型&quot; class=&quot;headerlink&quot; title=&quot;为什么要用泛型&quot;&gt;&lt;/a&gt;为什么要用泛型&lt;/h1&gt;&lt;p&gt;简言之，泛型能够使&lt;strong&gt;类型&lt;/strong&gt;（类和接口）在定义类，接口和方法的时候参数化。非常像方法定义时用到的&lt;strong&gt;形式参数&lt;/strong&gt;（formal parameters）,类型参数提供了一种你可以通过不同的输入来复用同一段代码的方法。不同点是，&lt;strong&gt;形式参数&lt;/strong&gt;输入的是&lt;strong&gt;值&lt;/strong&gt;，而类型参数输入的是&lt;strong&gt;类型&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;使用泛型比非泛型有很多好处：&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;/a&gt;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&lt;/h1&gt;&lt;p&gt; &amp;#x5728;&amp;#x4EFB;&amp;#x4F55;&amp;#x7E41;&amp;#x7410;&amp;#x7684;&amp;#xFF08;nontrivial&amp;#xFF09;&amp;#x8F6F;&amp;#x4EF6;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#xFF0C;bug&amp;#x662F;&amp;#x5BB6;&amp;#x5E38;&amp;#x4FBF;&amp;#x996D;&amp;#x3002;&amp;#x7EC6;&amp;#x5FC3;&amp;#x7684;&amp;#x89C4;&amp;#x5212;&amp;#xFF0C;&amp;#x7F16;&amp;#x7A0B;&amp;#x548C;&amp;#x6D4B;&amp;#x8BD5;&amp;#x53EF;&amp;#x4EE5;&amp;#x5E2E;&amp;#x52A9;&amp;#x51CF;&amp;#x5C11;bug&amp;#x7684;&amp;#x666E;&amp;#x904D;&amp;#x6027;&amp;#xFF08;pervasiveness&amp;#xFF09;,&amp;#x4F46;&amp;#x662F;&amp;#x65E0;&amp;#x8BBA;&amp;#x5982;&amp;#x4F55;&amp;#xFF0C;&amp;#x65E0;&amp;#x8BBA;&amp;#x5728;&amp;#x54EA;&amp;#x91CC;&amp;#xFF0C;bug&amp;#x603B;&amp;#x4F1A;&amp;#x4F3A;&amp;#x673A;&amp;#x6084;&amp;#x6084;&amp;#x6E9C;&amp;#x8FDB;&amp;#xFF08;creep&amp;#xFF09;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x5F88;&amp;#x660E;&amp;#x663E;&amp;#xFF0C;&amp;#x65B0;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x7684;&amp;#x88AB;&amp;#x5F15;&amp;#x5165;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x57FA;&amp;#x6570;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x53D8;&amp;#x5927;&amp;#x548C;&amp;#x590D;&amp;#x6742;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;  &amp;#x5E78;&amp;#x8FD0;&amp;#x7684;&amp;#x662F;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E9B;bug&amp;#x76F8;&amp;#x6BD4;&amp;#x5176;&amp;#x5B83;&amp;#x6BD4;&amp;#x8F83;&amp;#x5BB9;&amp;#x6613;&amp;#x68C0;&amp;#x6D4B;&amp;#x3002;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;bug&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x65E9;&amp;#x671F;&amp;#x88AB;&amp;#x68C0;&amp;#x6D4B;&amp;#x5230;&amp;#xFF1B;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x4FE1;&amp;#x606F;&amp;#x67E5;&amp;#x660E;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#x5E76;&amp;#x4E14;&amp;#x89E3;&amp;#x51B3;&amp;#xFF0C;&amp;#x5C31;&amp;#x5728;&amp;#x90A3;&amp;#x65F6;&amp;#x3002;&amp;#x7136;&amp;#x800C;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;bug&amp;#x4F1A;&amp;#x66F4;&amp;#x52A0;&amp;#x672A;&amp;#x9884;&amp;#x77E5;,&amp;#x4ED6;&amp;#x4EEC;&amp;#x4E0D;&amp;#x4F1A;&amp;#x7ACB;&amp;#x5373;&amp;#x5C55;&amp;#x793A;&amp;#x51FA;&amp;#x6765;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;#x9053;&amp;#x4EC0;&amp;#x4E48;&amp;#x65F6;&amp;#x5019;&amp;#x53D1;&amp;#x751F;&amp;#xFF0C;&amp;#x53EF;&amp;#x80FD;&amp;#x6839;&amp;#x672C;&amp;#x4E0D;&amp;#x5728;&amp;#x7A0B;&amp;#x5E8F;&amp;#x771F;&amp;#x6B63;&amp;#x51FA;&amp;#x73B0;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x70B9;&amp;#x4E0A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x901A;&amp;#x8FC7;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x5728;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x68C0;&amp;#x6D4B;bug&amp;#x4E3A;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x589E;&amp;#x52A0;&amp;#x4E86;&amp;#x7A33;&amp;#x5B9A;&amp;#x6027;&amp;#x3002;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x8981;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&quot;&gt;&lt;a href=&quot;#&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x8981;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x8981;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&quot;&gt;&lt;/a&gt;&amp;#x4E3A;&amp;#x4EC0;&amp;#x4E48;&amp;#x8981;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&lt;/h1&gt;&lt;p&gt;&amp;#x7B80;&amp;#x8A00;&amp;#x4E4B;&amp;#xFF0C;&amp;#x6CDB;&amp;#x578B;&amp;#x80FD;&amp;#x591F;&amp;#x4F7F;&lt;strong&gt;&amp;#x7C7B;&amp;#x578B;&lt;/strong&gt;&amp;#xFF08;&amp;#x7C7B;&amp;#x548C;&amp;#x63A5;&amp;#x53E3;&amp;#xFF09;&amp;#x5728;&amp;#x5B9A;&amp;#x4E49;&amp;#x7C7B;&amp;#xFF0C;&amp;#x63A5;&amp;#x53E3;&amp;#x548C;&amp;#x65B9;&amp;#x6CD5;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x3002;&amp;#x975E;&amp;#x5E38;&amp;#x50CF;&amp;#x65B9;&amp;#x6CD5;&amp;#x5B9A;&amp;#x4E49;&amp;#x65F6;&amp;#x7528;&amp;#x5230;&amp;#x7684;&lt;strong&gt;&amp;#x5F62;&amp;#x5F0F;&amp;#x53C2;&amp;#x6570;&lt;/strong&gt;&amp;#xFF08;formal parameters&amp;#xFF09;,&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;&amp;#x4E00;&amp;#x79CD;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x901A;&amp;#x8FC7;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x6765;&amp;#x590D;&amp;#x7528;&amp;#x540C;&amp;#x4E00;&amp;#x6BB5;&amp;#x4EE3;&amp;#x7801;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x3002;&amp;#x4E0D;&amp;#x540C;&amp;#x70B9;&amp;#x662F;&amp;#xFF0C;&lt;strong&gt;&amp;#x5F62;&amp;#x5F0F;&amp;#x53C2;&amp;#x6570;&lt;/strong&gt;&amp;#x8F93;&amp;#x5165;&amp;#x7684;&amp;#x662F;&lt;strong&gt;&amp;#x503C;&lt;/strong&gt;&amp;#xFF0C;&amp;#x800C;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x8F93;&amp;#x5165;&amp;#x7684;&amp;#x662F;&lt;strong&gt;&amp;#x7C7B;&amp;#x578B;&lt;/strong&gt;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&amp;#x6BD4;&amp;#x975E;&amp;#x6CDB;&amp;#x578B;&amp;#x6709;&amp;#x5F88;&amp;#x591A;&amp;#x597D;&amp;#x5904;&amp;#xFF1A;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;编译时更强大的类型检测&lt;/li&gt;
+&lt;li&gt;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x66F4;&amp;#x5F3A;&amp;#x5927;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x68C0;&amp;#x6D4B;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt; Java编译器对泛型应用了强大的类型检测，如果代码违反了类型安全就会报错。修复编译时错误比修复运行时错误更加容易，因为运行时错误很难查找到。&lt;/p&gt;
+&lt;p&gt; Java&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x5BF9;&amp;#x6CDB;&amp;#x578B;&amp;#x5E94;&amp;#x7528;&amp;#x4E86;&amp;#x5F3A;&amp;#x5927;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x68C0;&amp;#x6D4B;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x4EE3;&amp;#x7801;&amp;#x8FDD;&amp;#x53CD;&amp;#x4E86;&amp;#x7C7B;&amp;#x578B;&amp;#x5B89;&amp;#x5168;&amp;#x5C31;&amp;#x4F1A;&amp;#x62A5;&amp;#x9519;&amp;#x3002;&amp;#x4FEE;&amp;#x590D;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x9519;&amp;#x8BEF;&amp;#x6BD4;&amp;#x4FEE;&amp;#x590D;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x9519;&amp;#x8BEF;&amp;#x66F4;&amp;#x52A0;&amp;#x5BB9;&amp;#x6613;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x9519;&amp;#x8BEF;&amp;#x5F88;&amp;#x96BE;&amp;#x67E5;&amp;#x627E;&amp;#x5230;&amp;#x3002;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;消除类型转换(Elimination of casts)&lt;/p&gt;
-&lt;p&gt;以下代码片段没有泛型需要转型：&lt;/p&gt;
-&lt;p&gt;  List list = new ArrayList();&lt;br&gt;  list.add(“hello”);&lt;br&gt;  String s = (String) list.get(0);&lt;br&gt;当我们重新用泛型编写，代码就不需要类型转换了：&lt;/p&gt;
-&lt;p&gt;  List&lt;string&gt; list = new ArrayList&lt;string&gt;();&lt;br&gt;  list.add(“hello”);&lt;br&gt;  String s = list.get(0);   // no cast&lt;/string&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x6D88;&amp;#x9664;&amp;#x7C7B;&amp;#x578B;&amp;#x8F6C;&amp;#x6362;(Elimination of casts)&lt;/p&gt;
+&lt;p&gt;&amp;#x4EE5;&amp;#x4E0B;&amp;#x4EE3;&amp;#x7801;&amp;#x7247;&amp;#x6BB5;&amp;#x6CA1;&amp;#x6709;&amp;#x6CDB;&amp;#x578B;&amp;#x9700;&amp;#x8981;&amp;#x8F6C;&amp;#x578B;&amp;#xFF1A;&lt;/p&gt;
+&lt;p&gt;  List list = new ArrayList();&lt;br&gt;  list.add(&amp;#x201C;hello&amp;#x201D;);&lt;br&gt;  String s = (String) list.get(0);&lt;br&gt;&amp;#x5F53;&amp;#x6211;&amp;#x4EEC;&amp;#x91CD;&amp;#x65B0;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x5199;&amp;#xFF0C;&amp;#x4EE3;&amp;#x7801;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x7C7B;&amp;#x578B;&amp;#x8F6C;&amp;#x6362;&amp;#x4E86;&amp;#xFF1A;&lt;/p&gt;
+&lt;p&gt;  List&lt;string&gt; list = new ArrayList&lt;string&gt;();&lt;br&gt;  list.add(&amp;#x201C;hello&amp;#x201D;);&lt;br&gt;  String s = list.get(0);   // no cast&lt;/string&gt;&lt;/string&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使开发者实现泛型算法&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x4F7F;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x5B9E;&amp;#x73B0;&amp;#x6CDB;&amp;#x578B;&amp;#x7B97;&amp;#x6CD5;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;通过泛型，开发者可以自己实现泛型算法，应用到一系列的不同类型，可以自定义，并且类型安全，易读。&lt;/p&gt;
-&lt;h1 id=&quot;泛型类型&quot;&gt;&lt;a href=&quot;#泛型类型&quot; class=&quot;headerlink&quot; title=&quot;泛型类型&quot;&gt;&lt;/a&gt;泛型类型&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;泛型类型&lt;/strong&gt;是泛型类或者接口被类型参数化。下面的&lt;strong&gt;Box&lt;/strong&gt;类将被更改演示这个概念。&lt;/p&gt;
-&lt;h3 id=&quot;简单的-Box-类&quot;&gt;&lt;a href=&quot;#简单的-Box-类&quot; class=&quot;headerlink&quot; title=&quot;简单的 Box 类&quot;&gt;&lt;/a&gt;简单的 Box 类&lt;/h3&gt;&lt;p&gt;列举一个简单的非泛型 &lt;strong&gt;Box&lt;/strong&gt;操作任意类型的object。它只需要提供两个方法：set，添加一个obejct到box，get,获取这个对象：&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x6CDB;&amp;#x578B;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x53EF;&amp;#x4EE5;&amp;#x81EA;&amp;#x5DF1;&amp;#x5B9E;&amp;#x73B0;&amp;#x6CDB;&amp;#x578B;&amp;#x7B97;&amp;#x6CD5;&amp;#xFF0C;&amp;#x5E94;&amp;#x7528;&amp;#x5230;&amp;#x4E00;&amp;#x7CFB;&amp;#x5217;&amp;#x7684;&amp;#x4E0D;&amp;#x540C;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x81EA;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x7C7B;&amp;#x578B;&amp;#x5B89;&amp;#x5168;&amp;#xFF0C;&amp;#x6613;&amp;#x8BFB;&amp;#x3002;&lt;/p&gt;
+&lt;h1 id=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;a href=&quot;#&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;/a&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&lt;/strong&gt;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x6216;&amp;#x8005;&amp;#x63A5;&amp;#x53E3;&amp;#x88AB;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x3002;&amp;#x4E0B;&amp;#x9762;&amp;#x7684;&lt;strong&gt;Box&lt;/strong&gt;&amp;#x7C7B;&amp;#x5C06;&amp;#x88AB;&amp;#x66F4;&amp;#x6539;&amp;#x6F14;&amp;#x793A;&amp;#x8FD9;&amp;#x4E2A;&amp;#x6982;&amp;#x5FF5;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x7B80;&amp;#x5355;&amp;#x7684;-Box-&amp;#x7C7B;&quot;&gt;&lt;a href=&quot;#&amp;#x7B80;&amp;#x5355;&amp;#x7684;-Box-&amp;#x7C7B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7B80;&amp;#x5355;&amp;#x7684; Box &amp;#x7C7B;&quot;&gt;&lt;/a&gt;&amp;#x7B80;&amp;#x5355;&amp;#x7684; Box &amp;#x7C7B;&lt;/h3&gt;&lt;p&gt;&amp;#x5217;&amp;#x4E3E;&amp;#x4E00;&amp;#x4E2A;&amp;#x7B80;&amp;#x5355;&amp;#x7684;&amp;#x975E;&amp;#x6CDB;&amp;#x578B; &lt;strong&gt;Box&lt;/strong&gt;&amp;#x64CD;&amp;#x4F5C;&amp;#x4EFB;&amp;#x610F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;object&amp;#x3002;&amp;#x5B83;&amp;#x53EA;&amp;#x9700;&amp;#x8981;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E24;&amp;#x4E2A;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF1A;set&amp;#xFF0C;&amp;#x6DFB;&amp;#x52A0;&amp;#x4E00;&amp;#x4E2A;obejct&amp;#x5230;box&amp;#xFF0C;get,&amp;#x83B7;&amp;#x53D6;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5BF9;&amp;#x8C61;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class Box {
 private Object object;
 
 public void set(Object object) { this.object = object; }
 public Object get() { return object; }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因为它的方法接收或返回一个对象，你可以任意传入，只要传入的不是原始数据类型。我们没有在编译时辨别clas如何使用的。一边可能替换一个 Integer到box，另一边获取的不是Integer类型，而可能传入一个String类型，结果会导致运行时错误。&lt;/p&gt;
-&lt;h3 id=&quot;泛型版本的Box&quot;&gt;&lt;a href=&quot;#泛型版本的Box&quot; class=&quot;headerlink&quot; title=&quot;泛型版本的Box&quot;&gt;&lt;/a&gt;泛型版本的Box&lt;/h3&gt;&lt;p&gt;泛型类的定义形式如下：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x56E0;&amp;#x4E3A;&amp;#x5B83;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x63A5;&amp;#x6536;&amp;#x6216;&amp;#x8FD4;&amp;#x56DE;&amp;#x4E00;&amp;#x4E2A;&amp;#x5BF9;&amp;#x8C61;&amp;#xFF0C;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x4EFB;&amp;#x610F;&amp;#x4F20;&amp;#x5165;&amp;#xFF0C;&amp;#x53EA;&amp;#x8981;&amp;#x4F20;&amp;#x5165;&amp;#x7684;&amp;#x4E0D;&amp;#x662F;&amp;#x539F;&amp;#x59CB;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x3002;&amp;#x6211;&amp;#x4EEC;&amp;#x6CA1;&amp;#x6709;&amp;#x5728;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x8FA8;&amp;#x522B;clas&amp;#x5982;&amp;#x4F55;&amp;#x4F7F;&amp;#x7528;&amp;#x7684;&amp;#x3002;&amp;#x4E00;&amp;#x8FB9;&amp;#x53EF;&amp;#x80FD;&amp;#x66FF;&amp;#x6362;&amp;#x4E00;&amp;#x4E2A; Integer&amp;#x5230;box&amp;#xFF0C;&amp;#x53E6;&amp;#x4E00;&amp;#x8FB9;&amp;#x83B7;&amp;#x53D6;&amp;#x7684;&amp;#x4E0D;&amp;#x662F;Integer&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x800C;&amp;#x53EF;&amp;#x80FD;&amp;#x4F20;&amp;#x5165;&amp;#x4E00;&amp;#x4E2A;String&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x7ED3;&amp;#x679C;&amp;#x4F1A;&amp;#x5BFC;&amp;#x81F4;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x9519;&amp;#x8BEF;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#x7248;&amp;#x672C;&amp;#x7684;Box&quot;&gt;&lt;a href=&quot;#&amp;#x6CDB;&amp;#x578B;&amp;#x7248;&amp;#x672C;&amp;#x7684;Box&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#x7248;&amp;#x672C;&amp;#x7684;Box&quot;&gt;&lt;/a&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x7248;&amp;#x672C;&amp;#x7684;Box&lt;/h3&gt;&lt;p&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x7684;&amp;#x5B9A;&amp;#x4E49;&amp;#x5F62;&amp;#x5F0F;&amp;#x5982;&amp;#x4E0B;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class name&amp;lt;T1, T2, ..., Tn&amp;gt; { /* ... */ }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;类型参数部分被一对尖括号（&amp;lt;&amp;gt;）划分，紧跟类名，它指定了&lt;strong&gt;类型参数&lt;/strong&gt;（也叫作类型变量）T1， T2， ….,和Tn.&lt;/p&gt;
-&lt;p&gt;把原Box类更新为泛型类，你要通过把“public class Box”改变为“public class Box&lt;t&gt;”创建一个类型声明。这会引入一个&lt;strong&gt;类型变量&lt;/strong&gt;, &lt;strong&gt;T&lt;/strong&gt;,你可以在类中任意地方使用。通过这个改变，Box类就变为：&lt;/t&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x90E8;&amp;#x5206;&amp;#x88AB;&amp;#x4E00;&amp;#x5BF9;&amp;#x5C16;&amp;#x62EC;&amp;#x53F7;&amp;#xFF08;&amp;lt;&amp;gt;&amp;#xFF09;&amp;#x5212;&amp;#x5206;&amp;#xFF0C;&amp;#x7D27;&amp;#x8DDF;&amp;#x7C7B;&amp;#x540D;&amp;#xFF0C;&amp;#x5B83;&amp;#x6307;&amp;#x5B9A;&amp;#x4E86;&lt;strong&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&lt;/strong&gt;&amp;#xFF08;&amp;#x4E5F;&amp;#x53EB;&amp;#x4F5C;&amp;#x7C7B;&amp;#x578B;&amp;#x53D8;&amp;#x91CF;&amp;#xFF09;T1&amp;#xFF0C; T2&amp;#xFF0C; &amp;#x2026;.,&amp;#x548C;Tn.&lt;/p&gt;
+&lt;p&gt;&amp;#x628A;&amp;#x539F;Box&amp;#x7C7B;&amp;#x66F4;&amp;#x65B0;&amp;#x4E3A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#xFF0C;&amp;#x4F60;&amp;#x8981;&amp;#x901A;&amp;#x8FC7;&amp;#x628A;&amp;#x201C;public class Box&amp;#x201D;&amp;#x6539;&amp;#x53D8;&amp;#x4E3A;&amp;#x201C;public class Box&lt;t&gt;&amp;#x201D;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x578B;&amp;#x58F0;&amp;#x660E;&amp;#x3002;&amp;#x8FD9;&amp;#x4F1A;&amp;#x5F15;&amp;#x5165;&amp;#x4E00;&amp;#x4E2A;&lt;strong&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x53D8;&amp;#x91CF;&lt;/strong&gt;, &lt;strong&gt;T&lt;/strong&gt;,&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x7C7B;&amp;#x4E2D;&amp;#x4EFB;&amp;#x610F;&amp;#x5730;&amp;#x65B9;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&amp;#x901A;&amp;#x8FC7;&amp;#x8FD9;&amp;#x4E2A;&amp;#x6539;&amp;#x53D8;&amp;#xFF0C;Box&amp;#x7C7B;&amp;#x5C31;&amp;#x53D8;&amp;#x4E3A;&amp;#xFF1A;&lt;/t&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/**
  * Generic version of the Box class.
  * @param &amp;lt;T&amp;gt; the type of the value being boxed
@@ -961,31 +979,31 @@ private T t;
 public void set(T t) { this.t = t; }
 public T get() { return t; }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以看到，所有&lt;strong&gt;Object&lt;/strong&gt;出现的地方都被替换为T了。一个类型变量可以指定为任意非原始类型的类型：任意的类，任意的接口，任意的数组，甚至其他的类型变量。同样的技术可以应用到创建泛型接口上。&lt;/p&gt;
-&lt;h3 id=&quot;类型参数命名规则（Naming-Conventions）&quot;&gt;&lt;a href=&quot;#类型参数命名规则（Naming-Conventions）&quot; class=&quot;headerlink&quot; title=&quot;类型参数命名规则（Naming Conventions）&quot;&gt;&lt;/a&gt;类型参数命名规则（Naming Conventions）&lt;/h3&gt;&lt;p&gt;通过规则，类型参数是单独的，大写字母。这个表示鲜明区别了你已知的变量命名规则，一个好的理由是：没有这个规则，你将很难区分类型变量和原生类或接口名的区别。&lt;/p&gt;
-&lt;p&gt;最普遍使用的类型参数是：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x770B;&amp;#x5230;&amp;#xFF0C;&amp;#x6240;&amp;#x6709;&lt;strong&gt;Object&lt;/strong&gt;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x5730;&amp;#x65B9;&amp;#x90FD;&amp;#x88AB;&amp;#x66FF;&amp;#x6362;&amp;#x4E3A;T&amp;#x4E86;&amp;#x3002;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x578B;&amp;#x53D8;&amp;#x91CF;&amp;#x53EF;&amp;#x4EE5;&amp;#x6307;&amp;#x5B9A;&amp;#x4E3A;&amp;#x4EFB;&amp;#x610F;&amp;#x975E;&amp;#x539F;&amp;#x59CB;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#xFF1A;&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x63A5;&amp;#x53E3;&amp;#xFF0C;&amp;#x4EFB;&amp;#x610F;&amp;#x7684;&amp;#x6570;&amp;#x7EC4;&amp;#xFF0C;&amp;#x751A;&amp;#x81F3;&amp;#x5176;&amp;#x4ED6;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x53D8;&amp;#x91CF;&amp;#x3002;&amp;#x540C;&amp;#x6837;&amp;#x7684;&amp;#x6280;&amp;#x672F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5E94;&amp;#x7528;&amp;#x5230;&amp;#x521B;&amp;#x5EFA;&amp;#x6CDB;&amp;#x578B;&amp;#x63A5;&amp;#x53E3;&amp;#x4E0A;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x547D;&amp;#x540D;&amp;#x89C4;&amp;#x5219;&amp;#xFF08;Naming-Conventions&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x547D;&amp;#x540D;&amp;#x89C4;&amp;#x5219;&amp;#xFF08;Naming-Conventions&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x547D;&amp;#x540D;&amp;#x89C4;&amp;#x5219;&amp;#xFF08;Naming Conventions&amp;#xFF09;&quot;&gt;&lt;/a&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x547D;&amp;#x540D;&amp;#x89C4;&amp;#x5219;&amp;#xFF08;Naming Conventions&amp;#xFF09;&lt;/h3&gt;&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x89C4;&amp;#x5219;&amp;#xFF0C;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x662F;&amp;#x5355;&amp;#x72EC;&amp;#x7684;&amp;#xFF0C;&amp;#x5927;&amp;#x5199;&amp;#x5B57;&amp;#x6BCD;&amp;#x3002;&amp;#x8FD9;&amp;#x4E2A;&amp;#x8868;&amp;#x793A;&amp;#x9C9C;&amp;#x660E;&amp;#x533A;&amp;#x522B;&amp;#x4E86;&amp;#x4F60;&amp;#x5DF2;&amp;#x77E5;&amp;#x7684;&amp;#x53D8;&amp;#x91CF;&amp;#x547D;&amp;#x540D;&amp;#x89C4;&amp;#x5219;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E2A;&amp;#x597D;&amp;#x7684;&amp;#x7406;&amp;#x7531;&amp;#x662F;&amp;#xFF1A;&amp;#x6CA1;&amp;#x6709;&amp;#x8FD9;&amp;#x4E2A;&amp;#x89C4;&amp;#x5219;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C06;&amp;#x5F88;&amp;#x96BE;&amp;#x533A;&amp;#x5206;&amp;#x7C7B;&amp;#x578B;&amp;#x53D8;&amp;#x91CF;&amp;#x548C;&amp;#x539F;&amp;#x751F;&amp;#x7C7B;&amp;#x6216;&amp;#x63A5;&amp;#x53E3;&amp;#x540D;&amp;#x7684;&amp;#x533A;&amp;#x522B;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6700;&amp;#x666E;&amp;#x904D;&amp;#x4F7F;&amp;#x7528;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x662F;&amp;#xFF1A;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;E -Element（Java Collections框架大量使用）&lt;/li&gt;
+&lt;li&gt;E -Element&amp;#xFF08;Java Collections&amp;#x6846;&amp;#x67B6;&amp;#x5927;&amp;#x91CF;&amp;#x4F7F;&amp;#x7528;&amp;#xFF09;&lt;/li&gt;
 &lt;li&gt;K -Key&lt;/li&gt;
 &lt;li&gt;N -Number&lt;/li&gt;
 &lt;li&gt;T -Type&lt;/li&gt;
 &lt;li&gt;V -Value &lt;/li&gt;
-&lt;li&gt;S,U,V 等 -第二，第三，第四个类型&lt;/li&gt;
+&lt;li&gt;S,U,V &amp;#x7B49; -&amp;#x7B2C;&amp;#x4E8C;&amp;#xFF0C;&amp;#x7B2C;&amp;#x4E09;&amp;#xFF0C;&amp;#x7B2C;&amp;#x56DB;&amp;#x4E2A;&amp;#x7C7B;&amp;#x578B;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;你可以在JAVA SE API 看到这些名字的使用。&lt;/p&gt;
-&lt;h3 id=&quot;调用和实例化一个泛型类型&quot;&gt;&lt;a href=&quot;#调用和实例化一个泛型类型&quot; class=&quot;headerlink&quot; title=&quot;调用和实例化一个泛型类型&quot;&gt;&lt;/a&gt;调用和实例化一个泛型类型&lt;/h3&gt;&lt;p&gt;要在你的代码引用泛型类 Box，你必须执行 泛型类型调用，把T替换成具体的值，比如Integer： &lt;/p&gt;
+&lt;p&gt;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;JAVA SE API &amp;#x770B;&amp;#x5230;&amp;#x8FD9;&amp;#x4E9B;&amp;#x540D;&amp;#x5B57;&amp;#x7684;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x8C03;&amp;#x7528;&amp;#x548C;&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E00;&amp;#x4E2A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;a href=&quot;#&amp;#x8C03;&amp;#x7528;&amp;#x548C;&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E00;&amp;#x4E2A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x8C03;&amp;#x7528;&amp;#x548C;&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E00;&amp;#x4E2A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;/a&gt;&amp;#x8C03;&amp;#x7528;&amp;#x548C;&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E00;&amp;#x4E2A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&lt;/h3&gt;&lt;p&gt;&amp;#x8981;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x5F15;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B; Box&amp;#xFF0C;&amp;#x4F60;&amp;#x5FC5;&amp;#x987B;&amp;#x6267;&amp;#x884C; &amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&amp;#x8C03;&amp;#x7528;&amp;#xFF0C;&amp;#x628A;T&amp;#x66FF;&amp;#x6362;&amp;#x6210;&amp;#x5177;&amp;#x4F53;&amp;#x7684;&amp;#x503C;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;Integer&amp;#xFF1A; &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以认为泛型类型调用跟原生方法调用大致一样，但是不是传入一个参数到方法，而是传入一个类型蚕食–这个情况下的Integer–给Box类本身。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x8BA4;&amp;#x4E3A;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&amp;#x8C03;&amp;#x7528;&amp;#x8DDF;&amp;#x539F;&amp;#x751F;&amp;#x65B9;&amp;#x6CD5;&amp;#x8C03;&amp;#x7528;&amp;#x5927;&amp;#x81F4;&amp;#x4E00;&amp;#x6837;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x4E0D;&amp;#x662F;&amp;#x4F20;&amp;#x5165;&amp;#x4E00;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#x5230;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF0C;&amp;#x800C;&amp;#x662F;&amp;#x4F20;&amp;#x5165;&amp;#x4E00;&amp;#x4E2A;&amp;#x7C7B;&amp;#x578B;&amp;#x8695;&amp;#x98DF;&amp;#x2013;&amp;#x8FD9;&amp;#x4E2A;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#x7684;Integer&amp;#x2013;&amp;#x7ED9;Box&amp;#x7C7B;&amp;#x672C;&amp;#x8EAB;&amp;#x3002;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Type Parameter&lt;/strong&gt;和&lt;strong&gt;Type Argument&lt;/strong&gt;术语（Terminology）：&lt;br&gt;很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，&lt;br&gt;type argument 创建一个参数化类型，因此，Foo&amp;lt; T&amp;gt;中的T是type parameter，Foo&amp;lt; String&amp;gt; f中的String是一个type argument。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type Parameter&lt;/strong&gt;&amp;#x548C;&lt;strong&gt;Type Argument&lt;/strong&gt;&amp;#x672F;&amp;#x8BED;&amp;#xFF08;Terminology&amp;#xFF09;&amp;#xFF1A;&lt;br&gt;&amp;#x5F88;&amp;#x591A;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x4EA4;&amp;#x6362;&amp;#x4F7F;&amp;#x7528;&amp;#x8FD9;&amp;#x4E2A;&amp;#x4E24;&amp;#x4E2A;&amp;#x672F;&amp;#x8BED;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x8FD9;&amp;#x4E24;&amp;#x4E2A;&amp;#x672F;&amp;#x8BED;&amp;#x5E76;&amp;#x4E0D;&amp;#x540C;&amp;#x3002;&amp;#x6572;&amp;#x4EE3;&amp;#x7801;&amp;#x65F6;&amp;#xFF0C;&lt;br&gt;type argument &amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x56E0;&amp;#x6B64;&amp;#xFF0C;Foo&amp;lt; T&amp;gt;&amp;#x4E2D;&amp;#x7684;T&amp;#x662F;type parameter&amp;#xFF0C;Foo&amp;lt; String&amp;gt; f&amp;#x4E2D;&amp;#x7684;String&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;type argument&amp;#x3002;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;就想其他的变量定义，上面的代码不会真正创建一个新的 Box对象。它只是声明，integerBox将持有一个“Box of Integer”的引用，用以读取Box&lt;integer&gt;.泛型类型的调用通常称为参数化类型。&lt;/integer&gt;&lt;/p&gt;
-&lt;p&gt;为了实例化这个类，用new 关键字，把&lt;integer&gt;放在类名和括号之间。&lt;/integer&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x5C31;&amp;#x60F3;&amp;#x5176;&amp;#x4ED6;&amp;#x7684;&amp;#x53D8;&amp;#x91CF;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x4E0A;&amp;#x9762;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x4E0D;&amp;#x4F1A;&amp;#x771F;&amp;#x6B63;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x65B0;&amp;#x7684; Box&amp;#x5BF9;&amp;#x8C61;&amp;#x3002;&amp;#x5B83;&amp;#x53EA;&amp;#x662F;&amp;#x58F0;&amp;#x660E;&amp;#xFF0C;integerBox&amp;#x5C06;&amp;#x6301;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x201C;Box of Integer&amp;#x201D;&amp;#x7684;&amp;#x5F15;&amp;#x7528;&amp;#xFF0C;&amp;#x7528;&amp;#x4EE5;&amp;#x8BFB;&amp;#x53D6;Box&lt;integer&gt;.&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8C03;&amp;#x7528;&amp;#x901A;&amp;#x5E38;&amp;#x79F0;&amp;#x4E3A;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&amp;#x3002;&lt;/integer&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E3A;&amp;#x4E86;&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7C7B;&amp;#xFF0C;&amp;#x7528;new &amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x628A;&lt;integer&gt;&amp;#x653E;&amp;#x5728;&amp;#x7C7B;&amp;#x540D;&amp;#x548C;&amp;#x62EC;&amp;#x53F7;&amp;#x4E4B;&amp;#x95F4;&amp;#x3002;&lt;/integer&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox = new Box&amp;lt;Integer&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;The-Diamond&quot;&gt;&lt;a href=&quot;#The-Diamond&quot; class=&quot;headerlink&quot; title=&quot;The Diamond&quot;&gt;&lt;/a&gt;The Diamond&lt;/h3&gt;&lt;p&gt;在Java SE 7及以后版本，可以省去类型参数调用泛型类的构造函数，用一个空的类型参数（&amp;lt;&amp;gt;）,编译器可以通过上下文决定，或推测type arguments，这个尖括号非正式得叫作diamond(钻石？这么奇葩)，你可以这样创建Box&amp;lt; Integer&amp;gt;的一个实例：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;The-Diamond&quot;&gt;&lt;a href=&quot;#The-Diamond&quot; class=&quot;headerlink&quot; title=&quot;The Diamond&quot;&gt;&lt;/a&gt;The Diamond&lt;/h3&gt;&lt;p&gt;&amp;#x5728;Java SE 7&amp;#x53CA;&amp;#x4EE5;&amp;#x540E;&amp;#x7248;&amp;#x672C;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x7701;&amp;#x53BB;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x8C03;&amp;#x7528;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x7684;&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x7528;&amp;#x4E00;&amp;#x4E2A;&amp;#x7A7A;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#xFF08;&amp;lt;&amp;gt;&amp;#xFF09;,&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x53EF;&amp;#x4EE5;&amp;#x901A;&amp;#x8FC7;&amp;#x4E0A;&amp;#x4E0B;&amp;#x6587;&amp;#x51B3;&amp;#x5B9A;&amp;#xFF0C;&amp;#x6216;&amp;#x63A8;&amp;#x6D4B;type arguments&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5C16;&amp;#x62EC;&amp;#x53F7;&amp;#x975E;&amp;#x6B63;&amp;#x5F0F;&amp;#x5F97;&amp;#x53EB;&amp;#x4F5C;diamond(&amp;#x94BB;&amp;#x77F3;&amp;#xFF1F;&amp;#x8FD9;&amp;#x4E48;&amp;#x5947;&amp;#x8469;)&amp;#xFF0C;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x8FD9;&amp;#x6837;&amp;#x521B;&amp;#x5EFA;Box&amp;lt; Integer&amp;gt;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B9E;&amp;#x4F8B;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;Integer&amp;gt; integerBox = new Box&amp;lt;&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;要查看更多关于diamond 符号和类型推断（inference）,请看&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;类型推断&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;多类型参数&quot;&gt;&lt;a href=&quot;#多类型参数&quot; class=&quot;headerlink&quot; title=&quot;多类型参数&quot;&gt;&lt;/a&gt;多类型参数&lt;/h3&gt;&lt;p&gt;正如前面提到的，泛型类可以有多个类型参数。比如泛型 OrderedPair 类，实现了泛型接口 Pair：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x8981;&amp;#x67E5;&amp;#x770B;&amp;#x66F4;&amp;#x591A;&amp;#x5173;&amp;#x4E8E;diamond &amp;#x7B26;&amp;#x53F7;&amp;#x548C;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x65AD;&amp;#xFF08;inference&amp;#xFF09;,&amp;#x8BF7;&amp;#x770B;&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x65AD;&lt;/a&gt;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x591A;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&quot;&gt;&lt;a href=&quot;#&amp;#x591A;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x591A;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&quot;&gt;&lt;/a&gt;&amp;#x591A;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&lt;/h3&gt;&lt;p&gt;&amp;#x6B63;&amp;#x5982;&amp;#x524D;&amp;#x9762;&amp;#x63D0;&amp;#x5230;&amp;#x7684;&amp;#xFF0C;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x4E2A;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x3002;&amp;#x6BD4;&amp;#x5982;&amp;#x6CDB;&amp;#x578B; OrderedPair &amp;#x7C7B;&amp;#xFF0C;&amp;#x5B9E;&amp;#x73B0;&amp;#x4E86;&amp;#x6CDB;&amp;#x578B;&amp;#x63A5;&amp;#x53E3; Pair&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public interface Pair&amp;lt;K, V&amp;gt; {
 public K getKey();
 public V getValue();
@@ -1004,37 +1022,37 @@ this.value = value;
 public K getKey()    { return key; }
 public V getValue() { return value; }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面的语句创建了两个OrderedPair的实例：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4E0B;&amp;#x9762;&amp;#x7684;&amp;#x8BED;&amp;#x53E5;&amp;#x521B;&amp;#x5EFA;&amp;#x4E86;&amp;#x4E24;&amp;#x4E2A;OrderedPair&amp;#x7684;&amp;#x5B9E;&amp;#x4F8B;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Pair&amp;lt;String, Integer&amp;gt; p1 = new OrderedPair&amp;lt;String, Integer&amp;gt;(&amp;quot;Even&amp;quot;, 8);
 Pair&amp;lt;String, String&amp;gt;  p2 = new OrderedPair&amp;lt;String, String&amp;gt;(&amp;quot;hello&amp;quot;, &amp;quot;world&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;new OrderedPair&lt;string,integer&gt;把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自动装箱&lt;/a&gt;，传入String和int到类是有效的。&lt;/string,integer&gt;&lt;/p&gt;
-&lt;h3 id=&quot;参数化类型&quot;&gt;&lt;a href=&quot;#参数化类型&quot; class=&quot;headerlink&quot; title=&quot;参数化类型&quot;&gt;&lt;/a&gt;参数化类型&lt;/h3&gt;&lt;p&gt;你也可以用一个参数化的类型（ie List&amp;lt; String&amp;gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&amp;lt; K,V&amp;gt;:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;new OrderedPair&lt;string,integer&gt;&amp;#x628A;K&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E3A;String&amp;#xFF0C;V&amp;#x5B9E;&amp;#x4F8B;&amp;#x5316;&amp;#x4E3A;Integer&amp;#x3002;&amp;#x56E0;&amp;#x6B64;OrderedPair&amp;#x7684;&amp;#x53C2;&amp;#x6570;&amp;#x7C7B;&amp;#x578B;&amp;#x5206;&amp;#x522B;(respectively)&amp;#x662F;String&amp;#x548C;Integer&amp;#x3002;&amp;#x56E0;&amp;#x4E3A;&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x81EA;&amp;#x52A8;&amp;#x88C5;&amp;#x7BB1;&lt;/a&gt;&amp;#xFF0C;&amp;#x4F20;&amp;#x5165;String&amp;#x548C;int&amp;#x5230;&amp;#x7C7B;&amp;#x662F;&amp;#x6709;&amp;#x6548;&amp;#x7684;&amp;#x3002;&lt;/string,integer&gt;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;a href=&quot;#&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&quot;&gt;&lt;/a&gt;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&lt;/h3&gt;&lt;p&gt;&amp;#x4F60;&amp;#x4E5F;&amp;#x53EF;&amp;#x4EE5;&amp;#x7528;&amp;#x4E00;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#xFF08;ie List&amp;lt; String&amp;gt;&amp;#xFF09;&amp;#x66FF;&amp;#x6362;&amp;#xFF08;substitute&amp;#xFF09;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#xFF08;K &amp;#xFF0C;V&amp;#xFF09;,&amp;#x4F8B;&amp;#x5982;&amp;#x7528;OrderedPair&amp;lt; K,V&amp;gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;OrderedPair&amp;lt;String, Box&amp;lt;Integer&amp;gt;&amp;gt; p = new OrderedPair&amp;lt;&amp;gt;(&amp;quot;primes&amp;quot;, new Box&amp;lt;Integer&amp;gt;(...));
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;原类型（Raw-Types）&quot;&gt;&lt;a href=&quot;#原类型（Raw-Types）&quot; class=&quot;headerlink&quot; title=&quot;原类型（Raw Types）&quot;&gt;&lt;/a&gt;原类型（Raw Types）&lt;/h1&gt;&lt;p&gt;原类型是指泛型类或泛型接口的名字没有任何参数，比如，给出泛型类Box：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#xFF08;Raw-Types&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#xFF08;Raw-Types&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#xFF08;Raw Types&amp;#xFF09;&quot;&gt;&lt;/a&gt;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#xFF08;Raw Types&amp;#xFF09;&lt;/h1&gt;&lt;p&gt;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x662F;&amp;#x6307;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x6216;&amp;#x6CDB;&amp;#x578B;&amp;#x63A5;&amp;#x53E3;&amp;#x7684;&amp;#x540D;&amp;#x5B57;&amp;#x6CA1;&amp;#x6709;&amp;#x4EFB;&amp;#x4F55;&amp;#x53C2;&amp;#x6570;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;&amp;#xFF0C;&amp;#x7ED9;&amp;#x51FA;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;Box&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class Box(T){
 public void set(T t){
 /* ...... */
 }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以为形参&lt;strong&gt;T&lt;/strong&gt;赋值一个真实的类型参数来创建一个参数化类型的 Box（T）：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E3A;&amp;#x5F62;&amp;#x53C2;&lt;strong&gt;T&lt;/strong&gt;&amp;#x8D4B;&amp;#x503C;&amp;#x4E00;&amp;#x4E2A;&amp;#x771F;&amp;#x5B9E;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x6765;&amp;#x521B;&amp;#x5EFA;&amp;#x4E00;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&amp;#x7684; Box&amp;#xFF08;T&amp;#xFF09;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box(Ingeter) intBox=new Box&amp;lt;&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果真实的类型参数被省略掉了，你就创建了一个&lt;strong&gt;原类型&lt;/strong&gt;的Box&lt;t&gt;:&lt;/t&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;&amp;#x771F;&amp;#x5B9E;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x53C2;&amp;#x6570;&amp;#x88AB;&amp;#x7701;&amp;#x7565;&amp;#x6389;&amp;#x4E86;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C31;&amp;#x521B;&amp;#x5EFA;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&lt;strong&gt;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&lt;/strong&gt;&amp;#x7684;Box&lt;t&gt;:&lt;/t&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box rawBox =new Box();
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因此，Box是Box&lt;t&gt;的原类型。然而，非泛型类或非泛型接口没有原类型。&lt;br&gt;原类型出现在遗赠的代码里是因为大量的API类（比如&lt;strong&gt;Collections&lt;/strong&gt;类）在JDK5之前不是泛型类。当使用原类型的时候，你本质上使用的是泛型之前的表现—Box -&amp;gt;Object.为了向后兼容，赋值参数化类型给他的原类型是允许的：&lt;/t&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x56E0;&amp;#x6B64;&amp;#xFF0C;Box&amp;#x662F;Box&lt;t&gt;&amp;#x7684;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x3002;&amp;#x7136;&amp;#x800C;&amp;#xFF0C;&amp;#x975E;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x6216;&amp;#x975E;&amp;#x6CDB;&amp;#x578B;&amp;#x63A5;&amp;#x53E3;&amp;#x6CA1;&amp;#x6709;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x3002;&lt;br&gt;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x51FA;&amp;#x73B0;&amp;#x5728;&amp;#x9057;&amp;#x8D60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x91CC;&amp;#x662F;&amp;#x56E0;&amp;#x4E3A;&amp;#x5927;&amp;#x91CF;&amp;#x7684;API&amp;#x7C7B;&amp;#xFF08;&amp;#x6BD4;&amp;#x5982;&lt;strong&gt;Collections&lt;/strong&gt;&amp;#x7C7B;&amp;#xFF09;&amp;#x5728;JDK5&amp;#x4E4B;&amp;#x524D;&amp;#x4E0D;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x3002;&amp;#x5F53;&amp;#x4F7F;&amp;#x7528;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#xFF0C;&amp;#x4F60;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4F7F;&amp;#x7528;&amp;#x7684;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x4E4B;&amp;#x524D;&amp;#x7684;&amp;#x8868;&amp;#x73B0;&amp;#x2014;Box -&amp;gt;Object.&amp;#x4E3A;&amp;#x4E86;&amp;#x5411;&amp;#x540E;&amp;#x517C;&amp;#x5BB9;&amp;#xFF0C;&amp;#x8D4B;&amp;#x503C;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7C7B;&amp;#x578B;&amp;#x7ED9;&amp;#x4ED6;&amp;#x7684;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x662F;&amp;#x5141;&amp;#x8BB8;&amp;#x7684;&amp;#xFF1A;&lt;/t&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;String&amp;gt; stringBox=new Box&amp;lt;&amp;gt;();
 Box rawBox=stringBox;    //OK
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但是如果你赋值一个原类型给一个参数化的类型，你将得到警告：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Box rawBox=new Box(); //rawBox是Box&amp;lt;T&amp;gt;()的原类型
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4F46;&amp;#x662F;&amp;#x5982;&amp;#x679C;&amp;#x4F60;&amp;#x8D4B;&amp;#x503C;&amp;#x4E00;&amp;#x4E2A;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x7ED9;&amp;#x4E00;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#x5316;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C06;&amp;#x5F97;&amp;#x5230;&amp;#x8B66;&amp;#x544A;&amp;#xFF1A;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Box rawBox=new Box(); //rawBox&amp;#x662F;Box&amp;lt;T&amp;gt;()&amp;#x7684;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;
 Box&amp;lt;Integer&amp;gt; intBox=rawBox;  //warning:unchecked conversion
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当你用原类型调用关联的反省类型的泛型方法时，你也会得到警告：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5F53;&amp;#x4F60;&amp;#x7528;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x8C03;&amp;#x7528;&amp;#x5173;&amp;#x8054;&amp;#x7684;&amp;#x53CD;&amp;#x7701;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x6CDB;&amp;#x578B;&amp;#x65B9;&amp;#x6CD5;&amp;#x65F6;&amp;#xFF0C;&amp;#x4F60;&amp;#x4E5F;&amp;#x4F1A;&amp;#x5F97;&amp;#x5230;&amp;#x8B66;&amp;#x544A;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Box&amp;lt;String&amp;gt; stringBox=new Box&amp;lt;&amp;gt;();
 Box rawBox=stringBox;
 rawBox.set(8);  //waring: unchecked invocation to set(T)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;警告显示原类型绕过泛型类型检查，延迟捕获不安全代码到运行时。因此，你需要避免使用原类型。&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/erasure.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;类型擦除&lt;/a&gt;部分会有更多关于Java编译器如何使用原类型的内容。&lt;/p&gt;
-&lt;h2 id=&quot;Unchecked-Error-Messages&quot;&gt;&lt;a href=&quot;#Unchecked-Error-Messages&quot; class=&quot;headerlink&quot; title=&quot;Unchecked Error Messages&quot;&gt;&lt;/a&gt;Unchecked Error Messages&lt;/h2&gt;&lt;p&gt;正如上面提到的，当混合遗赠代码和泛型代码时，你可能会碰到跟下面相似的警告：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x8B66;&amp;#x544A;&amp;#x663E;&amp;#x793A;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x7ED5;&amp;#x8FC7;&amp;#x6CDB;&amp;#x578B;&amp;#x7C7B;&amp;#x578B;&amp;#x68C0;&amp;#x67E5;&amp;#xFF0C;&amp;#x5EF6;&amp;#x8FDF;&amp;#x6355;&amp;#x83B7;&amp;#x4E0D;&amp;#x5B89;&amp;#x5168;&amp;#x4EE3;&amp;#x7801;&amp;#x5230;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x3002;&amp;#x56E0;&amp;#x6B64;&amp;#xFF0C;&amp;#x4F60;&amp;#x9700;&amp;#x8981;&amp;#x907F;&amp;#x514D;&amp;#x4F7F;&amp;#x7528;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x3002;&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/erasure.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x7C7B;&amp;#x578B;&amp;#x64E6;&amp;#x9664;&lt;/a&gt;&amp;#x90E8;&amp;#x5206;&amp;#x4F1A;&amp;#x6709;&amp;#x66F4;&amp;#x591A;&amp;#x5173;&amp;#x4E8E;Java&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x5982;&amp;#x4F55;&amp;#x4F7F;&amp;#x7528;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x3002;&lt;/p&gt;
+&lt;h2 id=&quot;Unchecked-Error-Messages&quot;&gt;&lt;a href=&quot;#Unchecked-Error-Messages&quot; class=&quot;headerlink&quot; title=&quot;Unchecked Error Messages&quot;&gt;&lt;/a&gt;Unchecked Error Messages&lt;/h2&gt;&lt;p&gt;&amp;#x6B63;&amp;#x5982;&amp;#x4E0A;&amp;#x9762;&amp;#x63D0;&amp;#x5230;&amp;#x7684;&amp;#xFF0C;&amp;#x5F53;&amp;#x6DF7;&amp;#x5408;&amp;#x9057;&amp;#x8D60;&amp;#x4EE3;&amp;#x7801;&amp;#x548C;&amp;#x6CDB;&amp;#x578B;&amp;#x4EE3;&amp;#x7801;&amp;#x65F6;&amp;#xFF0C;&amp;#x4F60;&amp;#x53EF;&amp;#x80FD;&amp;#x4F1A;&amp;#x78B0;&amp;#x5230;&amp;#x8DDF;&amp;#x4E0B;&amp;#x9762;&amp;#x76F8;&amp;#x4F3C;&amp;#x7684;&amp;#x8B66;&amp;#x544A;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Note: Example.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这发生在当使用老的API操作原类型时，例如如下代码：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x8FD9;&amp;#x53D1;&amp;#x751F;&amp;#x5728;&amp;#x5F53;&amp;#x4F7F;&amp;#x7528;&amp;#x8001;&amp;#x7684;API&amp;#x64CD;&amp;#x4F5C;&amp;#x539F;&amp;#x7C7B;&amp;#x578B;&amp;#x65F6;&amp;#xFF0C;&amp;#x4F8B;&amp;#x5982;&amp;#x5982;&amp;#x4E0B;&amp;#x4EE3;&amp;#x7801;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class WarningDemo {
 Box&amp;lt;Integer&amp;gt; bi;
 bi=createBox();
@@ -1042,21 +1060,21 @@ bi=createBox();
 static Box createBox(){
 return new Box();
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;‘unchecked’指的是编译器没有足够的类型信息来执行所有必要的类型检查以保证类型安全。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x2018;unchecked&amp;#x2019;&amp;#x6307;&amp;#x7684;&amp;#x662F;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x6CA1;&amp;#x6709;&amp;#x8DB3;&amp;#x591F;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x4FE1;&amp;#x606F;&amp;#x6765;&amp;#x6267;&amp;#x884C;&amp;#x6240;&amp;#x6709;&amp;#x5FC5;&amp;#x8981;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x68C0;&amp;#x67E5;&amp;#x4EE5;&amp;#x4FDD;&amp;#x8BC1;&amp;#x7C7B;&amp;#x578B;&amp;#x5B89;&amp;#x5168;&amp;#x3002;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;泛型（已更新）&quot;&gt;&lt;a href=&quot;#泛型（已更新）&quot; class=&quot;headerlink&quot; title=&quot;泛型（已更新）&quot;&gt;&lt;/a&gt;泛型（已更新）&lt;/h1&gt;&lt;p&gt; 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。&lt;/p&gt;
-&lt;p&gt;  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。&lt;/p&gt;
-&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;br&gt;
+&lt;h1 id=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;/a&gt;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&lt;/h1&gt;&lt;p&gt; &amp;#x5728;&amp;#x4EFB;&amp;#x4F55;&amp;#x7E41;&amp;#x7410;&amp;#x7684;&amp;#xFF08;nontrivial&amp;#xFF09;&amp;#x8F6F;&amp;#x4EF6;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#xFF0C;bug&amp;#x662F;&amp;#x5BB6;&amp;#x5E38;&amp;#x4FBF;&amp;#x996D;&amp;#x3002;&amp;#x7EC6;&amp;#x5FC3;&amp;#x7684;&amp;#x89C4;&amp;#x5212;&amp;#xFF0C;&amp;#x7F16;&amp;#x7A0B;&amp;#x548C;&amp;#x6D4B;&amp;#x8BD5;&amp;#x53EF;&amp;#x4EE5;&amp;#x5E2E;&amp;#x52A9;&amp;#x51CF;&amp;#x5C11;bug&amp;#x7684;&amp;#x666E;&amp;#x904D;&amp;#x6027;&amp;#xFF08;pervasiveness&amp;#xFF09;,&amp;#x4F46;&amp;#x662F;&amp;#x65E0;&amp;#x8BBA;&amp;#x5982;&amp;#x4F55;&amp;#xFF0C;&amp;#x65E0;&amp;#x8BBA;&amp;#x5728;&amp;#x54EA;&amp;#x91CC;&amp;#xFF0C;bug&amp;#x603B;&amp;#x4F1A;&amp;#x4F3A;&amp;#x673A;&amp;#x6084;&amp;#x6084;&amp;#x6E9C;&amp;#x8FDB;&amp;#xFF08;creep&amp;#xFF09;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x5F88;&amp;#x660E;&amp;#x663E;&amp;#xFF0C;&amp;#x65B0;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x7684;&amp;#x88AB;&amp;#x5F15;&amp;#x5165;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x57FA;&amp;#x6570;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x53D8;&amp;#x5927;&amp;#x548C;&amp;#x590D;&amp;#x6742;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;  &amp;#x5E78;&amp;#x8FD0;&amp;#x7684;&amp;#x662F;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E9B;bug&amp;#x76F8;&amp;#x6BD4;&amp;#x5176;&amp;#x5B83;&amp;#x6BD4;&amp;#x8F83;&amp;#x5BB9;&amp;#x6613;&amp;#x68C0;&amp;#x6D4B;&amp;#x3002;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;bug&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x65E9;&amp;#x671F;&amp;#x88AB;&amp;#x68C0;&amp;#x6D4B;&amp;#x5230;&amp;#xFF1B;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x4FE1;&amp;#x606F;&amp;#x67E5;&amp;#x660E;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#x5E76;&amp;#x4E14;&amp;#x89E3;&amp;#x51B3;&amp;#xFF0C;&amp;#x5C31;&amp;#x5728;&amp;#x90A3;&amp;#x65F6;&amp;#x3002;&amp;#x7136;&amp;#x800C;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;bug&amp;#x4F1A;&amp;#x66F4;&amp;#x52A0;&amp;#x672A;&amp;#x9884;&amp;#x77E5;,&amp;#x4ED6;&amp;#x4EEC;&amp;#x4E0D;&amp;#x4F1A;&amp;#x7ACB;&amp;#x5373;&amp;#x5C55;&amp;#x793A;&amp;#x51FA;&amp;#x6765;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;#x9053;&amp;#x4EC0;&amp;#x4E48;&amp;#x65F6;&amp;#x5019;&amp;#x53D1;&amp;#x751F;&amp;#xFF0C;&amp;#x53EF;&amp;#x80FD;&amp;#x6839;&amp;#x672C;&amp;#x4E0D;&amp;#x5728;&amp;#x7A0B;&amp;#x5E8F;&amp;#x771F;&amp;#x6B63;&amp;#x51FA;&amp;#x73B0;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x70B9;&amp;#x4E0A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x901A;&amp;#x8FC7;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x5728;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x68C0;&amp;#x6D4B;bug&amp;#x4E3A;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x589E;&amp;#x52A0;&amp;#x4E86;&amp;#x7A33;&amp;#x5B9A;&amp;#x6027;&amp;#x3002;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1074,20 +1092,20 @@ return new Box();
     
     <content type="html">&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;虽然现在有很多试用的方法可以省略这些多余代码，但是Android Studio 1.5以及更高版本已经有官方的方法了。&lt;/p&gt;
-&lt;p&gt;首先，你必须在Application的build.gradle里的android块内填写如下代码：&lt;/p&gt;
+&lt;p&gt;Android Studio&amp;#x5F00;&amp;#x53D1;android&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5C0F;&amp;#x7279;&amp;#x70B9;&amp;#x662F;&amp;#x6570;&amp;#x636E;&amp;#x7ED1;&amp;#x5B9A;&amp;#x3002;&amp;#x6211;&amp;#x4F1A;&amp;#x5728;&amp;#x5C06;&amp;#x6765;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x4E2D;&amp;#x8BB2;&amp;#x89E3;&amp;#x5B83;&amp;#x7684;&amp;#x5176;&amp;#x4ED6;&amp;#x4E00;&amp;#x4E9B;&amp;#x4F18;&amp;#x96C5;&amp;#x7684;&amp;#x7279;&amp;#x70B9;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x4F60;&amp;#x8981;&amp;#x4E86;&amp;#x89E3;&amp;#x7684;&amp;#x6700;&amp;#x57FA;&amp;#x7840;&amp;#x7684;&amp;#x662F;&amp;#x600E;&amp;#x6837;&amp;#x6D88;&amp;#x9664;findViewById.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x867D;&amp;#x7136;&amp;#x73B0;&amp;#x5728;&amp;#x6709;&amp;#x5F88;&amp;#x591A;&amp;#x8BD5;&amp;#x7528;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x53EF;&amp;#x4EE5;&amp;#x7701;&amp;#x7565;&amp;#x8FD9;&amp;#x4E9B;&amp;#x591A;&amp;#x4F59;&amp;#x4EE3;&amp;#x7801;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;Android Studio 1.5&amp;#x4EE5;&amp;#x53CA;&amp;#x66F4;&amp;#x9AD8;&amp;#x7248;&amp;#x672C;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6709;&amp;#x5B98;&amp;#x65B9;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x9996;&amp;#x5148;&amp;#xFF0C;&amp;#x4F60;&amp;#x5FC5;&amp;#x987B;&amp;#x5728;Application&amp;#x7684;build.gradle&amp;#x91CC;&amp;#x7684;android&amp;#x5757;&amp;#x5185;&amp;#x586B;&amp;#x5199;&amp;#x5982;&amp;#x4E0B;&amp;#x4EE3;&amp;#x7801;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;android {
-…
+&amp;#x2026;
 dataBinding.enabled = true
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;}&lt;/p&gt;
-&lt;p&gt;下一步就是在你的layout文件的最外层添加 &lt;layout&gt;标签，不管你用的是任何 ViewGroup:&lt;/layout&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E0B;&amp;#x4E00;&amp;#x6B65;&amp;#x5C31;&amp;#x662F;&amp;#x5728;&amp;#x4F60;&amp;#x7684;layout&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x6700;&amp;#x5916;&amp;#x5C42;&amp;#x6DFB;&amp;#x52A0; &lt;layout&gt;&amp;#x6807;&amp;#x7B7E;&amp;#xFF0C;&amp;#x4E0D;&amp;#x7BA1;&amp;#x4F60;&amp;#x7528;&amp;#x7684;&amp;#x662F;&amp;#x4EFB;&amp;#x4F55; ViewGroup:&lt;/layout&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;layout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
     xmlns:tools=&amp;quot;http://schemas.android.com/tools&amp;quot;&amp;gt;
 &amp;lt;RelativeLayout
@@ -1106,37 +1124,37 @@ dataBinding.enabled = true
 
 &amp;lt;/RelativeLayout&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Layout&lt;/strong&gt;标签告诉Android Studio这个layout在编译时将进行额外的操作，查找到所有感兴趣的view,并且标签为下一步。所有外部没有包&lt;code&gt;layout&lt;/code&gt;标签的布局将不会执行额外操作。所以你可以在新项目中少量使用而无需改变项目中其他的部分。&lt;/p&gt;
-&lt;p&gt;下面要做的就是告诉它在运行时分别加载你的layout。因为它向后兼容，所以不需要依赖新框架的改变来加载这些预执行的layout文件。因此你只需对程序做一个轻微的改变。&lt;/p&gt;
-&lt;p&gt;从一个Activity,不是：&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;    setContentView(R.layout.hello_world);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hello.setText(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;而是这样加载：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Layout&lt;/strong&gt;&amp;#x6807;&amp;#x7B7E;&amp;#x544A;&amp;#x8BC9;Android Studio&amp;#x8FD9;&amp;#x4E2A;layout&amp;#x5728;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x5C06;&amp;#x8FDB;&amp;#x884C;&amp;#x989D;&amp;#x5916;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x67E5;&amp;#x627E;&amp;#x5230;&amp;#x6240;&amp;#x6709;&amp;#x611F;&amp;#x5174;&amp;#x8DA3;&amp;#x7684;view,&amp;#x5E76;&amp;#x4E14;&amp;#x6807;&amp;#x7B7E;&amp;#x4E3A;&amp;#x4E0B;&amp;#x4E00;&amp;#x6B65;&amp;#x3002;&amp;#x6240;&amp;#x6709;&amp;#x5916;&amp;#x90E8;&amp;#x6CA1;&amp;#x6709;&amp;#x5305;&lt;code&gt;layout&lt;/code&gt;&amp;#x6807;&amp;#x7B7E;&amp;#x7684;&amp;#x5E03;&amp;#x5C40;&amp;#x5C06;&amp;#x4E0D;&amp;#x4F1A;&amp;#x6267;&amp;#x884C;&amp;#x989D;&amp;#x5916;&amp;#x64CD;&amp;#x4F5C;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x65B0;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#x5C11;&amp;#x91CF;&amp;#x4F7F;&amp;#x7528;&amp;#x800C;&amp;#x65E0;&amp;#x9700;&amp;#x6539;&amp;#x53D8;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#x5176;&amp;#x4ED6;&amp;#x7684;&amp;#x90E8;&amp;#x5206;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4E0B;&amp;#x9762;&amp;#x8981;&amp;#x505A;&amp;#x7684;&amp;#x5C31;&amp;#x662F;&amp;#x544A;&amp;#x8BC9;&amp;#x5B83;&amp;#x5728;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x5206;&amp;#x522B;&amp;#x52A0;&amp;#x8F7D;&amp;#x4F60;&amp;#x7684;layout&amp;#x3002;&amp;#x56E0;&amp;#x4E3A;&amp;#x5B83;&amp;#x5411;&amp;#x540E;&amp;#x517C;&amp;#x5BB9;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x4F9D;&amp;#x8D56;&amp;#x65B0;&amp;#x6846;&amp;#x67B6;&amp;#x7684;&amp;#x6539;&amp;#x53D8;&amp;#x6765;&amp;#x52A0;&amp;#x8F7D;&amp;#x8FD9;&amp;#x4E9B;&amp;#x9884;&amp;#x6267;&amp;#x884C;&amp;#x7684;layout&amp;#x6587;&amp;#x4EF6;&amp;#x3002;&amp;#x56E0;&amp;#x6B64;&amp;#x4F60;&amp;#x53EA;&amp;#x9700;&amp;#x5BF9;&amp;#x7A0B;&amp;#x5E8F;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x8F7B;&amp;#x5FAE;&amp;#x7684;&amp;#x6539;&amp;#x53D8;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4ECE;&amp;#x4E00;&amp;#x4E2A;Activity,&amp;#x4E0D;&amp;#x662F;&amp;#xFF1A;&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;    setContentView(R.layout.hello_world);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TextView hello = (TextView) findViewById(R.id.hello);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hello.setText(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;); &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&amp;#x800C;&amp;#x662F;&amp;#x8FD9;&amp;#x6837;&amp;#x52A0;&amp;#x8F7D;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;HelloWorldBinding binding = 
 DataBindingUtil.setContentView(this, R.layout.hello_world);
 binding.hello.setText(&amp;quot;Hello World&amp;quot;); 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你可以看到 &lt;strong&gt;HelloWordBinding&lt;/strong&gt;这个类自动为&lt;strong&gt;hello_world.xml&lt;/strong&gt;生成并且id为“@+id/hello”的view分配到了一个&lt;strong&gt;hello&lt;/strong&gt;的field你可以使用。没有强制类型转换，没有findViewById.&lt;/p&gt;
-&lt;p&gt;这标兵这是访问view的机制不仅仅比findViewById更加简单，而且也更加快！绑定程序一次执行覆盖所有layout的view，把view分配到field。当你运行findViewById，的时候view结构每次都会被遍历查找。&lt;/p&gt;
-&lt;p&gt;你会注意到一件事:它对你的变量名使用了驼峰命名法（比如hello_world.html 变成类 HelloWorldBinding）,所以如果你给它的id是“@+id/hello_text”,那么field的名称将会是 helloText.&lt;/p&gt;
-&lt;p&gt;当你正在inflate你布局里RecyclerView,ViewPager，或其他不设置Activity内容的控件，你将希望在生成的类上用生成的类型安全的方法，这里有几个版本匹配LayoutInflater,所以使用你最适合食用的.举个例子：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x770B;&amp;#x5230; &lt;strong&gt;HelloWordBinding&lt;/strong&gt;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7C7B;&amp;#x81EA;&amp;#x52A8;&amp;#x4E3A;&lt;strong&gt;hello_world.xml&lt;/strong&gt;&amp;#x751F;&amp;#x6210;&amp;#x5E76;&amp;#x4E14;id&amp;#x4E3A;&amp;#x201C;@+id/hello&amp;#x201D;&amp;#x7684;view&amp;#x5206;&amp;#x914D;&amp;#x5230;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&lt;strong&gt;hello&lt;/strong&gt;&amp;#x7684;field&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&amp;#x6CA1;&amp;#x6709;&amp;#x5F3A;&amp;#x5236;&amp;#x7C7B;&amp;#x578B;&amp;#x8F6C;&amp;#x6362;&amp;#xFF0C;&amp;#x6CA1;&amp;#x6709;findViewById.&lt;/p&gt;
+&lt;p&gt;&amp;#x8FD9;&amp;#x6807;&amp;#x5175;&amp;#x8FD9;&amp;#x662F;&amp;#x8BBF;&amp;#x95EE;view&amp;#x7684;&amp;#x673A;&amp;#x5236;&amp;#x4E0D;&amp;#x4EC5;&amp;#x4EC5;&amp;#x6BD4;findViewById&amp;#x66F4;&amp;#x52A0;&amp;#x7B80;&amp;#x5355;&amp;#xFF0C;&amp;#x800C;&amp;#x4E14;&amp;#x4E5F;&amp;#x66F4;&amp;#x52A0;&amp;#x5FEB;&amp;#xFF01;&amp;#x7ED1;&amp;#x5B9A;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E00;&amp;#x6B21;&amp;#x6267;&amp;#x884C;&amp;#x8986;&amp;#x76D6;&amp;#x6240;&amp;#x6709;layout&amp;#x7684;view&amp;#xFF0C;&amp;#x628A;view&amp;#x5206;&amp;#x914D;&amp;#x5230;field&amp;#x3002;&amp;#x5F53;&amp;#x4F60;&amp;#x8FD0;&amp;#x884C;findViewById&amp;#xFF0C;&amp;#x7684;&amp;#x65F6;&amp;#x5019;view&amp;#x7ED3;&amp;#x6784;&amp;#x6BCF;&amp;#x6B21;&amp;#x90FD;&amp;#x4F1A;&amp;#x88AB;&amp;#x904D;&amp;#x5386;&amp;#x67E5;&amp;#x627E;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F60;&amp;#x4F1A;&amp;#x6CE8;&amp;#x610F;&amp;#x5230;&amp;#x4E00;&amp;#x4EF6;&amp;#x4E8B;:&amp;#x5B83;&amp;#x5BF9;&amp;#x4F60;&amp;#x7684;&amp;#x53D8;&amp;#x91CF;&amp;#x540D;&amp;#x4F7F;&amp;#x7528;&amp;#x4E86;&amp;#x9A7C;&amp;#x5CF0;&amp;#x547D;&amp;#x540D;&amp;#x6CD5;&amp;#xFF08;&amp;#x6BD4;&amp;#x5982;hello_world.html &amp;#x53D8;&amp;#x6210;&amp;#x7C7B; HelloWorldBinding&amp;#xFF09;,&amp;#x6240;&amp;#x4EE5;&amp;#x5982;&amp;#x679C;&amp;#x4F60;&amp;#x7ED9;&amp;#x5B83;&amp;#x7684;id&amp;#x662F;&amp;#x201C;@+id/hello_text&amp;#x201D;,&amp;#x90A3;&amp;#x4E48;field&amp;#x7684;&amp;#x540D;&amp;#x79F0;&amp;#x5C06;&amp;#x4F1A;&amp;#x662F; helloText.&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x4F60;&amp;#x6B63;&amp;#x5728;inflate&amp;#x4F60;&amp;#x5E03;&amp;#x5C40;&amp;#x91CC;RecyclerView,ViewPager&amp;#xFF0C;&amp;#x6216;&amp;#x5176;&amp;#x4ED6;&amp;#x4E0D;&amp;#x8BBE;&amp;#x7F6E;Activity&amp;#x5185;&amp;#x5BB9;&amp;#x7684;&amp;#x63A7;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C06;&amp;#x5E0C;&amp;#x671B;&amp;#x5728;&amp;#x751F;&amp;#x6210;&amp;#x7684;&amp;#x7C7B;&amp;#x4E0A;&amp;#x7528;&amp;#x751F;&amp;#x6210;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x5B89;&amp;#x5168;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF0C;&amp;#x8FD9;&amp;#x91CC;&amp;#x6709;&amp;#x51E0;&amp;#x4E2A;&amp;#x7248;&amp;#x672C;&amp;#x5339;&amp;#x914D;LayoutInflater,&amp;#x6240;&amp;#x4EE5;&amp;#x4F7F;&amp;#x7528;&amp;#x4F60;&amp;#x6700;&amp;#x9002;&amp;#x5408;&amp;#x98DF;&amp;#x7528;&amp;#x7684;.&amp;#x4E3E;&amp;#x4E2A;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;HelloWorldBinding binding = HelloWorldBinding.inflate(
 getLayoutInflater(), container, attachToContainer);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果你们有把被inflate的view 附加到包含他们的ViewGroup上，你必须访问被infalte的view的view结构。你可以用binding的getRoot()方法：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;&amp;#x4F60;&amp;#x4EEC;&amp;#x6709;&amp;#x628A;&amp;#x88AB;inflate&amp;#x7684;view &amp;#x9644;&amp;#x52A0;&amp;#x5230;&amp;#x5305;&amp;#x542B;&amp;#x4ED6;&amp;#x4EEC;&amp;#x7684;ViewGroup&amp;#x4E0A;&amp;#xFF0C;&amp;#x4F60;&amp;#x5FC5;&amp;#x987B;&amp;#x8BBF;&amp;#x95EE;&amp;#x88AB;infalte&amp;#x7684;view&amp;#x7684;view&amp;#x7ED3;&amp;#x6784;&amp;#x3002;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x7528;binding&amp;#x7684;getRoot()&amp;#x65B9;&amp;#x6CD5;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;linearLayout.addView(binding.getRoot());
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;现在，你可能会考虑，如果我有一个layout包含同步view的不同配置呢？layout预执行和运行时inflate阶段通过添加所有View 的id到生成的类，如果没有被inflate的话设置为null。&lt;/p&gt;
-&lt;p&gt;相当神奇，不是吗？最好的部分是运行时没有反射和其他任何高消耗的技术。把他少量添加到你现有程序里面非常容易，他能让你的生活更加简单，让你的layout加载的更快！&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;#x73B0;&amp;#x5728;&amp;#xFF0C;&amp;#x4F60;&amp;#x53EF;&amp;#x80FD;&amp;#x4F1A;&amp;#x8003;&amp;#x8651;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6211;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;layout&amp;#x5305;&amp;#x542B;&amp;#x540C;&amp;#x6B65;view&amp;#x7684;&amp;#x4E0D;&amp;#x540C;&amp;#x914D;&amp;#x7F6E;&amp;#x5462;&amp;#xFF1F;layout&amp;#x9884;&amp;#x6267;&amp;#x884C;&amp;#x548C;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;inflate&amp;#x9636;&amp;#x6BB5;&amp;#x901A;&amp;#x8FC7;&amp;#x6DFB;&amp;#x52A0;&amp;#x6240;&amp;#x6709;View &amp;#x7684;id&amp;#x5230;&amp;#x751F;&amp;#x6210;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709;&amp;#x88AB;inflate&amp;#x7684;&amp;#x8BDD;&amp;#x8BBE;&amp;#x7F6E;&amp;#x4E3A;null&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x76F8;&amp;#x5F53;&amp;#x795E;&amp;#x5947;&amp;#xFF0C;&amp;#x4E0D;&amp;#x662F;&amp;#x5417;&amp;#xFF1F;&amp;#x6700;&amp;#x597D;&amp;#x7684;&amp;#x90E8;&amp;#x5206;&amp;#x662F;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x6CA1;&amp;#x6709;&amp;#x53CD;&amp;#x5C04;&amp;#x548C;&amp;#x5176;&amp;#x4ED6;&amp;#x4EFB;&amp;#x4F55;&amp;#x9AD8;&amp;#x6D88;&amp;#x8017;&amp;#x7684;&amp;#x6280;&amp;#x672F;&amp;#x3002;&amp;#x628A;&amp;#x4ED6;&amp;#x5C11;&amp;#x91CF;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;&amp;#x4F60;&amp;#x73B0;&amp;#x6709;&amp;#x7A0B;&amp;#x5E8F;&amp;#x91CC;&amp;#x9762;&amp;#x975E;&amp;#x5E38;&amp;#x5BB9;&amp;#x6613;&amp;#xFF0C;&amp;#x4ED6;&amp;#x80FD;&amp;#x8BA9;&amp;#x4F60;&amp;#x7684;&amp;#x751F;&amp;#x6D3B;&amp;#x66F4;&amp;#x52A0;&amp;#x7B80;&amp;#x5355;&amp;#xFF0C;&amp;#x8BA9;&amp;#x4F60;&amp;#x7684;layout&amp;#x52A0;&amp;#x8F7D;&amp;#x7684;&amp;#x66F4;&amp;#x5FEB;&amp;#xFF01;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; &lt;a href=&quot;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&quot;&gt;https://medium.com/google-developers/no-more-findviewbyid-457457644885#.cs0jg2og6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;No-More-findViewById&quot;&gt;&lt;a href=&quot;#No-More-findViewById&quot; class=&quot;headerlink&quot; title=&quot;No More findViewById&quot;&gt;&lt;/a&gt;No More findViewById&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;Android Studio开发android程序的一个小特点是数据绑定。我会在将来的文章中讲解它的其他一些优雅的特点，但是你要了解的最基础的是怎样消除findViewById.&lt;br&gt;
+&lt;p&gt;Android Studio&amp;#x5F00;&amp;#x53D1;android&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x5C0F;&amp;#x7279;&amp;#x70B9;&amp;#x662F;&amp;#x6570;&amp;#x636E;&amp;#x7ED1;&amp;#x5B9A;&amp;#x3002;&amp;#x6211;&amp;#x4F1A;&amp;#x5728;&amp;#x5C06;&amp;#x6765;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x4E2D;&amp;#x8BB2;&amp;#x89E3;&amp;#x5B83;&amp;#x7684;&amp;#x5176;&amp;#x4ED6;&amp;#x4E00;&amp;#x4E9B;&amp;#x4F18;&amp;#x96C5;&amp;#x7684;&amp;#x7279;&amp;#x70B9;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x4F60;&amp;#x8981;&amp;#x4E86;&amp;#x89E3;&amp;#x7684;&amp;#x6700;&amp;#x57FA;&amp;#x7840;&amp;#x7684;&amp;#x662F;&amp;#x600E;&amp;#x6837;&amp;#x6D88;&amp;#x9664;findViewById.&lt;br&gt;&lt;/p&gt;
     
     </summary>
     

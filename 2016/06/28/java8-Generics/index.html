@@ -10,44 +10,35 @@
   
   
   <meta name="keywords" content="java">
-  <meta name="description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
+  <meta name="description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
+&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java8教程-泛型（Generics）">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/06/28/java8-Generics/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
+<meta property="og:description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
+&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;">
 <meta property="og:updated_time" content="2016-07-20T09:34:13.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java8教程-泛型（Generics）">
-<meta name="twitter:description" content="原文链接 [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-翻译： Adamin90
-转载请注明出处，谢谢！
-
-
-泛型（已更新） 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会">
+<meta name="twitter:description" content="&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; Adamin90
+&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
   <meta name="summary" content="&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原文链接 [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;翻译： &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;转载请注明出处，谢谢！&lt;/li&gt;
+&lt;li&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5; [&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/generics/index.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/generics/index.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&amp;#x7FFB;&amp;#x8BD1;&amp;#xFF1A; &lt;a href=&quot;https://github.com/adamin1990&quot;&gt;Adamin90&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;#x8F6C;&amp;#x8F7D;&amp;#x8BF7;&amp;#x6CE8;&amp;#x660E;&amp;#x51FA;&amp;#x5904;&amp;#xFF0C;&amp;#x8C22;&amp;#x8C22;&amp;#xFF01;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;泛型（已更新）&quot;&gt;&lt;a href=&quot;#泛型（已更新）&quot; class=&quot;headerlink&quot; title=&quot;泛型（已更新）&quot;&gt;&lt;/a&gt;泛型（已更新）&lt;/h1&gt;&lt;p&gt; 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。&lt;/p&gt;
-&lt;p&gt;  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。&lt;/p&gt;
-&lt;p&gt;泛型通过更多的在编译时检测bug为你的代码增加了稳定性。&lt;br&gt;">
+&lt;h1 id=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;a href=&quot;#&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&quot;&gt;&lt;/a&gt;&amp;#x6CDB;&amp;#x578B;&amp;#xFF08;&amp;#x5DF2;&amp;#x66F4;&amp;#x65B0;&amp;#xFF09;&lt;/h1&gt;&lt;p&gt; &amp;#x5728;&amp;#x4EFB;&amp;#x4F55;&amp;#x7E41;&amp;#x7410;&amp;#x7684;&amp;#xFF08;nontrivial&amp;#xFF09;&amp;#x8F6F;&amp;#x4EF6;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#xFF0C;bug&amp;#x662F;&amp;#x5BB6;&amp;#x5E38;&amp;#x4FBF;&amp;#x996D;&amp;#x3002;&amp;#x7EC6;&amp;#x5FC3;&amp;#x7684;&amp;#x89C4;&amp;#x5212;&amp;#xFF0C;&amp;#x7F16;&amp;#x7A0B;&amp;#x548C;&amp;#x6D4B;&amp;#x8BD5;&amp;#x53EF;&amp;#x4EE5;&amp;#x5E2E;&amp;#x52A9;&amp;#x51CF;&amp;#x5C11;bug&amp;#x7684;&amp;#x666E;&amp;#x904D;&amp;#x6027;&amp;#xFF08;pervasiveness&amp;#xFF09;,&amp;#x4F46;&amp;#x662F;&amp;#x65E0;&amp;#x8BBA;&amp;#x5982;&amp;#x4F55;&amp;#xFF0C;&amp;#x65E0;&amp;#x8BBA;&amp;#x5728;&amp;#x54EA;&amp;#x91CC;&amp;#xFF0C;bug&amp;#x603B;&amp;#x4F1A;&amp;#x4F3A;&amp;#x673A;&amp;#x6084;&amp;#x6084;&amp;#x6E9C;&amp;#x8FDB;&amp;#xFF08;creep&amp;#xFF09;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x5F88;&amp;#x660E;&amp;#x663E;&amp;#xFF0C;&amp;#x65B0;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x7684;&amp;#x88AB;&amp;#x5F15;&amp;#x5165;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x57FA;&amp;#x6570;&amp;#x4F1A;&amp;#x4E0D;&amp;#x65AD;&amp;#x53D8;&amp;#x5927;&amp;#x548C;&amp;#x590D;&amp;#x6742;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;  &amp;#x5E78;&amp;#x8FD0;&amp;#x7684;&amp;#x662F;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E9B;bug&amp;#x76F8;&amp;#x6BD4;&amp;#x5176;&amp;#x5B83;&amp;#x6BD4;&amp;#x8F83;&amp;#x5BB9;&amp;#x6613;&amp;#x68C0;&amp;#x6D4B;&amp;#x3002;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;bug&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x65E9;&amp;#x671F;&amp;#x88AB;&amp;#x68C0;&amp;#x6D4B;&amp;#x5230;&amp;#xFF1B;&amp;#x4F60;&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x4FE1;&amp;#x606F;&amp;#x67E5;&amp;#x660E;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#x5E76;&amp;#x4E14;&amp;#x89E3;&amp;#x51B3;&amp;#xFF0C;&amp;#x5C31;&amp;#x5728;&amp;#x90A3;&amp;#x65F6;&amp;#x3002;&amp;#x7136;&amp;#x800C;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;bug&amp;#x4F1A;&amp;#x66F4;&amp;#x52A0;&amp;#x672A;&amp;#x9884;&amp;#x77E5;,&amp;#x4ED6;&amp;#x4EEC;&amp;#x4E0D;&amp;#x4F1A;&amp;#x7ACB;&amp;#x5373;&amp;#x5C55;&amp;#x793A;&amp;#x51FA;&amp;#x6765;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;#x9053;&amp;#x4EC0;&amp;#x4E48;&amp;#x65F6;&amp;#x5019;&amp;#x53D1;&amp;#x751F;&amp;#xFF0C;&amp;#x53EF;&amp;#x80FD;&amp;#x6839;&amp;#x672C;&amp;#x4E0D;&amp;#x5728;&amp;#x7A0B;&amp;#x5E8F;&amp;#x771F;&amp;#x6B63;&amp;#x51FA;&amp;#x73B0;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x70B9;&amp;#x4E0A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6CDB;&amp;#x578B;&amp;#x901A;&amp;#x8FC7;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x5728;&amp;#x7F16;&amp;#x8BD1;&amp;#x65F6;&amp;#x68C0;&amp;#x6D4B;bug&amp;#x4E3A;&amp;#x4F60;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x589E;&amp;#x52A0;&amp;#x4E86;&amp;#x7A33;&amp;#x5B9A;&amp;#x6027;&amp;#x3002;&lt;br&gt;&lt;/p&gt;">
   <link rel="shortcut icon" href="/img/logo.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -222,43 +213,43 @@
             <div class="post-content" id="post-content" itemprop="postContent">
             <blockquote>
 <ul>
-<li>原文链接 [<a href="https://docs.oracle.com/javase/tutorial/java/generics/index.html" target="_blank" rel="external">https://docs.oracle.com/javase/tutorial/java/generics/index.html</a>)</li>
-<li>翻译： <a href="https://github.com/adamin1990" target="_blank" rel="external">Adamin90</a></li>
-<li>转载请注明出处，谢谢！</li>
+<li>&#x539F;&#x6587;&#x94FE;&#x63A5; [<a href="https://docs.oracle.com/javase/tutorial/java/generics/index.html" target="_blank" rel="external">https://docs.oracle.com/javase/tutorial/java/generics/index.html</a>)</li>
+<li>&#x7FFB;&#x8BD1;&#xFF1A; <a href="https://github.com/adamin1990" target="_blank" rel="external">Adamin90</a></li>
+<li>&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</li>
 </ul>
 </blockquote>
-<h1 id="泛型（已更新）"><a href="#泛型（已更新）" class="headerlink" title="泛型（已更新）"></a>泛型（已更新）</h1><p> 在任何繁琐的（nontrivial）软件项目中，bug是家常便饭。细心的规划，编程和测试可以帮助减少bug的普遍性（pervasiveness）,但是无论如何，无论在哪里，bug总会伺机悄悄溜进（creep）你的代码，因为很明显，新的特性会不断的被引入，并且你的代码基数会不断变大和复杂。</p>
-<p>  幸运的是，一些bug相比其它比较容易检测。编译时bug可以在早期被检测到；你可以利用编译器的错误信息查明是什么问题并且解决，就在那时。然而，运行时bug会更加未预知,他们不会立即展示出来，不知道什么时候发生，可能根本不在程序真正出现问题的点上。</p>
-<p>泛型通过更多的在编译时检测bug为你的代码增加了稳定性。<br><a id="more"></a></p>
-<h1 id="为什么要用泛型"><a href="#为什么要用泛型" class="headerlink" title="为什么要用泛型"></a>为什么要用泛型</h1><p>简言之，泛型能够使<strong>类型</strong>（类和接口）在定义类，接口和方法的时候参数化。非常像方法定义时用到的<strong>形式参数</strong>（formal parameters）,类型参数提供了一种你可以通过不同的输入来复用同一段代码的方法。不同点是，<strong>形式参数</strong>输入的是<strong>值</strong>，而类型参数输入的是<strong>类型</strong>。</p>
-<p>使用泛型比非泛型有很多好处：</p>
+<h1 id="&#x6CDB;&#x578B;&#xFF08;&#x5DF2;&#x66F4;&#x65B0;&#xFF09;"><a href="#&#x6CDB;&#x578B;&#xFF08;&#x5DF2;&#x66F4;&#x65B0;&#xFF09;" class="headerlink" title="&#x6CDB;&#x578B;&#xFF08;&#x5DF2;&#x66F4;&#x65B0;&#xFF09;"></a>&#x6CDB;&#x578B;&#xFF08;&#x5DF2;&#x66F4;&#x65B0;&#xFF09;</h1><p> &#x5728;&#x4EFB;&#x4F55;&#x7E41;&#x7410;&#x7684;&#xFF08;nontrivial&#xFF09;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;bug&#x662F;&#x5BB6;&#x5E38;&#x4FBF;&#x996D;&#x3002;&#x7EC6;&#x5FC3;&#x7684;&#x89C4;&#x5212;&#xFF0C;&#x7F16;&#x7A0B;&#x548C;&#x6D4B;&#x8BD5;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x51CF;&#x5C11;bug&#x7684;&#x666E;&#x904D;&#x6027;&#xFF08;pervasiveness&#xFF09;,&#x4F46;&#x662F;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#xFF0C;&#x65E0;&#x8BBA;&#x5728;&#x54EA;&#x91CC;&#xFF0C;bug&#x603B;&#x4F1A;&#x4F3A;&#x673A;&#x6084;&#x6084;&#x6E9C;&#x8FDB;&#xFF08;creep&#xFF09;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x5F88;&#x660E;&#x663E;&#xFF0C;&#x65B0;&#x7684;&#x7279;&#x6027;&#x4F1A;&#x4E0D;&#x65AD;&#x7684;&#x88AB;&#x5F15;&#x5165;&#xFF0C;&#x5E76;&#x4E14;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x57FA;&#x6570;&#x4F1A;&#x4E0D;&#x65AD;&#x53D8;&#x5927;&#x548C;&#x590D;&#x6742;&#x3002;</p>
+<p>  &#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x4E9B;bug&#x76F8;&#x6BD4;&#x5176;&#x5B83;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#x68C0;&#x6D4B;&#x3002;&#x7F16;&#x8BD1;&#x65F6;bug&#x53EF;&#x4EE5;&#x5728;&#x65E9;&#x671F;&#x88AB;&#x68C0;&#x6D4B;&#x5230;&#xFF1B;&#x4F60;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x67E5;&#x660E;&#x662F;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x5E76;&#x4E14;&#x89E3;&#x51B3;&#xFF0C;&#x5C31;&#x5728;&#x90A3;&#x65F6;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;bug&#x4F1A;&#x66F4;&#x52A0;&#x672A;&#x9884;&#x77E5;,&#x4ED6;&#x4EEC;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x5C55;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53D1;&#x751F;&#xFF0C;&#x53EF;&#x80FD;&#x6839;&#x672C;&#x4E0D;&#x5728;&#x7A0B;&#x5E8F;&#x771F;&#x6B63;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x70B9;&#x4E0A;&#x3002;</p>
+<p>&#x6CDB;&#x578B;&#x901A;&#x8FC7;&#x66F4;&#x591A;&#x7684;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x68C0;&#x6D4B;bug&#x4E3A;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x589E;&#x52A0;&#x4E86;&#x7A33;&#x5B9A;&#x6027;&#x3002;<br><a id="more"></a></p>
+<h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6CDB;&#x578B;"><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6CDB;&#x578B;" class="headerlink" title="&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6CDB;&#x578B;"></a>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6CDB;&#x578B;</h1><p>&#x7B80;&#x8A00;&#x4E4B;&#xFF0C;&#x6CDB;&#x578B;&#x80FD;&#x591F;&#x4F7F;<strong>&#x7C7B;&#x578B;</strong>&#xFF08;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#xFF09;&#x5728;&#x5B9A;&#x4E49;&#x7C7B;&#xFF0C;&#x63A5;&#x53E3;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#x53C2;&#x6570;&#x5316;&#x3002;&#x975E;&#x5E38;&#x50CF;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x65F6;&#x7528;&#x5230;&#x7684;<strong>&#x5F62;&#x5F0F;&#x53C2;&#x6570;</strong>&#xFF08;formal parameters&#xFF09;,&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x8F93;&#x5165;&#x6765;&#x590D;&#x7528;&#x540C;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x4E0D;&#x540C;&#x70B9;&#x662F;&#xFF0C;<strong>&#x5F62;&#x5F0F;&#x53C2;&#x6570;</strong>&#x8F93;&#x5165;&#x7684;&#x662F;<strong>&#x503C;</strong>&#xFF0C;&#x800C;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x8F93;&#x5165;&#x7684;&#x662F;<strong>&#x7C7B;&#x578B;</strong>&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x6BD4;&#x975E;&#x6CDB;&#x578B;&#x6709;&#x5F88;&#x591A;&#x597D;&#x5904;&#xFF1A;</p>
 <ul>
-<li>编译时更强大的类型检测</li>
+<li>&#x7F16;&#x8BD1;&#x65F6;&#x66F4;&#x5F3A;&#x5927;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x6D4B;</li>
 </ul>
-<p> Java编译器对泛型应用了强大的类型检测，如果代码违反了类型安全就会报错。修复编译时错误比修复运行时错误更加容易，因为运行时错误很难查找到。</p>
+<p> Java&#x7F16;&#x8BD1;&#x5668;&#x5BF9;&#x6CDB;&#x578B;&#x5E94;&#x7528;&#x4E86;&#x5F3A;&#x5927;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x6D4B;&#xFF0C;&#x5982;&#x679C;&#x4EE3;&#x7801;&#x8FDD;&#x53CD;&#x4E86;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x4FEE;&#x590D;&#x7F16;&#x8BD1;&#x65F6;&#x9519;&#x8BEF;&#x6BD4;&#x4FEE;&#x590D;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x5F88;&#x96BE;&#x67E5;&#x627E;&#x5230;&#x3002;</p>
 <ul>
-<li><p>消除类型转换(Elimination of casts)</p>
-<p>以下代码片段没有泛型需要转型：</p>
-<p>  List list = new ArrayList();<br>  list.add(“hello”);<br>  String s = (String) list.get(0);<br>当我们重新用泛型编写，代码就不需要类型转换了：</p>
-<p>  List<string> list = new ArrayList<string>();<br>  list.add(“hello”);<br>  String s = list.get(0);   // no cast</string></string></p>
+<li><p>&#x6D88;&#x9664;&#x7C7B;&#x578B;&#x8F6C;&#x6362;(Elimination of casts)</p>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x6CA1;&#x6709;&#x6CDB;&#x578B;&#x9700;&#x8981;&#x8F6C;&#x578B;&#xFF1A;</p>
+<p>  List list = new ArrayList();<br>  list.add(&#x201C;hello&#x201D;);<br>  String s = (String) list.get(0);<br>&#x5F53;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x7528;&#x6CDB;&#x578B;&#x7F16;&#x5199;&#xFF0C;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E86;&#xFF1A;</p>
+<p>  List<string> list = new ArrayList<string>();<br>  list.add(&#x201C;hello&#x201D;);<br>  String s = list.get(0);   // no cast</string></string></p>
 </li>
-<li><p>使开发者实现泛型算法</p>
+<li><p>&#x4F7F;&#x5F00;&#x53D1;&#x8005;&#x5B9E;&#x73B0;&#x6CDB;&#x578B;&#x7B97;&#x6CD5;</p>
 </li>
 </ul>
-<p>通过泛型，开发者可以自己实现泛型算法，应用到一系列的不同类型，可以自定义，并且类型安全，易读。</p>
-<h1 id="泛型类型"><a href="#泛型类型" class="headerlink" title="泛型类型"></a>泛型类型</h1><p><strong>泛型类型</strong>是泛型类或者接口被类型参数化。下面的<strong>Box</strong>类将被更改演示这个概念。</p>
-<h3 id="简单的-Box-类"><a href="#简单的-Box-类" class="headerlink" title="简单的 Box 类"></a>简单的 Box 类</h3><p>列举一个简单的非泛型 <strong>Box</strong>操作任意类型的object。它只需要提供两个方法：set，添加一个obejct到box，get,获取这个对象：</p>
+<p>&#x901A;&#x8FC7;&#x6CDB;&#x578B;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6CDB;&#x578B;&#x7B97;&#x6CD5;&#xFF0C;&#x5E94;&#x7528;&#x5230;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x4E14;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#xFF0C;&#x6613;&#x8BFB;&#x3002;</p>
+<h1 id="&#x6CDB;&#x578B;&#x7C7B;&#x578B;"><a href="#&#x6CDB;&#x578B;&#x7C7B;&#x578B;" class="headerlink" title="&#x6CDB;&#x578B;&#x7C7B;&#x578B;"></a>&#x6CDB;&#x578B;&#x7C7B;&#x578B;</h1><p><strong>&#x6CDB;&#x578B;&#x7C7B;&#x578B;</strong>&#x662F;&#x6CDB;&#x578B;&#x7C7B;&#x6216;&#x8005;&#x63A5;&#x53E3;&#x88AB;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5316;&#x3002;&#x4E0B;&#x9762;&#x7684;<strong>Box</strong>&#x7C7B;&#x5C06;&#x88AB;&#x66F4;&#x6539;&#x6F14;&#x793A;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x3002;</p>
+<h3 id="&#x7B80;&#x5355;&#x7684;-Box-&#x7C7B;"><a href="#&#x7B80;&#x5355;&#x7684;-Box-&#x7C7B;" class="headerlink" title="&#x7B80;&#x5355;&#x7684; Box &#x7C7B;"></a>&#x7B80;&#x5355;&#x7684; Box &#x7C7B;</h3><p>&#x5217;&#x4E3E;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x975E;&#x6CDB;&#x578B; <strong>Box</strong>&#x64CD;&#x4F5C;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;object&#x3002;&#x5B83;&#x53EA;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;set&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;obejct&#x5230;box&#xFF0C;get,&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1A;</p>
 <pre><code>public class Box {
 private Object object;
 
 public void set(Object object) { this.object = object; }
 public Object get() { return object; }
 }
-</code></pre><p>因为它的方法接收或返回一个对象，你可以任意传入，只要传入的不是原始数据类型。我们没有在编译时辨别clas如何使用的。一边可能替换一个 Integer到box，另一边获取的不是Integer类型，而可能传入一个String类型，结果会导致运行时错误。</p>
-<h3 id="泛型版本的Box"><a href="#泛型版本的Box" class="headerlink" title="泛型版本的Box"></a>泛型版本的Box</h3><p>泛型类的定义形式如下：</p>
+</code></pre><p>&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x6216;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x4F20;&#x5165;&#xFF0C;&#x53EA;&#x8981;&#x4F20;&#x5165;&#x7684;&#x4E0D;&#x662F;&#x539F;&#x59CB;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x8FA8;&#x522B;clas&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x7684;&#x3002;&#x4E00;&#x8FB9;&#x53EF;&#x80FD;&#x66FF;&#x6362;&#x4E00;&#x4E2A; Integer&#x5230;box&#xFF0C;&#x53E6;&#x4E00;&#x8FB9;&#x83B7;&#x53D6;&#x7684;&#x4E0D;&#x662F;Integer&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x53EF;&#x80FD;&#x4F20;&#x5165;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#xFF0C;&#x7ED3;&#x679C;&#x4F1A;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;Box"><a href="#&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;Box" class="headerlink" title="&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;Box"></a>&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;Box</h3><p>&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code>class name&lt;T1, T2, ..., Tn&gt; { /* ... */ }
-</code></pre><p>类型参数部分被一对尖括号（&lt;&gt;）划分，紧跟类名，它指定了<strong>类型参数</strong>（也叫作类型变量）T1， T2， ….,和Tn.</p>
-<p>把原Box类更新为泛型类，你要通过把“public class Box”改变为“public class Box<t>”创建一个类型声明。这会引入一个<strong>类型变量</strong>, <strong>T</strong>,你可以在类中任意地方使用。通过这个改变，Box类就变为：</t></p>
+</code></pre><p>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x90E8;&#x5206;&#x88AB;&#x4E00;&#x5BF9;&#x5C16;&#x62EC;&#x53F7;&#xFF08;&lt;&gt;&#xFF09;&#x5212;&#x5206;&#xFF0C;&#x7D27;&#x8DDF;&#x7C7B;&#x540D;&#xFF0C;&#x5B83;&#x6307;&#x5B9A;&#x4E86;<strong>&#x7C7B;&#x578B;&#x53C2;&#x6570;</strong>&#xFF08;&#x4E5F;&#x53EB;&#x4F5C;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#xFF09;T1&#xFF0C; T2&#xFF0C; &#x2026;.,&#x548C;Tn.</p>
+<p>&#x628A;&#x539F;Box&#x7C7B;&#x66F4;&#x65B0;&#x4E3A;&#x6CDB;&#x578B;&#x7C7B;&#xFF0C;&#x4F60;&#x8981;&#x901A;&#x8FC7;&#x628A;&#x201C;public class Box&#x201D;&#x6539;&#x53D8;&#x4E3A;&#x201C;public class Box<t>&#x201D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x3002;&#x8FD9;&#x4F1A;&#x5F15;&#x5165;&#x4E00;&#x4E2A;<strong>&#x7C7B;&#x578B;&#x53D8;&#x91CF;</strong>, <strong>T</strong>,&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x4E2D;&#x4EFB;&#x610F;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6539;&#x53D8;&#xFF0C;Box&#x7C7B;&#x5C31;&#x53D8;&#x4E3A;&#xFF1A;</t></p>
 <pre><code>/**
  * Generic version of the Box class.
  * @param &lt;T&gt; the type of the value being boxed
@@ -270,31 +261,31 @@ private T t;
 public void set(T t) { this.t = t; }
 public T get() { return t; }
 }
-</code></pre><p>你可以看到，所有<strong>Object</strong>出现的地方都被替换为T了。一个类型变量可以指定为任意非原始类型的类型：任意的类，任意的接口，任意的数组，甚至其他的类型变量。同样的技术可以应用到创建泛型接口上。</p>
-<h3 id="类型参数命名规则（Naming-Conventions）"><a href="#类型参数命名规则（Naming-Conventions）" class="headerlink" title="类型参数命名规则（Naming Conventions）"></a>类型参数命名规则（Naming Conventions）</h3><p>通过规则，类型参数是单独的，大写字母。这个表示鲜明区别了你已知的变量命名规则，一个好的理由是：没有这个规则，你将很难区分类型变量和原生类或接口名的区别。</p>
-<p>最普遍使用的类型参数是：</p>
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6240;&#x6709;<strong>Object</strong>&#x51FA;&#x73B0;&#x7684;&#x5730;&#x65B9;&#x90FD;&#x88AB;&#x66FF;&#x6362;&#x4E3A;T&#x4E86;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E3A;&#x4EFB;&#x610F;&#x975E;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x578B;&#xFF1A;&#x4EFB;&#x610F;&#x7684;&#x7C7B;&#xFF0C;&#x4EFB;&#x610F;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4EFB;&#x610F;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x751A;&#x81F3;&#x5176;&#x4ED6;&#x7684;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x3002;&#x540C;&#x6837;&#x7684;&#x6280;&#x672F;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x5230;&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x63A5;&#x53E3;&#x4E0A;&#x3002;</p>
+<h3 id="&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF08;Naming-Conventions&#xFF09;"><a href="#&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF08;Naming-Conventions&#xFF09;" class="headerlink" title="&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF08;Naming Conventions&#xFF09;"></a>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF08;Naming Conventions&#xFF09;</h3><p>&#x901A;&#x8FC7;&#x89C4;&#x5219;&#xFF0C;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x662F;&#x5355;&#x72EC;&#x7684;&#xFF0C;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x3002;&#x8FD9;&#x4E2A;&#x8868;&#x793A;&#x9C9C;&#x660E;&#x533A;&#x522B;&#x4E86;&#x4F60;&#x5DF2;&#x77E5;&#x7684;&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x7406;&#x7531;&#x662F;&#xFF1A;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x89C4;&#x5219;&#xFF0C;&#x4F60;&#x5C06;&#x5F88;&#x96BE;&#x533A;&#x5206;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x548C;&#x539F;&#x751F;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x540D;&#x7684;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x6700;&#x666E;&#x904D;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x662F;&#xFF1A;</p>
 <ul>
-<li>E -Element（Java Collections框架大量使用）</li>
+<li>E -Element&#xFF08;Java Collections&#x6846;&#x67B6;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#xFF09;</li>
 <li>K -Key</li>
 <li>N -Number</li>
 <li>T -Type</li>
 <li>V -Value </li>
-<li>S,U,V 等 -第二，第三，第四个类型</li>
+<li>S,U,V &#x7B49; -&#x7B2C;&#x4E8C;&#xFF0C;&#x7B2C;&#x4E09;&#xFF0C;&#x7B2C;&#x56DB;&#x4E2A;&#x7C7B;&#x578B;</li>
 </ul>
-<p>你可以在JAVA SE API 看到这些名字的使用。</p>
-<h3 id="调用和实例化一个泛型类型"><a href="#调用和实例化一个泛型类型" class="headerlink" title="调用和实例化一个泛型类型"></a>调用和实例化一个泛型类型</h3><p>要在你的代码引用泛型类 Box，你必须执行 泛型类型调用，把T替换成具体的值，比如Integer： </p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;JAVA SE API &#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x540D;&#x5B57;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="&#x8C03;&#x7528;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;"><a href="#&#x8C03;&#x7528;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;" class="headerlink" title="&#x8C03;&#x7528;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;"></a>&#x8C03;&#x7528;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;</h3><p>&#x8981;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5F15;&#x7528;&#x6CDB;&#x578B;&#x7C7B; Box&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x6267;&#x884C; &#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x8C03;&#x7528;&#xFF0C;&#x628A;T&#x66FF;&#x6362;&#x6210;&#x5177;&#x4F53;&#x7684;&#x503C;&#xFF0C;&#x6BD4;&#x5982;Integer&#xFF1A; </p>
 <pre><code>Box&lt;Integer&gt; integerBox;
-</code></pre><p>你可以认为泛型类型调用跟原生方法调用大致一样，但是不是传入一个参数到方法，而是传入一个类型蚕食–这个情况下的Integer–给Box类本身。</p>
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x8C03;&#x7528;&#x8DDF;&#x539F;&#x751F;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5927;&#x81F4;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x662F;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5230;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x662F;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x8695;&#x98DF;&#x2013;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#x4E0B;&#x7684;Integer&#x2013;&#x7ED9;Box&#x7C7B;&#x672C;&#x8EAB;&#x3002;</p>
 <blockquote>
-<p><strong>Type Parameter</strong>和<strong>Type Argument</strong>术语（Terminology）：<br>很多开发者交换使用这个两个术语，但是这两个术语并不同。敲代码时，<br>type argument 创建一个参数化类型，因此，Foo&lt; T&gt;中的T是type parameter，Foo&lt; String&gt; f中的String是一个type argument。</p>
+<p><strong>Type Parameter</strong>&#x548C;<strong>Type Argument</strong>&#x672F;&#x8BED;&#xFF08;Terminology&#xFF09;&#xFF1A;<br>&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x4EA4;&#x6362;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x4E24;&#x4E2A;&#x672F;&#x8BED;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x672F;&#x8BED;&#x5E76;&#x4E0D;&#x540C;&#x3002;&#x6572;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;<br>type argument &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;Foo&lt; T&gt;&#x4E2D;&#x7684;T&#x662F;type parameter&#xFF0C;Foo&lt; String&gt; f&#x4E2D;&#x7684;String&#x662F;&#x4E00;&#x4E2A;type argument&#x3002;</p>
 </blockquote>
-<p>就想其他的变量定义，上面的代码不会真正创建一个新的 Box对象。它只是声明，integerBox将持有一个“Box of Integer”的引用，用以读取Box<integer>.泛型类型的调用通常称为参数化类型。</integer></p>
-<p>为了实例化这个类，用new 关键字，把<integer>放在类名和括号之间。</integer></p>
+<p>&#x5C31;&#x60F3;&#x5176;&#x4ED6;&#x7684;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x4F1A;&#x771F;&#x6B63;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Box&#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x53EA;&#x662F;&#x58F0;&#x660E;&#xFF0C;integerBox&#x5C06;&#x6301;&#x6709;&#x4E00;&#x4E2A;&#x201C;Box of Integer&#x201D;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x7528;&#x4EE5;&#x8BFB;&#x53D6;Box<integer>.&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;&#x8C03;&#x7528;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;&#x3002;</integer></p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x4F8B;&#x5316;&#x8FD9;&#x4E2A;&#x7C7B;&#xFF0C;&#x7528;new &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x628A;<integer>&#x653E;&#x5728;&#x7C7B;&#x540D;&#x548C;&#x62EC;&#x53F7;&#x4E4B;&#x95F4;&#x3002;</integer></p>
 <pre><code>Box&lt;Integer&gt; integerBox = new Box&lt;Integer&gt;();
-</code></pre><h3 id="The-Diamond"><a href="#The-Diamond" class="headerlink" title="The Diamond"></a>The Diamond</h3><p>在Java SE 7及以后版本，可以省去类型参数调用泛型类的构造函数，用一个空的类型参数（&lt;&gt;）,编译器可以通过上下文决定，或推测type arguments，这个尖括号非正式得叫作diamond(钻石？这么奇葩)，你可以这样创建Box&lt; Integer&gt;的一个实例：</p>
+</code></pre><h3 id="The-Diamond"><a href="#The-Diamond" class="headerlink" title="The Diamond"></a>The Diamond</h3><p>&#x5728;Java SE 7&#x53CA;&#x4EE5;&#x540E;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x7701;&#x53BB;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;&lt;&gt;&#xFF09;,&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0A;&#x4E0B;&#x6587;&#x51B3;&#x5B9A;&#xFF0C;&#x6216;&#x63A8;&#x6D4B;type arguments&#xFF0C;&#x8FD9;&#x4E2A;&#x5C16;&#x62EC;&#x53F7;&#x975E;&#x6B63;&#x5F0F;&#x5F97;&#x53EB;&#x4F5C;diamond(&#x94BB;&#x77F3;&#xFF1F;&#x8FD9;&#x4E48;&#x5947;&#x8469;)&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x521B;&#x5EFA;Box&lt; Integer&gt;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF1A;</p>
 <pre><code>Box&lt;Integer&gt; integerBox = new Box&lt;&gt;();
-</code></pre><p>要查看更多关于diamond 符号和类型推断（inference）,请看<a href="https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html" target="_blank" rel="external">类型推断</a>。</p>
-<h3 id="多类型参数"><a href="#多类型参数" class="headerlink" title="多类型参数"></a>多类型参数</h3><p>正如前面提到的，泛型类可以有多个类型参数。比如泛型 OrderedPair 类，实现了泛型接口 Pair：</p>
+</code></pre><p>&#x8981;&#x67E5;&#x770B;&#x66F4;&#x591A;&#x5173;&#x4E8E;diamond &#x7B26;&#x53F7;&#x548C;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#xFF08;inference&#xFF09;,&#x8BF7;&#x770B;<a href="https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html" target="_blank" rel="external">&#x7C7B;&#x578B;&#x63A8;&#x65AD;</a>&#x3002;</p>
+<h3 id="&#x591A;&#x7C7B;&#x578B;&#x53C2;&#x6570;"><a href="#&#x591A;&#x7C7B;&#x578B;&#x53C2;&#x6570;" class="headerlink" title="&#x591A;&#x7C7B;&#x578B;&#x53C2;&#x6570;"></a>&#x591A;&#x7C7B;&#x578B;&#x53C2;&#x6570;</h3><p>&#x6B63;&#x5982;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6CDB;&#x578B;&#x7C7B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x3002;&#x6BD4;&#x5982;&#x6CDB;&#x578B; OrderedPair &#x7C7B;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x6CDB;&#x578B;&#x63A5;&#x53E3; Pair&#xFF1A;</p>
 <pre><code>public interface Pair&lt;K, V&gt; {
 public K getKey();
 public V getValue();
@@ -313,37 +304,37 @@ this.value = value;
 public K getKey()    { return key; }
 public V getValue() { return value; }
 }
-</code></pre><p>下面的语句创建了两个OrderedPair的实例：</p>
+</code></pre><p>&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x521B;&#x5EFA;&#x4E86;&#x4E24;&#x4E2A;OrderedPair&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;</p>
 <pre><code>Pair&lt;String, Integer&gt; p1 = new OrderedPair&lt;String, Integer&gt;(&quot;Even&quot;, 8);
 Pair&lt;String, String&gt;  p2 = new OrderedPair&lt;String, String&gt;(&quot;hello&quot;, &quot;world&quot;);
-</code></pre><p>new OrderedPair<string,integer>把K实例化为String，V实例化为Integer。因此OrderedPair的参数类型分别(respectively)是String和Integer。因为<a href="https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html" target="_blank" rel="external">自动装箱</a>，传入String和int到类是有效的。</string,integer></p>
-<h3 id="参数化类型"><a href="#参数化类型" class="headerlink" title="参数化类型"></a>参数化类型</h3><p>你也可以用一个参数化的类型（ie List&lt; String&gt;）替换（substitute）类型参数（K ，V）,例如用OrderedPair&lt; K,V&gt;:</p>
+</code></pre><p>new OrderedPair<string,integer>&#x628A;K&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;String&#xFF0C;V&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;Integer&#x3002;&#x56E0;&#x6B64;OrderedPair&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x5206;&#x522B;(respectively)&#x662F;String&#x548C;Integer&#x3002;&#x56E0;&#x4E3A;<a href="https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html" target="_blank" rel="external">&#x81EA;&#x52A8;&#x88C5;&#x7BB1;</a>&#xFF0C;&#x4F20;&#x5165;String&#x548C;int&#x5230;&#x7C7B;&#x662F;&#x6709;&#x6548;&#x7684;&#x3002;</string,integer></p>
+<h3 id="&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;"><a href="#&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;" class="headerlink" title="&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;"></a>&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;</h3><p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5316;&#x7684;&#x7C7B;&#x578B;&#xFF08;ie List&lt; String&gt;&#xFF09;&#x66FF;&#x6362;&#xFF08;substitute&#xFF09;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF08;K &#xFF0C;V&#xFF09;,&#x4F8B;&#x5982;&#x7528;OrderedPair&lt; K,V&gt;:</p>
 <pre><code>OrderedPair&lt;String, Box&lt;Integer&gt;&gt; p = new OrderedPair&lt;&gt;(&quot;primes&quot;, new Box&lt;Integer&gt;(...));
-</code></pre><h1 id="原类型（Raw-Types）"><a href="#原类型（Raw-Types）" class="headerlink" title="原类型（Raw Types）"></a>原类型（Raw Types）</h1><p>原类型是指泛型类或泛型接口的名字没有任何参数，比如，给出泛型类Box：</p>
+</code></pre><h1 id="&#x539F;&#x7C7B;&#x578B;&#xFF08;Raw-Types&#xFF09;"><a href="#&#x539F;&#x7C7B;&#x578B;&#xFF08;Raw-Types&#xFF09;" class="headerlink" title="&#x539F;&#x7C7B;&#x578B;&#xFF08;Raw Types&#xFF09;"></a>&#x539F;&#x7C7B;&#x578B;&#xFF08;Raw Types&#xFF09;</h1><p>&#x539F;&#x7C7B;&#x578B;&#x662F;&#x6307;&#x6CDB;&#x578B;&#x7C7B;&#x6216;&#x6CDB;&#x578B;&#x63A5;&#x53E3;&#x7684;&#x540D;&#x5B57;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x7ED9;&#x51FA;&#x6CDB;&#x578B;&#x7C7B;Box&#xFF1A;</p>
 <pre><code>public class Box(T){
 public void set(T t){
 /* ...... */
 }
 }
-</code></pre><p>你可以为形参<strong>T</strong>赋值一个真实的类型参数来创建一个参数化类型的 Box（T）：</p>
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x4E3A;&#x5F62;&#x53C2;<strong>T</strong>&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x771F;&#x5B9E;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;&#x7684; Box&#xFF08;T&#xFF09;&#xFF1A;</p>
 <pre><code>Box(Ingeter) intBox=new Box&lt;&gt;();
-</code></pre><p>如果真实的类型参数被省略掉了，你就创建了一个<strong>原类型</strong>的Box<t>:</t></p>
+</code></pre><p>&#x5982;&#x679C;&#x771F;&#x5B9E;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x88AB;&#x7701;&#x7565;&#x6389;&#x4E86;&#xFF0C;&#x4F60;&#x5C31;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<strong>&#x539F;&#x7C7B;&#x578B;</strong>&#x7684;Box<t>:</t></p>
 <pre><code>Box rawBox =new Box();
-</code></pre><p>因此，Box是Box<t>的原类型。然而，非泛型类或非泛型接口没有原类型。<br>原类型出现在遗赠的代码里是因为大量的API类（比如<strong>Collections</strong>类）在JDK5之前不是泛型类。当使用原类型的时候，你本质上使用的是泛型之前的表现—Box -&gt;Object.为了向后兼容，赋值参数化类型给他的原类型是允许的：</t></p>
+</code></pre><p>&#x56E0;&#x6B64;&#xFF0C;Box&#x662F;Box<t>&#x7684;&#x539F;&#x7C7B;&#x578B;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x975E;&#x6CDB;&#x578B;&#x7C7B;&#x6216;&#x975E;&#x6CDB;&#x578B;&#x63A5;&#x53E3;&#x6CA1;&#x6709;&#x539F;&#x7C7B;&#x578B;&#x3002;<br>&#x539F;&#x7C7B;&#x578B;&#x51FA;&#x73B0;&#x5728;&#x9057;&#x8D60;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#x662F;&#x56E0;&#x4E3A;&#x5927;&#x91CF;&#x7684;API&#x7C7B;&#xFF08;&#x6BD4;&#x5982;<strong>Collections</strong>&#x7C7B;&#xFF09;&#x5728;JDK5&#x4E4B;&#x524D;&#x4E0D;&#x662F;&#x6CDB;&#x578B;&#x7C7B;&#x3002;&#x5F53;&#x4F7F;&#x7528;&#x539F;&#x7C7B;&#x578B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x672C;&#x8D28;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x6CDB;&#x578B;&#x4E4B;&#x524D;&#x7684;&#x8868;&#x73B0;&#x2014;Box -&gt;Object.&#x4E3A;&#x4E86;&#x5411;&#x540E;&#x517C;&#x5BB9;&#xFF0C;&#x8D4B;&#x503C;&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;&#x7ED9;&#x4ED6;&#x7684;&#x539F;&#x7C7B;&#x578B;&#x662F;&#x5141;&#x8BB8;&#x7684;&#xFF1A;</t></p>
 <pre><code>Box&lt;String&gt; stringBox=new Box&lt;&gt;();
 Box rawBox=stringBox;    //OK
-</code></pre><p>但是如果你赋值一个原类型给一个参数化的类型，你将得到警告：</p>
-<pre><code>Box rawBox=new Box(); //rawBox是Box&lt;T&gt;()的原类型
+</code></pre><p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x539F;&#x7C7B;&#x578B;&#x7ED9;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5316;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4F60;&#x5C06;&#x5F97;&#x5230;&#x8B66;&#x544A;&#xFF1A;</p>
+<pre><code>Box rawBox=new Box(); //rawBox&#x662F;Box&lt;T&gt;()&#x7684;&#x539F;&#x7C7B;&#x578B;
 Box&lt;Integer&gt; intBox=rawBox;  //warning:unchecked conversion
-</code></pre><p>当你用原类型调用关联的反省类型的泛型方法时，你也会得到警告：</p>
+</code></pre><p>&#x5F53;&#x4F60;&#x7528;&#x539F;&#x7C7B;&#x578B;&#x8C03;&#x7528;&#x5173;&#x8054;&#x7684;&#x53CD;&#x7701;&#x7C7B;&#x578B;&#x7684;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4F60;&#x4E5F;&#x4F1A;&#x5F97;&#x5230;&#x8B66;&#x544A;&#xFF1A;</p>
 <pre><code>Box&lt;String&gt; stringBox=new Box&lt;&gt;();
 Box rawBox=stringBox;
 rawBox.set(8);  //waring: unchecked invocation to set(T)
-</code></pre><p>警告显示原类型绕过泛型类型检查，延迟捕获不安全代码到运行时。因此，你需要避免使用原类型。<a href="https://docs.oracle.com/javase/tutorial/java/generics/erasure.html" target="_blank" rel="external">类型擦除</a>部分会有更多关于Java编译器如何使用原类型的内容。</p>
-<h2 id="Unchecked-Error-Messages"><a href="#Unchecked-Error-Messages" class="headerlink" title="Unchecked Error Messages"></a>Unchecked Error Messages</h2><p>正如上面提到的，当混合遗赠代码和泛型代码时，你可能会碰到跟下面相似的警告：</p>
+</code></pre><p>&#x8B66;&#x544A;&#x663E;&#x793A;&#x539F;&#x7C7B;&#x578B;&#x7ED5;&#x8FC7;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x5EF6;&#x8FDF;&#x6355;&#x83B7;&#x4E0D;&#x5B89;&#x5168;&#x4EE3;&#x7801;&#x5230;&#x8FD0;&#x884C;&#x65F6;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x539F;&#x7C7B;&#x578B;&#x3002;<a href="https://docs.oracle.com/javase/tutorial/java/generics/erasure.html" target="_blank" rel="external">&#x7C7B;&#x578B;&#x64E6;&#x9664;</a>&#x90E8;&#x5206;&#x4F1A;&#x6709;&#x66F4;&#x591A;&#x5173;&#x4E8E;Java&#x7F16;&#x8BD1;&#x5668;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x539F;&#x7C7B;&#x578B;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="Unchecked-Error-Messages"><a href="#Unchecked-Error-Messages" class="headerlink" title="Unchecked Error Messages"></a>Unchecked Error Messages</h2><p>&#x6B63;&#x5982;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x5F53;&#x6DF7;&#x5408;&#x9057;&#x8D60;&#x4EE3;&#x7801;&#x548C;&#x6CDB;&#x578B;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x78B0;&#x5230;&#x8DDF;&#x4E0B;&#x9762;&#x76F8;&#x4F3C;&#x7684;&#x8B66;&#x544A;&#xFF1A;</p>
 <pre><code>Note: Example.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-</code></pre><p>这发生在当使用老的API操作原类型时，例如如下代码：</p>
+</code></pre><p>&#x8FD9;&#x53D1;&#x751F;&#x5728;&#x5F53;&#x4F7F;&#x7528;&#x8001;&#x7684;API&#x64CD;&#x4F5C;&#x539F;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x4F8B;&#x5982;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code>public class WarningDemo {
 Box&lt;Integer&gt; bi;
 bi=createBox();
@@ -351,7 +342,7 @@ bi=createBox();
 static Box createBox(){
 return new Box();
 }
-</code></pre><p>‘unchecked’指的是编译器没有足够的类型信息来执行所有必要的类型检查以保证类型安全。</p>
+</code></pre><p>&#x2018;unchecked&#x2019;&#x6307;&#x7684;&#x662F;&#x7F16;&#x8BD1;&#x5668;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x6765;&#x6267;&#x884C;&#x6240;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x4EE5;&#x4FDD;&#x8BC1;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x3002;</p>
 
             <blockquote>
               <p>
