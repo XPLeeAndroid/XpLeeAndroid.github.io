@@ -41,7 +41,7 @@
     <link href="http://xpleeandroid.github.io/2016/08/12/ss-user-guide/"/>
     <id>http://xpleeandroid.github.io/2016/08/12/ss-user-guide/</id>
     <published>2016-08-12T06:54:55.000Z</published>
-    <updated>2016-08-12T06:57:46.375Z</updated>
+    <updated>2016-09-23T10:22:07.172Z</updated>
     
     <content type="html">&lt;h1 id=&quot;ShadowSocks使用说明&quot;&gt;&lt;a href=&quot;#ShadowSocks使用说明&quot; class=&quot;headerlink&quot; title=&quot;ShadowSocks使用说明&quot;&gt;&lt;/a&gt;ShadowSocks使用说明&lt;/h1&gt;&lt;p&gt;shadowsocks是一款开源的基于UDP转发的开源的科学上网工具&lt;/p&gt;
 &lt;h2 id=&quot;客户端下载与配置&quot;&gt;&lt;a href=&quot;#客户端下载与配置&quot; class=&quot;headerlink&quot; title=&quot;客户端下载与配置&quot;&gt;&lt;/a&gt;客户端下载与配置&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; title=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://shadowsocks.org/en/download/clients.html&lt;/a&gt;&lt;br&gt;提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  &lt;/p&gt;
@@ -66,7 +66,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;获取账号与配置文件&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;1 . &lt;strong&gt;获取SS账号&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;到&lt;a href=&quot;http://216.158.86.233/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://216.158.86.233/&lt;/a&gt; 获取注册凭邀请码注册账号  &lt;/p&gt;
+&lt;p&gt; 到&lt;a href=&quot;http://ss.lixiaopeng.top/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ss.lixiaopeng.top/&lt;/a&gt; 获取注册凭邀请码注册账号  &lt;/p&gt;
 &lt;p&gt;2 . &lt;strong&gt;Windows客户端&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;下载&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows客户端&lt;/a&gt;&lt;br&gt;双击运行程序，在Windows右下角的图标区域就会多一个像纸飞机一样的图标，这个就是客户端程序&lt;br&gt;鼠标右键点击这个纸飞机图标，会出现客户端的主菜单&lt;br&gt;把SS账号的二维码图片显示在电脑上，在Windows的SS客户端上（注意：不是手机）点击“服务器选择”，“扫描屏幕上的二维码”， 客户端软件会识别屏幕上的二维码自动配置（电脑不需要有摄像头）&lt;/p&gt;
 &lt;p&gt;然后点击“确定”回到主菜单，选择“启用代理”和“开机启动”，让这两项前面都有对号，也就是选择上，这样客户端就配置好了。&lt;/p&gt;
