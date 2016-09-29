@@ -13,24 +13,24 @@
   
   <meta name="keywords" content="shadowsocks">
   <meta name="description" content="ShadowSocks使用说明shadowsocks是一款开源的基于UDP转发的开源的科学上网工具
-客户端下载与配置下载地址：https://shadowsocks.org/en/download/clients.html提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  
-配置文件Shadowsocks接收JSON格式的配置,形式如下：
-{">
+客户端下载与配置下载地址: http://download.lixiaopeng.top提供了Windows,Mac OS X  ,Android,IOS的客户端以下显示Windows客户端的配置方法  
+1.下载Windows客户端下载地址  http://download.lixiaopeng.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SS用户说明">
 <meta property="og:url" content="http://xpleeandroid.github.io/2016/08/12/ss-user-guide/index.html">
 <meta property="og:site_name" content="李晓鹏">
 <meta property="og:description" content="ShadowSocks使用说明shadowsocks是一款开源的基于UDP转发的开源的科学上网工具
-客户端下载与配置下载地址：https://shadowsocks.org/en/download/clients.html提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  
-配置文件Shadowsocks接收JSON格式的配置,形式如下：
-{">
-<meta property="og:updated_time" content="2016-09-23T10:22:07.172Z">
+客户端下载与配置下载地址: http://download.lixiaopeng.top提供了Windows,Mac OS X  ,Android,IOS的客户端以下显示Windows客户端的配置方法  
+1.下载Windows客户端下载地址  http://download.lixiaopeng.">
+<meta property="og:image" content="https://xpleeandroid.github.io/img/ss-1.png">
+<meta property="og:image" content="https://xpleeandroid.github.io/img/ss-2.png">
+<meta property="og:updated_time" content="2016-09-29T04:30:19.765Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SS用户说明">
 <meta name="twitter:description" content="ShadowSocks使用说明shadowsocks是一款开源的基于UDP转发的开源的科学上网工具
-客户端下载与配置下载地址：https://shadowsocks.org/en/download/clients.html提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  
-配置文件Shadowsocks接收JSON格式的配置,形式如下：
-{">
+客户端下载与配置下载地址: http://download.lixiaopeng.top提供了Windows,Mac OS X  ,Android,IOS的客户端以下显示Windows客户端的配置方法  
+1.下载Windows客户端下载地址  http://download.lixiaopeng.">
+<meta name="twitter:image" content="https://xpleeandroid.github.io/img/ss-1.png">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
@@ -199,7 +199,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ShadowSocks使用说明"><span class="post-toc-text">ShadowSocks使用说明</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#客户端下载与配置"><span class="post-toc-text">客户端下载与配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#配置文件"><span class="post-toc-text">配置文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#字段解释"><span class="post-toc-text">字段解释</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ShadowSocks使用说明"><span class="post-toc-text">ShadowSocks使用说明</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#客户端下载与配置"><span class="post-toc-text">客户端下载与配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-下载Windows客户端"><span class="post-toc-text">1.下载Windows客户端</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-登录http-ss-lixiaopeng-top-quot-用户中心-quot-并获取配置信息"><span class="post-toc-text">2.登录http://ss.lixiaopeng.top"用户中心"并获取配置信息</span></a></li></ol></li></ol></li></ol>
           </nav>
           
         </aside>
@@ -208,35 +208,9 @@
 
             <div class="post-content" id="post-content" itemprop="postContent">
             <h1 id="ShadowSocks使用说明"><a href="#ShadowSocks使用说明" class="headerlink" title="ShadowSocks使用说明"></a>ShadowSocks使用说明</h1><p>shadowsocks是一款开源的基于UDP转发的开源的科学上网工具</p>
-<h2 id="客户端下载与配置"><a href="#客户端下载与配置" class="headerlink" title="客户端下载与配置"></a>客户端下载与配置</h2><p>下载地址：<a href="https://shadowsocks.org/en/download/clients.html" title="https://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">https://shadowsocks.org/en/download/clients.html</a><br>提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  </p>
-<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>Shadowsocks接收JSON格式的配置,形式如下：</p>
-<pre><code>{
-&quot;server&quot;:&quot;my_server_ip&quot;,
-&quot;server_port&quot;:8388,
-&quot;local_port&quot;:1080,
-&quot;password&quot;:&quot;barfoo!&quot;,
-&quot;timeout&quot;:600,
-&quot;method&quot;:&quot;table&quot;,
-&quot;auth&quot;: true
-}
-</code></pre><h3 id="字段解释"><a href="#字段解释" class="headerlink" title="字段解释"></a>字段解释</h3><ul>
-<li><strong>server</strong> : 您的主机名或者服务器IP地址（IPV4/IPV6）  </li>
-<li><strong>server_port</strong> : 服务器端口号  </li>
-<li><strong>local_port</strong> : 本机端口号   </li>
-<li><strong>password</strong> : 用于加密传输的密码  </li>
-<li><strong>timeout</strong> :链接超时时间，单位毫秒  </li>
-<li><strong>method</strong> :加密方式，“bf-cfb”,“aes-256-cfb”,”des-cfb”,”rc4”等。默认是table，并不安全，“aes-256-cfb”是推荐的方式 。  </li>
-<li><strong>auth</strong> : 一次性认证，true表示开启一次性认真特性。  </li>
-</ul>
-<p><strong>获取账号与配置文件</strong></p>
-<p>1 . <strong>获取SS账号</strong>  </p>
-<p> 到<a href="http://ss.lixiaopeng.top/" target="_blank" rel="external">http://ss.lixiaopeng.top/</a> 获取注册凭邀请码注册账号  </p>
-<p>2 . <strong>Windows客户端</strong></p>
-<p>下载<a href="https://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">Windows客户端</a><br>双击运行程序，在Windows右下角的图标区域就会多一个像纸飞机一样的图标，这个就是客户端程序<br>鼠标右键点击这个纸飞机图标，会出现客户端的主菜单<br>把SS账号的二维码图片显示在电脑上，在Windows的SS客户端上（注意：不是手机）点击“服务器选择”，“扫描屏幕上的二维码”， 客户端软件会识别屏幕上的二维码自动配置（电脑不需要有摄像头）</p>
-<p>然后点击“确定”回到主菜单，选择“启用代理”和“开机启动”，让这两项前面都有对号，也就是选择上，这样客户端就配置好了。</p>
-<p>在主菜单里面，点击代理模式，可以选择PAC模式或者全局模式，前者的意思是只有访问被墙的网站才通过SS账号访问，国内网站和国外没有被墙的网站不通过SS账号。全局模式则是所有访问都走SS。</p>
-<p>3 . <strong>MAC OS 系统</strong></p>
-<p><a href="https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help" target="_blank" rel="external">参考OSX客户端使用说明 </a></p>
+<h2 id="客户端下载与配置"><a href="#客户端下载与配置" class="headerlink" title="客户端下载与配置"></a>客户端下载与配置</h2><p>下载地址: <a href="http://download.lixiaopeng.top" target="_blank" rel="external">http://download.lixiaopeng.top</a><br>提供了Windows,Mac OS X  ,Android,IOS的客户端<br>以下显示Windows客户端的配置方法  </p>
+<h3 id="1-下载Windows客户端"><a href="#1-下载Windows客户端" class="headerlink" title="1.下载Windows客户端"></a>1.下载Windows客户端</h3><p>下载地址  <a href="http://download.lixiaopeng.top/" target="_blank" rel="external">http://download.lixiaopeng.top/</a>  </p>
+<h3 id="2-登录http-ss-lixiaopeng-top-quot-用户中心-quot-并获取配置信息"><a href="#2-登录http-ss-lixiaopeng-top-quot-用户中心-quot-并获取配置信息" class="headerlink" title="2.登录http://ss.lixiaopeng.top&quot;用户中心&quot;并获取配置信息"></a>2.登录<a href="http://ss.lixiaopeng.top&quot;用户中心&quot;并获取配置信息" target="_blank" rel="external">http://ss.lixiaopeng.top&quot;用户中心&quot;并获取配置信息</a></h3><p><img src="https://xpleeandroid.github.io/img/ss-1.png" alt=""><br><img src="https://xpleeandroid.github.io/img/ss-2.png" alt=""></p>
 
             <blockquote>
               <p>

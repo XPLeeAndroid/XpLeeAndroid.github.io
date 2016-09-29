@@ -41,38 +41,12 @@
     <link href="http://xpleeandroid.github.io/2016/08/12/ss-user-guide/"/>
     <id>http://xpleeandroid.github.io/2016/08/12/ss-user-guide/</id>
     <published>2016-08-12T06:54:55.000Z</published>
-    <updated>2016-09-23T10:22:07.172Z</updated>
+    <updated>2016-09-29T04:30:19.765Z</updated>
     
     <content type="html">&lt;h1 id=&quot;ShadowSocks使用说明&quot;&gt;&lt;a href=&quot;#ShadowSocks使用说明&quot; class=&quot;headerlink&quot; title=&quot;ShadowSocks使用说明&quot;&gt;&lt;/a&gt;ShadowSocks使用说明&lt;/h1&gt;&lt;p&gt;shadowsocks是一款开源的基于UDP转发的开源的科学上网工具&lt;/p&gt;
-&lt;h2 id=&quot;客户端下载与配置&quot;&gt;&lt;a href=&quot;#客户端下载与配置&quot; class=&quot;headerlink&quot; title=&quot;客户端下载与配置&quot;&gt;&lt;/a&gt;客户端下载与配置&lt;/h2&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; title=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://shadowsocks.org/en/download/clients.html&lt;/a&gt;&lt;br&gt;提供了Windows,Mac OS X ,Linux ,Android,IOS,OpenWRT的客户端  &lt;/p&gt;
-&lt;h3 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h3&gt;&lt;p&gt;Shadowsocks接收JSON格式的配置,形式如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-&amp;quot;server&amp;quot;:&amp;quot;my_server_ip&amp;quot;,
-&amp;quot;server_port&amp;quot;:8388,
-&amp;quot;local_port&amp;quot;:1080,
-&amp;quot;password&amp;quot;:&amp;quot;barfoo!&amp;quot;,
-&amp;quot;timeout&amp;quot;:600,
-&amp;quot;method&amp;quot;:&amp;quot;table&amp;quot;,
-&amp;quot;auth&amp;quot;: true
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;字段解释&quot;&gt;&lt;a href=&quot;#字段解释&quot; class=&quot;headerlink&quot; title=&quot;字段解释&quot;&gt;&lt;/a&gt;字段解释&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;server&lt;/strong&gt; : 您的主机名或者服务器IP地址（IPV4/IPV6）  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;server_port&lt;/strong&gt; : 服务器端口号  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;local_port&lt;/strong&gt; : 本机端口号   &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;password&lt;/strong&gt; : 用于加密传输的密码  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;timeout&lt;/strong&gt; :链接超时时间，单位毫秒  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;method&lt;/strong&gt; :加密方式，“bf-cfb”,“aes-256-cfb”,”des-cfb”,”rc4”等。默认是table，并不安全，“aes-256-cfb”是推荐的方式 。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;auth&lt;/strong&gt; : 一次性认证，true表示开启一次性认真特性。  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;获取账号与配置文件&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1 . &lt;strong&gt;获取SS账号&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt; 到&lt;a href=&quot;http://ss.lixiaopeng.top/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ss.lixiaopeng.top/&lt;/a&gt; 获取注册凭邀请码注册账号  &lt;/p&gt;
-&lt;p&gt;2 . &lt;strong&gt;Windows客户端&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;下载&lt;a href=&quot;https://shadowsocks.org/en/download/clients.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows客户端&lt;/a&gt;&lt;br&gt;双击运行程序，在Windows右下角的图标区域就会多一个像纸飞机一样的图标，这个就是客户端程序&lt;br&gt;鼠标右键点击这个纸飞机图标，会出现客户端的主菜单&lt;br&gt;把SS账号的二维码图片显示在电脑上，在Windows的SS客户端上（注意：不是手机）点击“服务器选择”，“扫描屏幕上的二维码”， 客户端软件会识别屏幕上的二维码自动配置（电脑不需要有摄像头）&lt;/p&gt;
-&lt;p&gt;然后点击“确定”回到主菜单，选择“启用代理”和“开机启动”，让这两项前面都有对号，也就是选择上，这样客户端就配置好了。&lt;/p&gt;
-&lt;p&gt;在主菜单里面，点击代理模式，可以选择PAC模式或者全局模式，前者的意思是只有访问被墙的网站才通过SS账号访问，国内网站和国外没有被墙的网站不通过SS账号。全局模式则是所有访问都走SS。&lt;/p&gt;
-&lt;p&gt;3 . &lt;strong&gt;MAC OS 系统&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-iOS/wiki/Shadowsocks-for-OSX-Help&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考OSX客户端使用说明 &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;客户端下载与配置&quot;&gt;&lt;a href=&quot;#客户端下载与配置&quot; class=&quot;headerlink&quot; title=&quot;客户端下载与配置&quot;&gt;&lt;/a&gt;客户端下载与配置&lt;/h2&gt;&lt;p&gt;下载地址: &lt;a href=&quot;http://download.lixiaopeng.top&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://download.lixiaopeng.top&lt;/a&gt;&lt;br&gt;提供了Windows,Mac OS X  ,Android,IOS的客户端&lt;br&gt;以下显示Windows客户端的配置方法  &lt;/p&gt;
+&lt;h3 id=&quot;1-下载Windows客户端&quot;&gt;&lt;a href=&quot;#1-下载Windows客户端&quot; class=&quot;headerlink&quot; title=&quot;1.下载Windows客户端&quot;&gt;&lt;/a&gt;1.下载Windows客户端&lt;/h3&gt;&lt;p&gt;下载地址  &lt;a href=&quot;http://download.lixiaopeng.top/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://download.lixiaopeng.top/&lt;/a&gt;  &lt;/p&gt;
+&lt;h3 id=&quot;2-登录http-ss-lixiaopeng-top-quot-用户中心-quot-并获取配置信息&quot;&gt;&lt;a href=&quot;#2-登录http-ss-lixiaopeng-top-quot-用户中心-quot-并获取配置信息&quot; class=&quot;headerlink&quot; title=&quot;2.登录http://ss.lixiaopeng.top&amp;quot;用户中心&amp;quot;并获取配置信息&quot;&gt;&lt;/a&gt;2.登录&lt;a href=&quot;http://ss.lixiaopeng.top&amp;quot;用户中心&amp;quot;并获取配置信息&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ss.lixiaopeng.top&amp;quot;用户中心&amp;quot;并获取配置信息&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://xpleeandroid.github.io/img/ss-1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://xpleeandroid.github.io/img/ss-2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
