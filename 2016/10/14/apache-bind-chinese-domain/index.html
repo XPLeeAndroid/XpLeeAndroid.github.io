@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>解决CentOS VI中文乱码问题 | 李晓鹏 | Adam</title>
+  <title>中文网站绑定Apache无法解析的问题解决办法 | 李晓鹏 | Adam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="keywords" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师 " />
 	<meta name="description" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师  "/>
@@ -11,44 +11,20 @@
   <meta name="theme-color" content="#e91e63">
   
   
-  <meta name="keywords" content="linux">
-  <meta name="description" content="centos 7.1 
-cd /etc/vi virc在最后面增加如下字段:
-set fileencodings=utf-8,gb2312,gbk,gb18030  
-
-set termencoding=utf-8  
-
-set fileformats=unix  
-
-set encoding=prc 
-Over.">
+  <meta name="keywords" content="apache,server">
+  <meta name="description" content="公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：
+  中文域名需要先转成punycode,再把punycode绑定到apache的vhost中，关于punycode,维基中解释的很简洁  不在缀余。用在线工具把shop.速帮购.com转成punycode格式:sh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决CentOS VI中文乱码问题">
-<meta property="og:url" content="http://xpleeandroid.github.io/2016/10/08/centos-vi-chinese-garbled/index.html">
+<meta property="og:title" content="中文网站绑定Apache无法解析的问题解决办法">
+<meta property="og:url" content="http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="centos 7.1 
-cd /etc/vi virc在最后面增加如下字段:
-set fileencodings=utf-8,gb2312,gbk,gb18030  
-
-set termencoding=utf-8  
-
-set fileformats=unix  
-
-set encoding=prc 
-Over.">
-<meta property="og:updated_time" content="2016-10-08T05:09:29.932Z">
+<meta property="og:description" content="公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：
+  中文域名需要先转成punycode,再把punycode绑定到apache的vhost中，关于punycode,维基中解释的很简洁  不在缀余。用在线工具把shop.速帮购.com转成punycode格式:sh">
+<meta property="og:updated_time" content="2016-10-14T05:52:36.872Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决CentOS VI中文乱码问题">
-<meta name="twitter:description" content="centos 7.1 
-cd /etc/vi virc在最后面增加如下字段:
-set fileencodings=utf-8,gb2312,gbk,gb18030  
-
-set termencoding=utf-8  
-
-set fileformats=unix  
-
-set encoding=prc 
-Over.">
+<meta name="twitter:title" content="中文网站绑定Apache无法解析的问题解决办法">
+<meta name="twitter:description" content="公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：
+  中文域名需要先转成punycode,再把punycode绑定到apache的vhost中，关于punycode,维基中解释的很简洁  不在缀余。用在线工具把shop.速帮购.com转成punycode格式:sh">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
@@ -137,7 +113,7 @@ Over.">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">解决CentOS VI中文乱码问题</div>
+        <div class="flex-col header-title ellipsis">中文网站绑定Apache无法解析的问题解决办法</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -158,18 +134,18 @@ Over.">
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">解决CentOS VI中文乱码问题</h1>
-    <h5 class="subtitle">2016-10-08</h5>
+    <h1 class="author">中文网站绑定Apache无法解析的问题解决办法</h1>
+    <h5 class="subtitle">2016-10-14</h5>
   </div>
 </header>
 
     <div class="container body-wrap">
       
-  <article id="post-centos-vi-chinese-garbled" class="article article-type-post" itemprop="blogPost">
+  <article id="post-apache-bind-chinese-domain" class="article article-type-post" itemprop="blogPost">
     
       <div class="post-meat flex-row">
         <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/server/">server</a></li></ul>
 </div>
       </div>
       <div class="post-body">
@@ -225,21 +201,35 @@ Over.">
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>centos 7.1 </p>
-<p>cd /etc/<br>vi virc<br>在最后面增加如下字段:</p>
-<pre><code>set fileencodings=utf-8,gb2312,gbk,gb18030  
-
-set termencoding=utf-8  
-
-set fileformats=unix  
-
-set encoding=prc 
-</code></pre><p>Over.</p>
-
+            <p>公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：</p>
+<p>  中文域名需要先转成punycode,再把punycode绑定到apache的vhost中，关于punycode,<a href="https://zh.wikipedia.org/wiki/Punycode" target="_blank" rel="external">维基中解释的很简洁</a>  不在缀余。<br>用<a href="http://www.cnnic.cn/jczyfw/zwym/zgymzcjsy/201206/t20120612_26523.htm?spm=5176.bbsr268165.0.0.i2QEbv" target="_blank" rel="external">在线工具</a>把shop.速帮购.com转成punycode格式:shop.xn–huT195Hu3B.com,然后再绑定到apache：  </p>
+<pre><code>#shop.速帮购
+&lt;VirtualHost *:80&gt;
+DocumentRoot &quot;E:/server/ecmoban/upload&quot;
+ServerName shop.xn--huT195Hu3B.com:80
+ServerAlias 
+ServerAdmin webmaster@shop.xn--huT195Hu3B.com
+DirectoryIndex index.html index.htm index.php default.php app.php u.php
+ErrorLog logs/shop.xn--huT195Hu3B.com-error.log
+CustomLog logs/shop.xn--huT195Hu3B.com-access_%Y%m%d.log comonvhost
+php_admin_value open_basedir &quot;E:\server\ecmoban\upload\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\htdocs\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\memcached\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\phpmyadmin\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\temp\;C:\Windows\Temp\&quot;
+&lt;Directory &quot;E:/server/ecmoban/upload&quot;&gt;
+Options FollowSymLinks
+AllowOverride All
+Require all granted
+&lt;/Directory&gt;
+&lt;LocationMatch &quot;/(inc)/(.*)$&quot;&gt;
+Require all denied
+&lt;/LocationMatch&gt;
+&lt;LocationMatch &quot;/(attachment|attachments|uploadfiles|avatar)/(.*).(php|php5|phps|asp|asp.net|jsp)$&quot;&gt;
+Require all denied
+&lt;/LocationMatch&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
             <blockquote>
               <p>
                 本文地址：
-                <a href="http://xpleeandroid.github.io/2016/10/08/centos-vi-chinese-garbled/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/10/08/centos-vi-chinese-garbled/</a>
+                <a href="http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/</a>
               </p>
               <footer><cite><a href="http://xpleeandroid.github.io">@李晓鹏</a></cite></footer>
             </blockquote>
@@ -247,19 +237,12 @@ set encoding=prc
             
 <nav class="post-nav">
   
-    <div class="waves-block waves-effect prev fl">
-      <a href="/2016/10/14/apache-bind-chinese-domain/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">中文网站绑定Apache无法解析的问题解决办法</h4>
-      </a>
-    </div>
-  
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/08/31/MyGoldRetriever/" id="post-next" class="post-nav-link">
+      <a href="/2016/10/08/centos-vi-chinese-garbled/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Life Record of My 撒欢</h4>
+        <h4 class="title">解决CentOS VI中文乱码问题</h4>
       </a>
     </div>
   
@@ -270,7 +253,7 @@ set encoding=prc
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="centos-vi-chinese-garbled" data-title="解决CentOS VI中文乱码问题" data-url="http://xpleeandroid.github.io/2016/10/08/centos-vi-chinese-garbled/index.html"></div>
+	<div class="ds-thread" data-thread-key="apache-bind-chinese-domain" data-title="中文网站绑定Apache无法解析的问题解决办法" data-url="http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -309,10 +292,10 @@ set encoding=prc
 
 <script>
 var BLOG_SHARE = {
-    title: "解决CentOS VI中文乱码问题",
+    title: "中文网站绑定Apache无法解析的问题解决办法",
     pic: "/img/author.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://xpleeandroid.github.io/2016/10/08/centos-vi-chinese-garbled/index.html"
+    url: "http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

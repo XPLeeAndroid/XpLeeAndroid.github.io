@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-10-08T05:09:29.932Z</updated>
+  <updated>2016-10-14T05:52:36.872Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中文网站绑定Apache无法解析的问题解决办法</title>
+    <link href="http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/"/>
+    <id>http://xpleeandroid.github.io/2016/10/14/apache-bind-chinese-domain/</id>
+    <published>2016-10-14T05:40:29.000Z</published>
+    <updated>2016-10-14T05:52:36.872Z</updated>
+    
+    <content type="html">&lt;p&gt;公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：&lt;/p&gt;
+&lt;p&gt;  中文域名需要先转成punycode,再把punycode绑定到apache的vhost中，关于punycode,&lt;a href=&quot;https://zh.wikipedia.org/wiki/Punycode&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;维基中解释的很简洁&lt;/a&gt;  不在缀余。&lt;br&gt;用&lt;a href=&quot;http://www.cnnic.cn/jczyfw/zwym/zgymzcjsy/201206/t20120612_26523.htm?spm=5176.bbsr268165.0.0.i2QEbv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在线工具&lt;/a&gt;把shop.速帮购.com转成punycode格式:shop.xn–huT195Hu3B.com,然后再绑定到apache：  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#shop.速帮购
+&amp;lt;VirtualHost *:80&amp;gt;
+DocumentRoot &amp;quot;E:/server/ecmoban/upload&amp;quot;
+ServerName shop.xn--huT195Hu3B.com:80
+ServerAlias 
+ServerAdmin webmaster@shop.xn--huT195Hu3B.com
+DirectoryIndex index.html index.htm index.php default.php app.php u.php
+ErrorLog logs/shop.xn--huT195Hu3B.com-error.log
+CustomLog logs/shop.xn--huT195Hu3B.com-access_%Y%m%d.log comonvhost
+php_admin_value open_basedir &amp;quot;E:\server\ecmoban\upload\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\htdocs\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\memcached\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\phpmyadmin\;E:\software\UPUPW_AP5.6-1510\UPUPW_AP5.6\temp\;C:\Windows\Temp\&amp;quot;
+&amp;lt;Directory &amp;quot;E:/server/ecmoban/upload&amp;quot;&amp;gt;
+Options FollowSymLinks
+AllowOverride All
+Require all granted
+&amp;lt;/Directory&amp;gt;
+&amp;lt;LocationMatch &amp;quot;/(inc)/(.*)$&amp;quot;&amp;gt;
+Require all denied
+&amp;lt;/LocationMatch&amp;gt;
+&amp;lt;LocationMatch &amp;quot;/(attachment|attachments|uploadfiles|avatar)/(.*).(php|php5|phps|asp|asp.net|jsp)$&amp;quot;&amp;gt;
+Require all denied
+&amp;lt;/LocationMatch&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;公司申请了俩网站,www.subanggo.com和www.速帮购.com,服务器上都配好了，今天域名备案成功,于是开始解析，解析中文域名始终不成功，google了一下吗，找到答案了：&lt;/p&gt;
+&lt;p&gt;  中文域名需要先转成punycode,再把punycode绑定到apac
+    
+    </summary>
+    
+    
+      <category term="apache" scheme="http://xpleeandroid.github.io/tags/apache/"/>
+    
+      <category term="server" scheme="http://xpleeandroid.github.io/tags/server/"/>
+    
+  </entry>
   
   <entry>
     <title>解决CentOS VI中文乱码问题</title>
