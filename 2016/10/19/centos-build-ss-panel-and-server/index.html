@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>linux日常命令 | 李晓鹏 | Adam</title>
+  <title>CentOS搭建LNMP,搭建ss-panel以及后端经验总结 | 李晓鹏 | Adam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="keywords" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师 " />
 	<meta name="description" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师  "/>
@@ -11,29 +11,23 @@
   <meta name="theme-color" content="#e91e63">
   
   
-  <meta name="keywords" content="linux">
-  <meta name="description" content="ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态
-ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 
-kill -9 pid 强制杀死进程pid
-service iptabes stop 停止防火墙 centos7之前版本
-chkconfig iptables off 禁用防">
+  <meta name="keywords" content="vps,ss-panel,linux,shadowsocks">
+  <meta name="description" content="前言几个月前开始搭建http://ss.lixiaopeng.top/shadowsocks并免费提供给别人使用，搭建过程中遇到不少问题，在这记录下来。
+安装LNMPyum update  //更新yum
+wget -c http://soft.vpser.net/lnmp/lnmp1.3.tar.gz &amp;amp;&amp;amp; tar zxf lnmp1.3.tar.gz &amp;amp;&amp;amp; cd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux日常命令">
-<meta property="og:url" content="http://xpleeandroid.github.io/2016/08/10/daily-linux-command/index.html">
+<meta property="og:title" content="CentOS搭建LNMP,搭建ss-panel以及后端经验总结">
+<meta property="og:url" content="http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态
-ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 
-kill -9 pid 强制杀死进程pid
-service iptabes stop 停止防火墙 centos7之前版本
-chkconfig iptables off 禁用防">
-<meta property="og:updated_time" content="2016-10-19T06:04:16.205Z">
+<meta property="og:description" content="前言几个月前开始搭建http://ss.lixiaopeng.top/shadowsocks并免费提供给别人使用，搭建过程中遇到不少问题，在这记录下来。
+安装LNMPyum update  //更新yum
+wget -c http://soft.vpser.net/lnmp/lnmp1.3.tar.gz &amp;amp;&amp;amp; tar zxf lnmp1.3.tar.gz &amp;amp;&amp;amp; cd">
+<meta property="og:updated_time" content="2016-10-19T07:53:29.788Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux日常命令">
-<meta name="twitter:description" content="ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态
-ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 
-kill -9 pid 强制杀死进程pid
-service iptabes stop 停止防火墙 centos7之前版本
-chkconfig iptables off 禁用防">
+<meta name="twitter:title" content="CentOS搭建LNMP,搭建ss-panel以及后端经验总结">
+<meta name="twitter:description" content="前言几个月前开始搭建http://ss.lixiaopeng.top/shadowsocks并免费提供给别人使用，搭建过程中遇到不少问题，在这记录下来。
+安装LNMPyum update  //更新yum
+wget -c http://soft.vpser.net/lnmp/lnmp1.3.tar.gz &amp;amp;&amp;amp; tar zxf lnmp1.3.tar.gz &amp;amp;&amp;amp; cd">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
@@ -122,7 +116,7 @@ chkconfig iptables off 禁用防">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">linux日常命令</div>
+        <div class="flex-col header-title ellipsis">CentOS搭建LNMP,搭建ss-panel以及后端经验总结</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -143,18 +137,18 @@ chkconfig iptables off 禁用防">
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">linux日常命令</h1>
-    <h5 class="subtitle">2016-08-10</h5>
+    <h1 class="author">CentOS搭建LNMP,搭建ss-panel以及后端经验总结</h1>
+    <h5 class="subtitle">2016-10-19</h5>
   </div>
 </header>
 
     <div class="container body-wrap">
       
-  <article id="post-daily-linux-command" class="article article-type-post" itemprop="blogPost">
+  <article id="post-centos-build-ss-panel-and-server" class="article article-type-post" itemprop="blogPost">
     
       <div class="post-meat flex-row">
         <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shadowsocks/">shadowsocks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ss-panel/">ss-panel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vps/">vps</a></li></ul>
 </div>
       </div>
       <div class="post-body">
@@ -202,7 +196,7 @@ chkconfig iptables off 禁用防">
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装LNMP"><span class="post-toc-text">安装LNMP</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装ss-panel"><span class="post-toc-text">安装ss-panel</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装shadowsocks-manyuser"><span class="post-toc-text">安装shadowsocks manyuser</span></a></li></ol>
           </nav>
           
         </aside>
@@ -210,23 +204,56 @@ chkconfig iptables off 禁用防">
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <ul>
-<li>ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态</li>
-<li>ps -ef | grep servers.py -e:显示所有进程，环境变量；-f:全格式 -h 不显示标题 </li>
-<li>kill -9 pid 强制杀死进程pid</li>
-<li>service iptabes stop 停止防火墙 centos7之前版本</li>
-<li>chkconfig iptables off 禁用防火墙 centos7之前版本</li>
-<li>systemctl stop firewalld.service 停止防火墙 centos7</li>
-<li>systemctl disable firewalld.service 禁用防火墙 centos7</li>
-<li>chmod -R 777 shadowsocks-rm</li>
-<li>mv ss-panel/{.,}* .; rmdir ss-panel 移动ss-panel文件夹下的内容到上级目录，并且删除ss-panel目录</li>
-<li>复制目录下所有到另一目录 cp -r phpmyadmin/. public/phpmyadmin/</li>
-</ul>
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>几个月前开始搭建<a href="http://ss.lixiaopeng.top/" title="http://ss.lixiaopeng.top/" target="_blank" rel="external">http://ss.lixiaopeng.top/</a>shadowsocks并免费提供给别人使用，搭建过程中遇到不少问题，在这记录下来。</p>
+<h1 id="安装LNMP"><a href="#安装LNMP" class="headerlink" title="安装LNMP"></a>安装LNMP</h1><pre><code>yum update  //更新yum
+wget -c http://soft.vpser.net/lnmp/lnmp1.3.tar.gz &amp;&amp; tar zxf lnmp1.3.tar.gz &amp;&amp; cd lnmp1.3 &amp;&amp; ./install.sh lnmp   下载并安装lnmp
+如果wget过程中出现 
+    -bash: wget: command not found 
 
+那么执行 yum -y install wget 安装wget然后继续执行上一步。然后等待lnmp安装完成。    
+</code></pre><h1 id="安装ss-panel"><a href="#安装ss-panel" class="headerlink" title="安装ss-panel"></a>安装ss-panel</h1><pre><code>cd/home/wwwroot/default
+git clone https://github.com/orvice/ss-panel.git
+cp -R ss-panel/. ./
+cp .env.example .env
+vi .env  一次填写网站的配置信息，数据库信息
+安装composer:
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install
+把phpmyadmin目录下的内容拷贝到public/phpmyadmin目录下：
+cp -R phpmyadmin/. public/phpmyadmin/
+添加管理员账号：
+php xcat createAdmin
+添加权限：
+chmod -R 777 storage
+添加www用户访问目录权限：
+chown -R www /home/wwwroot/default/
+cd /usr/local/nginx
+vi nginx.conf
+在 root /home/wwwroot/default后面加 /public 
+紧跟下面添加：
+location / {  
+try_files $uri $uri/ /index.php$is_args$args;
+} 
+退出vi保存。
+service nginx reload
+</code></pre><h1 id="安装shadowsocks-manyuser"><a href="#安装shadowsocks-manyuser" class="headerlink" title="安装shadowsocks manyuser"></a>安装shadowsocks manyuser</h1><pre><code>mysql -root -p 输入数据库密码;执行use mysql;
+grant all privileges on *.* to &apos;数据库名&apos;@&apos;manyuser所在ip&apos;identified by &apos;密码&apos; with grant option;
+下载rm：
+git clone -b manyuser https://github.com/mengskysama/shadowsocks-rm.git
+安装pip： yum install python-pip -y (Centos7会报错需要这样执行：  sudo yum -y install epel-release      sudo yum -y install python-pip     sudo yum clean all)
+
+安装cymysql：
+pip install cymysql
+cd shadowsocks-rm 
+cd shadowsocks
+vi config.py 填写相应信息保存退出。
+python servers.py开启服务。
+nohup python servers.py &amp; 后台运行。
+</code></pre>
             <blockquote>
               <p>
                 本文地址：
-                <a href="http://xpleeandroid.github.io/2016/08/10/daily-linux-command/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/08/10/daily-linux-command/</a>
+                <a href="http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/</a>
               </p>
               <footer><cite><a href="http://xpleeandroid.github.io">@李晓鹏</a></cite></footer>
             </blockquote>
@@ -234,19 +261,12 @@ chkconfig iptables off 禁用防">
             
 <nav class="post-nav">
   
-    <div class="waves-block waves-effect prev fl">
-      <a href="/2016/08/12/ss-user-guide/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">SS用户说明</h4>
-      </a>
-    </div>
-  
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/07/29/using-threadpoolexcuter-in-android/" id="post-next" class="post-nav-link">
+      <a href="/2016/10/14/apache-bind-chinese-domain/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">安卓中使用ThreadPoolExcutor</h4>
+        <h4 class="title">中文网站绑定Apache无法解析的问题解决办法</h4>
       </a>
     </div>
   
@@ -257,7 +277,7 @@ chkconfig iptables off 禁用防">
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="daily-linux-command" data-title="linux日常命令" data-url="http://xpleeandroid.github.io/2016/08/10/daily-linux-command/index.html"></div>
+	<div class="ds-thread" data-thread-key="centos-build-ss-panel-and-server" data-title="CentOS搭建LNMP,搭建ss-panel以及后端经验总结" data-url="http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -296,10 +316,10 @@ chkconfig iptables off 禁用防">
 
 <script>
 var BLOG_SHARE = {
-    title: "linux日常命令",
+    title: "CentOS搭建LNMP,搭建ss-panel以及后端经验总结",
     pic: "/img/author.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://xpleeandroid.github.io/2016/08/10/daily-linux-command/index.html"
+    url: "http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

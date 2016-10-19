@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-10-14T05:52:36.872Z</updated>
+  <updated>2016-10-19T07:53:29.788Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS搭建LNMP,搭建ss-panel以及后端经验总结</title>
+    <link href="http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/"/>
+    <id>http://xpleeandroid.github.io/2016/10/19/centos-build-ss-panel-and-server/</id>
+    <published>2016-10-19T03:32:39.000Z</published>
+    <updated>2016-10-19T07:53:29.788Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;几个月前开始搭建&lt;a href=&quot;http://ss.lixiaopeng.top/&quot; title=&quot;http://ss.lixiaopeng.top/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ss.lixiaopeng.top/&lt;/a&gt;shadowsocks并免费提供给别人使用，搭建过程中遇到不少问题，在这记录下来。&lt;/p&gt;
+&lt;h1 id=&quot;安装LNMP&quot;&gt;&lt;a href=&quot;#安装LNMP&quot; class=&quot;headerlink&quot; title=&quot;安装LNMP&quot;&gt;&lt;/a&gt;安装LNMP&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;yum update  //更新yum
+wget -c http://soft.vpser.net/lnmp/lnmp1.3.tar.gz &amp;amp;&amp;amp; tar zxf lnmp1.3.tar.gz &amp;amp;&amp;amp; cd lnmp1.3 &amp;amp;&amp;amp; ./install.sh lnmp   下载并安装lnmp
+如果wget过程中出现 
+    -bash: wget: command not found 
+
+那么执行 yum -y install wget 安装wget然后继续执行上一步。然后等待lnmp安装完成。    
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;安装ss-panel&quot;&gt;&lt;a href=&quot;#安装ss-panel&quot; class=&quot;headerlink&quot; title=&quot;安装ss-panel&quot;&gt;&lt;/a&gt;安装ss-panel&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;cd/home/wwwroot/default
+git clone https://github.com/orvice/ss-panel.git
+cp -R ss-panel/. ./
+cp .env.example .env
+vi .env  一次填写网站的配置信息，数据库信息
+安装composer:
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install
+把phpmyadmin目录下的内容拷贝到public/phpmyadmin目录下：
+cp -R phpmyadmin/. public/phpmyadmin/
+添加管理员账号：
+php xcat createAdmin
+添加权限：
+chmod -R 777 storage
+添加www用户访问目录权限：
+chown -R www /home/wwwroot/default/
+cd /usr/local/nginx
+vi nginx.conf
+在 root /home/wwwroot/default后面加 /public 
+紧跟下面添加：
+location / {  
+try_files $uri $uri/ /index.php$is_args$args;
+} 
+退出vi保存。
+service nginx reload
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;安装shadowsocks-manyuser&quot;&gt;&lt;a href=&quot;#安装shadowsocks-manyuser&quot; class=&quot;headerlink&quot; title=&quot;安装shadowsocks manyuser&quot;&gt;&lt;/a&gt;安装shadowsocks manyuser&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;mysql -root -p 输入数据库密码;执行use mysql;
+grant all privileges on *.* to &amp;apos;数据库名&amp;apos;@&amp;apos;manyuser所在ip&amp;apos;identified by &amp;apos;密码&amp;apos; with grant option;
+下载rm：
+git clone -b manyuser https://github.com/mengskysama/shadowsocks-rm.git
+安装pip： yum install python-pip -y (Centos7会报错需要这样执行：  sudo yum -y install epel-release      sudo yum -y install python-pip     sudo yum clean all)
+
+安装cymysql：
+pip install cymysql
+cd shadowsocks-rm 
+cd shadowsocks
+vi config.py 填写相应信息保存退出。
+python servers.py开启服务。
+nohup python servers.py &amp;amp; 后台运行。
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;几个月前开始搭建&lt;a href=&quot;http://ss.lixiaopeng.top/&quot; title=&quot;http://ss.lixiaopen
+    
+    </summary>
+    
+    
+      <category term="vps" scheme="http://xpleeandroid.github.io/tags/vps/"/>
+    
+      <category term="ss-panel" scheme="http://xpleeandroid.github.io/tags/ss-panel/"/>
+    
+      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
+    
+      <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
+    
+  </entry>
   
   <entry>
     <title>中文网站绑定Apache无法解析的问题解决办法</title>
@@ -169,7 +240,7 @@ set termencoding=utf-8
     <link href="http://xpleeandroid.github.io/2016/08/10/daily-linux-command/"/>
     <id>http://xpleeandroid.github.io/2016/08/10/daily-linux-command/</id>
     <published>2016-08-10T03:30:06.000Z</published>
-    <updated>2016-08-10T08:20:25.126Z</updated>
+    <updated>2016-10-19T06:04:16.205Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;ps -aux | grep servers.py 查看servers.py后台进程 -aux 显示所有状态&lt;/li&gt;
@@ -181,6 +252,7 @@ set termencoding=utf-8
 &lt;li&gt;systemctl disable firewalld.service 禁用防火墙 centos7&lt;/li&gt;
 &lt;li&gt;chmod -R 777 shadowsocks-rm&lt;/li&gt;
 &lt;li&gt;mv ss-panel/{.,}* .; rmdir ss-panel 移动ss-panel文件夹下的内容到上级目录，并且删除ss-panel目录&lt;/li&gt;
+&lt;li&gt;复制目录下所有到另一目录 cp -r phpmyadmin/. public/phpmyadmin/&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
