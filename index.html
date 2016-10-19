@@ -147,6 +147,58 @@
   <ul class="post-list">
   
     <li class="post-list-item">
+  <article id="post-centos-allow-remote-mysql" class="article article-type-post" itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/10/19/centos-allow-remote-mysql/">CentOS 允许mysql远程连接</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+</div>
+        <time datetime="2016-10-19T15:01:29.000Z" itemprop="datePublished" class="post-tiem">
+  2016-10-19
+</time>
+      </div>
+      <div class="post-content" id="post-content" itemprop="postContent" >
+        
+          <hr>
+<p>搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  </p>
+<pre><code>mysql -u root -p 输入数据库密码
+
+mysql控制台运行：
+grant all privileges on *.* to &apos;root&apos;@&apos;%&apos; identified by &apos;数据库密码&apos; with grant option;
+
+flush privileges; # 重载系统权限
+exit;
+允许3306端口
+iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+
+iptables -L -n # 或者: service iptables status
+此时生产环境是不安全的，远程管理之后应该关闭端口，删除之前添加的规则
+iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+</code></pre>
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2016/10/19/centos-allow-remote-mysql/" class="post-more waves-effect waves-button waves-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
   <article id="post-centos-build-ss-panel-and-server" class="article article-type-post" itemprop="blogPost">
     
       
@@ -589,43 +641,6 @@ set encoding=prc
       </div>
       <div class="post-footer clearfix">
         <a href="/2016/07/22/android-upload-img-to-php-server-2/" class="post-more waves-effect waves-button waves-light">MORE</a>
-      </div>
-    
-
-  </article>
-
-
-</li>
-  
-    <li class="post-list-item">
-  <article id="post-android-upload-img-to-php-server-1" class="article article-type-post" itemprop="blogPost">
-    
-      
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/21/android-upload-img-to-php-server-1/">Android拍照上传至PHP服务器并写入MySql数据库(上)</a>
-    </h3>
-  
-
-
-
-      <div class="post-meat flex-row">
-        <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-</div>
-        <time datetime="2016-07-21T08:45:00.000Z" itemprop="datePublished" class="post-tiem">
-  2016-07-21
-</time>
-      </div>
-      <div class="post-content" id="post-content" itemprop="postContent" >
-        
-          <h1 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h1><p>需求很简单，Android客户端点击拍照后，进行Base64加密，自动上传至服务器，服务器接收上传的数据并解密后保存到指定文件夹下，并将图片信心写入数据库，并返回相应的Json数据。</p>
-        
-      </div>
-      <div class="post-footer clearfix">
-        <a href="/2016/07/21/android-upload-img-to-php-server-1/" class="post-more waves-effect waves-button waves-light">MORE</a>
       </div>
     
 

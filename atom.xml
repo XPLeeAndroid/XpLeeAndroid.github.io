@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-10-19T07:53:29.788Z</updated>
+  <updated>2016-10-19T15:09:57.360Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS 允许mysql远程连接</title>
+    <link href="http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/"/>
+    <id>http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/</id>
+    <published>2016-10-19T15:01:29.000Z</published>
+    <updated>2016-10-19T15:09:57.360Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql -u root -p 输入数据库密码
+
+mysql控制台运行：
+grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; identified by &amp;apos;数据库密码&amp;apos; with grant option;
+
+flush privileges; # 重载系统权限
+exit;
+允许3306端口
+iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+
+iptables -L -n # 或者: service iptables status
+此时生产环境是不安全的，远程管理之后应该关闭端口，删除之前添加的规则
+iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql -u root -p 输入数据库密码
+
+mysql控制台运行：
+g
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="http://xpleeandroid.github.io/tags/mysql/"/>
+    
+      <category term="centos" scheme="http://xpleeandroid.github.io/tags/centos/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS搭建LNMP,搭建ss-panel以及后端经验总结</title>
@@ -76,11 +118,11 @@ nohup python servers.py &amp;amp; 后台运行。
     </summary>
     
     
+      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
+    
       <category term="vps" scheme="http://xpleeandroid.github.io/tags/vps/"/>
     
       <category term="ss-panel" scheme="http://xpleeandroid.github.io/tags/ss-panel/"/>
-    
-      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
     
       <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
     
