@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>CentOS 允许mysql远程连接 | 李晓鹏 | Adam</title>
+  <title>lnmp pathinfo设置 | 李晓鹏 | Adam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="keywords" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师 " />
 	<meta name="description" content="李晓鹏 ，adamin90， blog.lixiaopeng.top， lixiaopeng.top，  Android工程师 ，全栈工程师  "/>
@@ -11,29 +11,20 @@
   <meta name="theme-color" content="#e91e63">
   
   
-  <meta name="keywords" content="mysql,centos">
-  <meta name="description" content="搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  
-mysql -u root -p 输入数据库密码
-
-mysql控制台运行：
-grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; identified by &amp;apos;数">
+  <meta name="keywords" content="nginx,lnmp,thinkphp">
+  <meta name="description" content="今晚在centos服务器上上传了一个tp5的demo：http://yuedu.lixiaopeng.top/public/index.php访问没有问题http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：
+`lnmp v1.1上，修改对应虚拟主机的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS 允许mysql远程连接">
-<meta property="og:url" content="http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/index.html">
+<meta property="og:title" content="lnmp pathinfo设置">
+<meta property="og:url" content="http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/index.html">
 <meta property="og:site_name" content="李晓鹏">
-<meta property="og:description" content="搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  
-mysql -u root -p 输入数据库密码
-
-mysql控制台运行：
-grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; identified by &amp;apos;数">
-<meta property="og:updated_time" content="2016-10-19T15:09:57.360Z">
+<meta property="og:description" content="今晚在centos服务器上上传了一个tp5的demo：http://yuedu.lixiaopeng.top/public/index.php访问没有问题http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：
+`lnmp v1.1上，修改对应虚拟主机的">
+<meta property="og:updated_time" content="2016-11-07T16:28:56.247Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS 允许mysql远程连接">
-<meta name="twitter:description" content="搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  
-mysql -u root -p 输入数据库密码
-
-mysql控制台运行：
-grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; identified by &amp;apos;数">
+<meta name="twitter:title" content="lnmp pathinfo设置">
+<meta name="twitter:description" content="今晚在centos服务器上上传了一个tp5的demo：http://yuedu.lixiaopeng.top/public/index.php访问没有问题http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：
+`lnmp v1.1上，修改对应虚拟主机的">
   
     <link rel="alternative" href="/atom.xml" title="李晓鹏" type="application/atom+xml">
   
@@ -129,7 +120,7 @@ grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; id
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">CentOS 允许mysql远程连接</div>
+        <div class="flex-col header-title ellipsis">lnmp pathinfo设置</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -150,18 +141,18 @@ grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; id
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">CentOS 允许mysql远程连接</h1>
-    <h5 class="subtitle">2016-10-19</h5>
+    <h1 class="author">lnmp pathinfo设置</h1>
+    <h5 class="subtitle">2016-11-08</h5>
   </div>
 </header>
 
     <div class="container body-wrap">
       
-  <article id="post-centos-allow-remote-mysql" class="article article-type-post" itemprop="blogPost">
+  <article id="post-tp5-lnmp-pathinfo" class="article article-type-post" itemprop="blogPost">
     
       <div class="post-meat flex-row">
         <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lnmp/">lnmp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/thinkphp/">thinkphp</a></li></ul>
 </div>
       </div>
       <div class="post-body">
@@ -217,26 +208,19 @@ grant all privileges on *.* to &amp;apos;root&amp;apos;@&amp;apos;%&amp;apos; id
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <hr>
-<p>搭建ss过程中在另一台服务器上开启ss manyuser始终连接不上，错误日志是无法连接远程数据库，所以google了如下解决办法，以后就不用再找了：  </p>
-<pre><code>mysql -u root -p 输入数据库密码
+            <p>今晚在centos服务器上上传了一个tp5的demo：<br><a href="http://yuedu.lixiaopeng.top/public/index.php访问没有问题" target="_blank" rel="external">http://yuedu.lixiaopeng.top/public/index.php访问没有问题</a><br><a href="http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：" target="_blank" rel="external">http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：</a></p>
+<pre><code>`lnmp v1.1上，修改对应虚拟主机的配置文件
+去掉#include pathinfo.conf前面的#，把try_files $uri =404; 前面加上# 注释掉。
 
-mysql控制台运行：
-grant all privileges on *.* to &apos;root&apos;@&apos;%&apos; identified by &apos;数据库密码&apos; with grant option;
+1.2,1.3上，修改对应虚拟主机的配置文件
+将include enable-php.conf;替换为include enable-php-pathinfo.conf;
 
-flush privileges; # 重载系统权限
-exit;
-允许3306端口
-iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
-
-iptables -L -n # 或者: service iptables status
-此时生产环境是不安全的，远程管理之后应该关闭端口，删除之前添加的规则
-iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+修改pathinfo需要重启nginx生效。`
 </code></pre>
             <blockquote>
               <p>
                 本文地址：
-                <a href="http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/</a>
+                <a href="http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/" target="_blank" rel="external">http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/</a>
               </p>
               <footer><cite><a href="http://xpleeandroid.github.io">@李晓鹏</a></cite></footer>
             </blockquote>
@@ -244,19 +228,12 @@ iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
             
 <nav class="post-nav">
   
-    <div class="waves-block waves-effect prev fl">
-      <a href="/2016/11/08/tp5-lnmp-pathinfo/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">lnmp pathinfo设置</h4>
-      </a>
-    </div>
-  
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/10/19/centos-build-ss-panel-and-server/" id="post-next" class="post-nav-link">
+      <a href="/2016/10/19/centos-allow-remote-mysql/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">CentOS搭建LNMP,搭建ss-panel以及后端经验总结</h4>
+        <h4 class="title">CentOS 允许mysql远程连接</h4>
       </a>
     </div>
   
@@ -267,7 +244,7 @@ iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="centos-allow-remote-mysql" data-title="CentOS 允许mysql远程连接" data-url="http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/index.html"></div>
+	<div class="ds-thread" data-thread-key="tp5-lnmp-pathinfo" data-title="lnmp pathinfo设置" data-url="http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -306,10 +283,10 @@ iptables -D INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
 
 <script>
 var BLOG_SHARE = {
-    title: "CentOS 允许mysql远程连接",
+    title: "lnmp pathinfo设置",
     pic: "/img/author.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://xpleeandroid.github.io/2016/10/19/centos-allow-remote-mysql/index.html"
+    url: "http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

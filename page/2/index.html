@@ -147,6 +147,55 @@
   <ul class="post-list">
   
     <li class="post-list-item">
+  <article id="post-android-upload-img-to-php-server-2" class="article article-type-post" itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/07/22/android-upload-img-to-php-server-2/">Android拍照上传至PHP服务器并写入MySql数据库(下)</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+</div>
+        <time datetime="2016-07-22T07:45:32.000Z" itemprop="datePublished" class="post-tiem">
+  2016-07-22
+</time>
+      </div>
+      <div class="post-content" id="post-content" itemprop="postContent" >
+        
+          <h1 id="Android实现"><a href="#Android实现" class="headerlink" title="Android实现"></a>Android实现</h1><p>调用系统相机，拍照：</p>
+<pre><code> Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            getFileUri();
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
+            startActivityForResult(intent, CODE_CAMERA);
+
+
+  private void getFileUri() {
+    image_name = Calendar.getInstance().getTimeInMillis() + &quot;.jpg&quot;;
+    file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + image_name);
+    file_uri = Uri.fromFile(file);
+}
+</code></pre>
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2016/07/22/android-upload-img-to-php-server-2/" class="post-more waves-effect waves-button waves-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
   <article id="post-android-upload-img-to-php-server-1" class="article article-type-post" itemprop="blogPost">
     
       

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-10-19T15:09:57.360Z</updated>
+  <updated>2016-11-07T16:28:56.247Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lnmp pathinfo设置</title>
+    <link href="http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/"/>
+    <id>http://xpleeandroid.github.io/2016/11/08/tp5-lnmp-pathinfo/</id>
+    <published>2016-11-07T16:21:23.000Z</published>
+    <updated>2016-11-07T16:28:56.247Z</updated>
+    
+    <content type="html">&lt;p&gt;今晚在centos服务器上上传了一个tp5的demo：&lt;br&gt;&lt;a href=&quot;http://yuedu.lixiaopeng.top/public/index.php访问没有问题&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yuedu.lixiaopeng.top/public/index.php访问没有问题&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`lnmp v1.1上，修改对应虚拟主机的配置文件
+去掉#include pathinfo.conf前面的#，把try_files $uri =404; 前面加上# 注释掉。
+
+1.2,1.3上，修改对应虚拟主机的配置文件
+将include enable-php.conf;替换为include enable-php-pathinfo.conf;
+
+修改pathinfo需要重启nginx生效。`
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今晚在centos服务器上上传了一个tp5的demo：&lt;br&gt;&lt;a href=&quot;http://yuedu.lixiaopeng.top/public/index.php访问没有问题&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yuedu.l
+    
+    </summary>
+    
+    
+      <category term="nginx" scheme="http://xpleeandroid.github.io/tags/nginx/"/>
+    
+      <category term="lnmp" scheme="http://xpleeandroid.github.io/tags/lnmp/"/>
+    
+      <category term="thinkphp" scheme="http://xpleeandroid.github.io/tags/thinkphp/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS 允许mysql远程连接</title>
@@ -120,11 +152,11 @@ nohup python servers.py &amp;amp; 后台运行。
     
       <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
     
-      <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
-    
       <category term="vps" scheme="http://xpleeandroid.github.io/tags/vps/"/>
     
       <category term="ss-panel" scheme="http://xpleeandroid.github.io/tags/ss-panel/"/>
+    
+      <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
     
   </entry>
   

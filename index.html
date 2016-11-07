@@ -147,6 +147,51 @@
   <ul class="post-list">
   
     <li class="post-list-item">
+  <article id="post-tp5-lnmp-pathinfo" class="article article-type-post" itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/11/08/tp5-lnmp-pathinfo/">lnmp pathinfo设置</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lnmp/">lnmp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/thinkphp/">thinkphp</a></li></ul>
+</div>
+        <time datetime="2016-11-07T16:21:23.000Z" itemprop="datePublished" class="post-tiem">
+  2016-11-08
+</time>
+      </div>
+      <div class="post-content" id="post-content" itemprop="postContent" >
+        
+          <p>今晚在centos服务器上上传了一个tp5的demo：<br><a href="http://yuedu.lixiaopeng.top/public/index.php访问没有问题" target="_blank" rel="external">http://yuedu.lixiaopeng.top/public/index.php访问没有问题</a><br><a href="http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：" target="_blank" rel="external">http://yuedu.lixiaopeng.top/public/index.php/index却访问显示404错误，权限给了。google了一堆，都不能解决问题，最后在lnmp网站找到了解决办法：</a></p>
+<pre><code>`lnmp v1.1上，修改对应虚拟主机的配置文件
+去掉#include pathinfo.conf前面的#，把try_files $uri =404; 前面加上# 注释掉。
+
+1.2,1.3上，修改对应虚拟主机的配置文件
+将include enable-php.conf;替换为include enable-php-pathinfo.conf;
+
+修改pathinfo需要重启nginx生效。`
+</code></pre>
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2016/11/08/tp5-lnmp-pathinfo/" class="post-more waves-effect waves-button waves-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
   <article id="post-centos-allow-remote-mysql" class="article article-type-post" itemprop="blogPost">
     
       
@@ -594,55 +639,6 @@ set encoding=prc
       </div>
       <div class="post-footer clearfix">
         <a href="/2016/07/28/android-calculate-download-speed/" class="post-more waves-effect waves-button waves-light">MORE</a>
-      </div>
-    
-
-  </article>
-
-
-</li>
-  
-    <li class="post-list-item">
-  <article id="post-android-upload-img-to-php-server-2" class="article article-type-post" itemprop="blogPost">
-    
-      
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/07/22/android-upload-img-to-php-server-2/">Android拍照上传至PHP服务器并写入MySql数据库(下)</a>
-    </h3>
-  
-
-
-
-      <div class="post-meat flex-row">
-        <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-</div>
-        <time datetime="2016-07-22T07:45:32.000Z" itemprop="datePublished" class="post-tiem">
-  2016-07-22
-</time>
-      </div>
-      <div class="post-content" id="post-content" itemprop="postContent" >
-        
-          <h1 id="Android实现"><a href="#Android实现" class="headerlink" title="Android实现"></a>Android实现</h1><p>调用系统相机，拍照：</p>
-<pre><code> Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            getFileUri();
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, file_uri);
-            startActivityForResult(intent, CODE_CAMERA);
-
-
-  private void getFileUri() {
-    image_name = Calendar.getInstance().getTimeInMillis() + &quot;.jpg&quot;;
-    file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + image_name);
-    file_uri = Uri.fromFile(file);
-}
-</code></pre>
-        
-      </div>
-      <div class="post-footer clearfix">
-        <a href="/2016/07/22/android-upload-img-to-php-server-2/" class="post-more waves-effect waves-button waves-light">MORE</a>
       </div>
     
 
