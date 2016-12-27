@@ -175,13 +175,13 @@ nohup python servers.py &amp;amp; 后台运行。
     </summary>
     
     
-      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
-    
-      <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
-    
       <category term="vps" scheme="http://xpleeandroid.github.io/tags/vps/"/>
     
       <category term="ss-panel" scheme="http://xpleeandroid.github.io/tags/ss-panel/"/>
+    
+      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
+    
+      <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
     
   </entry>
   
