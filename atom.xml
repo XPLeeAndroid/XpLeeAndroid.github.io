@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xpleeandroid.github.io/"/>
-  <updated>2016-12-27T05:38:53.720Z</updated>
+  <updated>2017-01-07T03:57:17.624Z</updated>
   <id>http://xpleeandroid.github.io/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>再见2016，Hello 2017</title>
+    <link href="http://xpleeandroid.github.io/2017/01/03/goodbye2016-hello2017/"/>
+    <id>http://xpleeandroid.github.io/2017/01/03/goodbye2016-hello2017/</id>
+    <published>2017-01-03T01:32:38.000Z</published>
+    <updated>2017-01-07T03:57:17.624Z</updated>
+    
+    <content type="html">&lt;p&gt;  写之前看了14年的总结，感慨颇多。专业大学毕业已经过了两个年头。&lt;/p&gt;
+&lt;h2 id=&quot;2016&quot;&gt;&lt;a href=&quot;#2016&quot; class=&quot;headerlink&quot; title=&quot;2016&quot;&gt;&lt;/a&gt;2016&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;工作上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上半年比较空闲，下半年比较忙碌。在现在的公司将近两年，刚进来的时候做一直做安卓开发，上半年公司比较尴尬，老同事因为薪资等问题纷纷离职，还碰到了工作以来很多狗血的老板与员工之间的问题。上半年自己也一直想走，想离开，去找个靠谱的公司，起码工资高，没那么多烦心事，但是一直没有开口，期间也有朋友同事介绍过几家公司，待遇啥的都比较靠谱，由于我个人的原因没有去。最终公司技术只剩下两人，后来来了一个IOS美女同事，2016进入下半年。由于后台技术一直空缺，下半年开始接手PHP的工作，之前自己学过PHP基础，所以接手还是比较顺畅的，开始恶补后端知识，没多久就开始开发公司项目了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生活上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从崂山搬到了李沧区，到公司十分钟，学会了做菜，做很多菜，自己感觉也蛮好吃。又胖了，毕业以后一直在胖着，从来没间断。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;程序方面 PHP MYSQL 前端统统学习了一遍。接触了点日语跟西班牙语。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;总结&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选择有时候可能会大于努力；&lt;br&gt;该减肥了；做事情一定要提高效率，不一定事半功倍，但是不要事倍功半；早起，多喝水（周老师说不合适膀胱会出问题），多运动。&lt;/p&gt;
+&lt;h2 id=&quot;2017&quot;&gt;&lt;a href=&quot;#2017&quot; class=&quot;headerlink&quot; title=&quot;2017&quot;&gt;&lt;/a&gt;2017&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;工作上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;做正确的选择，多为自己，为家人考虑一下。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生活上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;早起，运动，尽量是早饭和午饭。买个像样的衣服鞋子。多与别人交流，尤其不是程序员不同行业的同学朋友。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习上 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;深入学习PHP,多读读程序源码，学习学习小程序开发，熟悉一下微信开发，，深入学习JS.&lt;br&gt;把自己规划要做的东西抓紧做出来，PC和APP.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  写之前看了14年的总结，感慨颇多。专业大学毕业已经过了两个年头。&lt;/p&gt;
+&lt;h2 id=&quot;2016&quot;&gt;&lt;a href=&quot;#2016&quot; class=&quot;headerlink&quot; title=&quot;2016&quot;&gt;&lt;/a&gt;2016&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;工作上&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="summary" scheme="http://xpleeandroid.github.io/tags/summary/"/>
+    
+  </entry>
   
   <entry>
     <title>Visual-Represenation-of-Sql-Joins</title>
@@ -175,11 +227,11 @@ nohup python servers.py &amp;amp; 后台运行。
     </summary>
     
     
+      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
+    
       <category term="vps" scheme="http://xpleeandroid.github.io/tags/vps/"/>
     
       <category term="ss-panel" scheme="http://xpleeandroid.github.io/tags/ss-panel/"/>
-    
-      <category term="linux" scheme="http://xpleeandroid.github.io/tags/linux/"/>
     
       <category term="shadowsocks" scheme="http://xpleeandroid.github.io/tags/shadowsocks/"/>
     
